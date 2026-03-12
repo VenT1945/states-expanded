@@ -1,0 +1,30 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_paper_mandate_icon"
+		texturefile = "gfx/interface/ideas/paper_mandate.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_divide_rule_icon"
+		texturefile = "gfx/interface/ideas/SYR_divide_rule.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_banque_syrie_1_icon"
+		texturefile = "gfx/interface/ideas/SYR_banque_syrie_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_banque_syrie_2_icon"
+		texturefile = "gfx/interface/ideas/SYR_banque_syrie_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_colonial_economy_icon"
+		texturefile = "gfx/interface/ideas/colonial_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_french_levant_army_icon"
+		texturefile = "gfx/interface/ideas/SYR_french_levant_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hashim_al_atassi"
+		texturefile = "gfx/interface/ideas/idea_hashim_al_atassi.dds"
+	}
+}

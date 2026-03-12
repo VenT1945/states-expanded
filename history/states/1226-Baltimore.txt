@@ -1,0 +1,22 @@
+state={
+	id=1226
+	name="STATE_1226"
+	provinces={
+		6984 
+	}
+	resources={
+		steel=2
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = MRD
+		victory_points = {
+			6984 10
+		}
+	}
+	manpower=965417
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+	id=1055
+	name="STATE_1055"
+	provinces={
+		634 4362 13391 
+	}
+	history={
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = NBW
+		victory_points = {
+			13391 2 
+		}
+		victory_points = {
+			4362 1 
+		}
+	}
+	manpower=99683
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

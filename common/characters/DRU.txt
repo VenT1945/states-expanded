@@ -1,0 +1,34 @@
+characters = {
+	DRU_pierre_f_j_tarrit = {
+
+		name = DRU_pierre_f_j_tarrit
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_europe_generic_5
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "1939.1.1.1"
+		}
+	}
+	DRU_sultan_al_atrash = {
+
+		name = DRU_sultan_al_atrash
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_europe_generic_2
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "1954.1.1.1"
+		}
+	}
+}

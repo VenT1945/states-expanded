@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_SYR_abdullah_atfeh"
+		texturefile = "gfx/leaders/SYR/portrait_SYR_abdullah_atfeh.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SYR_adnan_al_malki"
+		texturefile = "gfx/leaders/SYR/portrait_SYR_adnan_al_malki.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SYR_adib_shishakli"
+		texturefile = "gfx/leaders/SYR/portrait_SYR_adib_shishakli.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SYR_abdullah_atfeh_small"
+		texturefile = "gfx/leaders/SYR/portrait_SYR_abdullah_atfeh.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SYR_adnan_al_malki_small"
+		texturefile = "gfx/leaders/SYR/portrait_SYR_adnan_al_malki.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SYR_adib_shishakli_small"
+		texturefile = "gfx/leaders/SYR/portrait_SYR_adib_shishakli.dds"
+	}
+}

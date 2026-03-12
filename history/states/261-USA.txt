@@ -1,0 +1,24 @@
+state={
+	id=261
+	name="STATE_261"
+	resources={
+		steel=1
+	}
+	provinces={
+		659 689 3685 3872 11760 11791 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			11791 2
+		}
+		victory_points = {
+			3872 1
+		}
+	}
+	manpower=641065
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=11.000
+}

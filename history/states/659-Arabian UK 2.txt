@@ -1,0 +1,31 @@
+state={
+	id=659
+	name="STATE_659"
+	provinces={
+		4976 12821 
+	}
+	history = {
+		owner = QUA
+		add_core_of = QUA
+		add_claim_by = YEM
+		add_claim_by = FSA
+		victory_points = {
+			4976 3
+		}
+		victory_points = {
+			12821 2
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			4976 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=101880
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

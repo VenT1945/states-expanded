@@ -1,0 +1,320 @@
+ALDR_international_support_category = {
+	ALDR_communist_support = {
+		cost = 50
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = aldr_fascist_support
+					has_country_flag = aldr_democratic_support
+					has_country_flag = aldr_arab_support
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+    			tooltip = aldr_has_not_chosen_other_support_tt		
+    			NOT = {
+					OR = {
+						has_country_flag = aldr_fascist_support
+						has_country_flag = aldr_democratic_support
+						has_country_flag = aldr_arab_support
+					}
+				}
+			}
+		}
+		days_re_enable = 125
+		ai_will_do = {
+    		base = 0
+    		modifier = {
+        		add = 10
+        		IF = {
+					limit = {
+						original_tag = DRU
+					}
+					has_country_flag = DRU_AI_RANDOM_COMMUNIST
+				}
+    		}
+			modifier = {
+        		add = 10
+        		IF = {
+					limit = {
+						original_tag = DRU
+					}
+					has_game_rule = {
+						rule = DRU_ai_behavior
+						option = COMMUNIST
+					}
+				}
+    		}
+		}
+		complete_effect = {
+			custom_effect_tooltip = ALDR_ask_commie_maj_min
+			random_country = {
+				limit = {
+					AND = {
+						is_major = yes
+						has_government = communism
+					}
+				}
+				country_event = {
+    				id = aldr_support.1
+    				days = 7
+				}
+			}
+			random_country = {
+				limit = {
+					AND = {
+						is_major = no
+						has_government = communism
+					}
+				}
+				country_event = {
+    				id = aldr_support.1
+    				days = 7
+				}
+			}
+			custom_effect_tooltip = if_they_accept_tt
+			custom_effect_tooltip = ALDR_commie_support_acception
+			set_country_flag = aldr_commie_support
+		}
+	}
+	ALDR_fascist_support = {
+		cost = 50
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = aldr_commie_support
+					has_country_flag = aldr_democratic_support
+					has_country_flag = aldr_arab_support
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+    			tooltip = aldr_has_not_chosen_other_support_tt
+				NOT = {
+					OR = {
+						has_country_flag = aldr_commie_support
+						has_country_flag = aldr_democratic_support
+						has_country_flag = aldr_arab_support
+					}
+				}
+			}
+		}
+		days_re_enable = 125
+		ai_will_do = {
+    		base = 0
+    		modifier = {
+        		add = 10
+        		IF = {
+					limit = {
+						original_tag = DRU
+					}
+					has_country_flag = DRU_AI_RANDOM_FASCISM
+				}
+    		}
+			modifier = {
+        		add = 10
+        		IF = {
+					limit = {
+						original_tag = DRU
+					}
+					has_game_rule = {
+						rule = DRU_ai_behavior
+						option = FASCIST
+					}
+				}
+    		}
+		}
+		complete_effect = {
+			custom_effect_tooltip = ALDR_ask_fascist_maj_min
+			random_country = {
+				limit = {
+					AND = {
+						is_major = yes
+						has_government = fascism
+					}
+				}
+				country_event = {
+    				id = aldr_support.1
+    				days = 7
+				}
+			}
+			random_country = {
+				limit = {
+					AND = {
+						is_major = no
+						has_government = fascism
+					}
+				}
+				country_event = {
+    				id = aldr_support.1
+    				days = 7
+				}
+			}
+			custom_effect_tooltip = if_they_accept_tt
+			custom_effect_tooltip = ALDR_fascism_support_acception
+			set_country_flag = aldr_fascist_support
+		}
+	}
+	ALDR_democratic_support = {
+		cost = 50
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = aldr_fascist_support
+					has_country_flag = aldr_commie_support
+					has_country_flag = aldr_arab_support
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+    			tooltip = aldr_has_not_chosen_other_support_tt		
+    			NOT = {
+					OR = {
+						has_country_flag = aldr_fascist_support
+						has_country_flag = aldr_commie_support
+						has_country_flag = aldr_arab_support
+					}
+				}
+			}
+		}
+		days_re_enable = 125
+		ai_will_do = {
+    		base = 0
+    		modifier = {
+        		add = 10
+        		IF = {
+					limit = {
+						original_tag = DRU
+					}
+					has_country_flag = DRU_AI_RANDOM_DEMOCRATIC
+				}
+    		}
+			modifier = {
+        		add = 10
+        		IF = {
+					limit = {
+						original_tag = DRU
+					}
+					has_game_rule = {
+						rule = DRU_ai_behavior
+						option = DEMOCRATIC
+					}
+				}
+    		}
+		}
+		complete_effect = {
+			custom_effect_tooltip = ALDR_ask_democratic_maj_min
+			random_country = {
+				limit = {
+					AND = {
+						is_major = yes
+						has_government = democratic
+						NOT = {
+							original_tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				country_event = {
+    				id = aldr_support.1
+    				days = 7
+				}
+			}
+			random_country = {
+				limit = {
+					AND = {
+						is_major = no
+						has_government = democratic
+					}
+				}
+				country_event = {
+    				id = aldr_support.1
+    				days = 7
+				}
+			}
+			custom_effect_tooltip = if_they_accept_tt
+			custom_effect_tooltip = ALDR_democratic_support_acception
+			set_country_flag = aldr_democratic_support
+		}
+	}
+	ALDR_arab_support = {
+		cost = 50
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = aldr_fascist_support
+					has_country_flag = aldr_democratic_support
+					has_country_flag = aldr_commie_support
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+    			tooltip = aldr_has_not_chosen_other_support_tt		
+    			NOT = {
+					OR = {
+						has_country_flag = aldr_fascist_support
+						has_country_flag = aldr_democratic_support
+						has_country_flag = aldr_commie_support
+					}
+				}
+			}
+		}
+		days_re_enable = 75
+		ai_will_do = {
+    		base = 0
+    		modifier = {
+        		add = 10
+        		IF = {
+					limit = {
+						original_tag = DRU
+					}
+					has_country_flag = DRU_AI_RANDOM_SULTAN
+				}
+    		}
+			modifier = {
+        		add = 10
+        		IF = {
+					limit = {
+						original_tag = DRU
+					}
+					has_game_rule = {
+						rule = DRU_ai_behavior
+						option = SULTAN
+					}
+				}
+    		}
+		}
+		complete_effect = {
+			custom_effect_tooltip = ALDR_ask_arab
+			random_country = {
+				limit = {
+					AND = {
+						capital_scope = {
+							is_on_continent = middle_east
+						}
+						NOT = {
+							OR = {
+								original_tag = SYR
+								original_tag = LEB
+								original_tag = ALA
+								original_tag = UTA
+							}
+						}
+					}
+				}
+				country_event = {
+    				id = aldr_support.1
+    				days = 7
+				}
+			}
+		
+			custom_effect_tooltip = if_they_accept_tt
+			custom_effect_tooltip = ALDR_arab_support_acception
+			set_country_flag = aldr_arab_support
+		}
+	}
+}

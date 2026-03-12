@@ -1,0 +1,26 @@
+state={
+	id=992
+	name="STATE_992"
+	provinces={
+		5074 
+	}
+	history = {
+		owner = RAJ
+		add_core_of = FSA
+		add_claim_by = YEM
+		victory_points = {
+			5074 5
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			5074 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=80516
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

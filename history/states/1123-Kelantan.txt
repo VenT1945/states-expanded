@@ -1,0 +1,25 @@
+state={
+	id=1123
+	name="STATE_1123"
+	provinces={
+		7329 10227 
+	}
+	resources={ 
+		rubber=20.000
+		tungsten=5.000
+	}
+	history={
+		owner = KEL
+		add_core_of = KEL
+		victory_points = {
+			7329 2
+		}
+		victory_points = {
+			10227 1
+		}
+	}
+	manpower=305695
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

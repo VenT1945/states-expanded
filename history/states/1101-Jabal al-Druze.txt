@@ -1,0 +1,29 @@
+state={
+	id=1101
+	name="STATE_1101"
+	provinces={
+		4486 
+	}
+	
+	history={
+		owner = DRU
+		victory_points = {
+			4486 2
+		}
+		buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+        }
+		add_core_of = DRU
+		add_core_of = SYR
+		1939.1.1 = {
+            owner = SYR
+        }
+	}
+	
+	
+	manpower=184962
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

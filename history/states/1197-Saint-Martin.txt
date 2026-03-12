@@ -1,0 +1,18 @@
+state={
+	id=1197
+	name="STATE_1197"
+	provinces={
+		13084 
+	}
+	history={
+		add_core_of = BAS
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=2193
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

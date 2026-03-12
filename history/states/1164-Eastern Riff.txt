@@ -1,0 +1,19 @@
+state={
+	id=1164
+	name="STATE_1164"
+	provinces={
+		7215 13418 
+	}
+	history = {
+		add_core_of = RIF
+		add_core_of = MOR
+		owner = RIF
+		victory_points = {
+			13418 1
+		}
+	}
+	manpower=276419
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,18 @@
+state={
+	id=1151
+	name="STATE_1151"
+	provinces={
+		1620 4596 7645 10204 12167 
+	}
+	history = {
+		add_core_of = CAM
+		owner = VIN
+		victory_points = {
+			7645 1 
+		}
+	}
+	manpower=684105
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

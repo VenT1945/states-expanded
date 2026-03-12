@@ -1,0 +1,24 @@
+state={
+	id=855
+	name="STATE_855"
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		victory_points = {
+			12101 1 
+		}
+		victory_points = {
+			2095 1 
+		}
+		victory_points = {
+			2027 2
+		}
+	}
+	provinces={
+		1033 2027 2095 7970 8092 12101 12455 
+	}
+	manpower=54218
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

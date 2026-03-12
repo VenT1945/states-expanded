@@ -1,0 +1,25 @@
+state={
+	id=1079
+	name="STATE_1079"
+	provinces={
+		827 971 3829 7528 9760 9808 
+	}
+	resources={
+		coal=7
+		oil=1
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			9760 1
+		}
+		victory_points = {
+			827 1
+		}
+	}
+	manpower=866787
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

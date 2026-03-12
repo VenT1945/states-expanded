@@ -1,0 +1,26 @@
+state={
+	id=1047
+	name="STATE_1047"
+	provinces={
+		951 10343 11873 
+	}
+	resources={
+		coal=1
+		steel=1
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = VRG
+		victory_points = {
+			10343 1
+		}
+		victory_points = {
+			951 1 
+		}
+	}
+	manpower=262710
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

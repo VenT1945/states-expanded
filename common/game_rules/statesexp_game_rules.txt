@@ -1,0 +1,141 @@
+SYR_ai_behavior = {
+	name = "SYR_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_HISTORICAL_SYR_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = MANDATE
+		text = "RULE_OPTION_MANDATE"
+		desc = "RULE_MANDATE_SYR_AI_DESC"
+		allow_achievements = no
+	}
+    option = {
+		name = NATIONAL_BLOC
+		text = "RULE_OPTION_NATIONAL_BLOC"
+		desc = "RULE_NATIONAL_BLOC_SYR_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = BAATHIST
+		text = "RULE_OPTION_BAATHIST"
+		desc = "RULE_BAATHIST_SYR_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_GREATER_SYRIA"
+		desc = "RULE_FASCIST_SYR_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_SYR_ARABIA"
+		desc = "RULE_COMMUNIST_SYR_AI_DESC"
+		allow_achievements = no
+    }
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = no
+	}
+}
+DRU_ai_behavior = {
+	name = "DRU_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_HISTORICAL_DRU_AI_DESC"
+		allow_achievements = yes
+	}
+    option = {
+		name = SULTAN
+		text = "RULE_OPTION_SULTAN"
+		desc = "RULE_SULTAN_DRU_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_FASCIST"
+		desc = "RULE_FASCIST_DRU_AI_DESC"
+		allow_achievements = no
+	}
+    option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC"
+		desc = "RULE_DEMOCRATIC_DRU_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_COMMUNIST"
+		desc = "RULE_COMMUNIST_DRU_AI_DESC"
+		allow_achievements = no
+    }
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = no
+	}
+}
+ALA_ai_behavior = {
+	name = "ALA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_HISTORICAL_ALA_AI_DESC"
+		allow_achievements = yes
+	}
+    option = {
+		name = SULTAN
+		text = "RULE_OPTION_SULTAN"
+		desc = "RULE_SULTAN_ALA_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_FASCIST"
+		desc = "RULE_FASCIST_ALA_AI_DESC"
+		allow_achievements = no
+	}
+    option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC"
+		desc = "RULE_DEMOCRATIC_ALA_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_COMMUNIST"
+		desc = "RULE_COMMUNIST_ALA_AI_DESC"
+		allow_achievements = no
+    }
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = no
+	}
+}

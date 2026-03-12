@@ -1,0 +1,28 @@
+state={
+	id=1233
+	name="STATE_1233"
+	provinces={
+		13474 
+	}
+	history = {
+		add_core_of = IRE
+		owner = ENG
+		victory_points = {
+			13474 1
+		}
+		buildings = {
+            infrastructure = 1
+            13474 = {
+                naval_base = 1
+            }
+        }
+		1938.10.3 = {
+			owner = IRE
+			controller = IRE
+		}
+	}
+	manpower=1172
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,21 @@
+state={
+	id=699
+	name="STATE_699"
+	provinces={
+		5012 10875 
+	}
+	history={
+		owner = SPR
+		add_core_of = WES
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10875 1
+		}
+	}
+	manpower=182281
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

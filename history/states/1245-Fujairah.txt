@@ -1,0 +1,18 @@
+state={
+	id=1245
+	name="STATE_1245"
+	provinces={
+		13491 13497 
+	}
+	history = {
+		owner = UAE
+		add_core_of = UAE
+		victory_points = {
+			13497 1
+		}
+	}
+	manpower=7965
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=0
+}

@@ -1,0 +1,25 @@
+state={
+	id=454
+	name="STATE_454"
+	provinces={
+		1015 7176 
+	}
+	resources = {
+		oil=6
+	}
+	history = {
+		owner = PAL
+		add_core_of = PAL
+		buildings = {
+            infrastructure = 1
+			air_base = 2
+        }
+		victory_points = {
+			1015 1
+		}
+	}
+	manpower=104366
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

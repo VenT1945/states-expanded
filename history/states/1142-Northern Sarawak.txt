@@ -1,0 +1,21 @@
+state={
+	id=1142
+	name="STATE_1142"
+	provinces={
+		8091 10269 10285 13412 
+	}
+	history = {
+		owner = SRW
+		add_core_of = SRW
+		victory_points = {
+			10285 5 
+		}
+		victory_points = {
+			10269 2 
+		}
+	}
+	manpower=185232
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

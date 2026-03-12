@@ -1,0 +1,167 @@
+add_namespace = alawitedruze
+add_namespace = aldr_support
+
+country_event = {
+	id = alawitedruze.1
+	title = alawitedruze.1.t
+	desc = alawitedruze.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = alawitedruze.1.a
+		ai_chance = {
+    		base = 10
+		}
+        if = {
+			limit = {
+				original_tag = ALA
+			}
+			DRU = {
+                annex_country = {
+    			    target = ALA
+    			    transfer_troops = yes
+			    }
+				1099 = { add_core_of = DRU }
+				country_event = {
+    				id = alawitedruze.2
+    				days = 1
+				}
+			}
+		}
+		else = {
+			ALA = {
+                annex_country = {
+    			    target = DRU
+    			    transfer_troops = yes
+			    }
+				1101 = { add_core_of = ALA }
+				country_event = {
+    				id = alawitedruze.2
+    				days = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = alawitedruze.1.b
+		ai_chance = {
+    		base = 0
+		}
+	}
+}
+country_event = {
+	id = alawitedruze.2
+	title = alawitedruze.2.t
+	desc = alawitedruze.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = alawitedruze.2.a
+	}
+}
+country_event = {
+	id = aldr_support.1
+	title = aldr_support.1.t
+	desc = aldr_support.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aldr_support.1.a
+		ai_chance = {
+    		base = 10
+		}
+		ROOT = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment_1
+    			amount = -2000
+				producer = ROOT
+			}
+		}
+		FROM = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment_1
+    			amount = 2000
+				producer = ROOT
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_government = communism
+					}
+				}
+				add_ideas = communist_influence
+				add_ideas = communist_pressure
+				add_popularity = {
+    				ideology = communism
+    				popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_government = fascism
+					}
+				}
+				add_ideas = strong_fascist_influence
+				add_popularity = {
+    				ideology = fascism
+    				popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_government = democratic
+					}
+				}
+				add_ideas = democratic_influence
+				add_popularity = {
+    				ideology = democratic
+    				popularity = 0.05
+				}
+			}
+			else = {
+				add_ideas = neutrality_influence
+				add_popularity = {
+    				ideology = neutrality
+    				popularity = 0.05
+				}
+			}
+			country_event = aldr_support.2
+		}	
+	}
+	option = {
+		name = aldr_support.1.b
+		ai_chance = {
+    		base = 5
+		}
+		FROM = {
+			country_event = aldr_support.3
+		}
+	}
+}
+country_event = {
+	id = aldr_support.2
+	title = aldr_support.2.t
+	desc = aldr_support.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aldr_support.2.a
+	}
+}
+country_event = {
+	id = aldr_support.3
+	title = aldr_support.3.t
+	desc = aldr_support.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aldr_support.3.a
+	}
+}

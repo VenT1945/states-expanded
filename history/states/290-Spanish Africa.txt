@@ -1,0 +1,25 @@
+state={
+	id=290
+	name="STATE_290"
+	resources={
+		steel=40.000
+	}
+	provinces={
+		4199 10113 12087 
+	}
+	history = {
+		add_core_of = RIF
+		add_core_of = MOR
+		owner = RIF
+		victory_points = {
+			12087 5
+		}
+		victory_points = {
+			10113 2
+		}
+	}
+	manpower=312837
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

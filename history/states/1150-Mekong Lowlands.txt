@@ -1,0 +1,30 @@
+state={
+	id=1150
+	name="STATE_1150"
+	provinces={
+		1324 4302 4330 4639 5236 7319 7376 12260 12288 12475
+	}
+	history = {
+		add_core_of = CAM
+		owner = VIN
+		victory_points = {
+			7376 5 
+		}
+		victory_points = {
+			4302 2 
+		}
+		victory_points = {
+			7319 1 
+		}
+		victory_points = {
+			1324 1 
+		}
+		victory_points = {
+			12260 2 
+		}
+	}
+	manpower=1027412
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

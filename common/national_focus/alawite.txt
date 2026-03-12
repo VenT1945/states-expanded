@@ -1,0 +1,18 @@
+focus_tree = {
+	id = alawite_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ALA
+		}
+	}
+	
+	shared_focus = ALDR_realize_future
+	shared_focus = ALDR_industrial_growth
+	shared_focus = ALDR_army_expansion
+	shared_focus = ALDR_global_recognition
+	
+}

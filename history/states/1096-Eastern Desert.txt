@@ -1,0 +1,24 @@
+state={
+	id=1096
+	name="STATE_1096"
+	provinces={
+		1544 4440 4574 7001 
+	}
+	history = {
+		owner = JOR
+		add_core_of = JOR
+		victory_points = {
+			4440 1
+		}
+		victory_points = {
+			7001 2
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=47932
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

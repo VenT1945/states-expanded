@@ -1,0 +1,21 @@
+state={
+	id=1199
+	name="STATE_1199"
+	provinces={
+		7123 
+	}
+	history={
+		add_core_of = BAS
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			7123 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=50214
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

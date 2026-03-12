@@ -1,0 +1,30 @@
+state={
+	id=1020
+	name="STATE_1020"
+	provinces={
+		6909 9847 9850
+	}
+	resources={
+		steel=1
+		tungsten=2
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = CON
+		victory_points = {
+			9850 3 
+		}
+		victory_points = {
+			9847 3 
+		}
+		victory_points = {
+			6909 2 
+		}
+	}
+	
+	manpower=1405192
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

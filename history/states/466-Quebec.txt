@@ -1,0 +1,23 @@
+state={
+	id=466
+	name="STATE_466"
+	resources={
+		aluminium=4.000
+	}
+	provinces={
+		490 3911 4666 6740 10176 11682 13162 13166 13181 13196 
+	}
+	history={
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = QUE
+		
+		victory_points = {
+			3911 1
+		}
+	}
+	manpower=17893
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

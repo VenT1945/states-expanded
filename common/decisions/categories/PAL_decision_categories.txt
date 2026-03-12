@@ -1,0 +1,21 @@
+PAL_great_palestinian_uprising = {
+
+	priority = 40
+	visible_when_empty = no	
+	allowed = {
+		original_tag = PAL
+	}
+	visible = {
+		AND = {
+			has_global_flag = {
+				flag = the_1936_PAL_revolt_has_happened
+				days > 22
+				date > 1936.3.1
+			}
+			NOT = {
+				has_country_flag = PAL_uprising_happened
+				has_country_flag = PAL_uprising_prevented
+			}
+		}
+	}
+}

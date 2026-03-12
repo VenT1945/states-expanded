@@ -1,0 +1,22 @@
+state={
+	id=1237
+	name="STATE_1237"
+	provinces={
+		13477 13478 
+	}
+	history={
+		owner = USA
+		victory_points = {
+			13477 2
+		}
+		victory_points = {
+			13478 5 
+		}
+		add_core_of = USA
+		add_core_of = NHS
+	}
+	manpower=169164
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

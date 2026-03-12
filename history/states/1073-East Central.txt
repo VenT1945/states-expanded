@@ -1,0 +1,23 @@
+state={
+	id=1073
+	name="STATE_1073"
+	provinces={
+		3481 10656 12593 12663 
+	}
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = SAS
+		
+		victory_points = {
+			12663 5
+		}
+		victory_points = {
+			12593 2
+		}
+	}
+	manpower=312505
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

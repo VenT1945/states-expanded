@@ -1,0 +1,71 @@
+add_namespace = palestine
+add_namespace = arab_palestine
+add_namespace = mdt_palestine
+
+country_event = {
+	id = palestine.1
+	title = palestine.1.t
+	desc = palestine.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = palestine.1.a
+		set_country_flag = PAL_arab_path
+	}
+	option = {
+		name = palestine.1.b
+		set_country_flag = PAL_mdt_path
+		set_variable = {
+			var = paluprisingcount
+			value = 0
+		}
+	}
+}
+
+country_event = {
+	id = arab_palestine.1
+	title = arab_palestine.1.t
+	desc = arab_palestine.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = arab_palestine.1.a
+		drop_cosmetic_tag = yes
+		start_civil_war = {
+			ideology = neutrality
+			size = 0.6
+			PREV = {
+				PAL_harold_macmichael = {
+					set_nationality = PREV.PREV
+				}
+			}
+			capital = 1095
+			states = {
+				454 1094 1095
+			}
+		}
+		set_party_name = {
+			ideology = neutrality
+			name = PAL_arab_higher_committee
+		}
+		add_country_leader_role = {
+			character = PAL_amin_al_husseini
+			promote_leader = yes
+			country_leader = {
+				ideology = despotism
+				expire = "1974.7.4.1"
+			}
+		}
+		1095 = {
+			owner = {
+				set_cosmetic_tag = PAL_mandate
+				promote_character = PAL_harold_macmichael
+			}
+		}
+	}
+}

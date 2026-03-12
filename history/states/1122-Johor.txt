@@ -1,0 +1,27 @@
+state={
+	id=1122
+	name="STATE_1122"
+	provinces={
+		4424 10313 13408 
+	}
+	resources={ 
+		rubber=50.000
+		steel=1.000
+		tungsten=15.000
+		aluminium=2.000
+	}
+	history={
+		owner = JHR
+		add_core_of = JHR
+		victory_points = {
+			13408 5
+		}
+		victory_points = {
+			4424 2
+		}
+	}
+	manpower=593691
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

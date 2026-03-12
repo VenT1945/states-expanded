@@ -1,0 +1,19 @@
+state={
+	id=1034
+	name="STATE_1034"
+	provinces={
+		733 10481 
+	}
+	history={
+		owner = USA
+		victory_points = {
+			10481 1 
+		}
+		add_core_of = USA
+		add_core_of = NHS
+	}
+	manpower=118675
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

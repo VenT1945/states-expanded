@@ -1,0 +1,33 @@
+state={
+	id=1027
+	name="STATE_1027"
+	provinces={
+		706 3806 3894 6911 9673 9693 9774 11660 
+	}
+	resources={
+		steel=2
+		coal=2
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			9693 8 
+		}
+		victory_points = {
+			9774 2 
+		}
+		victory_points = {
+			6911 2
+		}
+		victory_points = {
+			706 1 
+		}
+		add_core_of = NYK
+	}
+	
+	manpower=1405551
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

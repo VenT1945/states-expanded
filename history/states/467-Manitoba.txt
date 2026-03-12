@@ -1,0 +1,22 @@
+state={
+	id=467
+	name="STATE_467"
+	provinces={
+		1848 4790 12145 
+	}
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = MTB
+		victory_points = {
+			4790 1
+		}
+		victory_points = {
+			1848 1
+		}
+	}
+	manpower=83816
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=9.000
+}

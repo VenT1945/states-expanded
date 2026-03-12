@@ -1,0 +1,26 @@
+state={
+	id=1225
+	name="STATE_1225"
+	provinces={
+		6882 13466 
+	}
+	resources={
+		steel=2
+		aluminium=1
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = NJR
+		victory_points = {
+			6882 10
+		}
+		victory_points = {
+			13466 10
+		}
+	}
+	manpower=2496558
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

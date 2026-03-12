@@ -1,0 +1,31 @@
+state={
+	id=1048
+	name="STATE_1048"
+	provinces={
+		788 865 11738 13387
+	}
+	resources={
+		steel=1
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = VRG
+		victory_points = {
+			788 8
+		}
+		victory_points = {
+			865 10 
+		}
+		victory_points = {
+			11738 2 
+		}
+		victory_points = {
+			13387 3 
+		}
+	}
+	manpower=695460
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

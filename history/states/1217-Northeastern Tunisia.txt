@@ -1,0 +1,26 @@
+state={
+	id=1217
+	name="STATE_1217"
+	provinces={
+		1046 4163 9994 
+	}
+	history = {
+		owner = TUN
+		add_core_of = TUN
+		victory_points = {
+			9994 3 
+		}
+		victory_points = {
+			4163 1 
+		}
+		buildings = {
+			9994 = {
+				naval_base = 8
+			}
+		}
+	}
+	manpower=410237
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

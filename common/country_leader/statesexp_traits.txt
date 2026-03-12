@@ -1,0 +1,19 @@
+leader_traits = {
+    SYR_unpopular_leader = {
+        random = no
+        stability_factor = -0.1
+        consumer_goods_factor = 0.2
+    }
+    SYR_french_puppet = {
+        random = no
+        improve_relations_maintain_cost_factor = -0.25
+        political_power_gain = -0.05
+    }
+    SYR_national_bloc_president = {
+        random = no
+        sprite = 13
+        stability_factor = 0.05
+        neutrality_drift = 0.02
+        custom_modifier_tooltip = SYR_national_bloc_influence_tt
+    }
+}

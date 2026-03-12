@@ -1,0 +1,19 @@
+state={
+	id=1060
+	name="STATE_1060"
+	provinces={
+		1284 4305 4422 12291 
+	}
+	history={
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = QUE
+		victory_points = {
+			12291 1 
+		}
+	}
+	manpower=262537
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

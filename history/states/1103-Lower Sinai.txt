@@ -1,0 +1,21 @@
+state={
+	id=1103
+	name="STATE_1103"
+	provinces={
+		1112 10099 12073 
+	}
+	history={
+		owner = EGY
+		add_core_of = EGY
+		victory_points = {
+			10099 1 
+		}
+		victory_points = {
+			1112 1 
+		}
+	}
+	manpower=89193
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

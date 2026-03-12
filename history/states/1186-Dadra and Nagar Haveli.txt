@@ -1,0 +1,24 @@
+state={
+	id=1186
+	name="STATE_1186"
+	provinces={
+		13441 13442 13443 
+	}
+	history={
+		owner = POR
+		add_core_of = RAJ
+		victory_points = {
+			13441 1 
+		}
+		victory_points = {
+			13443 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=38642
+	buildings_max_level_factor=1.000
+	state_category = enclave
+	local_supplies=0.000
+}

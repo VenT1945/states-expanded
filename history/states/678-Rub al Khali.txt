@@ -1,0 +1,17 @@
+state={
+	id=678
+	name="STATE_678"
+	provinces={
+		8118 12740 13435 13438 
+	}
+	history = {
+		owner = UTA
+		add_core_of = UTA
+		add_claim_by = SAU
+		set_demilitarized_zone = yes	
+	}
+	manpower=6103
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

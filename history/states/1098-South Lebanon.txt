@@ -1,0 +1,24 @@
+state={
+	id=1098
+	name="STATE_1098"
+	provinces={
+		11919 13465
+	}
+	history = {
+		owner = LEB
+		add_core_of = LEB
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			11919 2
+		}
+		victory_points = {
+			13465 2 
+		}
+	}
+	manpower=377219
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

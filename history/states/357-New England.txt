@@ -1,0 +1,39 @@
+state={
+	id=357
+	name="STATE_357"
+	resources={
+		steel=2
+		coal=1
+	}
+	provinces={
+		905 3906 6732 13479
+	}
+	
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = MAS
+		victory_points = {
+			6732 20 
+		}
+		victory_points = {
+			13479 3 
+		}
+		victory_points = {
+			3906 2
+		}
+		victory_points = {
+			905 1 
+		}
+		buildings = {
+			6732 = {
+				naval_base = 7
+			}
+		}
+	}
+	
+	manpower=3179763
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

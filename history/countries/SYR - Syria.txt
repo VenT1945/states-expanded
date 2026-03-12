@@ -1,0 +1,83 @@
+﻿capital = 554
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	tech_support = 1
+	tech_military_police = 1
+	tech_recon = 1
+}
+
+set_oob = "SYR_1936"
+
+IF = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+
+add_ideas = {
+	LON_mandate_A
+	LON_colonial_economy
+	SYR_banque_de_syrie_1
+	SYR_divide_and_rule
+	SYR_french_levant_army
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+
+set_convoys = 5
+
+set_cosmetic_tag = SYR_mandate
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.6.11"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 57
+	fascism = 4
+	communism = 13
+	neutrality = 26
+}
+
+recruit_character = SYR_mehemed_ali_abed
+recruit_character = SYR_hashim_al_atassi
+recruit_character = SYR_hashim_al_atassi_idea
+recruit_character = SYR_abdullah_atfeh
+recruit_character = SYR_adnan_al_malki
+recruit_character = SYR_adib_shishakli
+recruit_character = FRA_charles_huntziger
+
+
+create_country_leader = {
+	name = "Antun Saadeh"
+	desc = ""
+	picture = GFX_portrait_Antun_Saadeh
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Khalid Bakdash"
+	desc = ""
+	picture = GFX_portrait_Khalid_Bakdash
+	ideology = leninism
+	traits = {
+		#
+	}
+}

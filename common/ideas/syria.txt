@@ -1,0 +1,209 @@
+ideas = {
+    country = {
+        SYR_banque_de_syrie_1 = {
+			picture = SYR_banque_syrie_1_icon
+			modifier = {
+				political_power_cost = 0.3
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.1
+                production_speed_buildings_factor = 0.05
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+        SYR_banque_de_syrie_2 = {
+			picture = SYR_banque_syrie_2_icon
+			name = SYR_banque_de_syrie_1
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.1
+                production_speed_buildings_factor = 0.15
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		SYR_divide_and_rule = {
+			picture = SYR_divide_rule_icon
+			modifier = {
+				conscription_factor = -0.3
+				stability_factor = -0.15
+			}
+			cancel = {
+  				ROOT = {
+					owns_state = 1099
+					owns_state = 1101
+				} 
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		SYR_french_levant_army = {
+			picture = SYR_french_levant_army_icon
+			modifier = {
+				custom_modifier_tooltip = SYR_french_levant_army_tt
+				experience_gain_army = 0.25
+				training_time_factor = -0.1
+			}
+			cancel = {
+				ROOT = {
+					NOT = {
+						is_subject_of = FRA
+					}
+				}
+			}
+			on_remove = {
+				IF = {
+					limit = {
+						NOT = {
+							has_country_flag = SYR_coerced_huntziger
+						}
+					}
+					every_possible_country = {
+						limit = { has_character = FRA_charles_huntziger }
+						random_character = {
+							limit = { is_character = FRA_charles_huntziger }
+							set_nationality = FRA
+						}
+					}
+				}
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+		}
+		SYR_core_defense_act = {
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.075
+				conscription = 0.01
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		}
+		SYR_independence = {
+			modifier = {
+				autonomy_gain = 5
+				stability_weekly = 0.01
+			}
+			cancel = {
+  				is_subject = no 
+			}
+		}
+		SYR_reperations = {
+			modifier = {
+				political_power_gain = 0.35
+				consumer_goods_factor = -0.3
+			}
+		}
+		SYR_reperations_payments = {
+			modifier = {
+				political_power_gain = -0.35
+				consumer_goods_factor = 0.3
+				civilian_factory_use = 1
+			}
+		}
+		SYR_transitional_power = {
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = 0.005
+			}
+		}
+		SYR_true_syria_1 = {
+			modifier = {
+				stability_factor = 0.05
+				fascism_drift = 0.01
+			}
+		}
+		SYR_true_syria_2 = {
+			name = SYR_true_syria_1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				fascism_drift = 0.02
+				production_speed_arms_factory_factor = 0.25
+				consumer_goods_factor = 0.05
+			}
+		}
+		SYR_true_syria_3 = {
+			name = SYR_true_syria_1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				party_popularity_stability_factor = 0.3
+				fascism_drift = 0.02
+				production_speed_arms_factory_factor = 0.25
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.05
+			}
+		}
+		SYR_new_constitution_fascist_idea = {
+			modifier = {
+				war_support_factor = 0.1
+				political_power_factor = 0.15
+				political_advisor_cost_factor = -0.25
+			}
+		}
+		SYR_communist_underground = {
+			modifier = {
+				communism_drift = 0.02
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+		}
+		SYR_red_propaganda = {
+			modifier = {
+				communism_drift = 0.01
+				conscription = 0.005
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+		}
+		SYR_five_year_plan_reforms = {
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = -0.1
+			}
+			on_remove = {
+				add_ideas = SYR_five_year_plan_reformed
+			}
+		}
+		SYR_five_year_plan_reformed = {
+			modifier = {
+				political_power_cost = 0.15
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.15
+				production_speed_infrastructure_factor = 0.5 
+				stability_factor = 0.05
+			}
+		}
+		SYR_islam_with_socialism = {
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				political_power_gain = 0.25
+				training_time_factor = -0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.15
+			}
+		}
+		SYR_state_atheism_idea = {
+			modifier = {
+				stability_factor = -0.125
+				war_support_factor = -0.1
+				political_power_gain = 0.25
+				experience_gain_army_factor = 0.3
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.15
+			}
+		}
+	}
+}

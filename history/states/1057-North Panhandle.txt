@@ -1,0 +1,24 @@
+state={
+	id=1057
+	name="STATE_1057"
+	provinces={
+		6850 
+	}
+	resources={
+		steel=2
+		coal=12
+		oil=1
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = WVG
+		victory_points = {
+			6850 3
+		}
+	}
+	manpower=165082
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

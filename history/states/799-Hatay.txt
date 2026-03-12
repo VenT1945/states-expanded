@@ -1,0 +1,30 @@
+state={
+	id=799
+	name="STATE_799"
+	provinces={
+		13476 
+	}
+	manpower = 99867
+	resources = {
+		chromium=1
+	}
+	
+	state_category = rural
+
+	history= {
+		owner = SYR
+		add_core_of = SYR
+		add_core_of = HAT
+		victory_points = {
+			13476 2
+		}
+		buildings = {
+			infrastructure = 2
+            13476 = {
+                naval_base = 2
+            }
+		}
+	}
+
+	local_supplies=0.0 
+}

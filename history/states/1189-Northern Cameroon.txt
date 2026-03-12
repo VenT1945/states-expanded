@@ -1,0 +1,24 @@
+state={
+	id=1189
+	name="STATE_1189"
+	provinces={
+		7963 11194 
+	}
+	history={
+		owner = CMR
+		add_core_of = CMR
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			11194 2
+		}
+		victory_points = {
+			7963 2
+		}
+	}
+	manpower=707312
+	buildings_max_level_factor=1.000
+	state_category = rural
+	local_supplies=0.000
+}

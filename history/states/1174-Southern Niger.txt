@@ -1,0 +1,25 @@
+state={
+	id=1174
+	name="STATE_1174"
+	provinces={
+		8028 10758 10780 10805
+	}
+	history = {
+		add_core_of = NGR
+		add_core_of = SOK
+		owner = FRA
+		victory_points = {
+			10805 2
+		}
+		victory_points = {
+			10758 2
+		}
+		victory_points = {
+			8028 1
+		}
+	}
+	manpower=342717
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

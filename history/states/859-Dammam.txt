@@ -1,0 +1,36 @@
+state={
+	id=859
+	name="STATE_859"
+	resources={
+		oil=3.000
+	}
+	provinces={
+		1955 10850 12702 13488 13489
+	}
+	history = {
+
+		owner = SAU
+		add_core_of = SAU
+
+		victory_points = {
+			13489 4
+		}
+		victory_points = {
+			12702 2 
+		}
+		victory_points = {
+			13488 2 
+		}
+
+		buildings = {
+			infrastructure = 1
+			12702 = {
+				naval_base = 6
+			}
+		}
+	}
+	manpower=125906
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

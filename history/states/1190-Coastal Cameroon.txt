@@ -1,0 +1,27 @@
+state={
+	id=1190
+	name="STATE_1190"
+	provinces={
+		5036 6039 
+	}
+	history={
+		owner = CMR
+		add_core_of = CMR
+		buildings = {
+			infrastructure = 3
+			6039 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			6039 5
+		}
+		victory_points = {
+			5036 1
+		}
+	}
+	manpower=641237
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

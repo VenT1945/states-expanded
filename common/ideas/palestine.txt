@@ -1,0 +1,85 @@
+ideas = {
+    country = {
+        LON_mandate_A = {
+			picture = paper_mandate_icon
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.1
+				autonomy_gain = 0.25
+				research_speed_factor = -0.1
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+		}	
+        PAL_marginalized_muslim_maj = {
+			picture = raj_marginalized_muslim_community_angry
+			modifier = {
+				political_power_cost = 0.15
+				stability_factor = -0.20
+				neutrality_drift = 0.01
+				army_org_factor = -0.05
+				conscription_factor = -0.60
+			}
+		}	
+        PAL_balfour_declaration = {
+			picture = generic_constitutional_guarantees
+			modifier = {
+				weekly_manpower = 1050
+				stability_factor = -0.05
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+		}	
+        LON_colonial_economy = {
+			picture = colonial_economy_icon
+			modifier = {
+				production_speed_buildings_factor = -0.4
+				industrial_capacity_dockyard = -0.25
+				industrial_capacity_factory = -0.25
+				consumer_goods_factor = 0.15
+				local_resources_factor = 0.20
+				extra_trade_to_overlord_factor = 0.5
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+		}	
+        PAL_general_strikes = {
+			modifier = {
+				political_power_cost = 0.25
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.1
+				conscription_factor = -0.15
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+		}	
+        PAL_martial_law = {
+			modifier = {
+				political_power_cost = 0.25
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+        PAL_notrim = {
+			modifier = {
+				required_garrison_factor = -0.15
+				resistance_growth = -0.25
+				compliance_growth = 0.1
+				training_time_army_factor = -0.25
+				dig_in_speed_factor = 0.25
+				root_out_resistance_effectiveness_factor = 0.3
+			}
+		}
+	}
+}

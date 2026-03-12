@@ -1,0 +1,21 @@
+state={
+	id=1209
+	name="STATE_1209"
+	provinces={
+		1688 2171 5106 10566 
+	}
+	history={
+		owner = SAF
+		add_core_of = SAF
+		victory_points = {
+			5106 3 
+		}
+		victory_points = {
+			2171 1 
+		}
+	}
+	manpower=1389772
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

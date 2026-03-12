@@ -1,0 +1,17 @@
+state={
+	id=332
+	name="STATE_332"
+	provinces={
+		4787 
+	}
+	history={
+		owner = ENG
+		add_core_of = CAN
+		add_core_of = NFL
+		add_claim_by = QUE
+	}
+	manpower=5873
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

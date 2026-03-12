@@ -1,0 +1,16 @@
+state={
+	id=1066
+	name="STATE_1066"
+	provinces={
+		13314 13315
+	}
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = NWT
+	}
+	manpower=147
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=1227
+	name="STATE_1227"
+	provinces={
+		13366 13367 13469 
+	}
+	history = {
+		owner = KUW
+		add_core_of = KUW
+		victory_points = {
+			13469 1
+		}
+		victory_points = {
+			13367 1
+		}
+		buildings = {
+			13469 = {
+        		coastal_bunker = 2
+    		}
+		}
+	}
+	manpower=10291
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

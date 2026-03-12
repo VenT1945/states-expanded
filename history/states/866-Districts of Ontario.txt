@@ -1,0 +1,16 @@
+state={
+	id=866
+	name="STATE_866"
+	provinces={
+		761 4753 9740 10621 12701 
+	}
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = ONT
+	}
+	manpower=36129
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

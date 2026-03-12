@@ -1,0 +1,695 @@
+UTA_expansion_central = {
+    expedition_into_khor = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = UAE
+            }
+        }
+        fire_only_once = yes
+        visible = {
+            AND = {
+                has_completed_focus = UTA_shared_create_expeditionaries
+                NOT = {
+                    1179 = {
+                        has_state_flag = UTA_state_taken
+                    }
+                }
+            }
+        }
+        available = {
+            AND = {
+                1179 = {
+                    is_owned_by = UTA
+                    is_claimed_by = ROOT
+                    any_neighbor_state = {
+                        is_owned_by = ROOT
+                    }
+                }
+                NOT = {
+                    ROOT = {
+                        has_country_flag = doing_expedition_alr
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            1179 = {
+                set_demilitarized_zone = no
+            }
+            set_country_flag = doing_expedition_alr
+            set_country_flag = khor_expedition
+        }
+    }
+    expedition_into_liwa_oasis = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = UAE
+            }
+        }
+        fire_only_once = yes
+        visible = {
+            AND = {
+                has_completed_focus = UTA_shared_create_expeditionaries
+                NOT = {
+                    1180 = {
+                        has_state_flag = UTA_state_taken
+                    }
+                }
+            }
+        }
+        available = {
+            AND = {
+                1180 = {
+                    is_owned_by = UTA
+                    is_claimed_by = ROOT
+                    any_neighbor_state = {
+                        is_owned_by = ROOT
+                    }
+                }
+                NOT = {
+                    ROOT = {
+                        has_country_flag = doing_expedition_alr
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            1180 = {
+                set_demilitarized_zone = no
+            }
+            set_country_flag = doing_expedition_alr
+            set_country_flag = liwa_expedition
+        }
+    }
+    expedition_into_oman = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = IMO
+                original_tag = OMA
+            }
+        }
+        fire_only_once = yes
+        visible = {
+            AND = {
+                has_completed_focus = UTA_shared_create_expeditionaries
+                NOT = {
+                    1181 = {
+                        has_state_flag = UTA_state_taken
+                    }
+                }
+            }
+        }
+        available = {
+            AND = {
+                1181 = {
+                    is_owned_by = UTA
+                    is_claimed_by = ROOT
+                    any_neighbor_state = {
+                        is_owned_by = ROOT
+                    }
+                }
+                NOT = {
+                    ROOT = {
+                        has_country_flag = doing_expedition_alr
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            1181 = {
+                set_demilitarized_zone = no
+            }
+            set_country_flag = doing_expedition_alr
+            set_country_flag = oman_expedition
+        }
+    }
+    expedition_into_yemen = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = YEM
+                original_tag = FSA
+            }
+        }
+        fire_only_once = yes
+        visible = {
+            AND = {
+                has_completed_focus = UTA_shared_create_expeditionaries
+                NOT = {
+                    1182 = {
+                        has_state_flag = UTA_state_taken
+                    }
+                }
+            }
+        }
+        available = {
+            AND = {
+                1182 = {
+                    is_owned_by = UTA
+                    is_claimed_by = ROOT
+                    any_neighbor_state = {
+                        is_owned_by = ROOT
+                    }
+                }
+                NOT = {
+                    ROOT = {
+                        has_country_flag = doing_expedition_alr
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            1182 = {
+                set_demilitarized_zone = no
+            }
+            set_country_flag = doing_expedition_alr
+            set_country_flag = yemen_expedition
+        }
+    }
+    expedition_into_northern_yemen = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = YEM
+                original_tag = FSA
+            }
+        }
+        fire_only_once = yes
+        visible = {
+            AND = {
+                has_completed_focus = UTA_shared_create_expeditionaries
+                NOT = {
+                    1116 = {
+                        has_state_flag = UTA_state_taken
+                    }
+                }
+            }
+        }
+        available = {
+            AND = {
+                1116 = {
+                    is_owned_by = UTA
+                    is_claimed_by = ROOT
+                    any_neighbor_state = {
+                        is_owned_by = ROOT
+                    }
+                }
+                NOT = {
+                    ROOT = {
+                        has_country_flag = doing_expedition_alr
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            1116 = {
+                set_demilitarized_zone = no
+            }
+            set_country_flag = doing_expedition_alr
+            set_country_flag = northern_yemen_expedition
+        }
+    }
+    expedition_into_rub_al_khali = {
+        allowed = {
+            original_tag = SAU
+        }
+        fire_only_once = yes
+        visible = {
+            AND = {
+                has_completed_focus = UTA_shared_create_expeditionaries
+                NOT = {
+                    678 = {
+                        has_state_flag = UTA_state_taken
+                    }
+                }
+            }
+        }
+        available = {
+            AND = {
+                678 = {
+                    is_owned_by = UTA
+                    is_claimed_by = ROOT
+                    any_neighbor_state = {
+                        is_owned_by = ROOT
+                    }
+                }
+                NOT = {
+                    ROOT = {
+                        has_country_flag = doing_expedition_alr
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            678 = {
+                set_demilitarized_zone = no
+            }
+            set_country_flag = doing_expedition_alr
+            set_country_flag = rub_al_khali_expedition
+        }
+    }
+    annex_khor = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = UAE
+            }
+        }
+        days_remove = 30
+        visible = {
+            has_country_flag = khor_expedition
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = expeditionary_in_state_tt
+                divisions_in_state = {
+                    unit = camelry
+                    size = 1
+                    state = 1179
+                }
+            }
+        }
+        cancel_trigger = {
+            custom_trigger_tooltip = {
+                tooltip = dont_remove_expeditionary_tt
+                NOT = {
+                    divisions_in_state = {
+                        unit = camelry
+                        size = 1
+                        state = 1179
+                    }
+                }  
+            }
+        }
+        remove_effect = {
+            1179 = {
+                transfer_state_to = ROOT
+                set_state_flag = UTA_state_taken
+            }
+            clr_country_flag = khor_expedition
+            clr_country_flag = doing_expedition_alr
+        }
+    }
+    annex_liwa = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = UAE
+            }
+        }
+        days_remove = 30
+        visible = {
+            has_country_flag = liwa_expedition
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = expeditionary_in_state_tt
+                divisions_in_state = {
+                    unit = camelry
+                    size = 1
+                    state = 1180
+                }
+            }
+        }
+        cancel_trigger = {
+            custom_trigger_tooltip = {
+                tooltip = dont_remove_expeditionary_tt
+                NOT = {
+                    divisions_in_state = {
+                        unit = camelry
+                        size = 1
+                        state = 1180
+                    }
+                }  
+            }
+        }
+        remove_effect = {
+            1180 = {
+                transfer_state_to = ROOT
+                set_state_flag = UTA_state_taken
+            }
+            clr_country_flag = liwa_expedition
+            clr_country_flag = doing_expedition_alr
+        }
+    }
+    annex_oman = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = OMA
+                original_tag = IMO
+            }
+        }
+        days_remove = 30
+        visible = {
+            has_country_flag = oman_expedition
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = expeditionary_in_state_tt
+                divisions_in_state = {
+                    unit = camelry
+                    size = 1
+                    state = 1181
+                }
+            }
+        }
+        cancel_trigger = {
+            custom_trigger_tooltip = {
+                tooltip = dont_remove_expeditionary_tt
+                NOT = {
+                    divisions_in_state = {
+                        unit = camelry
+                        size = 1
+                        state = 1181
+                    }
+                }  
+            }
+        }
+        remove_effect = {
+            1181 = {
+                transfer_state_to = ROOT
+                set_state_flag = UTA_state_taken
+            }
+            clr_country_flag = oman_expedition
+            clr_country_flag = doing_expedition_alr
+        }
+    }
+    annex_yemen = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = FSA
+                original_tag = YEM
+            }
+        }
+        days_remove = 30
+        visible = {
+            has_country_flag = yemen_expedition
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = expeditionary_in_state_tt
+                divisions_in_state = {
+                    unit = camelry
+                    size = 1
+                    state = 1182
+                }
+            }
+        }
+        cancel_trigger = {
+            custom_trigger_tooltip = {
+                tooltip = dont_remove_expeditionary_tt
+                NOT = {
+                    divisions_in_state = {
+                        unit = camelry
+                        size = 1
+                        state = 1182
+                    }
+                }  
+            }
+        }
+        remove_effect = {
+            1182 = {
+                transfer_state_to = ROOT
+                set_state_flag = UTA_state_taken
+            }
+            clr_country_flag = yemen_expedition
+            clr_country_flag = doing_expedition_alr
+        }
+    }
+    annex_northern_yemen = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = FSA
+                original_tag = YEM
+            }
+        }
+        days_remove = 30
+        visible = {
+            has_country_flag = northern_yemen_expedition
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = expeditionary_in_state_tt
+                divisions_in_state = {
+                    unit = camelry
+                    size = 1
+                    state = 1116
+                }
+            }
+        }
+        cancel_trigger = {
+            custom_trigger_tooltip = {
+                tooltip = dont_remove_expeditionary_tt
+                NOT = {
+                    divisions_in_state = {
+                        unit = camelry
+                        size = 1
+                        state = 1116
+                    }
+                }  
+            }
+        }
+        remove_effect = {
+            1116 = {
+                transfer_state_to = ROOT
+                set_state_flag = UTA_state_taken
+            }
+            clr_country_flag = northern_yemen_expedition
+            clr_country_flag = doing_expedition_alr
+        }
+    }
+    annex_rub_al_khali = {
+        allowed = {
+            original_tag = SAU
+        }
+        days_remove = 30
+        visible = {
+            has_country_flag = rub_al_khali_expedition
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = expeditionary_in_state_tt
+                divisions_in_state = {
+                    unit = camelry
+                    size = 1
+                    state = 678
+                }
+            }
+        }
+        cancel_trigger = {
+            custom_trigger_tooltip = {
+                tooltip = dont_remove_expeditionary_tt
+                NOT = {
+                    divisions_in_state = {
+                        unit = camelry
+                        size = 1
+                        state = 678
+                    }
+                }  
+            }
+        }
+        remove_effect = {
+            678 = {
+                transfer_state_to = ROOT
+                set_state_flag = UTA_state_taken
+            }
+            clr_country_flag = rub_al_khali_expedition
+            clr_country_flag = doing_expedition_alr
+        }
+    }
+}
+UTA_expansion_north_KUW = {
+    SAU_expand_influence_KUW_zone = {
+        allowed = {
+            original_tag = SAU
+        }
+        cost = 50
+        days_remove = 30
+        ai_will_do = {
+            base = 10
+            modifier = {
+				factor = 0
+				has_country_flag = UTA_neutral_zone_ai_timer_flag
+			}
+            modifier = {
+				factor = 0
+				check_variable = {
+                    sau_divided_zone_influence > 25
+                }
+			}
+        }
+        available = {
+            has_global_flag = discovered_oil_in_arabia
+        }
+        remove_effect = {
+            add_to_variable = { var = sau_divided_zone_influence value = 5 }
+            UTA = {
+                set_variable = { var = sau_temp_divided_influence value = SAU.sau_divided_zone_influence }
+                subtract_from_variable = { var = sau_temp_influence value = KUW.kuw_divided_zone_influence }
+                set_variable = { var = kuw_temp_influence value = KUW.kuw_divided_zone_influence }
+                subtract_from_variable = { var = kuw_temp_influence value = SAU.sau_divided_zone_influence }
+            }
+            hidden_effect = {
+		        random_list = {
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 20 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 25 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 30 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 35 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 40 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 45 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 50 }
+		        	}
+		        }
+            }
+        }
+    }
+    KUW_expand_influence_KUW_zone = {
+        allowed = {
+            original_tag = KUW
+        }
+        cost = 50
+        days_remove = 30
+        ai_will_do = {
+            base = 10
+            modifier = {
+				factor = 0
+				has_country_flag = UTA_neutral_zone_ai_timer_flag
+			}
+            modifier = {
+				factor = 0
+				check_variable = {
+                    kuw_divided_zone_influence > 25
+                }
+			}
+        }
+        available = {
+            has_global_flag = discovered_oil_in_arabia
+        }
+        remove_effect = {
+            add_to_variable = { var = kuw_divided_zone_influence value = 5 }
+            UTA = {
+                set_variable = { var = kuw_temp_influence value = KUW.kuw_divided_zone_influence }
+                subtract_from_variable = { var = kuw_temp_influence value = SAU.sau_divided_zone_influence }
+                set_variable = { var = sau_temp_divided_influence value = SAU.sau_divided_zone_influence }
+                subtract_from_variable = { var = sau_temp_influence value = KUW.kuw_divided_zone_influence }
+            }
+            hidden_effect = {
+		        random_list = {
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 20 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 25 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 30 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 35 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 40 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 45 }
+		        	}
+		        	10 = {
+		        		set_country_flag = { flag = UTA_neutral_zone_ai_timer_flag value = 1 days = 50 }
+		        	}
+		        }
+            }
+        }
+    }
+    UTA_kuwait_zone_treaty = {
+        allowed = {
+            OR = {
+                original_tag = SAU
+                original_tag = KUW
+            }
+        }
+        cost = 50
+        ai_will_do = {
+            base = 10
+        }
+        available = {
+            custom_trigger_tooltip = {
+				tooltip = UTA_kuwait_zone_atleast_25_tt
+				check_variable = { var = SAU.sau_divided_zone_influence value = 25 compare = greater_than_or_equals }
+				check_variable = { var = KUW.kuw_divided_zone_influence value = 25 compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = UTA_kuwait_zone_equal_tt
+				check_variable = { var = sau_temp_influence value = 5 compare = less_than_or_equals }
+				check_variable = { var = sau_temp_influence value = -5 compare = greater_than_or_equals }
+                check_variable = { var = kuw_temp_influence value = 5 compare = less_than_or_equals }
+				check_variable = { var = kuw_temp_influence value = -5 compare = greater_than_or_equals }
+			}
+        }
+        complete_effect = {
+
+        }
+    }
+    SAU_kuwait_zone_annexation = {
+        allowed = {
+            original_tag = SAU
+        }
+        cost = 50
+        ai_will_do = {
+            base = 10
+        }
+        available = {
+            custom_trigger_tooltip = {
+				tooltip = UTA_kuwait_zone_atleast_25_tt
+				check_variable = { var = SAU.sau_divided_zone_influence value = 25 compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = UTA_has_15_more_tt
+				check_variable = { var = sau_temp_influence value = 15 compare = greater_than_or_equals }
+			}
+        }
+        complete_effect = {
+
+        }
+    }
+    KUW_kuwait_zone_annexation = {
+        allowed = {
+            original_tag = KUW
+        }
+        cost = 50
+        ai_will_do = {
+            base = 10
+        }
+        available = {
+            custom_trigger_tooltip = {
+				tooltip = UTA_kuwait_zone_atleast_25_tt
+				check_variable = { var = KUW.kuw_divided_zone_influence value = 25 compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = UTA_has_15_more_tt
+				check_variable = { var = kuw_temp_influence value = 15 compare = greater_than_or_equals }
+			}
+        }
+        complete_effect = {
+
+        }
+    }
+}

@@ -1,0 +1,27 @@
+state={
+	id=359
+	name="STATE_359"
+	provinces={
+		3693 3863 11782 
+	}
+	resources={
+		steel=1
+		coal=4
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = NJR
+		victory_points = {
+			11782 5 
+		}
+		victory_points = {
+			3863 1 
+		}
+	}
+	
+	manpower=686803
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=15.000
+}

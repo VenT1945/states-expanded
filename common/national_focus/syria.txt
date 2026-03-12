@@ -1,0 +1,2102 @@
+focus_tree = {
+	id = syria_focus
+	continuous_focus_position = { x = 50 y = 3500 }
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SYR
+		}
+	}
+	shared_focus = TUR_the_hatay_issue
+	focus = {
+		id = SYR_general_strike
+		x = 10
+		y = 0
+
+		icon = GFX_SYR_general_strike
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			country_event = syria.1
+		}
+	}
+	focus = {
+		id = SYR_limit_french_control
+		x = -1
+		y = 1
+
+		icon = GFX_SYR_limit_french_control
+
+		cost = 5
+
+		relative_position_id = SYR_general_strike
+		prerequisite = { focus = SYR_general_strike }
+
+		completion_reward = {
+			add_autonomy_score = {
+				value = 250
+			}
+			add_war_support = 0.075
+		}
+	}
+	focus = {
+		id = SYR_expand_ministry_of_interior
+		x = 3
+		y = 1
+
+		icon = GFX_SYR_expand_ministry_of_interior
+
+		cost = 5
+
+		relative_position_id = SYR_general_strike
+		prerequisite = { focus = SYR_general_strike }
+
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = hashim_al_atassi
+		}
+	}
+	focus = {
+		id = SYR_remembering_great_syrian_revolt
+		x = -1
+		y = 1
+
+		icon = GFX_SYR_remembering_great_syrian_revolt
+
+		cost = 5
+
+		relative_position_id = SYR_limit_french_control
+		prerequisite = { focus = SYR_limit_french_control }
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = SYR_protest_french
+		x = 1
+		y = 1
+
+		icon = GFX_SYR_protest_france
+
+		cost = 5
+
+		relative_position_id = SYR_general_strike
+		prerequisite = { focus = SYR_general_strike }
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.075
+		}
+	}
+	focus = {
+		id = SYR_ban_ssnp
+		x = 1
+		y = 1
+
+		icon = GFX_SYR_ban_ssnp
+
+		cost = 5
+
+		relative_position_id = SYR_protest_french
+		prerequisite = { focus = SYR_expand_ministry_of_interior }
+		mutually_exclusive = { focus = SYR_allow_ssnp }
+
+		completion_reward = {
+			set_country_flag = SYR_banned_ssnp
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = SYR_allow_ssnp
+		x = 3
+		y = 1
+
+		icon = GFX_SYR_allow_ssnp
+
+		cost = 5
+
+		relative_position_id = SYR_protest_french
+		prerequisite = { focus = SYR_expand_ministry_of_interior }
+		mutually_exclusive = { focus = SYR_ban_ssnp }
+
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = SYR_defense_act
+		x = -1
+		y = 1
+
+		icon = GFX_SYR_defense_act
+
+		cost = 10
+
+		relative_position_id = SYR_protest_french
+		prerequisite = { focus = SYR_protest_french }
+		prerequisite = { focus = SYR_limit_french_control }
+
+		completion_reward = {
+			add_ideas = SYR_core_defense_act
+		}
+	}
+	focus = {
+		id = SYR_syrian_question
+		x = 0
+		y = 1
+
+		icon = GFX_SYR_syrian_question
+
+		cost = 5
+
+		relative_position_id = SYR_defense_act
+		prerequisite = { focus = SYR_defense_act }
+		prerequisite = { focus = SYR_ban_ssnp focus = SYR_allow_ssnp }
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+	focus = {
+		id = SYR_france_treaty
+		x = 0
+		y = 1
+
+		available = {
+			neutrality > 0.5
+		}
+
+		icon = GFX_SYR_france_treaty
+
+		cost = 10
+
+		relative_position_id = SYR_syrian_question
+		prerequisite = { focus = SYR_syrian_question }
+		mutually_exclusive = { focus = SYR_realize_france_good }
+		mutually_exclusive = { focus = SYR_communist_underground_focus }
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = SYR_communist_underground_focus
+					has_completed_focus = SYR_realize_france_good
+				}
+			}
+		}
+
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = SYR_basic_demands
+		x = 0
+		y = 1
+
+		cost = 1
+
+		icon = GFX_SYR_basic_demands
+
+		relative_position_id = SYR_france_treaty
+		prerequisite = { focus = SYR_france_treaty }
+
+		completion_reward = {
+			country_event = syria_treaty.1
+		}
+	}
+	focus = {
+		id = SYR_lebanon_question
+		x = 2
+		y = 1
+
+		cost = 1
+
+		icon = GFX_SYR_lebanon_question
+
+		relative_position_id = SYR_france_treaty
+		prerequisite = { focus = SYR_france_treaty }
+
+		completion_reward = {
+			country_event = syria_treaty.2
+		}
+	}
+	focus = {
+		id = SYR_future_relations
+		x = -2
+		y = 1
+
+		cost = 1
+
+		icon = GFX_SYR_future_relations
+
+		relative_position_id = SYR_france_treaty
+		prerequisite = { focus = SYR_france_treaty }
+
+		completion_reward = {
+			country_event = syria_treaty.4
+		}
+	}
+	focus = {
+		id = SYR_coerce_treaty
+		x = 0
+		y = 1
+		
+		relative_position_id = SYR_basic_demands
+		prerequisite = { focus = SYR_basic_demands }
+		prerequisite = { focus = SYR_future_relations }
+		prerequisite = { focus = SYR_lebanon_question }
+
+		cost = 4
+
+		icon = GFX_SYR_coerce_treaty
+
+		completion_reward = {
+			add_political_power = 50
+            FRA = {
+                country_event = {
+                    id = syria_treaty.6
+					days = 1
+                    random_days = 5
+                }
+            }
+		}
+	}
+	focus = {
+		id = SYR_ratified
+		x = 2
+		y = 1
+
+		available = { always = no }
+
+		cost = 1
+
+		icon = GFX_SYR_ratified
+
+		relative_position_id = SYR_coerce_treaty
+		prerequisite = { focus = SYR_coerce_treaty }
+		mutually_exclusive = { focus = SYR_failed }
+
+
+		completion_reward = {
+			custom_effect_tooltip = if_they_accept
+			add_autonomy_score = {
+				value = 100
+			}
+			add_ideas = SYR_independence
+			custom_effect_tooltip = SYR_independence_event_chain_tt
+			hidden_effect = {
+				country_event = syria_treaty.11
+			}
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SYR_failed
+		x = -2
+		y = 1
+
+		available = { always = no }
+
+		cost = 1
+
+		icon = GFX_SYR_failed
+
+		relative_position_id = SYR_coerce_treaty
+		prerequisite = { focus = SYR_coerce_treaty }
+		mutually_exclusive = { focus = SYR_ratified }
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = -0.15
+		}
+	}
+	focus = {
+		id = SYR_armed_rebellion
+		x = 2
+		y = 1
+
+		icon = GFX_focus_generic_workers
+
+		cost = 10
+
+		relative_position_id = SYR_failed
+		prerequisite = { focus = SYR_failed }
+		mutually_exclusive = { focus = SYR_accept_future }
+
+		completion_reward = {
+			custom_effect_tooltip = SYR_armed_rebellion_tt
+			hidden_effect = {
+				drop_cosmetic_tag = yes
+				start_civil_war = {
+					ruling_party = neutrality
+					ideology = ROOT
+					size = 0.5
+					states = {
+						680 799 1102 1236
+					}
+					PREV.PREV = {
+						set_cosmetic_tag = SYR_mandate
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_annex_aldr_rebellion
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_armed_rebellion
+		prerequisite = { focus = SYR_armed_rebellion }
+
+		icon = GFX_goal_generic_attack_allies
+
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+			ALA = {
+				country_event = syria_treaty.7
+			}
+			DRU = {
+				country_event = syria_treaty.7
+			}
+		}
+	}
+	focus = {
+		id = SYR_proclaim_independence_day
+		x = 0
+		y = 2
+
+		cost = 10
+
+		icon = GFX_SYR_proclaim_independence_day
+
+		relative_position_id = SYR_ratified
+		prerequisite = { focus = SYR_ratified focus = SYR_armed_rebellion }
+
+		available = {
+			is_subject = no
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SYR_fix_instability
+		x = -7
+		y = 1
+
+
+		cost = 20
+
+		relative_position_id = SYR_proclaim_independence_day
+		prerequisite = { focus = SYR_proclaim_independence_day }
+		mutually_exclusive = { focus = SYR_use_instability }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_redraft_constitution
+		x = 0
+		y = 1
+
+
+		cost = 5
+
+		relative_position_id = SYR_fix_instability
+		prerequisite = { focus = SYR_fix_instability }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_election_day
+		x = 0
+		y = 1
+
+
+		cost = 10
+
+		relative_position_id = SYR_redraft_constitution
+		prerequisite = { focus = SYR_redraft_constitution }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_national_bloc_wins
+		x = -2
+		y = 1
+
+		available = { always = no }
+
+		cost = 5
+
+		relative_position_id = SYR_election_day
+		prerequisite = { focus = SYR_election_day }
+		mutually_exclusive = { focus = SYR_league_of_action_wins }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_league_of_action_wins
+		x = 2
+		y = 1
+
+		available = { always = no }
+
+		cost = 5
+
+		relative_position_id = SYR_election_day
+		prerequisite = { focus = SYR_election_day }
+		mutually_exclusive = { focus = SYR_national_bloc_wins }
+
+
+		completion_reward = {
+			#event for atassi resigning as leader of national bloc
+		}
+	}
+	focus = {
+		id = SYR_weak_administration
+		x = 0
+		y = 1
+
+		available = { always = no }
+
+		cost = 5
+
+		relative_position_id = SYR_league_of_action_wins
+		prerequisite = { focus = SYR_league_of_action_wins }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_avenge_maysalun
+		x = 5
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_league_of_action_wins
+		prerequisite = { focus = SYR_league_of_action_wins focus = SYR_militarize_society }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_ousting_of_league
+		x = 0
+		y = 1
+
+		available = { always = no }
+
+		cost = 5
+
+		relative_position_id = SYR_weak_administration
+		prerequisite = { focus = SYR_weak_administration }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_a_new_monarch_in_town
+		x = 5
+		y = 1
+
+		available = { always = no }
+		allow_branch = {
+			OR = { 
+				has_country_flag = SYR_ghazi_exiled
+				has_country_flag = SYR_faisal_2_exiled
+			}
+		}
+
+		cost = 5
+
+		relative_position_id = SYR_ousting_of_league
+		prerequisite = { focus = SYR_ousting_of_league }
+		mutually_exclusive = { focus = SYR_arab_baath }
+		mutually_exclusive = { focus = SYR_national_bloc_rises_again }
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SYR_national_bloc_rises_again
+		x = -2
+		y = 1
+
+		available = { always = no }
+
+		cost = 5
+
+		relative_position_id = SYR_ousting_of_league
+		prerequisite = { focus = SYR_ousting_of_league }
+		mutually_exclusive = { focus = SYR_arab_baath }
+		mutually_exclusive = { focus = SYR_a_new_monarch_in_town }
+
+
+		completion_reward = {
+			#new leader for national bloc
+		}
+	}
+	focus = {
+		id = SYR_arab_baath
+		x = 1
+		y = 1
+
+		available = { always = no }
+
+		cost = 5
+
+		relative_position_id = SYR_ousting_of_league
+		prerequisite = { focus = SYR_ousting_of_league }
+		mutually_exclusive = { focus = SYR_national_bloc_rises_again }
+		mutually_exclusive = { focus = SYR_a_new_monarch_in_town }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_create_baath_newspaper
+		x = 1
+		y = 1
+
+		available = { always = no }
+
+		cost = 5
+
+		relative_position_id = SYR_arab_baath
+		prerequisite = { focus = SYR_arab_baath }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_promote_baathist_generals
+		x = -1
+		y = 1
+
+		available = { always = no }
+
+		cost = 5
+
+		relative_position_id = SYR_arab_baath
+		prerequisite = { focus = SYR_arab_baath }
+
+
+		completion_reward = {
+			add_corps_commander_role = {
+				character = SYR_adnan_al_malki
+				traits = { politically_connected baathist_officer }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+		}
+	}
+	focus = {
+		id = SYR_promote_independence
+		x = 1
+		y = 1
+
+		available = { always = no }
+
+		cost = 5
+
+		relative_position_id = SYR_promote_baathist_generals
+		prerequisite = { focus = SYR_promote_baathist_generals }
+		prerequisite = { focus = SYR_create_baath_newspaper }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_use_instability
+		x = 5
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_proclaim_independence_day
+		prerequisite = { focus = SYR_proclaim_independence_day }
+		mutually_exclusive = { focus = SYR_fix_instability }
+
+
+		available = {
+			NOT = {
+				has_country_flag = SYR_banned_ssnp
+			}
+		}
+
+		completion_reward = {
+			
+			add_stability = -0.1
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.15
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = SYR_transitional_state
+		x = -1
+		y = 2
+
+		cost = 5
+
+		relative_position_id = SYR_proclaim_independence_day
+		prerequisite = { focus = SYR_fix_instability focus = SYR_use_instability }
+
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = SYR_transitional_power
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = SYR_fascist_coup
+		x = 0
+		y = 1
+
+		icon = GFX_focus_generic_fascist_troops
+
+		cost = 5
+
+		relative_position_id = SYR_use_instability
+		prerequisite = { focus = SYR_use_instability }
+
+		completion_reward = {
+			add_stability = -0.15
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = SYR_new_constitution_fascist
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_fascist_coup
+		prerequisite = { focus = SYR_fascist_coup }
+
+		completion_reward = {
+			add_ideas = SYR_new_constitution_fascist_idea
+		}
+	}
+	focus = {
+		id = SYR_enforce_control
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_fascist_coup
+		prerequisite = { focus = SYR_fascist_coup }
+
+		completion_reward = {
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.1
+			}
+			add_ideas = SYR_true_syria_1
+		}
+	}
+	focus = {
+		id = SYR_militarize_society
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_enforce_control
+		prerequisite = { focus = SYR_enforce_control }
+		prerequisite = { focus = SYR_new_constitution_fascist }
+
+		completion_reward = {
+			add_war_support = 0.05
+			random_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					OR = {
+						state = 554
+						state = 677
+						state = 1100
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = SYR_true_syria_1
+				add_idea = SYR_true_syria_2
+			}
+		}
+	}
+	focus = {
+		id = SYR_publish_ssnp_map
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_enforce_control
+		prerequisite = { focus = SYR_enforce_control }
+
+		completion_reward = {
+			add_war_support = 0.05
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = PAL
+						is_core_of = LEB
+						is_core_of = JOR
+						is_core_of = IRQ
+						is_core_of = KUW
+					}
+				}
+				add_claim_by = SYR
+			}
+		}
+	}
+	focus = {
+		id = SYR_unite_lebanon
+		x = 2
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_militarize_society
+		prerequisite = { focus = SYR_militarize_society }
+		prerequisite = { focus = SYR_publish_ssnp_map }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_launch_coups
+		x = 0
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_unite_lebanon
+		prerequisite = { focus = SYR_unite_lebanon }
+
+		completion_reward = {
+			unlock_decision_category_tooltip = SYR_launch_coups_category
+		}
+	}
+	focus = {
+		id = SYR_sinai_for_guarantees
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_launch_coups
+		prerequisite = { focus = SYR_launch_coups }
+		mutually_exclusive = { focus = SYR_right_owner_sinai }
+
+		completion_reward = {
+			#event for sinai AND east suez
+		}
+	}
+	focus = {
+		id = SYR_right_owner_sinai
+		x = 1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_launch_coups
+		prerequisite = { focus = SYR_launch_coups }
+		mutually_exclusive = { focus = SYR_sinai_for_guarantees }
+
+		completion_reward = {
+			#claims and wargoals on sinai AND east suez
+		}
+	}
+	focus = {
+		id = SYR_turkish_claims
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_right_owner_sinai
+		prerequisite = { focus = SYR_right_owner_sinai focus = SYR_sinai_for_guarantees }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_jawf_crisis
+		x = -1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_right_owner_sinai
+		prerequisite = { focus = SYR_right_owner_sinai focus = SYR_sinai_for_guarantees }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_khuzestan_claims
+		x = -1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_sinai_for_guarantees
+		prerequisite = { focus = SYR_right_owner_sinai focus = SYR_sinai_for_guarantees }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_cyprus_our_land
+		x = 2
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_khuzestan_claims
+		prerequisite = { focus = SYR_khuzestan_claims }
+		prerequisite = { focus = SYR_jawf_crisis }
+		prerequisite = { focus = SYR_turkish_claims }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_natural_syria
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_cyprus_our_land
+		prerequisite = { focus = SYR_cyprus_our_land }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_eagles_of_whirlwind_creation
+		x = -2
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_militarize_society
+		prerequisite = { focus = SYR_militarize_society }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_secular_nationalism
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_militarize_society
+		prerequisite = { focus = SYR_militarize_society }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SYR_true_syria_2
+				add_idea = SYR_true_syria_3
+			}
+		}
+	}
+	focus = {
+		id = SYR_propoganda_ssnp
+		x = -1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_secular_nationalism
+		prerequisite = { focus = SYR_secular_nationalism }
+		prerequisite = { focus = SYR_eagles_of_whirlwind_creation}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_join_axis
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_propoganda_ssnp
+		prerequisite = { focus = SYR_propoganda_ssnp }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_realize_france_good
+		x = -10
+		y = 1
+
+		offset = {
+		    x = 10
+		    trigger = {
+				has_completed_focus = SYR_realize_france_good
+		    }
+		}
+
+		cost = 10
+
+		relative_position_id = SYR_syrian_question
+		prerequisite = { focus = SYR_syrian_question }
+		mutually_exclusive = { focus = SYR_france_treaty }
+		mutually_exclusive = { focus = SYR_communist_underground_focus }
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = SYR_france_treaty
+					has_completed_focus = SYR_communist_underground_focus
+				}
+			}
+		}
+
+		available = {
+			has_opinion = {
+				target = FRA
+				value > 75
+			}
+		}
+
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = SYR_accept_future
+		x = 0
+		y = 4
+
+		cost = 5
+
+		relative_position_id = SYR_realize_france_good
+		prerequisite = { focus = SYR_failed focus = SYR_realize_france_good}
+		mutually_exclusive = { focus = SYR_armed_rebellion }
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SYR_communist_underground_focus
+		x = 15
+		y = 1
+
+		icon = GFX_goal_support_communism
+
+		offset = {
+		    x = -15
+		    trigger = {
+				has_completed_focus = SYR_communist_underground_focus
+		    }
+		}
+
+		cost = 10
+
+		relative_position_id = SYR_syrian_question
+		prerequisite = { focus = SYR_syrian_question }
+		mutually_exclusive = { focus = SYR_france_treaty }
+		mutually_exclusive = { focus = SYR_realize_france_good }
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = SYR_france_treaty
+					has_completed_focus = SYR_realize_france_good
+				}
+			}
+		}
+
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			add_ideas = SYR_communist_underground
+			add_popularity = { 
+				ideology = communism 
+				popularity = 0.05 
+			}
+		}
+	}
+	focus = {
+		id = SYR_rally_working_class
+		x = 0
+		y = 1
+
+		icon = GFX_SYR_rally_working_class
+
+		cost = 5
+
+		relative_position_id = SYR_communist_underground_focus
+		prerequisite = { focus = SYR_communist_underground_focus }
+
+		completion_reward = {
+			add_popularity = { 
+				ideology = communism 
+				popularity = 0.1
+			}
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = SYR_soviet_support
+		x = 2
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_communist_underground_focus
+		prerequisite = { focus = SYR_communist_underground_focus }
+
+		completion_reward = {
+			random_list = {
+				60 = {
+					add_stability = -0.025
+					add_political_power = 25
+					add_equipment_to_stockpile = {
+					    type = infantry_equipment
+					    amount = 500
+						producer = SOV
+					}
+				}
+				20 = {
+					add_stability = -0.05
+					add_political_power = 50
+					add_equipment_to_stockpile = {
+					    type = infantry_equipment
+					    amount = 900
+						producer = SOV
+					}
+				}
+				10 = {
+					add_stability = -0.10
+					add_political_power = 100
+					add_equipment_to_stockpile = {
+					    type = infantry_equipment
+					    amount = 1750
+						producer = SOV
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_propoganda
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_rally_working_class
+		prerequisite = { focus = SYR_rally_working_class }
+		prerequisite = { focus = SYR_soviet_support }
+
+		completion_reward = {
+			IF = {
+				limit = {
+					communism > 0.35
+				}
+				add_popularity = { 
+					ideology = communism 
+					popularity = 0.1
+				}
+			}
+			else = {
+				add_popularity = { 
+					ideology = communism 
+					popularity = 0.25
+				}
+				add_stability = -0.1
+			}
+			add_ideas = SYR_red_propaganda
+		}
+	}
+	focus = {
+		id = SYR_expand_underground_operations
+		x = -1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_rally_working_class
+		prerequisite = { focus = SYR_rally_working_class }
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					OR = {
+						state = 1102
+						state = 677
+						state = 1100
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_ignite_revolution
+		x = 1
+		y = 1
+
+		icon = GFX_goal_generic_war_with_comintern
+
+		cost = 10
+
+		relative_position_id = SYR_expand_underground_operations
+		prerequisite = { focus = SYR_expand_underground_operations }
+		prerequisite = { focus = SYR_propoganda }
+
+		available = {
+			communism > 0.5
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SYR_ignite_revolution_tt
+			hidden_effect = {
+				drop_cosmetic_tag = yes
+				set_capital = { state = 677 }
+				start_civil_war = {
+					ruling_party = communism
+					ideology = ROOT
+					size = 0.5
+					states = {
+						554 680 1236 1249
+					}
+					PREV.PREV = {
+						set_cosmetic_tag = SYR_mandate
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_one_party_one_state
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_ignite_revolution
+		prerequisite = { focus = SYR_ignite_revolution }
+		mutually_exclusive = { focus = SYR_divide_parties_commie }
+
+		available = {
+			LEB = {
+				has_government = communism
+			}
+		}
+
+		completion_reward = {
+			LEB = {
+				country_event = { days = 5 id = syria_communism.1 }
+				every_core_state = {
+					add_core_of = SYR
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_divide_parties_commie
+		x = 1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_ignite_revolution
+		prerequisite = { focus = SYR_ignite_revolution }
+		mutually_exclusive = { focus = SYR_one_party_one_state }
+
+		available = {
+			NOT = {
+				LEB = {
+					has_government = communism
+				}
+			}
+		}
+
+		completion_reward = {
+			set_party_name = {
+				ideology = communism
+				long_name = SYR_communism_party_split
+				name = SYR_communism_party_split
+			}
+			LEB = {
+				country_event = { days = 5 id = syria_communism.1 }
+				set_party_name = {
+					ideology = communism
+					long_name = LEB_communism_party_split
+					name = LEB_communism_party_split
+				}
+			}
+			custom_effect_tooltip = SYR_expansion_event_tt
+		}
+	}
+	focus = {
+		id = SYR_kick_out_colonial_admin
+		x = 4
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_ignite_revolution
+		prerequisite = { focus = SYR_ignite_revolution }
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+	focus = {
+		id = SYR_stabilize_internals
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_kick_out_colonial_admin
+		prerequisite = { focus = SYR_kick_out_colonial_admin }
+
+		completion_reward = {
+			add_war_support = 0.05
+			set_country_flag = SYR_stabilized_internal
+		}
+	}
+	focus = {
+		id = SYR_new_government_building
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_kick_out_colonial_admin
+		prerequisite = { focus = SYR_kick_out_colonial_admin }
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = SYR_islamic_socialism
+		x = -1
+		y = 1
+
+		cost = 10
+
+		mutually_exclusive = { focus = SYR_state_atheism }
+
+		relative_position_id = SYR_stabilize_internals
+		prerequisite = { focus = SYR_stabilize_internals }
+
+		completion_reward = {
+			add_ideas = SYR_islam_with_socialism
+		}
+	}
+	focus = {
+		id = SYR_state_atheism
+		x = 1
+		y = 1
+
+		cost = 10
+
+		mutually_exclusive = { focus = SYR_islamic_socialism }
+
+		relative_position_id = SYR_stabilize_internals
+		prerequisite = { focus = SYR_stabilize_internals }
+
+		completion_reward = {
+			add_ideas = SYR_state_atheism_idea
+		}
+	}
+	focus = {
+		id = SYR_five_year_plan
+		x = -1
+		y = 2
+
+		cost = 10
+
+		relative_position_id = SYR_ignite_revolution
+		prerequisite = { focus = SYR_one_party_one_state focus = SYR_divide_parties_commie }
+
+		completion_reward = {
+			add_political_power = 75
+			add_research_slot = 1
+			add_stability = -0.05
+			add_timed_idea = {
+				idea = SYR_five_year_plan_reforms
+				days = 360
+			}
+		}
+	}
+	focus = {
+		id = SYR_bring_divisions_back
+		x = -3
+		y = 2
+
+		cost = 5
+
+		relative_position_id = SYR_ignite_revolution
+		prerequisite = { focus = SYR_one_party_one_state focus = SYR_divide_parties_commie }
+
+		completion_reward = {
+			ALA = {
+				country_event = syria_treaty.7
+			}
+			DRU = {
+				country_event = syria_treaty.7
+			}
+		}
+	}
+	focus = {
+		id = SYR_enforce_party_loyalty
+		x = 1
+		y = 2
+
+		cost = 10
+
+		relative_position_id = SYR_ignite_revolution
+		prerequisite = { focus = SYR_one_party_one_state focus = SYR_divide_parties_commie }
+
+		available = {
+			has_country_flag = SYR_stabilized_internal
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_spread_revolution_south
+		x = -3
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_enforce_party_loyalty
+		prerequisite = { focus = SYR_five_year_plan }
+		prerequisite = { focus = SYR_bring_divisions_back }
+
+		available = {
+			has_country_flag = SYR_stabilized_internal
+		}
+
+		completion_reward = {
+			PAL = {
+				country_event = { days = 5 id = syria_communism.1 }
+			}
+			JOR = {
+				country_event = { days = 5 id = syria_communism.1 }
+			}
+			custom_effect_tooltip = SYR_expansion_event_tt
+		}
+	}
+	focus = {
+		id = SYR_spread_revolution_east
+		x = -1
+		y = 1
+
+		icon = GFX_focus_generic_attack_iraq
+
+		cost = 10
+
+		relative_position_id = SYR_enforce_party_loyalty
+		prerequisite = { focus = SYR_five_year_plan }
+		prerequisite = { focus = SYR_enforce_party_loyalty }
+
+		available = {
+			has_country_flag = SYR_stabilized_internal
+		}
+
+		completion_reward = {
+			IF = {
+				limit = {
+					country_exists = IRQ
+				}
+				create_wargoal = {
+    				type = annex_everything
+					target = IRQ
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_the_kurdish_question
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_spread_revolution_east
+		prerequisite = { focus = SYR_spread_revolution_east }
+
+
+		completion_reward = {
+			unlock_decision_category_tooltip = SYR_kurdistan_commie_category
+		}
+	}
+	focus = {
+		id = SYR_socialist_economy_reforms
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_spread_revolution_east
+		prerequisite = { focus = SYR_spread_revolution_east focus = SYR_spread_revolution_south }
+
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					OR = {
+						state = 554
+						state = 677
+						state = 1100
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					OR = {
+						state = 554
+						state = 677
+						state = 1100
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_red_alliance
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_socialist_economy_reforms
+		prerequisite = { focus = SYR_socialist_economy_reforms }
+
+		mutually_exclusive = { focus = SYR_join_comintern }
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction_from_template = {
+				template = faction_template_world_revolution
+				name = RED_FACTION
+				color = { 210 50 50 }
+			}
+		}
+	}
+	focus = {
+		id = SYR_join_comintern
+		x = 1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_socialist_economy_reforms
+		prerequisite = { focus = SYR_socialist_economy_reforms }
+
+		mutually_exclusive = { focus = SYR_red_alliance }
+
+		completion_reward = {
+			SOV = {
+				country_event = { days = 1 id = syria_communism.4 }
+			}
+		}
+	}
+	focus = {
+		id = SYR_invite_to_red_alliance
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_red_alliance
+		prerequisite = { focus = SYR_red_alliance }
+
+		available = {
+			is_faction_leader = yes
+		}
+
+		completion_reward = {
+			custom_override_tooltip = {
+				tooltip = invite_all_commies_arabia_tt
+				ROOT = {
+					every_other_country = {
+						limit = {
+							has_government = ROOT
+							is_on_same_continent_as = ROOT
+						}
+						country_event = { days = 5 id = syria_communism.10 }
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_unite_levant_commie
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_join_comintern
+		prerequisite = { focus = SYR_join_comintern focus = SYR_red_alliance}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = levantine_states_form_tt		
+				controls_state = 680
+				controls_state = 1101
+				controls_state = 677
+				controls_state = 1100
+				controls_state = 554
+				controls_state = 1099
+				controls_state = 1101
+				controls_state = 553
+				controls_state = 1098
+				controls_state = 1094
+				controls_state = 1092
+				controls_state = 1095
+				controls_state = 1090
+				controls_state = 1093
+				controls_state = 1091
+				controls_state = 1092
+				controls_state = 454
+				controls_state = 1096
+				controls_state = 455
+				controls_state = 1097
+				controls_state = 1218
+				controls_state = 1089
+				controls_state = 1249
+			}
+		}
+
+		completion_reward = {
+			custom_override_tooltip = {
+				tooltip = core_levantine_states_tt
+				every_state = {
+					limit = {
+						or = {
+							state = 680
+							state = 1101
+							state = 677
+							state = 1100
+							state = 554
+							state = 1099
+							state = 1101
+							state = 553
+							state = 1098
+							state = 1094
+							state = 1092
+							state = 1095
+							state = 1090
+							state = 1093
+							state = 1091
+							state = 1092
+							state = 454
+							state = 1096
+							state = 455
+							state = 1097
+							state = 1218
+							state = 1089
+							state = 1249
+						}
+					}
+					add_core_of = SYR
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_sinai_question
+		x = -2
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_unite_levant_commie
+		prerequisite = { focus = SYR_unite_levant_commie }
+
+		completion_reward = {
+			#basically soviets demand baltics, decisions for sinai AND suez
+		}
+	}
+	focus = {
+		id = SYR_fund_communists
+		x = 2
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_unite_levant_commie
+		prerequisite = { focus = SYR_unite_levant_commie }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_spread_revolution_saudi
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_unite_levant_commie
+		prerequisite = { focus = SYR_unite_levant_commie }
+
+		completion_reward = {
+			IF = {
+				limit = {
+					country_exists = SAU
+				}
+				create_wargoal = {
+    				type = annex_everything
+					target = SAU
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_conquer_independents
+		x = 1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_spread_revolution_saudi
+		prerequisite = { focus = SYR_spread_revolution_saudi }
+		prerequisite = { focus = SYR_fund_communists }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_unite_arabia_commie
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_conquer_independents
+		prerequisite = { focus = SYR_conquer_independents }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_nationalize_banque_de_syrie
+		x = 8
+		y = 1
+
+		offset = {
+		    x = -12
+		    trigger = {
+				has_completed_focus = SYR_communist_underground_focus
+		    }
+		}
+		offset = {
+		    x = -3
+		    trigger = {
+				has_completed_focus = SYR_france_treaty
+		    }
+		}
+
+		cost = 10
+
+		relative_position_id = SYR_france_treaty
+		prerequisite = { focus = SYR_france_treaty focus = SYR_communist_underground_focus }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SYR_banque_de_syrie_1
+				add_idea = SYR_banque_de_syrie_2
+			}
+		}
+	}
+	focus = {
+		id = SYR_sieze_foreign_industries
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_nationalize_banque_de_syrie
+		prerequisite = { focus = SYR_nationalize_banque_de_syrie }
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.075
+			add_political_power = 75
+			677 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			554 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_raid_french_stockpiles
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_sieze_foreign_industries
+		prerequisite = { focus = SYR_sieze_foreign_industries }
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+    			amount = 550
+    			producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+    			amount = 125
+    			producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = SYR_industrialization
+		x = 33
+		y = 0
+
+		icon = GFX_SYR_industrialization
+
+		cost = 10
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					OR = {
+						state = 554
+						state = 677
+						state = 1100
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_expand_homs_mil_academy
+		x = 2
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_industrialization
+		prerequisite = { focus = SYR_industrialization }
+
+		completion_reward = {
+			1100 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			random_unit_leader = {
+				add_random_trait = { brilliant_strategist inflexible_strategist }
+			}
+		}
+	}
+	focus = {
+		id = SYR_develop_desert
+		x = -2
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_industrialization
+		prerequisite = { focus = SYR_industrialization }
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					OR = {
+						state = 680
+						state = 1102
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_resource_extraction_1
+		x = -3
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_develop_desert
+		prerequisite = { focus = SYR_develop_desert }
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					OR = {
+						state = 680
+						state = 1102
+					}
+				}
+				add_resource = {
+   					type = steel
+    				amount = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_damascus_arsenal
+		x = 0
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_industrialization
+		prerequisite = { focus = SYR_industrialization }
+
+		completion_reward = {
+			554 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = infantry_weapons
+			}			
+		}
+	}
+	focus = {
+		id = SYR_develop_unis
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_damascus_arsenal
+		prerequisite = { focus = SYR_damascus_arsenal }
+		prerequisite = { focus = SYR_develop_desert }
+
+		completion_reward = {
+			add_research_slot = 1			
+		}
+	}
+	focus = {
+		id = SYR_develop_railways
+		x = 1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_damascus_arsenal
+		prerequisite = { focus = SYR_damascus_arsenal }
+		prerequisite = { focus = SYR_expand_homs_mil_academy }
+
+		completion_reward = {
+			add_research_slot = 1			
+		}
+	}
+	focus = {
+		id = SYR_connect_syria_iraq
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_develop_railways
+		prerequisite = { focus = SYR_develop_railways }
+
+		completion_reward = {
+			#connects railway inbetween syria deir oz zor and iraq, gives infra and extra slot	
+		}
+	}
+	focus = {
+		id = SYR_military_expansion
+		x = 39
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			army_experience = 100
+		}
+	}
+	focus = {
+		id = SYR_army_modernization
+		x = 42
+		y = 0
+
+		icon = GFX_SYR_army_modernization
+
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 1
+    			category = infantry_weapons
+			}
+			army_experience = 50
+		}
+	}
+}

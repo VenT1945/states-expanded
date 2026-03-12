@@ -1,0 +1,25 @@
+state={
+	id=1049
+	name="STATE_1049"
+	provinces={
+		873 3823 6846 
+	}
+	resources={
+		steel=1
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = VRG
+		victory_points = {
+			6846 1 
+		}
+		victory_points = {
+			3823 1 
+		}
+	}
+	manpower=255776
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+state={
+	id=364
+	name="STATE_364"
+	provinces={
+		1485 4491 4653 7527 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			4653 3
+		}
+		victory_points = {
+			4491 2 
+		}
+		victory_points = {
+			7527 5 
+		}
+	}
+	manpower=1738764
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

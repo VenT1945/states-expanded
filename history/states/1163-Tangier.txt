@@ -1,0 +1,19 @@
+state={
+	id=1163
+	name="STATE_1163"
+	provinces={
+		13417 
+	}
+	history = {
+		add_core_of = TIZ
+		owner = TIZ
+		victory_points = {
+			13417 5 
+		}
+		set_demilitarized_zone = yes
+	}
+	manpower=55318
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

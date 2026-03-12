@@ -1,0 +1,39 @@
+state = {
+	id = 681
+	name = "STATE_681" # Cape
+	manpower = 1628741
+
+	state_category = large_town
+
+	history = {
+
+		owner = SAF
+		add_core_of = SAF
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			air_base = 1
+
+			12589 = {
+				naval_base = 4
+			    # Woodhead Dam
+				dam = 1
+			}
+		}
+
+		victory_points = {
+			12589 10
+		}
+		victory_points = {
+			10415 1
+		}
+		
+	}
+
+	provinces = {
+		10415 12589 12692 
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,31 @@
+capital = 1101
+
+oob = "DRU"
+
+set_cosmetic_tag = DRU_mandate
+recruit_character = DRU_pierre_f_j_tarrit
+recruit_character = DRU_sultan_al_atrash
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+}
+
+add_ideas = {
+	ALDR_ineffective_colonial_admin
+	ALDR_weak_army_1
+	}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 16
+	fascism = 3
+	communism = 1
+	neutrality = 80
+}
+

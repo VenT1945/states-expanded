@@ -1,0 +1,27 @@
+state={
+	id=1045
+	name="STATE_1045"
+	provinces={
+		6823 6929 
+	}
+	resources={
+		steel=1
+		coal=2
+		oil=1
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = MRD
+		victory_points = {
+			6823 2 
+		}
+		victory_points = {
+			6929 3
+		}
+	}
+	manpower=219328
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

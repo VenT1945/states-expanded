@@ -1,0 +1,24 @@
+state={
+	id=1146
+	name="STATE_1146"
+	provinces={
+		4401 7238 7347 10261 12232 
+	}
+	history = {
+		add_core_of = VIN
+		owner = VIN
+		victory_points = {
+			4401 10 
+		}
+		victory_points = {
+			10261 1 
+		}
+		victory_points = {
+			12232 3 
+		}
+	}
+	manpower=2039921
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+	id=1054
+	name="STATE_1054"
+	provinces={
+		1354 4623 7361 
+	}
+	history={
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = NSC
+		victory_points = {
+			7361 5
+		}
+		victory_points = {
+			4623 1
+		}
+	}
+	manpower=203740
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

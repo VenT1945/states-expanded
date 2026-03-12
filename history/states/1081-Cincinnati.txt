@@ -1,0 +1,28 @@
+state={
+	id=1081
+	name="STATE_1081"
+	provinces={
+		831 4601 9775 11776 11890 
+	}
+	resources={
+		steel=2
+		coal=1
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			4601 10
+		}
+		victory_points = {
+			11776 5
+		}
+		victory_points = {
+			831 2
+		}
+	}
+	manpower=1585272
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

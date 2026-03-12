@@ -1,0 +1,18 @@
+state={
+	id=1033
+	name="STATE_1033"
+	provinces={
+		3957 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			3957 50 
+		}
+	}
+	manpower=486869	
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

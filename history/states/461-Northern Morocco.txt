@@ -1,0 +1,30 @@
+state={
+	id=461
+	name="STATE_461"
+	resources={
+		chromium=12.000
+	}
+	provinces={
+		1079 1194 4084 7100 10013 10070 11987 
+	}
+	history = {
+		add_core_of = MOR
+		owner = MOR
+		victory_points = {
+			10070 5 
+		}
+		victory_points = {
+			11987 3
+		}
+		victory_points = {
+			7100 2
+		}
+		victory_points = {
+			1194 3
+		}
+	}
+	manpower=1538472
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

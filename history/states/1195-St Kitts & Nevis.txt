@@ -1,0 +1,18 @@
+state={
+	id=1195
+	name="STATE_1195"
+	provinces={
+		13452 
+	}
+	history={
+		add_core_of = BAS
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=35412
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

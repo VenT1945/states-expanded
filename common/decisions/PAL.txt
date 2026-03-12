@@ -1,0 +1,181 @@
+PAL_great_palestinian_uprising = {
+	PAL_great_palestinian_uprising_mission = {
+		available = {
+			check_variable = {
+				var = paluprisingcount
+				value = 3
+				compare = greater_than_or_equals
+			}
+		}
+		activation = {
+			has_global_flag = {
+				flag = the_1936_PAL_revolt_has_happened
+				days > 22
+				date > 1936.3.1
+			}
+			NOT = {
+				has_country_flag = PAL_uprising_happened
+				has_country_flag = PAL_uprising_prevented
+			}
+		}
+		cancel_effect = {
+			set_country_flag = PAL_uprising_prevented
+		}
+		days_mission_timeout = 700
+		timeout_effect = {
+			country_event = {
+				id = arab_palestine.1
+				days = 1
+				random_days = 5
+			}
+			hidden_effect = {
+				set_country_flag = PAL_uprising_happened
+			}
+		}
+	}
+	PAL_expand_national_bloc = {
+		cost = 50
+		days_re_enable = 150
+		visible = {
+			has_country_flag = PAL_arab_path
+		}
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = PAL_great_palestinian_uprising_mission
+				days = -100
+			}
+		}
+	}
+	PAL_promote_general_strike = {
+		cost = 75
+		fire_only_once = yes
+		visible = {
+			has_country_flag = PAL_arab_path
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			add_days_mission_timeout = {
+				mission = PAL_great_palestinian_uprising_mission
+				days = -100
+			}
+			add_ideas = PAL_general_strikes
+		}
+	}
+	PAL_power_to_arabs = {
+		fire_only_once = yes
+		visible = {
+			has_country_flag = PAL_arab_path
+		}
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = PAL_great_palestinian_uprising_mission
+				days = -35
+			}
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	PAL_reinstate_news = {
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = PAL_arab_path
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			add_days_mission_timeout = {
+				mission = PAL_great_palestinian_uprising_mission
+				days = -75
+			}
+			set_country_flag = PAL_arab_news
+		}
+	}
+	PAL_testuprising = {
+		cost = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = PAL_arab_path
+		}
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = PAL_great_palestinian_uprising_mission
+				days = -700
+			}
+		}
+	}
+	
+	
+	PAL_impose_martial_law = {
+		cost = 100
+		fire_only_once = yes
+		visible = {
+			has_country_flag = PAL_mdt_path
+		}
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = PAL_great_palestinian_uprising_mission
+				days = 100
+			}
+			PAL = {
+				PAL = {
+					set_occupation_law = martial_law_occupation
+				}
+			}
+			add_ideas = PAL_martial_law
+			add_to_variable = { 
+				var = paluprisingcount
+				value = 1
+			}
+		}
+	}
+	PAL_censor_newspapers = {
+		cost = 75
+		fire_only_once = yes
+		visible = {
+			has_country_flag = PAL_mdt_path
+		}
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = PAL_great_palestinian_uprising_mission
+				days = 50
+			}
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_to_variable = {
+				var = paluprisingcount
+				value = 1
+			}
+		}
+	}
+	PAL_expand_notrim = {
+		cost = 75
+		fire_only_once = yes
+		visible = {
+			has_country_flag = PAL_mdt_path
+		}
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = PAL_great_palestinian_uprising_mission
+				days = 50
+			}
+			add_ideas = PAL_notrim
+			add_to_variable = {
+				var = paluprisingcount
+				value = 1
+			}
+		}
+	}
+	PAL_test2 = {
+		cost = 1 
+		fire_only_once = yes
+		visible = {
+			has_country_flag = PAL_mdt_path
+		}
+		complete_effect = {
+			add_to_variable = { 
+				var = paluprisingcount
+				value = 4
+			}
+		}
+	}
+}

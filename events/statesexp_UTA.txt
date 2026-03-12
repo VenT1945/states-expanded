@@ -1,0 +1,15 @@
+add_namespace = utanorth
+
+news_event = {
+    id = utanorth.1
+	title = utanorth.1.t
+	desc = utanorth.1.d
+	
+	is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = utanorth.1.a
+        set_global_flag = discovered_oil_in_arabia
+    }
+}

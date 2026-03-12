@@ -1,0 +1,22 @@
+state={
+	id=1052
+	name="STATE_1052"
+	provinces={
+		4360 13388 13389
+	}
+	history={
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = PEI
+		victory_points = {
+			13389 2
+		}
+		victory_points = {
+			13388 1
+		}
+	}
+	manpower=88038
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

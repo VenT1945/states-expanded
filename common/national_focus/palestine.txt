@@ -1,0 +1,58 @@
+focus_tree = {
+	id = palestine_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PAL
+		}
+	}
+	focus = {
+		id = PAL_political_situation
+		x = 10
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = PAL_arab_revolt
+		x = 0
+		y = 1
+		
+		relative_position_id = PAL_political_situation
+		prerequisite = { focus = PAL_political_situation }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PAL_arab_revolt_tt
+				has_global_flag = {
+					flag = the_1936_PAL_revolt_has_happened
+					days > 19
+					date > 1936.3.1
+				}
+			}
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = palestine.1
+		}
+	}
+}

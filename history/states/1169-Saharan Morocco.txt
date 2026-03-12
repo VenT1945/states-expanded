@@ -1,0 +1,18 @@
+state={
+	id=1169
+	name="STATE_1169"
+	provinces={
+		1989 4933 7908 7958 8046 
+	}
+	history = {
+		add_core_of = MOR
+		owner = MOR
+		victory_points = {
+			7908 1
+		}
+	}
+	manpower=728963
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

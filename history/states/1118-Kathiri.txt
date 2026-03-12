@@ -1,0 +1,23 @@
+state={
+	id=1118
+	name="STATE_1118"
+	provinces={
+		12894 
+	}
+	history = {
+		owner = KTH
+		add_core_of = KTH
+		add_claim_by = YEM
+		add_claim_by = FSA
+		victory_points = {
+			12894 2
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=75296
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

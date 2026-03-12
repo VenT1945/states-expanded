@@ -1,0 +1,28 @@
+state={
+	id=1040
+	name="STATE_1040"
+	provinces={
+		880 3802 9789 11789 11800 
+	}
+	resources={
+		steel=4
+		coal=31
+		oil=1
+		tungsten=1
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = PEN
+		victory_points = {
+			11800 15
+		}
+		victory_points = {
+			9789 2
+		}
+	}
+	manpower=2728887
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

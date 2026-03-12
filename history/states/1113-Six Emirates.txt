@@ -1,0 +1,24 @@
+state={
+	id=1113
+	name="STATE_1113"
+	provinces={
+		10904 
+	}
+	resources = {
+		oil = 4
+	}
+	history = {
+		owner = UAE
+		add_core_of = UAE
+		victory_points = {
+			10904 2
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=30764
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,48 @@
+joint_focus = {
+	id = TUR_the_hatay_issue
+	icon = GFX_goal_generic_demand_territory
+	x = 22
+	y = 0
+	cost = 5
+	ai_will_do = {
+		base = 10
+    }
+    text_icon = SSB_TUR_focus_style
+    available = {
+        tag = TUR
+        OR = {
+            date > 1938.09.02
+            country_exists = HAT
+        }
+    }
+	completion_reward_joint_originator = {
+        SYR = {
+            release = HAT
+        }
+        HAT = {
+            set_cosmetic_tag = HAT_hatay_state
+        }
+	}
+}
+joint_focus = {
+	id = HATAY_show_dispute_league
+	x = 0
+	y = 1
+    icon = GFX_HATAY_show_dispute_league
+    prerequisite = { focus = TUR_the_hatay_issue }
+    relative_position_id = TUR_the_hatay_issue 
+	cost = 5
+	ai_will_do = {
+		base = 10
+    }
+    text_icon = HATAY_TUR_SYR_focus_style
+    available = {
+        OR = {
+            tag = TUR
+            tag = SYR
+        }
+    }
+	completion_reward = {
+        unlock_decision_category_tooltip = HATAY_parliament_category
+	}
+}

@@ -1,0 +1,41 @@
+state={
+	id=724
+	name="STATE_724"
+	manpower = 494376
+	
+	state_category = rural
+	
+	resources={
+		rubber=40 # was: 70
+	}
+
+
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 2
+			12230 = {
+				naval_base = 2
+			}
+			10158 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			12230 5
+		}
+		victory_points = {
+			12286 3
+		}
+		victory_points = {
+			10158 1
+		}
+		add_core_of = SIA
+	}
+	
+	provinces={
+		1366 10156 10158 12230 12286
+	}
+
+	local_supplies=1 
+}

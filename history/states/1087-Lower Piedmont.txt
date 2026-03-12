@@ -1,0 +1,27 @@
+state={
+	id=1087
+	name="STATE_1087"
+	provinces={
+		7083 7138 10051 12054 13467
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			7138 10 
+		}
+		victory_points = {
+			10051 3 
+		}
+		victory_points = {
+			12054 2 
+		}
+		victory_points = {
+			13467 3
+		}
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

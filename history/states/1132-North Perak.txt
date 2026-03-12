@@ -1,0 +1,25 @@
+state={
+	id=1132
+	name="STATE_1132"
+	provinces={
+		1364 4310 
+	}
+	resources={ 
+		rubber=45.000
+		tungsten=80.000
+	}
+	history = {
+		owner = MAL
+		add_core_of = MAL
+		victory_points = {
+			1364 5 
+		}
+		victory_points = {
+			4310 1 
+		}
+	}
+	manpower=350512
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

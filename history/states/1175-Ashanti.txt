@@ -1,0 +1,21 @@
+state={
+	id=1175
+	name="STATE_1175"
+	provinces={
+		12787 13425 13426 
+	}
+	history = {
+		add_core_of = GHA
+		owner = ENG
+		victory_points = {
+			12787 3 
+		}
+		victory_points = {
+			13425 2 
+		}
+	}
+	manpower=657492
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

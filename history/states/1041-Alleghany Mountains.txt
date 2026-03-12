@@ -1,0 +1,25 @@
+state={
+	id=1041
+	name="STATE_1041"
+	provinces={
+		847 3850 6872 6885 11758 11769 12405 
+	}
+	resources={
+		coal=21
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = PEN
+		victory_points = {
+			6872 2
+		}
+		victory_points = {
+			847 3
+		}
+	}
+	manpower=909366
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

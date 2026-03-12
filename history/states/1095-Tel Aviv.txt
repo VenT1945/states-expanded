@@ -1,0 +1,34 @@
+state={
+	id=1095
+	name="STATE_1095"
+	provinces={
+		4206 13481
+	}
+	resources = {
+		aluminium=1
+		steel=2
+	}
+	history = {
+		owner = PAL
+		add_core_of = PAL
+		victory_points = {
+			4206 10
+		}
+		victory_points = {
+			13481 2
+		}
+		buildings = {
+            infrastructure = 3
+            industrial_complex = 2
+            arms_factory = 1
+            dockyard = 1
+            4206 = {
+                naval_base = 2
+            }
+        }
+	}
+	manpower=124138
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

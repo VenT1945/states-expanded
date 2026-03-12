@@ -1,0 +1,27 @@
+state={
+	id=363
+	name="STATE_363"
+	provinces={
+		7045 10081 10096 11783 12445 13468
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			7045 10 
+		}
+		victory_points = {
+			12445 5 
+		}
+		victory_points = {
+			10081 5 
+		}
+		victory_points = {
+			13468 5 
+		}
+	}
+	manpower=3170274
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,41 @@
+state={
+	id=1230
+	name="STATE_1230"
+	provinces={
+		13470 13471 
+	}
+	history = {
+
+		owner = CZE
+		
+		buildings = {
+			infrastructure = 2
+			13470 = {
+				bunker = 2
+			}
+			13471 = {
+				bunker = 2
+			}
+		}
+
+		victory_points = {
+			13470 2
+		}
+		victory_points = {
+			13471 1
+		}
+
+		add_core_of = CZE
+		add_core_of = SLO
+
+		1938.9.30 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
+		}
+	}
+	manpower=8623
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

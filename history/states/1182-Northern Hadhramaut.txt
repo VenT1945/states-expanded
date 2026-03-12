@@ -1,0 +1,19 @@
+state={
+	id=1182
+	name="STATE_1182"
+	provinces={
+		2029 13436 13437 
+	}
+	history = {
+		owner = UTA
+		add_core_of = UTA
+		add_claim_by = FSA
+		add_claim_by = YEM
+		add_claim_by = SAU
+		set_demilitarized_zone = yes	
+	}
+	manpower=23919
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

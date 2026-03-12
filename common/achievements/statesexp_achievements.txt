@@ -1,0 +1,18 @@
+unique_id = achievements_statesexp
+
+no_more_division_test = {
+    possible = {
+        is_ironman = yes
+        difficulty > 1
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+        original_tag = SYR
+    }
+ 
+    happened = {
+        NOT = {
+            has_idea = SYR_divide_and_rule
+        }
+        has_stability > 0.7
+    } 
+}

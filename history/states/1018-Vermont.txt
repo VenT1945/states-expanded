@@ -1,0 +1,25 @@
+state={
+	id=1018
+	name="STATE_1018"
+	provinces={
+		4445 7629 13158
+	}
+	resources={
+		tungsten=1
+	}
+	history={
+		owner = USA
+		victory_points = {
+			4445 2 
+		}
+		victory_points = {
+			7629 2
+		}
+		add_core_of = USA
+		add_core_of = VER
+	}
+	manpower=226072
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

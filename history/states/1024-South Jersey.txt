@@ -1,0 +1,30 @@
+state={
+	id=1024
+	name="STATE_1024"
+	provinces={
+		9801 9864 11740 11900 
+	}
+	
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = NJR
+		victory_points = {
+			11900 3
+		}
+		victory_points = {
+			11740 1 
+		}
+		victory_points = {
+			9801 1 
+		}
+		victory_points = {
+			9864 3 
+		}
+	}
+	
+	manpower=857971
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

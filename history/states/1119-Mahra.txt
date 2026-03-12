@@ -1,0 +1,23 @@
+state={
+	id=1119
+	name="STATE_1119"
+	provinces={
+		13079 
+	}
+	history = {
+		owner = MAH
+		add_core_of = MAH
+		add_claim_by = YEM
+		add_claim_by = FSA
+		victory_points = {
+			13079 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=31824
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+state={
+	id=1171
+	name="STATE_1171"
+	provinces={
+		13419 
+	}
+	history = {
+		add_core_of = SAF
+		owner = ENG
+		victory_points = {
+			13419 3 
+		}
+		buildings = {
+            infrastructure = 2
+            dockyard = 1
+            13419 = {
+                naval_base = 5
+            }
+        }
+	}
+	manpower=5812
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,30 @@
+capital = 1099
+
+oob = "ALA"
+
+set_cosmetic_tag = ALA_mandate
+recruit_character = ALA_ernest_m_h_schoeffler
+recruit_character = ALA_salih_al_ali
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+}
+
+add_ideas = {
+	ALDR_ineffective_colonial_admin
+	ALDR_weak_army_1
+	}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 12
+	fascism = 11
+	communism = 2
+	neutrality = 75
+}

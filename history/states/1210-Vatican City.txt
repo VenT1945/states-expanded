@@ -1,0 +1,18 @@
+state={
+	id=1210
+	name="STATE_1210"
+	provinces={
+		13459 
+	}
+	history = {
+		owner = PAP
+		add_core_of = PAP
+		victory_points = {
+			13459 1 
+		}
+	}
+	manpower=914
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

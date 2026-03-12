@@ -1,0 +1,80 @@
+UTA_expansion_central = {
+	priority = 40
+	visible_when_empty = no	
+	allowed = {
+	    OR = {
+            original_tag = SAU
+            original_tag = YEM
+            original_tag = FSA
+            original_tag = OMA
+            original_tag = IMO
+            original_tag = UAE
+        }
+	}
+	visible = {
+        always = yes
+	}
+}
+
+
+UTA_expansion_north_KUW = {
+    priority = 45
+    visible_when_empty = no
+    picture = GFX_decision_cat_picture_fatherland_front
+    allowed = {
+        OR = {
+            original_tag = SAU
+            original_tag = KUW
+        }
+    }
+	custom_icon = {
+		tag = SAU
+		value = sau_divided_zone_icon_value
+		desc = sau_divided_zone_full_influence_breakdown
+
+		visible = {
+			country_exists = SAU
+		}
+	}
+	
+	custom_icon = {
+		tag = KUW
+		value = kuw_divided_zone_icon_value
+		desc = kuw_divided_zone_full_influence_breakdown
+
+		visible = {
+			country_exists = KUW
+		}
+	}
+}
+
+
+UTA_expansion_north_IRQ = {
+    priority = 45
+    visible_when_empty = no
+    picture = GFX_decision_cat_picture_fatherland_front
+    allowed = {
+        OR = {
+            original_tag = SAU
+            original_tag = IRQ
+        }
+    }
+    custom_icon = {
+		tag = SAU
+		value = sau_UTA_north_expansion_irq_var_value
+		desc = sau_UTA_north_expansion_irq_var_desc
+
+		visible = {
+			country_exists = SAU
+		}
+	}
+	custom_icon = {
+		tag = IRQ
+		value = irq_UTA_north_expansion_irq_var_value
+		desc = irq_UTA_north_expansion_irq_var_desc
+
+		visible = {
+			country_exists = IRQ
+		}
+	}
+}

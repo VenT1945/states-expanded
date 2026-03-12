@@ -1,0 +1,21 @@
+state={
+	id=1082
+	name="STATE_1082"
+	provinces={
+		1077 6943 9876 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			1077 1 
+		}
+		victory_points = {
+			9876 2 
+		}
+	}
+	manpower=241527
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,42 @@
+shared_focus = {
+    id = UTA_shared_create_expeditionaries
+	x = 30
+	y = 0
+	cost = 5
+
+	available = {
+	}
+
+	allow_branch = {
+		or = {
+			tag = SAU
+			tag = OMA
+			tag = YEM
+			tag = FSA
+			tag = UAE
+			tag = IMO
+		}
+	}
+
+	completion_reward = {
+		division_template = {
+			name = "Arab Expeditionary Force"
+			is_locked = yes
+			division_cap = 1
+			regiments = {
+				camelry = { x = 0 y = 0 }
+				camelry = { x = 0 y = 1 }
+			}
+		}
+		random_core_state = {
+			create_unit = {
+				division = "name = \"Arab Expeditionary Force\" division_template = \"Arab Expeditionary Force\" start_experience_factor = 0"
+				id = 80085
+				owner = ROOT
+			}
+		}
+		UTA = {
+			give_military_access = ROOT
+		}
+	}
+}

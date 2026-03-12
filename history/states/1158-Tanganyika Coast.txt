@@ -1,0 +1,21 @@
+state={
+	id=1158
+	name="STATE_1158"
+	provinces={
+		2196 8182 8183 12944 
+	}
+	history = {
+		add_core_of = TZN
+		owner = TZN
+		victory_points = {
+			2196 5 
+		}
+		victory_points = {
+			8183 3 
+		}
+	}
+	manpower=1019837
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

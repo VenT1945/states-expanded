@@ -1,0 +1,21 @@
+state={
+	id=1238
+	name="STATE_1238"
+	provinces={
+		13482 13483 13484 
+	}
+	history={
+		owner = SAU
+		add_core_of = SAU
+		victory_points = {
+			13482 3 
+		}
+		victory_points = {
+			13483 2 
+		}
+	}
+	manpower=130447
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

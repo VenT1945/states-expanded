@@ -1,0 +1,21 @@
+state={
+	id=462
+	name="STATE_462"
+	provinces={
+		989 1111 1152 1207 4097 4154 7116 7173 10107 12042 
+	}
+	history = {
+		add_core_of = MOR
+		owner = MOR
+		victory_points = {
+			989 2
+		}
+		victory_points = {
+			1207 1
+		}
+	}
+	manpower=1321394
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

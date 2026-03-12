@@ -1,0 +1,33 @@
+state={
+	id=1029
+	name="STATE_1029"
+	provinces={
+		3878 13384
+	}
+	resources={
+		steel=3
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			3878 40 
+		}
+		victory_points = {
+			13384 15 
+		}
+		buildings = {
+			3878 = {
+				landmark_statue_of_liberty = {
+					level = 1
+				}
+			}
+		}
+		add_core_of = NYK
+	}
+	
+	manpower=6930446
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

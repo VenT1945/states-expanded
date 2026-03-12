@@ -1,0 +1,24 @@
+state={
+	id=1028
+	name="STATE_1028"
+	provinces={
+		859 13382 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			859 2
+		}
+		
+		victory_points = {
+			13382 1
+		}
+		add_core_of = NYK
+	}
+	
+	manpower=464108
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

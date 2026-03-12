@@ -1,0 +1,18 @@
+state={
+	id=1228
+	name="STATE_1228"
+	provinces={
+		10330 10356 10456 
+	}
+	history = {
+		add_core_of = LAO
+		owner = VIN
+		victory_points = {
+			10330 1
+		}
+	}
+	manpower=86372
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

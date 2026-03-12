@@ -1,0 +1,30 @@
+
+state={
+	id=773
+	name="STATE_773" # Cameroon
+	manpower = 961229
+	
+	state_category = town
+
+	history={
+		owner = CMR
+		add_core_of = CMR
+		victory_points = {
+			2080 3
+		}
+		victory_points = {
+			5054 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+
+	provinces={
+		2080 5054 9137 
+	}
+
+	local_supplies=0.0 
+}

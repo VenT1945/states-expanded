@@ -1,0 +1,22 @@
+state={
+	id=1088
+	name="STATE_1088"
+	provinces={
+		10318 12202 12221 12459
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = MAI
+		victory_points = {
+			10318 1
+		}
+		victory_points = {
+			12459 2 
+		}
+	}
+	manpower=129721
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

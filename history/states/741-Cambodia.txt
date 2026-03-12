@@ -1,0 +1,27 @@
+state={
+	id=741
+	name="STATE_741"
+	provinces={
+		4251 10177 10134 10467 12447 12460 
+	}
+	history = {
+		add_core_of = CAM
+		owner = VIN
+		victory_points = {
+			4251 1 
+		}
+		victory_points = {
+			12447 1 
+		}
+		victory_points = {
+			10467 1 
+		}
+		victory_points = {
+			10177 3 
+		}
+	}
+	manpower=598734
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

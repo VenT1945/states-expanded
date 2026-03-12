@@ -1,0 +1,31 @@
+state={
+	id=276
+	name="STATE_276"
+	provinces={
+		605 3608 3635 3640 3661 6510 6662 6676 6797 9467 9580 9583 9585 9634 11569 11585 11602 11728 13201
+	}
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = ONT
+		victory_points = {
+			6797 3 
+		}
+		victory_points = {
+			9467 3 
+		}
+		victory_points = {
+			3661 1 
+		}
+		victory_points = {
+			9583 1 
+		}
+		victory_points = {
+			9580 2
+		}
+	}
+	manpower=614217
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

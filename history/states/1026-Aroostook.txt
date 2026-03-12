@@ -1,0 +1,26 @@
+state={
+	id=1026
+	name="STATE_1026"
+	provinces={
+		1282 4287 10247 
+	}
+	resources={
+		steel=1
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = MAI
+		victory_points = {
+			4287 1
+		}
+		victory_points = {
+			1282 1
+		}
+	}
+	
+	manpower=107843
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,36 @@
+state={
+	id=294
+	name="STATE_294"
+	resources={
+		oil=1.000
+	}
+	provinces={
+		4993 10760 
+	}
+	history = {
+
+		owner = OMA
+		add_core_of = OMA
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1 
+			10760 = {
+				naval_base = 3
+			}
+		}
+
+		victory_points = {
+			10760 5
+		}
+		victory_points = {
+			4993 2
+		}
+		
+	}
+	manpower=226615
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

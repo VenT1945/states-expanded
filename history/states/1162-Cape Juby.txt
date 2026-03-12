@@ -1,0 +1,19 @@
+state={
+	id=1162
+	name="STATE_1162"
+	provinces={
+		13416 
+	}
+	history = {
+		add_core_of = MOR
+		add_core_of = RIF
+		owner = RIF
+		victory_points = {
+			13416 1 
+		}
+	}
+	manpower=276419
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,21 @@
+state={
+	id=1077
+	name="STATE_1077"
+	provinces={
+		13396 
+	}
+	resources={
+		steel=1
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			13396 5
+		}
+	}
+	manpower=395502
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

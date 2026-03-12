@@ -1,0 +1,28 @@
+state={
+	id=676
+	name="STATE_676"
+	resources={
+		oil=8.000
+	}
+	provinces={
+		1600 1938 3795 10106 10804 12372 
+	}
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
+		add_core_of = KUR
+		victory_points = {
+			10106 5 
+		}
+		victory_points = {
+			3795 2
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=495123
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

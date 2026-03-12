@@ -1,0 +1,28 @@
+state={
+	id=455
+	name="STATE_455"
+	provinces={
+		1 7151 7170 10089 
+	}
+	history = {
+		owner = JOR
+		add_core_of = JOR
+		victory_points = {
+			7151 5
+		}
+		victory_points = {
+			7170 2
+		}
+		victory_points = {
+			10089 3
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=151487
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

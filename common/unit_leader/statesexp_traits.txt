@@ -1,0 +1,14 @@
+leader_traits = {
+    baathist_officer = {
+        type = land
+        trait_type = personality_trait
+        new_commander_weight = {
+            base = 0
+        }
+        attack_skill = 1
+        modifier = {
+            army_org_factor = 0.1
+            planning_speed = 0.2
+        }
+    }
+}

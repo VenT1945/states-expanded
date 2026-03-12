@@ -1,0 +1,23 @@
+state={
+	id=1022
+	name="STATE_1022"
+	provinces={
+		13381 
+	}
+	resources={
+		aluminium=1
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = RIS
+		victory_points = {
+			13381 1 
+		}
+	}
+	
+	manpower=41668
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

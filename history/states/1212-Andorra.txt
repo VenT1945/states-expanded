@@ -1,0 +1,17 @@
+state={
+	id=1212
+	name="STATE_1212"
+	provinces={
+		13460 
+	}
+	history = {
+		owner = SPR
+		victory_points = {
+			13460 1 
+		}
+	}
+	manpower=6283
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

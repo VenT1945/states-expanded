@@ -1,0 +1,128 @@
+on_actions = {
+    on_startup = {
+		effect = {  
+            SYR = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = SYR_ai_behavior
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = SYR_ai_behavior
+								option = RANDOM
+							}
+						}
+					}
+					random_list = {
+						35 = {
+							SYR = { set_country_flag = SYR_AI_RANDOM_HISTORICAL }
+						}
+						25 = {
+							SYR = { set_country_flag = SYR_AI_RANDOM_UMAYYAD }
+						}
+						5 = {
+							SYR = { set_country_flag = SYR_AI_RANDOM_OTTOMAN }
+						}
+						10 = {
+							SYR = { set_country_flag = SYR_AI_RANDOM_FASCISM }
+						}
+						10 = {
+							SYR = { set_country_flag = SYR_AI_RANDOM_DEMOCRATIC }
+						}
+						15 = {
+							SYR = { set_country_flag = SYR_AI_RANDOM_COMMUNIST }
+						}
+					}
+				}
+			}
+			DRU = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = DRU_ai_behavior
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = DRU_ai_behavior
+								option = RANDOM
+							}
+						}
+					}
+					random_list = {
+						40 = {
+							DRU = { set_country_flag = DRU_AI_RANDOM_HISTORICAL }
+						}
+						10 = {
+							DRU = { set_country_flag = DRU_AI_RANDOM_FASCISM }
+						}
+						10 = {
+							DRU = { set_country_flag = DRU_AI_RANDOM_DEMOCRATIC }
+						}
+						20 = {
+							DRU = { set_country_flag = DRU_AI_RANDOM_SULTAN }
+						}
+						10 = {
+							DRU = { set_country_flag = DRU_AI_RANDOM_COMMUNIST }
+						}
+					}
+				}
+			}
+		ALA = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = ALA_ai_behavior
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = ALA_ai_behavior
+								option = RANDOM
+							}
+						}
+					}
+					random_list = {
+						40 = {
+							ALA = { set_country_flag = ALA_AI_RANDOM_HISTORICAL }
+						}
+						10 = {
+							ALA = { set_country_flag = ALA_AI_RANDOM_FASCISM }
+						}
+						15 = {
+							ALA = { set_country_flag = ALA_AI_RANDOM_DEMOCRATIC }
+						}
+						20 = {
+							ALA = { set_country_flag = ALA_AI_RANDOM_SULTAN }
+						}
+						5 = {
+							ALA = { set_country_flag = ALA_AI_RANDOM_COMMUNIST }
+						}
+					}
+				}
+			}
+        }
+    }
+    on_startup = {
+        effect = {
+			SAU = {
+				news_event = {
+					id = utanorth.1
+					days = 761
+					random_days = 10
+				}
+			}
+        }
+    }
+}

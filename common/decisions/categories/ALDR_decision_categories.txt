@@ -1,0 +1,16 @@
+ALDR_international_support_category = {
+	priority = 40
+	visible_when_empty = no	
+	allowed = {
+		OR = {
+            original_tag = DRU
+            original_tag = ALA
+        }
+	}
+	visible = {
+        has_completed_focus = ALDR_ask_for_support
+		NOT = {
+			has_country_flag = aldr_free
+		}
+	}
+}

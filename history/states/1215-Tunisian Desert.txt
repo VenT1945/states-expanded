@@ -1,0 +1,21 @@
+state={
+	id=1215
+	name="STATE_1215"
+	provinces={
+		1105 3987 4992 9983 10082 11935 12000 13145 13179 
+	}
+	history = {
+		owner = TUN
+		add_core_of = TUN
+		victory_points = {
+			11935 2
+		}
+		victory_points = {
+			12000 1
+		}
+	}
+	manpower=314689
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	local_supplies=0.000
+}

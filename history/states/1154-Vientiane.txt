@@ -1,0 +1,18 @@
+state={
+	id=1154
+	name="STATE_1154"
+	provinces={
+		1464 1507 
+	}
+	history = {
+		add_core_of = LAO
+		owner = VIN
+		victory_points = {
+			1464 5 
+		}
+	}
+	manpower=243921
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

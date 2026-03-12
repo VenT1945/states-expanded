@@ -1,0 +1,23 @@
+state={
+	id=865
+	name="STATE_865"
+	provinces={
+		1671 2976 3800 4695 6779 12682 13167 13168 13183 13185 13187 13395
+	}
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = SAS
+		
+		victory_points = {
+			6779 1
+		}
+		victory_points = {
+			12682 1
+		}
+	}
+	manpower=6456
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+state={
+	id=1236
+	name="STATE_1236"
+	provinces={
+		12029 
+	}
+	resources = {
+		chromium=1
+		steel=1
+	}
+	manpower = 134512
+	
+	state_category = rural
+
+	history= {
+		owner = SYR
+		add_core_of = SYR
+		add_core_of = HAT
+		victory_points = {
+			12029 2
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	local_supplies=0.0 
+}

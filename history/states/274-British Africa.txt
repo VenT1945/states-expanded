@@ -1,0 +1,26 @@
+state={
+	id=274
+	name="STATE_274"
+	resources={
+		steel=8.000
+		tungsten=8.000
+		chromium=4.000
+	}
+	provinces={
+		10862 13136 13423 
+	}
+	history = {
+		add_core_of = GHA
+		owner = ENG
+		victory_points = {
+			10862 5 
+		}
+		victory_points = {
+			13423 1 
+		}
+	}
+	manpower=726318
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,98 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "SYR"
+		default = yes
+		SYR = {
+			history = "SYR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				SYR_divide_and_rule
+				SYR_banque_de_syrie_1
+				LON_mandate_A
+			}
+			focuses = {
+				SYR_france_treaty
+				SYR_ignite_revolution
+				SYR_fix_instability
+			}
+		}
+		PAL = {
+			history = "PAL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PAL_marginalized_muslim_maj
+				PAL_balfour_declaration
+				LON_mandate_A
+			}
+			focuses = {
+				
+			}
+		}
+		JOR = {
+			history = "JOR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+
+				LON_mandate_A
+			}
+			focuses = {
+				
+			}
+		}
+		LEB = {
+			history = "LEB_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+
+				LON_mandate_A
+			}
+			focuses = {
+				
+			}
+		}
+		ALA = {
+			history = "ALDR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ALDR_ineffective_colonial_admin
+				ALDR_weak_army_1
+			}
+			focuses = {
+				ALDR_realize_future
+				ALDR_unite_states
+				ALDR_global_recognition
+			}
+		}
+		DRU = {
+			history = "ALDR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ALDR_ineffective_colonial_admin
+				ALDR_weak_army_1
+			}
+			focuses = {
+				ALDR_realize_future
+				ALDR_unite_states
+				ALDR_global_recognition
+			}
+		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# after each patch, move 'majors' to minors ####
+	
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

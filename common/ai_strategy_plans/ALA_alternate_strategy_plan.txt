@@ -1,0 +1,24 @@
+DRU_sultan = {
+	name = "Alawite Sultan Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = ALA
+	}
+	enable = {
+		OR = {
+			has_country_flag = ALA_AI_RANDOM_SULTAN
+			has_game_rule = {
+				rule = ALA_ai_behavior
+				option = SULTAN
+			}
+		}
+	}
+    ai_national_focuses = {
+        ALDR_realize_future
+        ALDR_oppose_france
+        ALDR_national_identity
+        ALDR_industrial_growth
+        ALDR_army_expansion
+    }
+}

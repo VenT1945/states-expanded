@@ -1,0 +1,12 @@
+HATAY_parliament_category = {
+	HATAY_influence_TUR = {
+		cost = 50
+		days_re_enable = 30
+        visible = {
+            original_tag = TUR
+        }
+		complete_effect = {
+
+		}
+	}
+}

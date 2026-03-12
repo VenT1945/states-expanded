@@ -1,0 +1,24 @@
+state={
+	id=1139
+	name="STATE_1139"
+	provinces={
+		4282 10143 10199 10212 12186 
+	}
+	history = {
+		owner = SBH
+		add_core_of = SBH
+		victory_points = {
+			10212 3 
+		}
+		victory_points = {
+			4282 1 
+		}
+		victory_points = {
+			10199 5
+		}
+	}
+	manpower=141619
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,21 @@
+state={
+	id=1121
+	name="STATE_1121"
+	provinces={
+		13409 
+	}
+	resources={ 
+		rubber=2.000
+	}
+	history={
+		owner = PLS
+		add_core_of = PLS
+		victory_points = {
+			13409 1
+		}
+	}
+	manpower=143789
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

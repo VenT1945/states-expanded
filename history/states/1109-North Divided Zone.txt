@@ -1,0 +1,16 @@
+state={
+	id=1109
+	name="STATE_1109"
+	provinces={
+		13402 
+	}
+	history = {
+		owner = UTA
+		add_core_of = UTA
+		set_demilitarized_zone = yes	
+	}
+	manpower=8726
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

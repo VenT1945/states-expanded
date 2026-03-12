@@ -1,0 +1,33 @@
+DRU_historical = {
+	name = "Alawite Historical Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = ALA
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = ALA_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = ALA_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = ALA_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+    ai_national_focuses = {
+        ALDR_realize_future
+        ALDR_stay_with_france
+        ALDR_industrial_growth
+        ALDR_expand_civilian_sector
+    }
+    focus_factors = {
+        ALDR_army_expansion = 0
+    }
+}

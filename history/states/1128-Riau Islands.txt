@@ -1,0 +1,18 @@
+state={
+	id=1128
+	name="STATE_1128"
+	provinces={
+		12113 13298 13407 
+	}
+	history = {
+		owner = INS
+		add_core_of = INS
+		victory_points = {
+			12113 2 
+		}
+	}
+	manpower=161527
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

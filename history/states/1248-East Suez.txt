@@ -1,0 +1,18 @@
+state={
+	id=1248
+	name="STATE_1248"
+	provinces={
+		1155 9947
+	}
+	history = {
+		owner = ENG
+		add_core_of = EGY
+		victory_points = {
+			1155 2
+		}
+	}
+	manpower=62316
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

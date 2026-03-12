@@ -1,0 +1,36 @@
+state={
+	id=1099
+	name="STATE_1099"
+	provinces={
+		1088 10087 
+	}
+	resources = {
+		steel=1
+	}
+	history={
+		owner = ALA
+		buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+			1088 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = ALA
+		add_core_of = SYR
+		victory_points = {
+			1088 3
+		}
+		victory_points = {
+			10087 2 
+		}
+		1939.1.1 = {
+            owner = SYR
+        }
+	}
+	
+	manpower=268781
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

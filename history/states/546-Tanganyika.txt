@@ -1,0 +1,24 @@
+state={
+	id=546
+	name="STATE_546"
+	resources={
+		rubber=2.000
+	}
+	provinces={
+		8201 8205 10845 12967 
+	}
+	history = {
+		add_core_of = TZN
+		owner = TZN
+		victory_points = {
+			8205 2 
+		}
+		victory_points = {
+			10845 1 
+		}
+	}
+	manpower=558964
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

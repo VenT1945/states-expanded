@@ -1,0 +1,30 @@
+state={
+	id=1050
+	name="STATE_1050"
+	provinces={
+		1506 7558 9779 10439 
+	}
+	resources={
+		oil=1
+		coal=3
+		steel=1
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = VRG
+		victory_points = {
+			1506 3 
+		}
+		victory_points = {
+			9779 1 
+		}
+		victory_points = {
+			10439 1 
+		}
+	}
+	manpower=564117
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

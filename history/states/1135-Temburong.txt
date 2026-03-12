@@ -1,0 +1,18 @@
+state={
+	id=1135
+	name="STATE_1135"
+	provinces={
+		13411 
+	}
+	history = {
+		owner = BRU
+		add_core_of = BRU
+		victory_points = {
+			13411 1 
+		}
+	}
+	manpower=8073
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}
