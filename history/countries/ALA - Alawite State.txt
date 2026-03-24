@@ -14,7 +14,8 @@ set_technology = {
 add_ideas = {
 	ALDR_ineffective_colonial_admin
 	ALDR_weak_army_1
-	}
+	ALA_weak_united_voice
+}
 
 set_politics = {
 	ruling_party = neutrality

@@ -62,6 +62,7 @@ bookmarks = {
 			ideas = {
 				ALDR_ineffective_colonial_admin
 				ALDR_weak_army_1
+				ALA_weak_united_voice
 			}
 			focuses = {
 				ALDR_realize_future
@@ -75,6 +76,7 @@ bookmarks = {
 			ideas = {
 				ALDR_ineffective_colonial_admin
 				ALDR_weak_army_1
+				DRU_mountain_hold
 			}
 			focuses = {
 				ALDR_realize_future

@@ -46,3 +46,24 @@ joint_focus = {
         unlock_decision_category_tooltip = HATAY_parliament_category
 	}
 }
+joint_focus = {
+	id = HATAY_TUR_recognize_independence
+	x = -1
+	y = 1
+    prerequisite = { focus = HATAY_show_dispute_league }
+    relative_position_id = HATAY_show_dispute_league 
+	cost = 5
+	ai_will_do = {
+		base = 10
+    }
+    text_icon = SSB_TUR_focus_style
+    available = {
+        tag = TUR
+    }
+	completion_reward_joint_originator = {
+        give_guarantee = HAT
+        HAT = {
+            give_military_access = TUR
+        }
+	}
+}

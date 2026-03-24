@@ -1,70 +1,94 @@
 ideas = {
     country = {
         ALDR_ineffective_colonial_admin = {
+			picture = generic_disjointed_gov
 			modifier = {
 				political_power_factor = -0.15
 				stability_factor = -0.1
 				war_support_factor = -0.05
-				research_speed_factor = -0.1
                 production_speed_buildings_factor = -0.25
 			}
-		}	
-	   ALDR_weak_army_1 = {
+		}
+		ALA_weak_united_voice = { #boosted in decisions, by reduced peasant population bc peasants the reason why weak voice
+			modifier = {
+				war_support_factor = -0.05
+				political_power_cost = 0.1
+				political_advisor_cost_factor = 0.5
+				local_manpower = -0.5
+			}
+		}
+		ALA_medium_united_voice = { #boosted in decisions, by reduced peasant population bc peasants the reason why weak voice
+			modifier = {
+				war_support_factor = 0.05
+				local_manpower = -0.1
+			}
+		}
+		ALA_strong_united_voice = { #boosted in decisions, by reduced peasant population bc peasants the reason why weak voice
+			modifier = {
+				war_support_factor = 0.1
+				political_advisor_cost_factor = -0.25
+				local_manpower = 0.25
+			}
+		}
+		DRU_mountain_hold = {
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_factor = 0.2
+			}
+		}
+	   	ALDR_weak_army_1 = {
+			picture = generic_army_problems
 			modifier = {
 				army_attack_factor = -0.15
-	           army_defence_factor = -0.2
+	           	army_defence_factor = -0.2
 				army_org_factor = -0.25
-				army_speed_factor = -0.15
-	           experience_gain_army_factor = -0.1
+	           	experience_gain_army_factor = -0.1
 			}
 		}	
-	   ALDR_weak_army_guard = {
+	   	ALDR_weak_army_guard = {
 			modifier = {
-	           army_attack_factor = -0.05
-	           army_defence_factor = -0.075
-	           training_time_factor = 0.1
+	           	army_attack_factor = -0.05
+	           	army_defence_factor = -0.075
+	           	training_time_factor = 0.1
 				army_org_factor = -0.05
-				army_speed_factor = -0.1
-	           experience_gain_army_factor = 0.05
+	           	experience_gain_army_factor = 0.05
 			}
 		}	
-	   ALDR_weak_army_militia = {
+	   	ALDR_weak_army_militia = {
 			modifier = {
-	           army_attack_factor = -0.15
-	           army_defence_factor = -0.15
-	           training_time_factor = -0.20
+	           	army_attack_factor = -0.15
+	           	army_defence_factor = -0.15
+	           	training_time_factor = -0.20
 				army_org_factor = -0.15
-				army_speed_factor = 0.1
-	           experience_gain_army_factor = 0.05
+	           	experience_gain_army_factor = 0.05
 			}
 		}	
-	   ALDR_trained_army_guard = {
+	   	ALDR_trained_army_guard = {
 			modifier = {
-	           army_attack_factor = 0.1
-	           army_defence_factor = 0.125
+	           	army_attack_factor = 0.1
+	           	army_defence_factor = 0.125
 				training_time_factor = 0.15
 				army_org_factor = 0.1
-				army_speed_factor = -0.1
-	           experience_gain_army_factor = 0.2
+	           	experience_gain_army_factor = 0.2
 			}
 		}	
-	   ALDR_trained_army_militia = {
+	   	ALDR_trained_army_militia = {
 			modifier = {
-	           army_attack_factor = -0.05
+	           	army_attack_factor = -0.05
 				training_time_factor = -0.05
 				army_org_factor = -0.05
-				army_speed_factor = 0.15
-	           experience_gain_army_factor = 0.15
+				army_speed_factor = 0.1
+	           	experience_gain_army_factor = 0.15
 			}
 		}	
-	   ALDR_revive_culture = {
+	  	 ALDR_revive_culture = {
 			modifier = {
 				stability_weekly = 0.005
-	           war_support_weekly = 0.005
-	           weekly_manpower = 500
+	           	war_support_weekly = 0.005
+	           	weekly_manpower = 500
 			}
 		}	
-	   ALDR_cheaper_guns = {
+	   	ALDR_cheaper_guns = {
 			equipment_bonus = {
 				infantry_equipment = {
 	  				build_cost_ic = -0.25 instant = yes
@@ -73,10 +97,10 @@ ideas = {
 				}
 			}
 		}	
-	   ALDR_expanded_recruitment = {
+		ALDR_expanded_recruitment = {
 			modifier = {
 				conscription = 0.02
-				monthly_population = 0.25
+				monthly_population = 0.05
 			}
 		}	
 		ALDR_industrial_golden_age = {

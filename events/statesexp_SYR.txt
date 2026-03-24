@@ -308,6 +308,10 @@ country_event = {
     			target = ROOT
     			transfer_troops = yes
 			}
+			set_division_template_lock = {
+				division_template = "Irregular Militia"
+				is_locked = no
+			}
 			country_event = {
                 id = syria_treaty.9
                 random_days = 5

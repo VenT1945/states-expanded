@@ -24,3 +24,4 @@
  SYR_ignite_revolution_tt: "§GThe Communists will start a revolt against the mandate government!§!\n"
  SYR_armed_rebellion_tt: "§GThe National Bloc will start a revolt against the mandate government!§!\n"
  SYR_expansion_event_tt: "\nThey will be more likely to submit if:\n - §HWorld Tension§! is high\n - They have a §Hhigh opinion§! of us\n - They have a §Hnon-aggression pact§! with us\n - Their §Hmilitary is weaker§! than ours"
+ SYR_france_unratifies_tt: "France has the ability to unratify the treaty and keep us as a puppet for longer if they feel threatened by Germany!"

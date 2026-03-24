@@ -161,6 +161,12 @@ focus_tree = {
 		x = 0
 		y = 1
 
+		available = {
+			NOT = {
+				has_completed_focus = SYR_french_concessions
+			}
+		}
+
 		icon = GFX_SYR_syrian_question
 
 		cost = 5
@@ -190,15 +196,11 @@ focus_tree = {
 
 		relative_position_id = SYR_syrian_question
 		prerequisite = { focus = SYR_syrian_question }
-		mutually_exclusive = { focus = SYR_realize_france_good }
 		mutually_exclusive = { focus = SYR_communist_underground_focus }
 
 		allow_branch = {
 			NOT = {
-				OR = {
-					has_completed_focus = SYR_communist_underground_focus
-					has_completed_focus = SYR_realize_france_good
-				}
+				has_completed_focus = SYR_communist_underground_focus
 			}
 		}
 
@@ -308,6 +310,7 @@ focus_tree = {
 				country_event = syria_treaty.11
 			}
 			add_war_support = 0.1
+			custom_effect_tooltip = SYR_france_unratifies_tt
 		}
 	}
 	focus = {
@@ -342,6 +345,15 @@ focus_tree = {
 		relative_position_id = SYR_failed
 		prerequisite = { focus = SYR_failed }
 		mutually_exclusive = { focus = SYR_accept_future }
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = SYR_accept_future
+					has_completed_focus = SYR_communist_underground_focus
+				}
+			}
+		}
 
 		completion_reward = {
 			custom_effect_tooltip = SYR_armed_rebellion_tt
@@ -398,6 +410,15 @@ focus_tree = {
 		relative_position_id = SYR_ratified
 		prerequisite = { focus = SYR_ratified focus = SYR_armed_rebellion }
 
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = SYR_accept_future
+					has_completed_focus = SYR_communist_underground_focus
+				}
+			}
+		}
+
 		available = {
 			is_subject = no
 		}
@@ -407,7 +428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SYR_fix_instability
-		x = -7
+		x = -5
 		y = 1
 
 
@@ -418,8 +439,17 @@ focus_tree = {
 		mutually_exclusive = { focus = SYR_use_instability }
 
 
-		completion_reward = {
-			
+		select_effect = {
+			add_timed_idea = {
+				idea = SYR_transitional_power
+				days = 280
+			}
+		}
+		complete_tooltip = {
+			add_timed_idea = {
+				idea = SYR_transitional_power
+				days = 140
+			}
 		}
 	}
 	focus = {
@@ -495,7 +525,6 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		available = { always = no }
 
 		cost = 5
 
@@ -509,7 +538,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SYR_avenge_maysalun
-		x = 5
+		x = 3
 		y = 1
 
 		cost = 5
@@ -527,8 +556,6 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		available = { always = no }
-
 		cost = 5
 
 		relative_position_id = SYR_weak_administration
@@ -541,14 +568,19 @@ focus_tree = {
 	}
 	focus = {
 		id = SYR_a_new_monarch_in_town
-		x = 5
+		x = 4
 		y = 1
 
 		available = { always = no }
 		allow_branch = {
-			OR = { 
-				has_country_flag = SYR_ghazi_exiled
-				has_country_flag = SYR_faisal_2_exiled
+			AND = {
+				OR = { 
+					has_country_flag = SYR_ghazi_exiled
+					has_country_flag = SYR_faisal_2_exiled
+				}
+				NOT = {
+					has_completed_focus = SYR_accept_future
+				}
 			}
 		}
 
@@ -584,7 +616,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SYR_arab_baath
-		x = 1
+		x = 0
 		y = 1
 
 		available = { always = no }
@@ -606,8 +638,6 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		available = { always = no }
-
 		cost = 5
 
 		relative_position_id = SYR_arab_baath
@@ -622,8 +652,6 @@ focus_tree = {
 		id = SYR_promote_baathist_generals
 		x = -1
 		y = 1
-
-		available = { always = no }
 
 		cost = 5
 
@@ -648,13 +676,186 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		available = { always = no }
-
 		cost = 5
 
 		relative_position_id = SYR_promote_baathist_generals
 		prerequisite = { focus = SYR_promote_baathist_generals }
 		prerequisite = { focus = SYR_create_baath_newspaper }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_militarism
+		x = -2
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_promote_independence
+		prerequisite = { focus = SYR_promote_independence }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_mass_mobilization
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_militarism
+		prerequisite = { focus = SYR_militarism }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_create_ryu
+		x = -1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_militarism
+		prerequisite = { focus = SYR_militarism }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_secular_nationalism_baath
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_create_ryu
+		prerequisite = { focus = SYR_create_ryu }
+		prerequisite = { focus = SYR_mass_mobilization }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_expand_baath_rhetoric
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_create_baath_newspaper
+		prerequisite = { focus = SYR_create_baath_newspaper }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_arab_faction
+		x = 0
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_expand_baath_rhetoric
+		prerequisite = { focus = SYR_expand_baath_rhetoric }
+		prerequisite = { focus = SYR_promote_independence }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_unite_levant
+		x = -1
+		y = 1
+
+
+		cost = 5
+
+		relative_position_id = SYR_arab_faction
+		prerequisite = { focus = SYR_arab_faction }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_unite_iraq_kuwait
+		x = 1
+		y = 1
+
+
+		cost = 5
+
+		relative_position_id = SYR_arab_faction
+		prerequisite = { focus = SYR_arab_faction }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_unite_arabia
+		x = 0
+		y = 1
+
+
+		cost = 5
+
+		relative_position_id = SYR_unite_iraq_kuwait
+		prerequisite = { focus = SYR_unite_iraq_kuwait }
+		prerequisite = { focus = SYR_unite_levant }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_unite_egypt_sudan
+		x = -2
+		y = 1
+
+
+		cost = 5
+
+		relative_position_id = SYR_unite_iraq_kuwait
+		prerequisite = { focus = SYR_unite_iraq_kuwait }
+		prerequisite = { focus = SYR_unite_levant }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_push_for_maghreb
+		x = 1
+		y = 1
+
+
+		cost = 5
+
+		relative_position_id = SYR_unite_egypt_sudan
+		prerequisite = { focus = SYR_unite_egypt_sudan }
+		prerequisite = { focus = SYR_unite_arabia }
 
 
 		completion_reward = {
@@ -687,24 +888,6 @@ focus_tree = {
     			popularity = 0.15
 			}
 			add_political_power = 50
-		}
-	}
-	focus = {
-		id = SYR_transitional_state
-		x = -1
-		y = 2
-
-		cost = 5
-
-		relative_position_id = SYR_proclaim_independence_day
-		prerequisite = { focus = SYR_fix_instability focus = SYR_use_instability }
-
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = SYR_transitional_power
-				days = 180
-			}
 		}
 	}
 	focus = {
@@ -1012,23 +1195,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SYR_realize_france_good
-		x = -10
+		id = SYR_french_concessions
+		x = -5
 		y = 1
 
-		offset = {
-		    x = 10
-		    trigger = {
-				has_completed_focus = SYR_realize_france_good
-		    }
-		}
+		cost = 5
 
-		cost = 10
-
-		relative_position_id = SYR_syrian_question
-		prerequisite = { focus = SYR_syrian_question }
-		mutually_exclusive = { focus = SYR_france_treaty }
-		mutually_exclusive = { focus = SYR_communist_underground_focus }
+		relative_position_id = SYR_limit_french_control
+		prerequisite = { focus = SYR_limit_french_control }
 
 		allow_branch = {
 			NOT = {
@@ -1038,6 +1212,73 @@ focus_tree = {
 				}
 			}
 		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_expand_autonomy
+		x = -2
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_french_concessions
+		prerequisite = { focus = SYR_french_concessions }
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			add_autonomy_score = {
+				value = 250
+			}
+		}
+	}
+	focus = {
+		id = SYR_french_investments
+		x = -4
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_french_concessions
+		prerequisite = { focus = SYR_french_concessions }
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = france_investments_modifiers
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_realize_france_good
+		x = 1
+		y = 1
+
+		cost = 10
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = SYR_france_treaty
+					has_completed_focus = SYR_communist_underground_focus
+				}
+			}
+		}
+
+		relative_position_id = SYR_french_investments
+		prerequisite = { focus = SYR_expand_autonomy }
+		prerequisite = { focus = SYR_french_investments }
 
 		available = {
 			has_opinion = {
@@ -1051,15 +1292,118 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SYR_e
+		x = 2
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_realize_france_good
+		prerequisite = { focus = SYR_realize_france_good }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_bastion_of_democracy
+		x = 0
+		y = 2
+
+		cost = 10
+
+		relative_position_id = SYR_realize_france_good
+		prerequisite = { focus = SYR_realize_france_good }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
 		id = SYR_accept_future
 		x = 0
 		y = 4
 
 		cost = 5
 
+		offset = {
+		    x = 7
+		    trigger = {
+				has_completed_focus = SYR_accept_future
+				NOT = {
+					has_completed_focus = SYR_french_concessions
+				}
+		    }
+		}
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = SYR_armed_rebellion
+					has_completed_focus = SYR_communist_underground_focus
+				}
+			}
+		}
+
 		relative_position_id = SYR_realize_france_good
-		prerequisite = { focus = SYR_failed focus = SYR_realize_france_good}
+		prerequisite = { focus = SYR_failed focus = SYR_bastion_of_democracy }
 		mutually_exclusive = { focus = SYR_armed_rebellion }
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SYR_new_local_leadership
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_accept_future
+		prerequisite = { focus = SYR_accept_future }
+		mutually_exclusive = { focus = SYR_same_old_same_old }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_same_old_same_old
+		x = 1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_accept_future
+		prerequisite = { focus = SYR_accept_future }
+		mutually_exclusive = { focus = SYR_new_local_leadership }
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SYR_better_economy
+		x = -1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_same_old_same_old
+		prerequisite = { focus = SYR_same_old_same_old focus = SYR_new_local_leadership }
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SYR_push_for_lebanon
+		x = 0
+		y = 1
+
+		cost = 5
+
+		relative_position_id = SYR_better_economy
+		prerequisite = { focus = SYR_better_economy }
 
 		completion_reward = {
 		}
@@ -1083,13 +1427,12 @@ focus_tree = {
 		relative_position_id = SYR_syrian_question
 		prerequisite = { focus = SYR_syrian_question }
 		mutually_exclusive = { focus = SYR_france_treaty }
-		mutually_exclusive = { focus = SYR_realize_france_good }
 
 		allow_branch = {
 			NOT = {
 				OR = {
 					has_completed_focus = SYR_france_treaty
-					has_completed_focus = SYR_realize_france_good
+					has_completed_focus = SYR_french_concessions
 				}
 			}
 		}
@@ -1404,6 +1747,8 @@ focus_tree = {
 		x = -1
 		y = 2
 
+		icon = GFX_focus_generic_mass_production
+
 		cost = 10
 
 		relative_position_id = SYR_ignite_revolution
@@ -1423,6 +1768,8 @@ focus_tree = {
 		id = SYR_bring_divisions_back
 		x = -3
 		y = 2
+
+		icon = GFX_goal_generic_attack_allies
 
 		cost = 5
 
@@ -1812,6 +2159,12 @@ focus_tree = {
 		    }
 		}
 
+		allow_branch = {
+			NOT = {
+				has_completed_focus = SYR_french_concessions
+			}
+		}
+
 		cost = 10
 
 		relative_position_id = SYR_france_treaty
@@ -1892,7 +2245,6 @@ focus_tree = {
 			add_political_power = 50
 			random_owned_state = {
 				limit = {
-					is_owned_by = ROOT
 					OR = {
 						state = 554
 						state = 677
@@ -1955,7 +2307,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_state = {
 				limit = {
-					is_owned_by = ROOT
 					OR = {
 						state = 680
 						state = 1102
@@ -1983,7 +2334,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_state = {
 				limit = {
-					is_owned_by = ROOT
 					OR = {
 						state = 680
 						state = 1102
@@ -2049,7 +2399,7 @@ focus_tree = {
 		prerequisite = { focus = SYR_expand_homs_mil_academy }
 
 		completion_reward = {
-			add_research_slot = 1			
+					
 		}
 	}
 	focus = {
