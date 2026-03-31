@@ -4,6 +4,11 @@ SYR_charles_huntziger_category = {
 		days_re_enable = 50
 		days_remove = 7
 		fixed_random_seed = no
+		visible = {
+			NOT = {
+				has_country_flag = SYR_coerced_huntziger
+			}
+		}
 		remove_effect = {
 			add_to_variable = {
 				var = SYR_coerce_huntziger_value

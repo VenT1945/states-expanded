@@ -1,6 +1,6 @@
 SYR_charles_huntziger_category = {
 	priority = 100
-	visible_when_empty = no
+	visible_when_empty = yes
 	allowed = {
 		original_tag = SYR
 	}

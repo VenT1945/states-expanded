@@ -1,14 +1,14 @@
 HATAY_parliament_category = {
 	priority = 100
 	visible_when_empty = yes	
-	allowed = {
-        OR = {
-            original_tag = SYR
-            original_tag = TUR
-            original_tag = HAT
-        }
+        allowed = {
+                OR = {
+                        original_tag = SYR
+                        original_tag = TUR
+                        original_tag = HAT
+                }
 	}
 	visible = {
-        has_completed_focus = HATAY_show_dispute_league
+                has_completed_focus = HATAY_show_dispute_league
 	}
 }
