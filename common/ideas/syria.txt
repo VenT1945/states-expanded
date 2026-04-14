@@ -17,7 +17,7 @@ ideas = {
 			picture = SYR_banque_syrie_1_icon
 			modifier = {
 				political_power_cost = 0.3
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.15
 				industrial_capacity_factory = -0.1
                 production_speed_buildings_factor = 0.05
 			}
@@ -32,6 +32,7 @@ ideas = {
 				political_power_cost = 0.1
 				consumer_goods_factor = 0.1
                 production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.05
 			}
 			allowed_civil_war = {
 				always = yes
@@ -59,6 +60,7 @@ ideas = {
 				custom_modifier_tooltip = SYR_french_levant_army_tt
 				experience_gain_army = 0.25
 				training_time_factor = -0.1
+				army_org_factor = -0.05
 			}
 			cancel = {
 				ROOT = {
@@ -163,6 +165,7 @@ ideas = {
 		SYR_communist_underground = {
 			modifier = {
 				communism_drift = 0.02
+				stability_factor = -0.05
 			}
 			allowed_civil_war = {
 				has_government = communism
@@ -190,10 +193,9 @@ ideas = {
 		SYR_five_year_plan_reformed = {
 			modifier = {
 				political_power_cost = 0.15
-				consumer_goods_factor = -0.15
-				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.125
+				industrial_capacity_factory = 0.1
 				production_speed_infrastructure_factor = 0.5 
-				stability_factor = 0.05
 			}
 		}
 		SYR_islam_with_socialism = {
