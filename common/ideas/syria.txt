@@ -1,10 +1,23 @@
 ideas = {
-    country = {
+    hidden_ideas = {
+		SYR_mardam_bey_family_boost = {
+			modifier = {
+				stability_factor = 0.03
+			}
+			cancel = {
+				NOT = {
+					has_country_flag = SYR_khalil_bey_hired
+					has_country_flag = SYR_jamil_bey_hired
+				}
+			}
+		}
+	}
+	country = {
         SYR_banque_de_syrie_1 = {
 			picture = SYR_banque_syrie_1_icon
 			modifier = {
 				political_power_cost = 0.3
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.2
 				industrial_capacity_factory = -0.1
                 production_speed_buildings_factor = 0.05
 			}

@@ -6,7 +6,7 @@ state={
 	}
 	history = {
 		add_core_of = CHA
-		owner = FRA
+		owner = RCG
 	}
 	manpower=46271
 	buildings_max_level_factor=1.000

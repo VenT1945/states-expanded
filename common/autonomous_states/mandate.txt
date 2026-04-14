@@ -9,9 +9,9 @@ autonomy_state = {
 	}
 	
 	allowed = {
-    OR = {
-        is_subject = no
-        has_autonomy_state = autonomy_mandate
+    	OR = {
+        	is_subject = no
+        	has_autonomy_state = autonomy_mandate
 		}
 	}
 	

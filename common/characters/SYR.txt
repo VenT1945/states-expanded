@@ -1,0 +1,415 @@
+characters = {
+	
+	SYR_mehemed_ali_abed = {
+
+		name = SYR_mehemed_ali_abed
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_mehemed_ali_abed
+			}
+		}
+
+		country_leader = {
+			ideology = conservatism
+			traits = { unpopular_leader }
+			expire = "1939.1.1.1"
+			id = -1
+		}
+
+	}
+
+	SYR_hashim_al_atassi = {
+
+		name = SYR_hashim_al_atassi
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_hashim_al_atassi
+				small = GFX_idea_hashim_al_atassi
+			}
+		}
+
+		country_leader = {
+			ideology = oligarchism
+			traits = { skillful_diplomat }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = hashim_al_atassi
+			traits = { SYR_national_bloc_president }
+			available = {
+				has_completed_focus = SYR_expand_ministry_of_interior
+				NOT = {
+					OR = {
+						has_country_leader = {
+							character = SYR_hashim_al_atassi
+							ruling_only = yes
+						}
+						OR = {
+							has_completed_focus = SYR_league_of_action_wins
+							has_completed_focus = SYR_use_instability
+						}
+					}
+				}
+			}
+		}
+	}
+
+	SYR_antoun_saadeh = {
+
+		name = SYR_antoun_saadeh
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_antoun_saadeh
+				small = GFX_idea_antoun_saadeh
+			}
+		}
+
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {  }
+			expire = "1949.1.1.1"
+			id = -1
+		}
+
+	}
+
+	SYR_khalid_bakdash = {
+
+		name = SYR_khalid_bakdash
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_khalid_bakdash
+				small = GFX_idea_khalid_bakdash
+			}
+		}
+
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "1995.1.1.1"
+			id = -1
+		}
+
+	}
+
+	SYR_jamil_al_ulshi = {
+
+		name = SYR_jamil_al_ulshi
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_jamil_al_ulshi
+				small = GFX_idea_jamil_al_ulshi
+			}
+		}
+
+		country_leader = {
+			ideology = conservatism
+			traits = { unpopular_leader }
+			expire = "1951.1.1.1"
+			id = -1
+		}
+
+	}
+
+	SYR_shukri_al_quwatli = {
+
+		name = SYR_shukri_al_quwatli
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_shukri_al_quwatli
+				small = GFX_idea_shukri_al_quwatli
+			}
+		}
+
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "1967.1.1.1"
+			id = -1
+		}
+
+	}
+
+	SYR_zaki_al_arsuzi = {
+
+		name = SYR_zaki_al_arsuzi
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_zaki_al_arsuzi
+				small = GFX_idea_zaki_al_arsuzi
+			}
+		}
+
+		country_leader = {
+			ideology = baathism
+			traits = {  }
+			expire = "1968.1.1.1"
+			id = -1
+		}
+
+	}
+
+#---------
+
+	SYR_damien_de_martel = {
+
+		name = SYR_damien_de_martel
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_damien_de_martel
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = damien_de_martel
+			traits = { high_commissioner_of_levant }
+			can_be_fired = no
+		}
+	}
+
+	SYR_said_al_ghazzi = {
+
+		name = SYR_said_al_ghazzi
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_said_al_ghazzi
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = said_al_ghazzi
+			traits = { silent_workhorse }
+		}
+	}
+
+	SYR_fares_al_khoury = {
+
+		name = SYR_fares_al_khoury
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_fares_al_khoury
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = fares_al_khoury
+			traits = { compassionate_gentleman }
+		}
+	}
+
+	SYR_khalil_mardam_bey = {
+
+		name = SYR_khalil_mardam_bey
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_khalil_mardam_bey
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = khalil_mardam_bey
+			traits = { cultural_nationalist }
+			available = {
+				has_country_flag = SYR_khalil_anthem
+			}
+			on_add = {
+				owner = {
+					set_country_flag = SYR_khalil_bey_hired
+				}
+			}
+			on_remove = {
+				owner = {
+					clr_country_flag = SYR_khalil_bey_hired
+				}
+			}
+		}
+	}
+
+	SYR_jamil_mardam_bey = {
+
+		name = SYR_jamil_mardam_bey
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_jamil_mardam_bey
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = jamil_mardam_bey
+			traits = { great_compromiser }
+			on_add = {
+				owner = {
+					set_country_flag = SYR_jamil_bey_hired
+				}
+			}
+			on_remove = {
+				owner = {
+					clr_country_flag = SYR_jamil_bey_hired
+				}
+			}
+		}
+	}
+
+	SYR_omar_abu_risha = {
+
+		name = SYR_omar_abu_risha
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_omar_abu_risha
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = omar_abu_risha
+			traits = { cultural_poet }
+			available = {
+				has_country_flag = SYR_omar_anthem
+			}
+		}
+	}
+	
+#--------------
+
+	SYR_abdullah_atfeh = {
+
+		name = SYR_abdullah_atfeh
+
+		portraits = {
+    		army = {
+        		large = GFX_portrait_SYR_abdullah_atfeh
+				small = GFX_idea_abdullah_atfeh
+    		}
+		}
+
+		corps_commander = {
+            traits = { organizer }
+			skill = 3
+		    attack_skill = 2
+		    defense_skill = 3
+		    planning_skill = 3
+		    logistics_skill = 1
+        }
+
+		advisor = {
+			slot = army_chief
+			idea_token = abdullah_atfeh
+			traits = { army_chief_drill_1 }
+		}
+	}
+
+	SYR_adnan_al_malki = {
+
+		name = SYR_adnan_al_malki
+
+		portraits = {
+    		army = {
+        		large = GFX_portrait_SYR_adnan_al_malki
+				small = GFX_idea_adnan_al_malki
+    		}
+		}
+	}
+
+	SYR_fawzi_selu = {
+
+		name = SYR_fawzi_selu
+
+		portraits = {
+    		army = {
+        		large = GFX_portrait_SYR_fawzi_selu
+				small = GFX_idea_fawzi_selu
+    		}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = fawzi_selu
+			ledger = army
+			traits = { army_commando_1 }
+		}
+
+	}
+
+	SYR_adib_shishakli = {
+
+		name = SYR_adib_shishakli
+
+		portraits = {
+    		army = {
+        		large = GFX_portrait_SYR_adib_shishakli
+				small = GFX_idea_adib_shishakli
+    		}
+		}
+
+		corps_commander = {
+            traits = { infantry_officer }
+			skill = 3
+		    attack_skill = 3
+		    defense_skill = 2
+		    planning_skill = 2
+		    logistics_skill = 2
+        }
+
+		advisor = {
+			slot = high_command
+			idea_token = adib_shishakli
+			ledger = army
+			traits = { army_infantry_1 }
+		}
+	}
+
+	SYR_husni_al_zaim = {
+
+		name = SYR_husni_al_zaim
+
+		portraits = {
+    		army = {
+        		large = GFX_portrait_SYR_husni_al_zaim
+				small = GFX_idea_husni_al_zaim
+    		}
+		}
+
+		corps_commander = {
+			traits = { organizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = husni_al_zaim_chief
+			traits = { army_chief_reform_1 }
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = husni_al_zaim_command
+			ledger = army
+			traits = { army_regrouping_1 }
+		}
+	}
+}

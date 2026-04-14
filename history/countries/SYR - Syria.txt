@@ -55,29 +55,21 @@ set_popularities = {
 
 recruit_character = SYR_mehemed_ali_abed
 recruit_character = SYR_hashim_al_atassi
-recruit_character = SYR_hashim_al_atassi_idea
+recruit_character = SYR_antoun_saadeh
+recruit_character = SYR_khalid_bakdash
+recruit_character = SYR_jamil_al_ulshi
+recruit_character = SYR_shukri_al_quwatli
+recruit_character = SYR_zaki_al_arsuzi
+recruit_character = SYR_said_al_ghazzi
+recruit_character = SYR_damien_de_martel
+activate_advisor = damien_de_martel
+recruit_character = SYR_fares_al_khoury
+recruit_character = SYR_khalil_mardam_bey
+recruit_character = SYR_jamil_mardam_bey
+recruit_character = SYR_omar_abu_risha
 recruit_character = SYR_abdullah_atfeh
 recruit_character = SYR_adnan_al_malki
 recruit_character = SYR_adib_shishakli
+recruit_character = SYR_husni_al_zaim
+recruit_character = SYR_fawzi_selu
 recruit_character = FRA_charles_huntziger
-
-
-create_country_leader = {
-	name = "Antun Saadeh"
-	desc = ""
-	picture = GFX_portrait_Antun_Saadeh
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Khalid Bakdash"
-	desc = ""
-	picture = GFX_portrait_Khalid_Bakdash
-	ideology = leninism
-	traits = {
-		#
-	}
-}

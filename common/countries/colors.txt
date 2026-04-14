@@ -1216,8 +1216,8 @@ ALA = {
 	color_ui = rgb { 46 111 136 }
 }
 DRU = { 
-	color = rgb { 117 99 69 }
-	color_ui = rgb { 117 99 69 }
+	color = rgb { 128 72 144 }
+	color_ui = rgb { 128 72 144 }
 }
 UTA = {
 	color = rgb { 243 209 105 }

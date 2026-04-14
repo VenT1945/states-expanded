@@ -13,7 +13,21 @@ ideas = {
 			allowed_civil_war = {
                 is_puppet = yes
             }
-		}	
+		}
+		LON_colonial_economy = {
+			picture = colonial_economy_icon
+			modifier = {
+				production_speed_buildings_factor = -0.4
+				industrial_capacity_dockyard = -0.25
+				industrial_capacity_factory = -0.25
+				consumer_goods_factor = 0.15
+				local_resources_factor = 0.20
+				extra_trade_to_overlord_factor = 0.5
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+		}
         PAL_marginalized_muslim_maj = {
 			picture = raj_marginalized_muslim_community_angry
 			modifier = {
@@ -33,21 +47,7 @@ ideas = {
 			allowed_civil_war = {
                 is_puppet = yes
             }
-		}	
-        LON_colonial_economy = {
-			picture = colonial_economy_icon
-			modifier = {
-				production_speed_buildings_factor = -0.4
-				industrial_capacity_dockyard = -0.25
-				industrial_capacity_factory = -0.25
-				consumer_goods_factor = 0.15
-				local_resources_factor = 0.20
-				extra_trade_to_overlord_factor = 0.5
-			}
-			allowed_civil_war = {
-                is_puppet = yes
-            }
-		}	
+		}		
         PAL_general_strikes = {
 			modifier = {
 				political_power_cost = 0.25

@@ -1,4 +1,16 @@
 ﻿l_english:
+ ALDR_international_support_category: "International Support"
+ ALDR_international_support_category_desc: "Alone, we are weak against the growing Syrian threat. To survive, we need to reach out to the international community and get military support. \n\nBut as a result of our small size and power, whichever power we choose to support us will inevitably shape our politics through their ideology."
+ ALDR_communist_support: "Ask for Communist Support"
+ ALDR_fascist_support: "Ask for Fascist Support"
+ ALDR_democratic_support: "Ask for Democratic Support"
+ ALDR_arab_support: "Ask for Arab Support"
+ ALDR_ask_commie_maj_min: "We will ask both a §Ycommunist§! major and minor power for support."
+ ALDR_ask_fascist_maj_min: "We will ask both a §Yfascist§! major and minor power for support."
+ ALDR_ask_democratic_maj_min: "We will ask both a §Ydemocratic§! major and minor power for support."
+ ALDR_ask_arab: "We will ask an §Yarab§! power for support."
+ ALDR_support_acception: "We will get 2000 of their oldest infantry equipment."
+ 
  PAL_great_palestinian_uprising: "The Great Palestinian Uprising"
  PAL_great_palestinian_uprising_mission: "Impending Palestinian Uprising"
  PAL_great_palestinian_uprising_mission_desc: ""

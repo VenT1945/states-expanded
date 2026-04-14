@@ -1,765 +1,818 @@
-	shared_focus =  {
-		id = ALDR_realize_future
-		icon = GFX_goal_generic_attack_allies
-		x = 14
-		y = 0
-		cost = 5
-
-		available = {
-		}
-
-		completion_reward = {
-			add_political_power = 120
-		}
+shared_focus =  {
+	id = ALDR_realize_future
+	icon = GFX_goal_generic_attack_allies
+	x = 14
+	y = 0
+	cost = 5
+	available = {
 	}
-	shared_focus =  {
-		id = ALDR_oppose_france
-
-		x = 1
-		y = 1
-		
-		relative_position_id = ALDR_realize_future
-		prerequisite = { focus = ALDR_realize_future }
-		mutually_exclusive = { focus = ALDR_stay_with_france }
-		cost = 5
-
-		available = {
-		}
-
-		
-		completion_reward = {
-			add_political_power = 100
-			set_country_flag = aldr_opposed_france
-			add_stability = -0.1
-		}
+	completion_reward = {
+		add_political_power = 50
 	}
-	shared_focus =  {
-		id = ALDR_national_identity
+}
+shared_focus =  {
+	id = ALDR_oppose_france
+	x = 1
+	y = 1
 
-		x = 2
-		y = 1
-		
-		relative_position_id = ALDR_oppose_france
-		prerequisite = { focus = ALDR_oppose_france }
-		cost = 5
+	icon = GFX_focus_attack_france
 	
+	relative_position_id = ALDR_realize_future
+	prerequisite = { focus = ALDR_realize_future }
+	mutually_exclusive = { focus = ALDR_stay_with_france }
+	cost = 5
+	available = {
+	}
+	
+	completion_reward = {
+		add_political_power = 100
+		set_country_flag = aldr_opposed_france
+		add_stability = -0.1
+	}
+}
+shared_focus =  {
+	id = ALDR_national_identity
+	x = 2
+	y = 1
 
-		available = {
-		}
+	icon = GFX_focus_AFG_parliamentary_democracy
+	
+	relative_position_id = ALDR_oppose_france
+	prerequisite = { focus = ALDR_oppose_france }
+	cost = 5
 
-		
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
-			add_timed_idea = {
-    			idea = ALDR_revive_culture
-    			days = 140
+	available = {
+		IF = {
+			limit = {
+				original_tag = ALA
+			}
+			NOT = {
+				has_idea = ALA_weak_united_voice
 			}
 		}
 	}
-	shared_focus =  {
-		id = ALDR_ask_for_support
-
-		x = 0
-		y = 1
-		
-		relative_position_id = ALDR_oppose_france
-		prerequisite = { focus = ALDR_oppose_france }
-		cost = 4
-
-		available = {
-		}
-
-		
-		completion_reward = {
-			unlock_decision_category_tooltip = ALDR_international_support_category
+	
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.05
+		add_timed_idea = {
+ 			idea = ALDR_revive_culture
+ 			days = 140
 		}
 	}
-	shared_focus =  {
-		id = ALDR_bring_back_leaders
+}
+shared_focus =  {
+	id = ALDR_ask_for_support
+	x = 0
+	y = 1
 
-		x = 1
-		y = 1
-		
-		relative_position_id = ALDR_ask_for_support
-		prerequisite = { focus = ALDR_ask_for_support }
-		prerequisite = { focus = ALDR_national_identity }
-		cost = 10
-
-		available = {
-		}
-
-		
-		completion_reward = {
-			retire_country_leader = yes
-			IF = {
-				limit = {
-					original_tag = DRU
-				}
-				promote_character = DRU_sultan_al_atrash
-				set_party_name = {
-    				ideology = neutrality
-					long_name = DRU_druze_liberation_party_long
-    				name = DRU_druze_liberation_party
-				}
-			}
-			else = {
-				promote_character = ALA_salih_al_ali
-				set_party_name = {
-    				ideology = neutrality
-					long_name = ALA_alawite_freedom_party_long
-    				name = ALA_alawite_freedom_party
-				}
-			}
-			add_war_support = 0.05
-		}
+	icon = GFX_focus_GER_support_the_proletarian_uprising
+	
+	relative_position_id = ALDR_oppose_france
+	prerequisite = { focus = ALDR_oppose_france }
+	cost = 4
+	available = {
 	}
-	shared_focus =  {
-		id = ALDR_civilian_loyalty
-
-		x = 1
-		y = 1
-		
-		relative_position_id = ALDR_national_identity
-		prerequisite = { focus = ALDR_national_identity }
-
-		cost = 4
-		
-		prerequisite = {
-		}
-
-		available = {
-		}
-
-		
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-		}
+	
+	completion_reward = {
+		unlock_decision_category_tooltip = ALDR_international_support_category
 	}
-	shared_focus =  {
-		id = ALDR_unite_states
+}
+shared_focus =  {
+	id = ALDR_bring_back_leaders
+	x = 1
+	y = 1
 
-		x = 1
-		y = 1
-		
-		relative_position_id = ALDR_bring_back_leaders
-		prerequisite = { focus = ALDR_bring_back_leaders }
-		prerequisite = { focus = ALDR_civilian_loyalty }
-		
-		cost = 10
-
-		available = {
-		}
-
-		
-		completion_reward = {
-			if = {
-				limit = {
-					original_tag = DRU
-				}
-				ALA = {
-					country_event = {
-						id = alawitedruze.1
-						days = 2
-						random_days = 5
-					}
-				}
+	icon = GFX_ALDR_bring_back_leaders
+	
+	relative_position_id = ALDR_ask_for_support
+	prerequisite = { focus = ALDR_ask_for_support }
+	prerequisite = { focus = ALDR_national_identity }
+	cost = 10
+	available = {
+	}
+	
+	completion_reward = {
+		retire_country_leader = yes
+		IF = {
+			limit = {
+				original_tag = DRU
 			}
-			else = {
-				DRU = {
-					country_event = {
-						id = alawitedruze.1
-						days = 2
-						random_days = 5
-					}
-				}
+			promote_character = DRU_sultan_al_atrash
+			set_party_name = {
+ 				ideology = neutrality
+				long_name = DRU_druze_liberation_party
+ 				name = DRU_druze_liberation_party
 			}
 		}
+		else = {
+			promote_character = ALA_salih_al_ali
+			set_party_name = {
+ 				ideology = neutrality
+ 				long_name = ALA_alawite_freedom_party
+				name = ALA_alawite_freedom_party
+			}
+		}
+		add_war_support = 0.05
+		remove_ideas = ALDR_ineffective_colonial_admin
 	}
-	shared_focus =  {
-		id = ALDR_stay_with_france
-		x = -1
-		y = 1
-		
-		relative_position_id = ALDR_realize_future
-		prerequisite = { focus = ALDR_realize_future }
-		mutually_exclusive = { focus = ALDR_oppose_france }
+}
+shared_focus =  {
+	id = ALDR_civilian_loyalty
+	x = 1
+	y = 1
 
-		cost = 10
-		
-		prerequisite = {
-		}
-
-		available = {
-		}
-
-		
-		completion_reward = {
-			add_political_power = 120
-			set_country_flag = aldr_stayed_with_france
-		}
+	icon = {
+        trigger = { original_tag = ALA }
+        value = GFX_ALA_civilian_loyalty
+    }
+    icon = {
+        value = GFX_DRU_civilian_loyalty
+    }
+    dynamic = yes
+	
+	relative_position_id = ALDR_national_identity
+	prerequisite = { focus = ALDR_national_identity }
+	cost = 4
+	
+	prerequisite = {
 	}
-	shared_focus =  {
-		id = ALDR_industrial_growth
-		x = 31
-		y = 0
-		cost = 5
+	available = {
+	}
+	
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.1
+	}
+}
+shared_focus =  {
+	id = ALDR_propose_union
+	x = 1
+	y = 1
 
-		available = {
+	icon = GFX_ALDR_propose_union
+	
+	relative_position_id = ALDR_bring_back_leaders
+	prerequisite = { focus = ALDR_bring_back_leaders }
+	prerequisite = { focus = ALDR_civilian_loyalty }
+	
+	cost = 10
+	available = {
+	}
+	
+	completion_reward = {
+		IF = {
+			limit = {
+				original_tag = ALA
+			}
+			DRU = {
+				country_event = {
+					id = alawitedruze.1
+					days = 1
+				}
+			}
 		}
+		ELSE = {
+			ALA = {
+				country_event = {
+					id = alawitedruze.1
+					days = 1
+				}
+			}
+		}
+		add_ideas = ALDR_unrecognized_independence
+		set_cosmetic_tag = ALDR_levantine_state_fra
+	}
+}
+shared_focus =  {
+	id = ALDR_stay_with_france
+	x = -1
+	y = 1
 
-		search_filters = { FOCUS_FILTER_INDUSTRY  }
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.75
-				uses = 2
-				category = industry
-				category = electronics
+	icon = GFX_focus_chi_reach_out_to_france
+	
+	relative_position_id = ALDR_realize_future
+	prerequisite = { focus = ALDR_realize_future }
+	mutually_exclusive = { focus = ALDR_oppose_france }
+	cost = 5
+	
+	prerequisite = {
+	}
+	available = {
+	}
+	
+	completion_reward = {
+		add_political_power = 50
+		set_country_flag = aldr_stayed_with_france
+	}
+}
+shared_focus =  {
+	id = ALDR_economic_growth
+	x = 0
+	y = 1
+
+	icon = GFX_focus_generic_economic_recovery
+	
+	relative_position_id = ALDR_stay_with_france
+	prerequisite = { focus = ALDR_stay_with_france }
+	cost = 10
+	
+	prerequisite = {
+	}
+	available = {
+	}
+	
+	completion_reward = {
+		random_owned_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_political_power = 25
+	}
+}
+shared_focus =  {
+	id = ALDR_auxiliary_forces
+	x = 0
+	y = 1
+
+	icon = GFX_ALDR_auxiliary_forces
+	
+	relative_position_id = ALDR_economic_growth
+	prerequisite = { focus = ALDR_economic_growth }
+	cost = 10
+	
+	prerequisite = {
+	}
+	available = {
+	}
+	
+	completion_reward = {
+		add_manpower = 5000
+		add_war_support = 0.05
+	}
+}
+shared_focus =  {
+	id = ALDR_french_syrian_support
+	x = -2
+	y = 1
+
+	icon = GFX_focus_generic_money_for_equipment
+	
+	relative_position_id = ALDR_economic_growth
+	prerequisite = { focus = ALDR_economic_growth }
+	cost = 10
+	
+	prerequisite = {
+	}
+	available = {
+	}
+	
+	completion_reward = {
+		IF = {
+			limit = {
+				original_tag = ALA
+			}
+			FRA = {
+				add_ideas = ALA_france_syria_support
+			}
+			SYR = {
+				add_ideas = ALA_france_syria_support
+			}
+		}
+		ELSE = {
+			FRA = {
+				add_ideas = DRU_france_syria_support
+			}
+			SYR = {
+				add_ideas = DRU_france_syria_support
 			}
 		}
 	}
-	shared_focus = {
-		id = ALDR_expand_civilian_sector
-		x = -2
-		y = 1
-		cost = 10
-
-		relative_position_id = ALDR_industrial_growth
-		prerequisite = { focus = ALDR_industrial_growth }
-
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_owned_by = ROOT
-				}
-
-				add_extra_state_shared_building_slots = 2
+}
+shared_focus =  {
+	id = ALDR_industrial_growth
+	x = 31
+	y = 0
+	cost = 5
+	available = {
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY  }
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.75
+			uses = 2
+			category = industry
+			category = electronics
+		}
+	}
+}
+shared_focus = {
+	id = ALDR_expand_civilian_sector
+	x = -2
+	y = 1
+	cost = 5
+	relative_position_id = ALDR_industrial_growth
+	prerequisite = { focus = ALDR_industrial_growth }
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_owned_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = ALA_raise_status
+	x = -4
+	y = 1
+	cost = 10
+	relative_position_id = ALDR_industrial_growth
+	prerequisite = { focus = ALDR_industrial_growth }
+	allow_branch = {
+		original_tag = ALA
+	}
+	completion_reward = {
+		unlock_decision_category_tooltip = ALA_raise_status_category
+	}
+}
+shared_focus = {
+	id = ALDR_expand_fort_effort
+	x = -3
+	y = 1
+	cost = 5
+	relative_position_id = ALDR_expand_civilian_sector
+	prerequisite = { focus = ALDR_expand_civilian_sector }
+	prerequisite = { focus = ALDR_army_expansion }
+	completion_reward = {
+		custom_effect_tooltip = ALDR_forts_tt
+		hidden_effect = {
+			every_owned_state = {
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
+ 					type = bunker
+ 					level = 3
+ 					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = SYR
+ 					}
 				}
 			}
 		}
 	}
-	shared_focus = {
-		id = ALDR_expand_fort_effort
-		x = -3
-		y = 1
-		cost = 5
-
-		relative_position_id = ALDR_expand_civilian_sector
-		prerequisite = { focus = ALDR_expand_civilian_sector }
-		prerequisite = { focus = ALDR_army_expansion }
-
-		completion_reward = {
-			custom_effect_tooltip = ALDR_forts_tt
-			hidden_effect = {
-				every_owned_state = {
-					add_building_construction = {
-    					type = bunker
-    					level = 3
-    					instant_build = yes
-    				province = {
-        				all_provinces = yes
-        				limit_to_border_country = SYR
-    					}
-					}
-				}
+}
+shared_focus = {
+	id = ALDR_military_industry
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = ALDR_industrial_growth
+	prerequisite = { focus = ALDR_industrial_growth }
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_owned_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
 			}
 		}
 	}
-	shared_focus = {
-		id = ALDR_military_industry
-		x = 0
-		y = 1
-		cost = 10
-
-		relative_position_id = ALDR_industrial_growth
-		prerequisite = { focus = ALDR_industrial_growth }
-
-		completion_reward = {
+}
+shared_focus = {
+	id = ALDR_infastructure_focus
+	x = -1
+	y = 1
+	cost = 10
+	relative_position_id = ALDR_military_industry
+	prerequisite = { focus = ALDR_expand_civilian_sector focus = ALDR_military_industry }
+	completion_reward = {
+		custom_effect_tooltip = ALDR_max_infra_tt
+		hidden_effect = {
 			random_owned_state = {
 				limit = {
-					is_owned_by = ROOT
+					is_capital = yes
 				}
-
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	shared_focus = {
-		id = ALDR_infastructure_focus
-		x = -1
-		y = 1
-		cost = 10
-
-		relative_position_id = ALDR_military_industry
-		prerequisite = { focus = ALDR_expand_civilian_sector focus = ALDR_military_industry }
-
-
-		completion_reward = {
-			custom_effect_tooltip = ALDR_max_infra_tt
-			hidden_effect = {
-				random_owned_state = {
-					limit = {
-						is_capital = yes
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	shared_focus = {
-		id = ALDR_new_university
-		x = 0
-		y = 1
-		cost = 10
-
-		relative_position_id = ALDR_infastructure_focus
-		prerequisite = { focus = ALDR_infastructure_focus }
-
-		completion_reward = {
-			add_research_slot = 1
-			add_tech_bonus = {
-				name = electronics_bonus
-				bonus = 1
-				uses = 1
-				category = electronics
-			}
-			random_owned_state = {
-				limit = {
-					is_owned_by = ROOT
-				}
-
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					type = infrastructure
+					level = 5
 					instant_build = yes
 				}
 			}
 		}
 	}
-	shared_focus = {
-		id = ALDR_resource_exploiting
-		x = -1
-		y = 2
-		cost = 15
-
-		relative_position_id = ALDR_expand_civilian_sector
-		prerequisite = { focus = ALDR_expand_civilian_sector }
-
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_owned_by = ROOT
-				}
-				add_resource = {
-   					type = oil
-    				amount = 4
-				}
-				add_resource = {
-   					type = steel
-    				amount = 6
-				}
+}
+shared_focus = {
+	id = ALDR_new_university
+	x = 0
+	y = 1
+	cost = 10
+	relative_position_id = ALDR_infastructure_focus
+	prerequisite = { focus = ALDR_infastructure_focus }
+	completion_reward = {
+		add_research_slot = 1
+		add_tech_bonus = {
+			name = electronics_bonus
+			bonus = 1
+			uses = 1
+			category = electronics
+		}
+		random_owned_state = {
+			limit = {
+				is_owned_by = ROOT
 			}
-			add_tech_bonus = {
-				name = excavation_tech_bonus
-				bonus = 0.75
-				uses = 1
-				category = excavation_tech
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
 			}
 		}
 	}
-	shared_focus = {
-		id = ALDR_cheaper_guns_focus
-		x = 1
-		y = 2
-		cost = 5
-
-		relative_position_id = ALDR_military_industry
-		prerequisite = { focus = ALDR_military_industry }
-
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_owned_by = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+}
+shared_focus = {
+	id = ALDR_resource_exploiting
+	x = -1
+	y = 2
+	cost = 15
+	relative_position_id = ALDR_expand_civilian_sector
+	prerequisite = { focus = ALDR_expand_civilian_sector }
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_owned_by = ROOT
 			}
-			add_ideas = ALDR_cheaper_guns
-			custom_effect_tooltip = ALDR_cancel_cheaper_guns
+			add_resource = {
+					type = oil
+ 				amount = 4
+			}
+			add_resource = {
+					type = steel
+ 				amount = 6
+			}
+		}
+		add_tech_bonus = {
+			name = excavation_tech_bonus
+			bonus = 0.75
+			uses = 1
+			category = excavation_tech
 		}
 	}
-	shared_focus = {
-    	id = ALDR_economical_golden_age
-    	x = 0
-    	y = 1
-    	cost = 20
-    	relative_position_id = ALDR_new_university
-    	prerequisite = { focus = ALDR_new_university }
-		prerequisite = { focus = ALDR_cheaper_guns_focus }
-		prerequisite = { focus = ALDR_resource_exploiting }
-
-		available = {
-			has_country_flag = aldr_free
+}
+shared_focus = {
+	id = ALDR_cheaper_guns_focus
+	x = 1
+	y = 2
+	cost = 5
+	relative_position_id = ALDR_military_industry
+	prerequisite = { focus = ALDR_military_industry }
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_owned_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
 		}
-
-		completion_reward = {
-			add_stability = 0.1
-			add_research_slot = 1
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = industry
-			}
-			add_timed_idea = {
-				idea = ALDR_industrial_golden_age
-				days = 720
-			}
-    	}
+		add_ideas = ALDR_cheaper_guns
+		custom_effect_tooltip = ALDR_cancel_cheaper_guns
 	}
-	shared_focus = {
-		id = ALDR_dockyard_building
-		x = 3
-		y = 1
-		cost = 10
-
-		relative_position_id = ALDR_industrial_growth
-		prerequisite = { focus = ALDR_industrial_growth }
-
-		available = {
-			any_owned_state = {
+}
+shared_focus = {
+ 	id = ALDR_economical_golden_age
+ 	x = 0
+ 	y = 1
+ 	cost = 20
+ 	relative_position_id = ALDR_new_university
+ 	prerequisite = { focus = ALDR_new_university }
+	prerequisite = { focus = ALDR_cheaper_guns_focus }
+	prerequisite = { focus = ALDR_resource_exploiting }
+	available = {
+		has_country_flag = aldr_free
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_research_slot = 1
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = industry
+		}
+		add_timed_idea = {
+			idea = ALDR_industrial_golden_age
+			days = 720
+		}
+ 	}
+}
+shared_focus = {
+	id = ALDR_dockyard_building
+	x = 2
+	y = 1
+	cost = 10
+	relative_position_id = ALDR_industrial_growth
+	prerequisite = { focus = ALDR_industrial_growth }
+	available = {
+		any_owned_state = {
+			is_coastal = yes
+		}
+	}
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_owned_by = ROOT
 				is_coastal = yes
 			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
 		}
-
-		completion_reward = {
-			random_owned_state = {
+	}
+}
+shared_focus =  {
+	id = ALDR_army_expansion
+	x = 22
+	y = 0
+	cost = 5
+	available = {
+	}
+	completion_reward = {
+		army_experience = 50
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.75
+			uses = 1
+			category = land_doctrine
+		}
+		add_ideas = ALDR_expanded_recruitment
+	}
+}
+shared_focus =  {
+	id = ALDR_train_militia
+	x = -2
+	y = 1
+	
+	relative_position_id = ALDR_army_expansion
+	prerequisite = { focus = ALDR_army_expansion }
+	mutually_exclusive = { focus = ALDR_national_guard }
+	cost = 5
+	available = {
+	}
+	
+	completion_reward = {
+		swap_ideas = {
+ 			remove_idea = ALDR_weak_army_1
+ 			add_idea = ALDR_weak_army_militia
+		}
+		set_division_template_lock = {
+ 			division_template = "Irregular Militia"
+				is_locked = no
+		}
+		clear_division_template_cap = { 
+			division_template = "Irregular Militia"
+		}
+		add_equipment_to_stockpile = {
+ 			type = infantry_equipment
+ 			amount = 2500
+		}
+		custom_effect_tooltip = ALDR_spawn_weak_militias
+	}
+}
+shared_focus =  {
+	id = ALDR_national_guard
+	x = 0
+	y = 1
+	cost = 10
+	
+	relative_position_id = ALDR_army_expansion
+	prerequisite = { focus = ALDR_army_expansion }
+	mutually_exclusive = { focus = ALDR_train_militia }
+	available = {
+	}
+	completion_reward = {
+		army_experience = 25
+		swap_ideas = {
+ 			remove_idea = ALDR_weak_army_1
+ 			add_idea = ALDR_weak_army_guard
+		}
+		division_template = {
+				name = "National Guard" 
+			priority = 1
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+			}
+		}
+		add_equipment_to_stockpile = {
+ 			type = infantry_equipment
+ 			amount = 1500
+		}
+		custom_effect_tooltip = ALDR_spawn_strong_guard
+	}
+}
+shared_focus =  {
+	id = ALDR_mountaineers
+	x = 0
+	y = 1
+	cost = 10
+	
+	relative_position_id = ALDR_train_militia
+	prerequisite = { focus = ALDR_train_militia focus = ALDR_national_guard }
+	mutually_exclusive = { focus = ALDR_basic_divisions }
+	available = {
+	}
+	completion_reward = {
+		add_tech_bonus = {
+ 			bonus = 1
+ 			uses = 2
+ 			category = mountaineers_tech
+		}
+	}
+}
+shared_focus =  {
+	id = ALDR_basic_divisions
+	x = 0
+	y = 1
+	cost = 10
+	
+	relative_position_id = ALDR_national_guard
+	prerequisite = { focus = ALDR_train_militia focus = ALDR_national_guard }
+	mutually_exclusive = { focus = ALDR_mountaineers }
+	available = {
+	}
+	completion_reward = {
+		add_tech_bonus = {
+ 			bonus = 1
+ 			uses = 1
+			ahead_reduction = 0.5
+ 			category = infantry_weapons
+		}
+		add_tech_bonus = {
+ 			bonus = 1
+ 			uses = 1
+ 			category = support_tech
+		}
+	}
+}
+shared_focus =  {
+	id = ALDR_improve_armaments
+	x = 2
+	y = 1
+	cost = 10
+	
+	relative_position_id = ALDR_army_expansion
+	prerequisite = { focus = ALDR_army_expansion }
+	available = {
+	}
+	completion_reward = {
+		army_experience = 50
+		add_tech_bonus = {
+ 			bonus = 1
+ 			uses = 2
+ 			category = infantry_weapons
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.33
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+shared_focus =  {
+	id = ALDR_artillery_advancements
+	x = 0
+	y = 1
+	cost = 10
+	
+	relative_position_id = ALDR_improve_armaments
+	prerequisite = { focus = ALDR_improve_armaments }
+	available = {
+	}
+	completion_reward = {
+		army_experience = 50
+		add_tech_bonus = {
+ 			bonus = 1
+ 			uses = 1
+ 			category = artillery
+		}
+	}
+}
+shared_focus =  {
+	id = ALDR_final_improvements
+	x = 0
+	y = 1
+	cost = 10
+	
+	relative_position_id = ALDR_basic_divisions
+	prerequisite = { focus = ALDR_basic_divisions focus = ALDR_mountaineers}
+	prerequisite = { focus = ALDR_artillery_advancements }
+	available = {
+	}
+	completion_reward = {
+		army_experience = 25
+		add_political_power = 35
+		custom_effect_tooltip = ALDR_replace_weak_tt
+		hidden_effect = {
+			if = {
 				limit = {
-					is_owned_by = ROOT
-					is_coastal = yes
+					has_idea = ALDR_weak_army_guard
 				}
-
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
+				swap_ideas = {
+					remove_idea = ALDR_weak_army_guard
+					add_idea = ALDR_trained_army_guard
 				}
 			}
-		}
-	}
-	shared_focus =  {
-		id = ALDR_army_expansion
-		x = 22
-		y = 0
-		cost = 5
-
-		available = {
-		}
-
-		completion_reward = {
-			army_experience = 50
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.75
-				uses = 1
-				category = land_doctrine
-			}
-			add_ideas = ALDR_expanded_recruitment
-		}
-	}
-	shared_focus =  {
-		id = ALDR_train_militia
-
-		x = -2
-		y = 1
-		
-		relative_position_id = ALDR_army_expansion
-		prerequisite = { focus = ALDR_army_expansion }
-		mutually_exclusive = { focus = ALDR_national_guard }
-		cost = 5
-
-		available = {
-		}
-
-		
-		completion_reward = {
-			swap_ideas = {
-    			remove_idea = ALDR_weak_army_1
-    			add_idea = ALDR_weak_army_militia
-			}
-			set_division_template_lock = {
-    			division_template = "Irregular Militia"
-   				is_locked = no
-			}
-			clear_division_template_cap = { 
-				division_template = "Irregular Militia"
-			}
-			add_equipment_to_stockpile = {
-    			type = infantry_equipment
-    			amount = 2500
-			}
-			custom_effect_tooltip = ALDR_spawn_weak_militias
-		}
-	}
-	shared_focus =  {
-		id = ALDR_national_guard
-		x = 0
-		y = 1
-		cost = 10
-		
-		relative_position_id = ALDR_army_expansion
-		prerequisite = { focus = ALDR_army_expansion }
-		mutually_exclusive = { focus = ALDR_train_militia }
-
-		available = {
-		}
-
-		completion_reward = {
-			army_experience = 25
-			swap_ideas = {
-    			remove_idea = ALDR_weak_army_1
-    			add_idea = ALDR_weak_army_guard
-			}
-			division_template = {
-   				name = "National Guard" 
-				priority = 1
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-				}
-			}
-			add_equipment_to_stockpile = {
-    			type = infantry_equipment
-    			amount = 1500
-			}
-			custom_effect_tooltip = ALDR_spawn_strong_guard
-		}
-	}
-	shared_focus =  {
-		id = ALDR_mountaineers
-		x = 0
-		y = 1
-		cost = 10
-		
-		relative_position_id = ALDR_train_militia
-		prerequisite = { focus = ALDR_train_militia focus = ALDR_national_guard }
-		mutually_exclusive = { focus = ALDR_basic_divisions }
-
-		available = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-    			bonus = 1
-    			uses = 2
-    			category = mountaineers_tech
-			}
-		}
-	}
-	shared_focus =  {
-		id = ALDR_basic_divisions
-		x = 0
-		y = 1
-		cost = 10
-		
-		relative_position_id = ALDR_national_guard
-		prerequisite = { focus = ALDR_train_militia focus = ALDR_national_guard }
-		mutually_exclusive = { focus = ALDR_mountaineers }
-
-		available = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-    			bonus = 1
-    			uses = 1
-				ahead_reduction = 0.5
-    			category = infantry_weapons
-			}
-			add_tech_bonus = {
-    			bonus = 1
-    			uses = 1
-    			category = support_tech
-			}
-		}
-	}
-	shared_focus =  {
-		id = ALDR_improve_armaments
-		x = 2
-		y = 1
-		cost = 10
-		
-		relative_position_id = ALDR_army_expansion
-		prerequisite = { focus = ALDR_army_expansion }
-
-		available = {
-		}
-
-		completion_reward = {
-			army_experience = 50
-			add_tech_bonus = {
-    			bonus = 1
-    			uses = 2
-    			category = infantry_weapons
-			}
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.33
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-	shared_focus =  {
-		id = ALDR_artillery_advancements
-		x = 0
-		y = 1
-		cost = 10
-		
-		relative_position_id = ALDR_improve_armaments
-		prerequisite = { focus = ALDR_improve_armaments }
-
-		available = {
-		}
-
-		completion_reward = {
-			army_experience = 50
-			add_tech_bonus = {
-    			bonus = 1
-    			uses = 1
-    			category = artillery
-			}
-		}
-	}
-	shared_focus =  {
-		id = ALDR_final_improvements
-		x = 0
-		y = 1
-		cost = 10
-		
-		relative_position_id = ALDR_basic_divisions
-		prerequisite = { focus = ALDR_basic_divisions focus = ALDR_mountaineers}
-		prerequisite = { focus = ALDR_artillery_advancements }
-
-		available = {
-		}
-
-		completion_reward = {
-			army_experience = 25
-			add_political_power = 35
-			custom_effect_tooltip = ALDR_replace_weak_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						has_idea = ALDR_weak_army_guard
-					}
-					swap_ideas = {
-						remove_idea = ALDR_weak_army_guard
-						add_idea = ALDR_trained_army_guard
-					}
-				}
-				else = {
-					swap_ideas = {
-						remove_idea = ALDR_weak_army_militia
-						add_idea = ALDR_trained_army_militia
-					}
+			else = {
+				swap_ideas = {
+					remove_idea = ALDR_weak_army_militia
+					add_idea = ALDR_trained_army_militia
 				}
 			}
 		}
 	}
-	shared_focus = {
-		id = ALDR_global_recognition
-		x = 4
-		y = 0
+}
+shared_focus = {
+	id = ALDR_global_recognition
+	x = 4
+	y = 0
+	cost = 10
 
-		cost = 10
+	icon = GFX_focus_RAJ_to_shake_the_world
 
-		available = {
-			NOT = {
-				has_war_with = SYR
-			}
-			has_country_flag = aldr_free
+	available = {
+		NOT = {
+			has_war_with = SYR
 		}
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_political_power = 120
+		has_country_flag = aldr_free
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 120
+		remove_ideas = ALDR_unrecognized_independence
+	}
+}
+shared_focus = {
+	id = ALDR_stay_with_sultan
+	x = -2
+	y = 1
+	cost = 10
+	relative_position_id = ALDR_global_recognition
+	prerequisite = { focus = ALDR_global_recognition }
+	available = {
+		has_country_flag = ALDR_arab_support
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+shared_focus = {
+	id = ALDR_new_ideologies
+	x = 2
+	y = 1
+	cost = 10
+	relative_position_id = ALDR_global_recognition
+	prerequisite = { focus = ALDR_global_recognition }
+	available = {
+		OR = {
+			has_country_flag = aldr_fascist_support
+			has_country_flag = aldr_democratic_support
+			has_country_flag = aldr_commie_support
 		}
 	}
-	shared_focus = {
-		id = ALDR_stay_with_sultan
-		x = -2
-		y = 1
-
-		cost = 10
-
-		relative_position_id = ALDR_global_recognition
-		prerequisite = { focus = ALDR_global_recognition }
-
-		available = {
-			has_country_flag = ALDR_arab_support
-		}
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_political_power = 120
-		}
+	ai_will_do = {
+		factor = 50
 	}
-	shared_focus = {
-		id = ALDR_new_ideologies
-		x = 2
-		y = 1
-
-		cost = 10
-
-		relative_position_id = ALDR_global_recognition
-		prerequisite = { focus = ALDR_global_recognition }
-
-		available = {
-			OR = {
-				has_country_flag = aldr_fascist_support
-				has_country_flag = aldr_democratic_support
-				has_country_flag = aldr_commie_support
-			}
-		}
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_political_power = 120
-		}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 120
 	}
+}

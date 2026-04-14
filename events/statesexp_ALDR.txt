@@ -12,6 +12,10 @@ country_event = {
 		name = alawitedruze.1.a
 		ai_chance = {
     		base = 10
+			modifier = {
+				has_country_flag = aldr_stayed_with_france
+				factor = 0
+			}
 		}
         if = {
 			limit = {
@@ -46,7 +50,17 @@ country_event = {
 	option = {
 		name = alawitedruze.1.b
 		ai_chance = {
-    		base = 0
+    		base = 10
+			modifier = {
+				has_country_flag = aldr_opposed_france
+				factor = 0
+			}
+		}
+		FROM  = {
+			country_event = {
+    			id = alawitedruze.3
+    			days = 1
+			}
 		}
 	}
 }
@@ -59,6 +73,17 @@ country_event = {
 	
 	option = {
 		name = alawitedruze.2.a
+	}
+}
+country_event = {
+	id = alawitedruze.3
+	title = alawitedruze.3.t
+	desc = alawitedruze.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = alawitedruze.3.a
 	}
 }
 country_event = {

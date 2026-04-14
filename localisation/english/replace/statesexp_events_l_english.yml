@@ -13,3 +13,14 @@
  arab_palestine.1.t: "The Great Palestinian Uprising!"
  arab_palestine.1.d: ""
  arab_palestine.1.a: "Ignite the flames!"
+
+ alawitedruze.1.t: "[FROM.GetNameDefCap] proposes a union against Syria!"
+ alawitedruze.1.d: "[FROM.GetNameDefCap] has sent us an intriguing proposal. At any moment, Syria may demand our annexation, and alone, we are vulnerable. Their government suggests that we unite, forming a stronger front against the growing Syrian threat."
+ alawitedruze.1.a: "We shall join this union!"
+ alawitedruze.1.b: "We must reject this proposal"
+ alawitedruze.2.t: "[FROM.GetNameDefCap] agrees to join the union!"
+ alawitedruze.2.d:
+ alawitedruze.2.a: "Wonderful news!"
+ alawitedruze.3.t: "[FROM.GetNameDefCap] rejects the proposal!"
+ alawitedruze.3.d:
+ alawitedruze.3.a: "Bastards..."

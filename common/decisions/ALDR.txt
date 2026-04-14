@@ -11,8 +11,7 @@ ALDR_international_support_category = {
 			}
 		}
 		available = {
-			custom_trigger_tooltip = {
-    			tooltip = aldr_has_not_chosen_other_support_tt		
+			hidden_trigger = {	
     			NOT = {
 					OR = {
 						has_country_flag = aldr_fascist_support
@@ -74,7 +73,7 @@ ALDR_international_support_category = {
 				}
 			}
 			custom_effect_tooltip = if_they_accept_tt
-			custom_effect_tooltip = ALDR_commie_support_acception
+			custom_effect_tooltip = ALDR_support_acception
 			set_country_flag = aldr_commie_support
 		}
 	}
@@ -90,8 +89,7 @@ ALDR_international_support_category = {
 			}
 		}
 		available = {
-			custom_trigger_tooltip = {
-    			tooltip = aldr_has_not_chosen_other_support_tt
+			hidden_trigger = {
 				NOT = {
 					OR = {
 						has_country_flag = aldr_commie_support
@@ -153,7 +151,7 @@ ALDR_international_support_category = {
 				}
 			}
 			custom_effect_tooltip = if_they_accept_tt
-			custom_effect_tooltip = ALDR_fascism_support_acception
+			custom_effect_tooltip = ALDR_support_acception
 			set_country_flag = aldr_fascist_support
 		}
 	}
@@ -169,8 +167,7 @@ ALDR_international_support_category = {
 			}
 		}
 		available = {
-			custom_trigger_tooltip = {
-    			tooltip = aldr_has_not_chosen_other_support_tt		
+			hidden_trigger = {
     			NOT = {
 					OR = {
 						has_country_flag = aldr_fascist_support
@@ -236,7 +233,7 @@ ALDR_international_support_category = {
 				}
 			}
 			custom_effect_tooltip = if_they_accept_tt
-			custom_effect_tooltip = ALDR_democratic_support_acception
+			custom_effect_tooltip = ALDR_support_acception
 			set_country_flag = aldr_democratic_support
 		}
 	}
@@ -252,8 +249,7 @@ ALDR_international_support_category = {
 			}
 		}
 		available = {
-			custom_trigger_tooltip = {
-    			tooltip = aldr_has_not_chosen_other_support_tt		
+			hidden_trigger = {
     			NOT = {
 					OR = {
 						has_country_flag = aldr_fascist_support
@@ -301,6 +297,7 @@ ALDR_international_support_category = {
 								original_tag = SYR
 								original_tag = LEB
 								original_tag = ALA
+								original_tag = DRU
 								original_tag = UTA
 							}
 						}
@@ -313,7 +310,7 @@ ALDR_international_support_category = {
 			}
 		
 			custom_effect_tooltip = if_they_accept_tt
-			custom_effect_tooltip = ALDR_arab_support_acception
+			custom_effect_tooltip = ALDR_support_acception
 			set_country_flag = aldr_arab_support
 		}
 	}

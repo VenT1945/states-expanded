@@ -65,8 +65,8 @@ bookmarks = {
 				ALA_weak_united_voice
 			}
 			focuses = {
-				ALDR_realize_future
-				ALDR_unite_states
+				ALDR_oppose_france
+				ALDR_propose_union
 				ALDR_global_recognition
 			}
 		}
@@ -79,8 +79,8 @@ bookmarks = {
 				DRU_mountain_hold
 			}
 			focuses = {
-				ALDR_realize_future
-				ALDR_unite_states
+				ALDR_oppose_france
+				ALDR_propose_union
 				ALDR_global_recognition
 			}
 		}

@@ -497,9 +497,6 @@ characters={
 			slot = high_command
 			idea_token = charles_huntziger
 			ledger = army
-			allowed = {
-				original_tag = FRA
-			}
 			traits = {
 				army_logistics_1
 			}

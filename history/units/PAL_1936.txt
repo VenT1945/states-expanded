@@ -25,22 +25,22 @@ division_template = {
 
 units = {
     division= {
-        name = "Jerusalem District Militia"
+        name = "Jerusalem Militia"
         location = 1086
         division_template = "Irregular Division"
         start_experience_factor = 0.3
         start_equipment_factor = 0.5
     }
 	division= {
-        name = "Coastal Security Corps"
+        name = "Coastal Militia"
         location = 4206
         division_template = "Irregular Division"
         start_experience_factor = 0.3
         start_equipment_factor = 0.6
     }
 	division= {
-        name = "Naqab Camel Gendarmerie"
-        location = 13398
+        name = "Naqab Gendarmerie"
+        location = 1015
         division_template = "Camel Gendarmerie"
         start_experience_factor = 0.1
         start_equipment_factor = 0.3

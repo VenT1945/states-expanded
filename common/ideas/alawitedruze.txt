@@ -10,6 +10,7 @@ ideas = {
 			}
 		}
 		ALA_weak_united_voice = { #boosted in decisions, by reduced peasant population bc peasants the reason why weak voice
+			picture = ALA_weak_united_voice_icon
 			modifier = {
 				war_support_factor = -0.05
 				political_power_cost = 0.1
@@ -18,12 +19,14 @@ ideas = {
 			}
 		}
 		ALA_medium_united_voice = { #boosted in decisions, by reduced peasant population bc peasants the reason why weak voice
+			picture = ALA_strong_united_voice_icon
 			modifier = {
 				war_support_factor = 0.05
 				local_manpower = -0.1
 			}
 		}
 		ALA_strong_united_voice = { #boosted in decisions, by reduced peasant population bc peasants the reason why weak voice
+			picture = ALA_strong_united_voice_icon
 			modifier = {
 				war_support_factor = 0.1
 				political_advisor_cost_factor = -0.25
@@ -31,9 +34,16 @@ ideas = {
 			}
 		}
 		DRU_mountain_hold = {
+			picture = DRU_mountain_hold_icon
 			modifier = {
 				army_defence_factor = 0.1
-				army_org_factor = 0.2
+				production_speed_bunker_factor = 0.3
+			}
+		}
+		ALDR_unrecognized_independence = {
+			modifier = {
+				improve_relations_maintain_cost_factor = 0.5
+				political_power_factor = -0.15
 			}
 		}
 	   	ALDR_weak_army_1 = {
@@ -81,7 +91,7 @@ ideas = {
 	           	experience_gain_army_factor = 0.15
 			}
 		}	
-	  	 ALDR_revive_culture = {
+	  	ALDR_revive_culture = {
 			modifier = {
 				stability_weekly = 0.005
 	           	war_support_weekly = 0.005
@@ -100,14 +110,26 @@ ideas = {
 		ALDR_expanded_recruitment = {
 			modifier = {
 				conscription = 0.02
-				monthly_population = 0.05
+				monthly_population = 0.025
 			}
 		}	
 		ALDR_industrial_golden_age = {
 			modifier = {
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.2
 				consumer_goods_factor = -0.1
 				industrial_capacity_factory = 0.15
+			}
+		}
+		ALA_france_syria_support = {
+			modifier = {
+				political_power_gain = 0.15
+				command_power_gain = 0.1
+			}
+		}
+		DRU_france_syria_support = {
+			modifier = {
+				political_power_gain = 0.15
+				command_power_gain = 0.1
 			}
 		}
 	}

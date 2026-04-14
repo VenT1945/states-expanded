@@ -1,4 +1,4 @@
-DRU_historical = {
+ALA_historical = {
 	name = "Alawite Historical Plan"
 	desc = ""
 

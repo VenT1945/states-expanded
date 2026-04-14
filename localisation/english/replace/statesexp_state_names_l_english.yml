@@ -22,6 +22,7 @@
  STATE_362:0 "Southside Virginia"
  STATE_363:0 "Upper Piedmont"
  STATE_364:0 "Upstate"
+ STATE_368:0 "Middle Tennessee"
  STATE_446:0 "West Suez"
  STATE_453:0 "North Sinai"
  STATE_454:0 "Al-Naqab"
@@ -347,3 +348,5 @@
  STATE_1248:0 "East Suez"
  STATE_1249:0 "Golan"
  STATE_1250:0 "Duhok"
+ STATE_1251:0 "West Tennessee"
+ STATE_1252:0 "East Tennessee"

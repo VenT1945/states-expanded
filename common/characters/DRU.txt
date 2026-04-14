@@ -31,4 +31,20 @@ characters = {
 			expire = "1954.1.1.1"
 		}
 	}
+	DRU_abdul_g_p_al_atrash = {
+
+		name = DRU_abdul_g_p_al_atrash
+
+		portraits = {
+    		civilian = {
+				small = GFX_idea_abdul_g_p_al_atrash
+    		}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = abdul_g_p_al_atrash
+			traits = { DRU_druze_leader }
+		}
+	}
 }

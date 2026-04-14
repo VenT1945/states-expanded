@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/paper_mandate.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_colonial_economy_icon"
+		texturefile = "gfx/interface/ideas/colonial_economy.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_SYR_divide_rule_icon"
 		texturefile = "gfx/interface/ideas/SYR_divide_rule.dds"
 	}
@@ -16,12 +20,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SYR_banque_syrie_2.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_colonial_economy_icon"
-		texturefile = "gfx/interface/ideas/colonial_economy.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_SYR_french_levant_army_icon"
 		texturefile = "gfx/interface/ideas/SYR_french_levant_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DRU_mountain_hold_icon"
+		texturefile = "gfx/interface/ideas/DRU_mountain_hold.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ALA_weak_united_voice_icon"
+		texturefile = "gfx/interface/ideas/ALA_weak_united_voice.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ALA_strong_united_voice_icon"
+		texturefile = "gfx/interface/ideas/ALA_strong_united_voice.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_hashim_al_atassi"

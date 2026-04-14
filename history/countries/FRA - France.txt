@@ -76,12 +76,10 @@ if = {
 	set_autonomy = {
 		target = ALA
 		autonomous_state = autonomy_autonomous_state
-		freedom_level = 0.3
 	}
 	set_autonomy = {
 		target = DRU
 		autonomous_state = autonomy_autonomous_state
-		freedom_level = 0.3
 	}
 	set_autonomy = {
 		target = CMR
@@ -89,7 +87,15 @@ if = {
 	}
 	set_autonomy = {
 		target = VIN
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_colonial_federation
+	}
+	set_autonomy = {
+		target = SEN
+		autonomous_state = autonomy_colonial_federation
+	}
+	set_autonomy = {
+		target = RCG
+		autonomous_state = autonomy_colonial_federation
 	}
 	set_autonomy = {
 		target = MOR
@@ -103,6 +109,8 @@ if = {
 		puppet = SYR
 		puppet = LEB
 		puppet = VIN
+		puppet = SEN
+		puppet = RCG
 		puppet = MOR
 		puppet = CMR
 		puppet = TUN

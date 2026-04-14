@@ -1,24 +1,95 @@
-DRU_sultan = {
-	name = "Alawite Sultan Plan"
+ALA_ahistorical_EARLY = {
+	name = "Alawite Ahistorical Plan EARLY"
 	desc = ""
 
 	allowed = {
 		original_tag = ALA
 	}
 	enable = {
+		has_country_flag = ALA_ai_ahistorical_early
 		OR = {
 			has_country_flag = ALA_AI_RANDOM_SULTAN
+			has_country_flag = ALA_AI_RANDOM_FASCISM
+			has_country_flag = ALA_AI_RANDOM_DEMOCRATIC
+			has_country_flag = ALA_AI_RANDOM_COMMUNIST
 			has_game_rule = {
 				rule = ALA_ai_behavior
 				option = SULTAN
+			}
+			has_game_rule = {
+				rule = ALA_ai_behavior
+				option = FASCIST
+			}
+			has_game_rule = {
+				rule = ALA_ai_behavior
+				option = DEMOCRATIC
+			}
+			has_game_rule = {
+				rule = ALA_ai_behavior
+				option = COMMUNIST
 			}
 		}
 	}
     ai_national_focuses = {
         ALDR_realize_future
         ALDR_oppose_france
-        ALDR_national_identity
         ALDR_industrial_growth
-        ALDR_army_expansion
+		ALA_raise_status
+        ALDR_ask_for_support
+		ALDR_national_identity
+		ALDR_bring_back_leaders
+		ALDR_civilian_loyalty
+		ALDR_propose_union
+		ALDR_expand_civilian_sector
+		ALDR_military_industry
+		ALDR_expand_fort_effort
+    }
+}
+ALA_ahistorical_LATE = {
+	name = "Alawite Ahistorical Plan LATE"
+	desc = ""
+
+	allowed = {
+		original_tag = ALA
+	}
+	enable = {
+		has_country_flag = ALA_ai_ahistorical_late
+		OR = {
+			has_country_flag = ALA_AI_RANDOM_SULTAN
+			has_country_flag = ALA_AI_RANDOM_FASCISM
+			has_country_flag = ALA_AI_RANDOM_DEMOCRATIC
+			has_country_flag = ALA_AI_RANDOM_COMMUNIST
+			has_game_rule = {
+				rule = ALA_ai_behavior
+				option = SULTAN
+			}
+			has_game_rule = {
+				rule = ALA_ai_behavior
+				option = FASCIST
+			}
+			has_game_rule = {
+				rule = ALA_ai_behavior
+				option = DEMOCRATIC
+			}
+			has_game_rule = {
+				rule = ALA_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+    ai_national_focuses = {
+        ALDR_realize_future
+        ALDR_oppose_france
+        ALDR_industrial_growth
+		ALDR_military_industry
+		ALDR_ask_for_support
+		ALA_raise_status
+		ALDR_national_identity
+		ALDR_expand_civilian_sector
+		ALDR_expand_fort_effort
+		ALDR_bring_back_leaders
+		ALDR_civilian_loyalty
+		ALDR_infastructure_focus
+		ALDR_propose_union
     }
 }

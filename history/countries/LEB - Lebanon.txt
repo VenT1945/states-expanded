@@ -117,7 +117,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Rami Sarraff"
+	name = "Artin Madoyan"
 	desc = ""
 	picture = GFX_portrait_Rami_Sarraff
 	ideology = leninism

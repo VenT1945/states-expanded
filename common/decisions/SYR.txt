@@ -45,120 +45,43 @@ SYR_charles_huntziger_category = {
 		}
 	}
 }
-SYR_kurdistan_commie_category = {
-	SYR_fund_turkey_kurdistan_rebellion = {
-		cost = 50
-		days_re_enable = 30
-		complete_effect = {
-			add_to_variable = {
-				var = SYR_turk_kurd_fund_value
-				value = 1
-				tooltip = SYR_add_fund_value_tt
-			}
-		}
-	}
-	SYR_start_turkey_kurdistan_rebellion = {
-		cost = 50
-		available = {
-			custom_trigger_tooltip = {
-    			tooltip = SYR_enough_kurd_funding
-    			check_variable = {
-					var = SYR_turk_kurd_fund_value
-					value = 3
-					compare = equals
-				}
-			}
-		}
+SYR_FRA_unratify_treaty = {
+	SYR_unratify_treaty = {
+		cost = 100
 		fire_only_once = yes
-		days_remove = 45
+		days_remove = 50
 		remove_effect = {
-			custom_effect_tooltip = SYR_rebellion_kurd_start
-			hidden_effect = {
-				350 = {
-					transfer_state_to = KUR
+			SYR = {
+				country_event = syria_treaty.15
+				uncomplete_national_focus = {
+					focus = SYR_ratified
+					uncomplete_children = yes
+					refund_political_power = no
 				}
-				352 = {
-					transfer_state_to = KUR
+				complete_national_focus = SYR_failed
+				remove_ideas = SYR_independence
+				IF = {
+					limit = {
+						has_idea = SYR_reperations
+					}
+					remove_ideas = SYR_reperations
+					FRA = {
+						remove_ideas = SYR_reperations_payments
+					}
 				}
-				344 = {
-					add_core_of = KUR
-				}
-				353 = {
-					owner = {
-						declare_war_on = {
-							target = KUR
-							type = annex_everything
+				IF = {
+					limit = {
+						LEB = {
+							is_subject_of = SYR
+						}
+					}
+					FRA = {
+						set_autonomy = {
+							target = LEB
+							autonomous_state = autonomy_mandate
 						}
 					}
 				}
-				country_event = syria_communism.7
-				KUR = {
-					division_template = {
-						name = "Kurdish Insurrection Force"
-						is_locked = yes
-						division_cap = 6
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-						}
-						support = {
-							military_police = { x = 0 y = 0 }
-						}
-					}
-				}
-				activate_mission = SYR_kurdistan_mission_turkey
-			}
-		}
-	}
-	SYR_kurdistan_mission_turkey = {
-		days_mission_timeout = 270
-		allowed = {
-			always = no
-		}
-		available = {
-			always = no
-		}
-		is_good = no
-		timeout_effect = {
-			353 = {
-				owner = {
-					white_peace = SYR
-					white_peace = KUR
-				}
-			}
-			350 = {
-				transfer_state_to = TUR
-			}
-			352 = {
-				transfer_state_to = TUR
-			}
-		}
-		cancel_trigger = {
-			KUR = {
-				controls_state = 350
-				controls_state = 352
-				controls_state = 353
-				controls_state = 800
-				controls_state = 344
-			}
-		}
-		cancel_effect = {
-			353 = {
-				owner = {
-					white_peace = SYR
-					white_peace = KUR
-				}
-			}
-			353 = {
-				transfer_state_to = KUR
-			}
-			344 = {
-				transfer_state_to = KUR
-			}
-			800 = {
-				transfer_state_to = KUR
 			}
 		}
 	}

@@ -1,7 +1,31 @@
 add_namespace = syria
 add_namespace = syria_treaty
 add_namespace = syria_communism
+add_namespace = syria_hidden
 
+country_event = {
+    id = syria_hidden.1
+    
+    hidden = yes 
+
+    trigger = {
+        original_tag = SYR
+		has_country_flag = SYR_khalil_bey_hired
+		has_country_flag = SYR_jamil_bey_hired
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        hidden_effect = {
+            SYR = {
+				add_ideas = SYR_mardam_bey_family_boost
+			}
+        }
+    }
+}
 country_event = {
 	id = syria.1 #strikes
 	title = syria.1.t
@@ -271,6 +295,7 @@ country_event = {
 		}
 		FROM = {
 			complete_national_focus = SYR_ratified
+			country_event = syria_treaty.16
 		}
 	}
 	option = {
@@ -284,6 +309,7 @@ country_event = {
 		}
 		FROM = {
 			complete_national_focus = SYR_failed
+			country_event = syria_treaty.17
 		}
 	}
 }
@@ -304,13 +330,13 @@ country_event = {
 			}
 		}
 		FROM = {
-			annex_country = {
-    			target = ROOT
-    			transfer_troops = yes
-			}
 			set_division_template_lock = {
 				division_template = "Irregular Militia"
 				is_locked = no
+			}
+			annex_country = {
+    			target = ROOT
+    			transfer_troops = yes
 			}
 			country_event = {
                 id = syria_treaty.9
@@ -327,15 +353,43 @@ country_event = {
 				add = 5
 			}
 		}
-		ROOT = {
-			drop_cosmetic_tag = yes
+		IF = {
+			limit = {
+				NOT = {
+					has_autonomy_state = autonomy_free
+					has_cosmetic_tag = ALDR_levantine_state_fra
+				}
+			}
+			ROOT = {
+				drop_cosmetic_tag = yes
+			}
+			FROM = {
+				set_autonomy = {
+   					target = ROOT
+    				autonomous_state = autonomy_free
+				}
+			}	
+		}
+		IF = {
+			limit = {
+				has_cosmetic_tag = ALDR_levantine_state_fra
+				NOT = {
+					has_autonomy_state = autonomy_free
+				}
+			}
+			ROOT = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = ALDR_levantine_state_free
+			}
+			FROM = {
+				set_autonomy = {
+   					target = ROOT
+    				autonomous_state = autonomy_free
+				}
+			}	
 		}
 		FROM = {
-			set_autonomy = {
-   				target = ROOT
-    			autonomous_state = autonomy_free
-			}
-            country_event = {
+			country_event = {
                 id = syria_treaty.8
                 random_days = 5
             }
@@ -403,11 +457,27 @@ country_event = {
 		ai_chance = {
     		base = 10
 		}
-		ALA = {
-			country_event = syria_treaty.7
+		IF = {
+			limit = {
+				country_exists = ALA
+			}
+			ALA = {
+				country_event = {
+					id = syria_treaty.7
+					days = 1
+				}
+			}
 		}
-		DRU = {
-			country_event = syria_treaty.7
+		IF = {
+			limit = {
+				country_exists = DRU
+			}
+			DRU = {
+				country_event = {
+					id = syria_treaty.7
+					days = 1
+				}
+			}
 		}
 		hidden_effect = {
 			IF = {
@@ -509,6 +579,48 @@ country_event = {
 		set_autonomy = {
 			target = LEB
 			autonomous_state = autonomy_protectorate
+		}
+	}
+}
+country_event = {
+	id = syria_treaty.15
+	title = syria_treaty.15.t
+	desc = syria_treaty.15.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = syria_treaty.15.a
+		ai_chance = {
+    		base = 10
+		}
+	}
+}
+country_event = {
+	id = syria_treaty.16
+	title = syria_treaty.16.t
+	desc = syria_treaty.16.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = syria_treaty.16.a
+		ai_chance = {
+    		base = 10
+		}
+	}
+}
+country_event = {
+	id = syria_treaty.17
+	title = syria_treaty.17.t
+	desc = syria_treaty.17.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = syria_treaty.17.a
+		ai_chance = {
+    		base = 10
 		}
 	}
 }
@@ -678,185 +790,6 @@ country_event = {
 	option = {
 		name = syria_communism.7.a
 		ai_chance = {
-			base = 5
-		}
-		KUR = {
-			country_event = {
-				id = syria_communism.8
-				days = 1
-			}
-		}
-		hidden_effect = {
-			KUR = {
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = syria_communism.7.b
-		ai_chance = {
-			base = 10
-		}
-		KUR = {
-			country_event = {
-				id = syria_communism.9
-				days = 1
-			}
-		}
-		hidden_effect = {
-			KUR = {
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = syria_communism.7.c
-		ai_chance = {
-			base = 0
-		}
-		KUR = {
-			give_military_access = SYR
-		}
-		353 = {
-			owner = {
-				declare_war_on = SYR
-			}
-		}
-		hidden_effect = {
-			KUR = {
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-				random_owned_state = {
-					create_unit = {
-						division = "name = \"Kurdish Insurrection Force\" division_template = \"Kurdish Insurrection Force\" start_experience_factor = 0"
-						owner = KUR
-					}
-				}
-			}
-		}
-	}
-}
-country_event = {
-	id = syria_communism.8
-	title = syria_communism.8.t
-	desc = syria_communism.8.d
-
-	is_triggered_only = yes
-	
-	option = {
-		name = syria_communism.8.a
-		ai_chance = {
-			base = 5
-		}
-		SYR = {
-			puppet = {
-				target = KUR
-				end_wars = no
-			}
-		}
-	}
-	option = {
-		name = syria_communism.8.b
-		ai_chance = {
-			base = 5
-		}
-	}
-}
-country_event = {
-	id = syria_communism.9
-	title = syria_communism.9.t
-	desc = syria_communism.9.d
-
-	is_triggered_only = yes
-	
-	option = {
-		name = syria_communism.9.a
-		ai_chance = {
-			base = 5
-		}
-		SYR = {
-			add_to_faction = KUR
-		}
-	}
-	option = {
-		name = syria_communism.9.b
-		ai_chance = {
-			base = 5
-		}
-	}
-}
-country_event = {
-	id = syria_communism.10
-	title = syria_communism.10.t
-	desc = syria_communism.10.d
-
-	is_triggered_only = yes
-	
-	option = {
-		name = syria_communism.10.a
-		ai_chance = {
 			base = 15
 		}
 		FROM = {
@@ -864,7 +797,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = syria_communism.10.b
+		name = syria_communism.7.b
 		ai_chance = {
 			base = 5
 		}

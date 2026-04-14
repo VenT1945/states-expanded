@@ -8,10 +8,6 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/SYR_army_modernization.dds"
     }
     spriteType = {
-        name = "GFX_SYR_protest_france"
-        texturefile = "gfx/interface/goals/SYR_protest_france.dds"
-    }
-    spriteType = {
         name = "GFX_SYR_defense_act"
         texturefile = "gfx/interface/goals/SYR_defense_act.dds"
     }
@@ -80,7 +76,43 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/SYR_proclaim_independence_day.dds"
     }
     spriteType = {
+        name = "GFX_SYR_soviet_support"
+        texturefile = "gfx/interface/goals/SYR_soviet_support.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_SYR_kick_out_colonial_admin"
+        texturefile = "gfx/interface/goals/SYR_kick_out_colonial_admin.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_one_party_one_state"
+        texturefile = "gfx/interface/goals/SYR_one_party_one_state.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_divide_parties_commie"
+        texturefile = "gfx/interface/goals/SYR_divide_parties_commie.dds"
+    }
+    spriteType = {
         name = "GFX_HATAY_show_dispute_league"
         texturefile = "gfx/interface/goals/HATAY_show_dispute_league.dds"
+    }
+    spriteType = {
+        name = "GFX_ALA_civilian_loyalty"
+        texturefile = "gfx/interface/goals/ALA_civilian_loyalty.dds"
+    }
+    spriteType = {
+        name = "GFX_DRU_civilian_loyalty"
+        texturefile = "gfx/interface/goals/DRU_civilian_loyalty.dds"
+    }
+    spriteType = {
+        name = "GFX_ALDR_propose_union"
+        texturefile = "gfx/interface/goals/ALDR_propose_union.dds"
+    }
+    spriteType = {
+        name = "GFX_ALDR_bring_back_leaders"
+        texturefile = "gfx/interface/goals/ALDR_bring_back_leaders.dds"
+    }
+    spriteType = {
+        name = "GFX_ALDR_auxiliary_forces"
+        texturefile = "gfx/interface/goals/ALDR_auxiliary_forces.dds"
     }
 }
