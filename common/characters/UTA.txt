@@ -1,4 +1,20 @@
 characters = {
+	UTA_no_government = {
+
+		name = UTA_no_government
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_desert
+			}
+		}
+
+		country_leader = {
+			ideology = anarchism
+			traits = {  }
+			expire = "2000.1.1.1"
+		}
+	}
 	UTA_bedouin_nomads = {
 
 		name = UTA_bedouin_nomads
