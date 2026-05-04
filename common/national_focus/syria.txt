@@ -99,8 +99,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = SYR_banned_ssnp
-			add_stability = 0.05
 			add_political_power = 75
+			add_ideas = SYR_banned_ssnp_idea
 		}
 	}
 	focus = {
@@ -425,6 +425,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.05
+			add_ideas = {
+				SYR_fragile_state
+			}
 		}
 	}
 	focus = {
@@ -457,7 +462,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SYR_redraft_constitution
+		id = SYR_administrative_reform
 		x = 0
 		y = 1
 
@@ -469,7 +474,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			
+			add_political_power = 75
+			add_command_power = 50
 		}
 	}
 	focus = {
@@ -477,15 +483,20 @@ focus_tree = {
 		x = 0
 		y = 1
 
+		available = {
+			NOT = {
+				has_idea = SYR_transitional_power
+			}
+		}
 
 		cost = 10
 
-		relative_position_id = SYR_redraft_constitution
-		prerequisite = { focus = SYR_redraft_constitution }
+		relative_position_id = SYR_administrative_reform
+		prerequisite = { focus = SYR_administrative_reform }
 
 
 		completion_reward = {
-			
+			country_event = sy
 		}
 	}
 	focus = {
@@ -503,7 +514,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			
+			add_stability = 0.1
+        	add_political_power = 50
 		}
 	}
 	focus = {
@@ -1742,6 +1754,8 @@ focus_tree = {
 		x = 1
 		y = 1
 
+		icon = GFX_SOV_collectivist_propaganda_ccp_2d_sov_compatibility
+
 		cost = 5
 
 		relative_position_id = SYR_rally_working_class
@@ -1772,6 +1786,8 @@ focus_tree = {
 		id = SYR_expand_underground_operations
 		x = -1
 		y = 1
+
+		icon = GFX_focus_prc_infiltration
 
 		cost = 5
 
@@ -1921,6 +1937,8 @@ focus_tree = {
 		x = 1
 		y = 1
 
+		icon = GFX_SYR_stabilize_internals
+
 		cost = 5
 
 		relative_position_id = SYR_kick_out_colonial_admin
@@ -1936,6 +1954,8 @@ focus_tree = {
 		x = -1
 		y = 1
 
+		icon = GFX_focus_AFG_parliamentary_democracy
+
 		cost = 10
 
 		relative_position_id = SYR_kick_out_colonial_admin
@@ -1949,6 +1969,8 @@ focus_tree = {
 		id = SYR_islamic_socialism
 		x = -1
 		y = 1
+
+		icon = GFX_SYR_islamic_socialism
 
 		cost = 10
 
@@ -1965,6 +1987,8 @@ focus_tree = {
 		id = SYR_state_atheism
 		x = 1
 		y = 1
+		
+		icon = GFX_focus_AFG_state_atheism
 
 		cost = 10
 
@@ -2034,6 +2058,8 @@ focus_tree = {
 		id = SYR_spread_revolution_south
 		x = -1
 		y = 1
+
+		icon = GFX_focus_IRQ_demand_palestine
 
 		cost = 10
 
@@ -2202,6 +2228,8 @@ focus_tree = {
 		id = SYR_unite_levant_commie
 		x = -1
 		y = 1
+
+		icon = GFX_focus_IRQ_liberate_levant
 
 		cost = 10
 
@@ -2391,7 +2419,7 @@ focus_tree = {
 
 		allow_branch = {
 			NOT = {
-				has_completed_focus = SYR_french_concessions
+				has_completed_focus = SYR_realize_france_good
 			}
 		}
 
@@ -2496,14 +2524,35 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SYR_expand_homs_mil_academy
-		x = 2
+		id = SYR_start_fixing_economy
+		x = 1
 		y = 1
 
 		cost = 10
 
 		relative_position_id = SYR_industrialization
 		prerequisite = { focus = SYR_industrialization }
+
+		available = {
+			has_idea = LON_recovering_economy_1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LON_recovering_economy_1
+				add_idea = LON_recovering_economy_2
+			}
+		}
+	}
+	focus = {
+		id = SYR_expand_homs_mil_academy
+		x = 1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_start_fixing_economy
+		prerequisite = { focus = SYR_start_fixing_economy }
 
 		completion_reward = {
 			1100 = {
@@ -2525,8 +2574,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SYR_military_industry_expansion
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_expand_homs_mil_academy
+		prerequisite = { focus = SYR_expand_homs_mil_academy }
+
+		completion_reward = {
+			add_political_power = 25
+			random_owned_state = {
+				limit = { is_core_of = ROOT }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
 		id = SYR_develop_desert
-		x = -2
+		x = -1
 		y = 1
 
 		cost = 10
@@ -2557,7 +2628,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SYR_defend_desert
+		id = SYR_revisit_euphrates_dam
 		x = -3
 		y = 1
 
@@ -2567,35 +2638,24 @@ focus_tree = {
 		prerequisite = { focus = SYR_develop_desert }
 
 		completion_reward = {
-			custom_effect_tooltip = SYR_desert_forts_tt
-			hidden_effect = {
-				1102 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
-					}
-				}
-				680 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
+			680 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 3942
 					}
 				}
 			}
-		}	
+			custom_effect_tooltip = {
+				localization_key = building_state_modifier|dam
+				INDENT = "    "
+			}
+		}
 	}
 	focus = {
-		id = SYR_resource_extraction_1
+		id = SYR_new_construction_plan
 		x = -1
 		y = 1
 
@@ -2603,6 +2663,20 @@ focus_tree = {
 
 		relative_position_id = SYR_develop_desert
 		prerequisite = { focus = SYR_develop_desert }
+
+		completion_reward = {
+			add_ideas = SYR_new_construction_plan_idea
+		}
+	}
+	focus = {
+		id = SYR_resource_extraction_1
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = SYR_new_construction_plan
+		prerequisite = { focus = SYR_new_construction_plan }
 
 		completion_reward = {
 			random_owned_state = {
@@ -2665,20 +2739,20 @@ focus_tree = {
 	}
 	focus = {
 		id = SYR_expand_aleppo_textiles
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 5
 
-		relative_position_id = SYR_industrialization
-		prerequisite = { focus = SYR_industrialization }
+		relative_position_id = SYR_start_fixing_economy
+		prerequisite = { focus = SYR_start_fixing_economy focus = SYR_develop_desert }
 
 		completion_reward = {
 			677 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2686,38 +2760,38 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}	
+			}
+			add_stability = 0.025	
 		}
 	}
 	focus = {
 		id = SYR_develop_unis
-		x = -1
+		x = 0
 		y = 1
 
 		cost = 10
 
 		relative_position_id = SYR_expand_aleppo_textiles
 		prerequisite = { focus = SYR_expand_aleppo_textiles }
-		prerequisite = { focus = SYR_develop_desert }
+		prerequisite = { focus = SYR_new_construction_plan }
 
 		completion_reward = {
 			add_research_slot = 1
 			add_tech_bonus = {
     			bonus = 0.5
     			uses = 1
-    			category = electronics_bonus
+    			category = electronics
 			}				
 		}
 	}
 	focus = {
 		id = SYR_develop_railways
-		x = 1
+		x = 2
 		y = 1
 
 		cost = 10
 
-		relative_position_id = SYR_expand_aleppo_textiles
-		prerequisite = { focus = SYR_expand_aleppo_textiles }
+		relative_position_id = SYR_expand_homs_mil_academy
 		prerequisite = { focus = SYR_expand_homs_mil_academy }
 
 		completion_reward = {
@@ -2735,11 +2809,31 @@ focus_tree = {
 		prerequisite = { focus = SYR_develop_railways }
 
 		completion_reward = {
-			#connects railway inbetween syria deir oz zor and iraq, gives infra and extra slot	
+			680 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				level = 1
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = SYR
+						add = 2
+					}
+				}
+				path = { 3942 2013 12413 }
+				start_province = 3942
+    			target_province = 12413
+			}
 		}
 	}
 	focus = {
-		id = SYR_military_expansion
+		id = SYR_promote_generals
 		x = 39
 		y = 0
 

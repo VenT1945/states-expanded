@@ -1,0 +1,67 @@
+ideas = {
+    country = {
+        LON_mandate_A = {
+			picture = paper_mandate_icon
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.1
+				autonomy_gain = 0.25
+				research_speed_factor = -0.1
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+			cancel = {
+  				is_subject = no 
+			}
+		}
+		LON_colonial_economy = {
+			picture = colonial_economy_icon
+			modifier = {
+				production_speed_buildings_factor = -0.4
+				industrial_capacity_dockyard = -0.25
+				industrial_capacity_factory = -0.25
+				consumer_goods_factor = 0.15
+				local_resources_factor = 0.20
+				extra_trade_to_overlord_factor = 0.5
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+			cancel = {
+  				is_subject = no 
+			}
+			on_remove = {
+				add_ideas = LON_recovering_economy_1
+			}
+		}
+		LON_recovering_economy_1 = {
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+		LON_recovering_economy_2 = {
+			name = LON_recovering_economy_1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				local_resources_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		LON_recovered_economy = {
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.25
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+}

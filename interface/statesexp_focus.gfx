@@ -92,6 +92,14 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/SYR_divide_parties_commie.dds"
     }
     spriteType = {
+        name = "GFX_SYR_stabilize_internals"
+        texturefile = "gfx/interface/goals/SYR_stabilize_internals.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_islamic_socialism"
+        texturefile = "gfx/interface/goals/SYR_islamic_socialism.dds"
+    }
+    spriteType = {
         name = "GFX_HATAY_show_dispute_league"
         texturefile = "gfx/interface/goals/HATAY_show_dispute_league.dds"
     }

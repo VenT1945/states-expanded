@@ -1,0 +1,13 @@
+ideas = {
+    country = {
+        LEB_trade_hub = {
+    		picture = idk
+    		modifier = {
+        		consumer_goods_factor = -0.05
+                local_resources_factor = 0.10
+                extra_trade_to_overlord_factor = 0.10
+                political_power_factor = 0.05
+            }
+		}
+	}
+}

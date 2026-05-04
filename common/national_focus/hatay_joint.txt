@@ -11,7 +11,9 @@ joint_focus = {
     available = {
         tag = TUR
         OR = {
-            date > 1938.09.02
+            TUR = {
+                has_completed_focus = TUR_assess_our_future
+            }
             country_exists = HAT
         }
     }

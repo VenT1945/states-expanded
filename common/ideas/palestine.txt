@@ -1,33 +1,5 @@
 ideas = {
     country = {
-        LON_mandate_A = {
-			picture = paper_mandate_icon
-			modifier = {
-				political_power_factor = -0.1
-				stability_factor = -0.1
-				war_support_factor = -0.15
-				consumer_goods_factor = 0.1
-				autonomy_gain = 0.25
-				research_speed_factor = -0.1
-			}
-			allowed_civil_war = {
-                is_puppet = yes
-            }
-		}
-		LON_colonial_economy = {
-			picture = colonial_economy_icon
-			modifier = {
-				production_speed_buildings_factor = -0.4
-				industrial_capacity_dockyard = -0.25
-				industrial_capacity_factory = -0.25
-				consumer_goods_factor = 0.15
-				local_resources_factor = 0.20
-				extra_trade_to_overlord_factor = 0.5
-			}
-			allowed_civil_war = {
-                is_puppet = yes
-            }
-		}
         PAL_marginalized_muslim_maj = {
 			picture = raj_marginalized_muslim_community_angry
 			modifier = {
