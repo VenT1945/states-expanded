@@ -20,30 +20,6 @@ bookmarks = {
 				SYR_fix_instability
 			}
 		}
-		PAL = {
-			history = "PAL_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				PAL_marginalized_muslim_maj
-				PAL_balfour_declaration
-				LON_mandate_A
-			}
-			focuses = {
-				
-			}
-		}
-		JOR = {
-			history = "JOR_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-
-
-				LON_mandate_A
-			}
-			focuses = {
-				
-			}
-		}
 		LEB = {
 			history = "LEB_GATHERING_STORM_DESC"
 			ideology = democratic
