@@ -70,7 +70,6 @@ ideas = {
 				}
 			}
 			on_remove = {
-				deactivate_advisor = damien_de_martel
 				IF = {
 					limit = {
 						NOT = {
