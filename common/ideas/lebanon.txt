@@ -9,5 +9,11 @@ ideas = {
                 political_power_factor = 0.05
             }
 		}
+		LEB_weak_confessionalism = {
+    		picture = idk
+    		modifier = {
+        		stability_factor = -0.1
+            }
+		}
 	}
 }
