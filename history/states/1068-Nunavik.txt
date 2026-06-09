@@ -8,6 +8,9 @@ state={
 		owner = CAN
 		add_core_of = CAN
 		add_core_of = QUE
+		victory_points = {
+			7364 1 
+		}
 	}
 	manpower=8427
 	buildings_max_level_factor=1.000

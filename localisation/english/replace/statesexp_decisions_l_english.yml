@@ -11,6 +11,11 @@
  ALDR_ask_arab: "We will ask an §Yarab§! power for support."
  ALDR_support_acception: "We will get 2000 of their oldest infantry equipment."
  
+ HATAY_parliament_category: "The Hatay State Peoples Assembly"
+ HATAY_parliament_category_desc: "The Hatay State Peoples Assembly is the main legislative organ of the Hatay State.\n\nThere are currently §Y[?hatay_turkey_support]§! supporters for [TUR.GetNameWithFlag], §Y[?hatay_independence_support]§! supporters for independece, and §Y[?hatay_syria_support]§! supporters for [SYR.GetNameWithFlag]"
+ 
+
+
  PAL_great_palestinian_uprising: "The Great Palestinian Uprising"
  PAL_great_palestinian_uprising_mission: "Impending Palestinian Uprising"
  PAL_great_palestinian_uprising_mission_desc: ""

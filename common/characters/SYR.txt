@@ -361,22 +361,7 @@ characters = {
 				small = GFX_idea_adib_shishakli
     		}
 		}
-
-		corps_commander = {
-            traits = { infantry_officer }
-			skill = 3
-		    attack_skill = 3
-		    defense_skill = 2
-		    planning_skill = 2
-		    logistics_skill = 2
-        }
-
-		advisor = {
-			slot = high_command
-			idea_token = adib_shishakli
-			ledger = army
-			traits = { army_infantry_1 }
-		}
+		
 	}
 
 	SYR_husni_al_zaim = {

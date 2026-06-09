@@ -1,4 +1,4 @@
-capital = 1112
+capital = 1116
 
 recruit_character = UTA_bedouin_nomads
 

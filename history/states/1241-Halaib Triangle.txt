@@ -5,7 +5,7 @@ state={
 		1977 
 	}
 	history = {
-		owner = ENG
+		owner = SUD
 		add_core_of = SUD
 		victory_points = {
 			1977 1

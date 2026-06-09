@@ -5,8 +5,8 @@ state={
 		13401 
 	}
 	history = {
-		owner = UTA
-		add_core_of = UTA
+		owner = NZO
+		add_core_of = NZO
 		set_demilitarized_zone = yes
 	}
 	manpower=207

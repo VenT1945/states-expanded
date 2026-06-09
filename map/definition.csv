@@ -13501,3 +13501,7 @@
 13500;4;100;6;land;false;desert;5
 13501;60;67;53;land;false;mountain;7
 13502;50;125;222;land;true;mountain;7
+13503;90;100;223;land;false;plains;2
+13504;5;5;223;land;false;plains;2
+13505;123;77;123;land;true;mountain;5
+13506;77;77;123;land;false;mountain;5

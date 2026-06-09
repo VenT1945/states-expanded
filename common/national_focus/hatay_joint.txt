@@ -21,8 +21,27 @@ joint_focus = {
         SYR = {
             release = HAT
         }
+        FRA = {
+            set_autonomy = {
+                target = HAT
+                autonomous_state = autonomy_condominium
+            }
+        }
         HAT = {
             set_cosmetic_tag = HAT_hatay_state
+            add_ideas = HAT_multiethnic_state
+        }
+        set_variable = {
+            var = hatay_turkey_support
+            value = 22
+        }
+        set_variable = {
+            var = hatay_independence_support
+            value = 4
+        }
+        set_variable = {
+            var = hatay_syria_support
+            value = 14
         }
 	}
 }
@@ -45,6 +64,10 @@ joint_focus = {
         }
     }
 	completion_reward = {
+        HAT = {
+            add_ideas = HAT_joint_military_supervision
+            add_ideas = HAT_peoples_assembly
+        }
         unlock_decision_category_tooltip = HATAY_parliament_category
 	}
 }

@@ -506,7 +506,7 @@ focus_tree = {
 
 		available = { always = no }
 
-		cost = 5
+		cost = 1
 
 		relative_position_id = SYR_election_day
 		prerequisite = { focus = SYR_election_day }
@@ -540,11 +540,43 @@ focus_tree = {
 		y = 1
 
 
-		cost = 5
+		cost = 10
 
 		relative_position_id = SYR_national_bloc_wins
 		prerequisite = { focus = SYR_national_bloc_wins }
 
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_convene_constituent_assembly
+		x = 1
+		y = 1
+
+
+		cost = 5
+
+		relative_position_id = SYR_consolidate_national_bloc
+		prerequisite = { focus = SYR_consolidate_national_bloc }
+		prerequisite = { focus = SYR_new_anthem_comp }
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SYR_republican_consitution
+		x = 0
+		y = 2
+
+
+		cost = 10
+
+		relative_position_id = SYR_convene_constituent_assembly
+		prerequisite = { focus = SYR_convene_constituent_assembly focus = SYR_national_bloc_rises_again }
 
 		completion_reward = {
 			
@@ -557,7 +589,7 @@ focus_tree = {
 
 		available = { always = no }
 
-		cost = 5
+		cost = 1
 
 		relative_position_id = SYR_election_day
 		prerequisite = { focus = SYR_election_day }
@@ -636,6 +668,7 @@ focus_tree = {
 
 		relative_position_id = SYR_ousting_of_league
 		prerequisite = { focus = SYR_ousting_of_league }
+		prerequisite = { focus = SYR_avenge_maysalun }
 		mutually_exclusive = { focus = SYR_arab_baath }
 		mutually_exclusive = { focus = SYR_national_bloc_rises_again }
 
@@ -650,7 +683,7 @@ focus_tree = {
 
 		available = { always = no }
 
-		cost = 2
+		cost = 1
 
 		relative_position_id = SYR_ousting_of_league
 		prerequisite = { focus = SYR_ousting_of_league }
@@ -669,7 +702,7 @@ focus_tree = {
 
 		available = { always = no }
 
-		cost = 2
+		cost = 1
 
 		relative_position_id = SYR_ousting_of_league
 		prerequisite = { focus = SYR_ousting_of_league }
@@ -737,28 +770,13 @@ focus_tree = {
 	}
 	focus = {
 		id = SYR_militarism
-		x = -2
+		x = 0
 		y = 1
 
 		cost = 5
 
 		relative_position_id = SYR_promote_independence
 		prerequisite = { focus = SYR_promote_independence }
-
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SYR_mass_mobilization
-		x = 1
-		y = 1
-
-		cost = 5
-
-		relative_position_id = SYR_militarism
-		prerequisite = { focus = SYR_militarism }
 
 
 		completion_reward = {
@@ -782,14 +800,13 @@ focus_tree = {
 	}
 	focus = {
 		id = SYR_secular_nationalism_baath
-		x = 1
+		x = 0
 		y = 1
 
 		cost = 5
 
 		relative_position_id = SYR_create_ryu
 		prerequisite = { focus = SYR_create_ryu }
-		prerequisite = { focus = SYR_mass_mobilization }
 
 
 		completion_reward = {
@@ -837,6 +854,7 @@ focus_tree = {
 
 		relative_position_id = SYR_arab_faction
 		prerequisite = { focus = SYR_arab_faction }
+		prerequisite = { focus = SYR_militarism }
 
 
 		completion_reward = {
@@ -1252,7 +1270,12 @@ focus_tree = {
 
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = SYR_more_likely_to_accept_tt
 			custom_effect_tooltip = SYR_communism_blocked_tt
+			add_to_variable = {
+				var = SYR_treaty_coercion_value
+				value = 1
+			}
 		}
 	}
 	focus = {
@@ -1276,6 +1299,11 @@ focus_tree = {
 			add_stability = 0.05
 			add_autonomy_score = {
 				value = 250
+			}
+			custom_effect_tooltip = SYR_more_likely_to_accept_tt
+			add_to_variable = {
+				var = SYR_treaty_coercion_value
+				value = 1
 			}
 		}
 	}
@@ -1307,6 +1335,11 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+			}
+			custom_effect_tooltip = SYR_more_likely_to_accept_tt
+			add_to_variable = {
+				var = SYR_treaty_coercion_value
+				value = 1
 			}
 		}
 	}
@@ -2423,6 +2456,10 @@ focus_tree = {
 			}
 		}
 
+		available = {
+			is_subject = no
+		}
+
 		cost = 10
 
 		relative_position_id = SYR_france_treaty
@@ -2440,7 +2477,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 20
 
 		relative_position_id = SYR_nationalize_banque_de_syrie
 		prerequisite = { focus = SYR_nationalize_banque_de_syrie }
@@ -2834,7 +2871,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SYR_promote_generals
-		x = 39
+		x = 41
 		y = 0
 
 		cost = 5
@@ -2844,12 +2881,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 50
+			SYR_adib_shishakli = {
+				add_corps_commander_role = {
+					traits = { infantry_officer }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				add_advisor_role = {
+					advisor = {
+						slot = high_command
+						idea_token = adib_shishakli
+						ledger = army
+						traits = { army_infantry_1 }
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = SYR_army_modernization
-		x = 42
+		x = 44
 		y = 0
 
 		icon = GFX_SYR_army_modernization

@@ -1,0 +1,26 @@
+focus_tree = {
+	id = hatay_focus
+	continuous_focus_position = { x = 50 y = 3500 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HAT
+		}
+	}
+	focus = {
+		id = HAT_support_turkish_interests
+		x = 10
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+}

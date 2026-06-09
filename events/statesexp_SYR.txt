@@ -2,6 +2,7 @@ add_namespace = syria
 add_namespace = syria_treaty
 add_namespace = syria_communism
 add_namespace = syria_hidden
+add_namespace = hatay
 
 country_event = {
     id = syria_hidden.1
@@ -291,6 +292,30 @@ country_event = {
 					value > 75
 				}
 				factor = 3
+			}
+			modifier = {
+				check_variable = {
+					var = SYR_treaty_coercion_value
+					value = 1
+					compare = equals
+				}
+				factor = 1.1
+			}
+			modifier = {
+				check_variable = {
+					var = SYR_treaty_coercion_value
+					value = 2
+					compare = equals
+				}
+				factor = 1.25
+			}
+			modifier = {
+				check_variable = {
+					var = SYR_treaty_coercion_value
+					value = 3
+					compare = equals
+				}
+				factor = 1.5
 			}
 		}
 		FROM = {

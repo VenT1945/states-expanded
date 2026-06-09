@@ -247,6 +247,10 @@ if = {
 		autonomous_state = autonomy_protectorate
 	}
 	set_autonomy = {
+		target = UGA
+		autonomous_state = autonomy_protectorate
+	}
+	set_autonomy = {
 		target = RAJ
 		autonomous_state = autonomy_colony
 		freedom_level = 0.35
@@ -351,6 +355,14 @@ if = {
 		autonomous_state = autonomy_protectorate
 	}
 	set_autonomy = {
+		target = BOT
+		autonomous_state = autonomy_protectorate
+	}
+	set_autonomy = {
+		target = SUD
+		autonomous_state = autonomy_condominium
+	}
+	set_autonomy = {
 		target = BRM
 		autonomous_state = autonomy_colony
 		freedom_level = 0.2
@@ -399,6 +411,8 @@ if = {
 		puppet = QAT
 		puppet = BHR
 		puppet = UAE
+		puppet = UGA
+		puppet = BOT
 	}
 }
 

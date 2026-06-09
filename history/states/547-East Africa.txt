@@ -2,8 +2,8 @@
 state={
 	id=547
 	name="STATE_547"
-	manpower = 1085440
-	state_category=rural
+	manpower = 1146382
+	state_category= city
 
 	history={
 		owner = ENG
@@ -13,7 +13,16 @@ state={
 			
 		}
 		victory_points = {
-			1939 2 
+			1939 10
+		}
+		victory_points = {
+			13506 3
+		}
+		victory_points = {
+			10860 3
+		}
+		victory_points = {
+			5160 2 
 		}
 		
 		add_core_of = KEN
@@ -21,7 +30,7 @@ state={
 	}
 
 	provinces={
-		1939 2066 5079 10962 13135 
+		1939 5160 10860 13506
 	}
 	buildings_max_level_factor=1.000
 	

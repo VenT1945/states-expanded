@@ -9,7 +9,7 @@ state = {
 	state_category = town
 	
 	history = {
-		owner = BRM
+		owner = RAJ
 		add_core_of = BRM
 
 		buildings = {

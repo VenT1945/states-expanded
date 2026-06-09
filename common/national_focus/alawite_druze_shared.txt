@@ -276,18 +276,30 @@ shared_focus =  {
 				original_tag = ALA
 			}
 			FRA = {
-				add_ideas = ALA_france_syria_support
+				add_timed_idea = {
+					idea = ALA_france_syria_support
+					days = 360
+				}
 			}
 			SYR = {
-				add_ideas = ALA_france_syria_support
+				add_timed_idea = {
+					idea = ALA_france_syria_support
+					days = 360
+				}
 			}
 		}
 		ELSE = {
 			FRA = {
-				add_ideas = DRU_france_syria_support
+				add_timed_idea = {
+					idea = DRU_france_syria_support
+					days = 360
+				}
 			}
 			SYR = {
-				add_ideas = DRU_france_syria_support
+				add_timed_idea = {
+					idea = DRU_france_syria_support
+					days = 360
+				}
 			}
 		}
 	}

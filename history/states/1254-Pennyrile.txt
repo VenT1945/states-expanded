@@ -1,0 +1,21 @@
+state={
+	id=1254
+	name="STATE_1254"
+	provinces={
+		4402 4988 6974 10727 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			10727 2
+		}
+		victory_points = {
+			6974 3
+		}
+	}
+	manpower=736251
+	buildings_max_level_factor=1
+	state_category = town
+	local_supplies=0
+}

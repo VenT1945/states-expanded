@@ -74,6 +74,10 @@ if = {
 		autonomous_state = autonomy_mandate
 	}
 	set_autonomy = {
+		target = TOG
+		autonomous_state = autonomy_mandate
+	}
+	set_autonomy = {
 		target = ALA
 		autonomous_state = autonomy_autonomous_state
 	}
@@ -116,6 +120,7 @@ if = {
 		puppet = TUN
 		puppet = ALA
 		puppet = DRU
+		puppet = TOG
 	}
 }
 

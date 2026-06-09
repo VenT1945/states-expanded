@@ -2,8 +2,8 @@
 state={
 	id=396
 	name="STATE_396"
-	manpower = 3238501
-	state_category = large_city
+	manpower = 1142387
+	state_category = city
 
 	history={
 		owner = USA
@@ -13,13 +13,21 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
-			1595 5 
+			1595 10 
 		}
-
+		victory_points = {
+			4531 3 
+		}
+		victory_points = {
+			12437 3
+		}
+		victory_points = {
+			9810 3 
+		}
 	}
 
 	provinces={
-		870 1595 1881 4437 4527 4531 6713 7551 9653 9654 9796 9810 10448 11621 11635 11637 12437 
+		1595 4531 7551 9796 9810 12437 
 	}
 
 	local_supplies=0.0 
