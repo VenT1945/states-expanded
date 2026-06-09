@@ -23,16 +23,16 @@ on_actions = {
 							SYR = { set_country_flag = SYR_AI_RANDOM_HISTORICAL }
 						}
 						25 = {
-							SYR = { set_country_flag = SYR_AI_RANDOM_UMAYYAD }
+							SYR = { set_country_flag = SYR_AI_RANDOM_NATIONAL_BLOC }
 						}
 						5 = {
-							SYR = { set_country_flag = SYR_AI_RANDOM_OTTOMAN }
+							SYR = { set_country_flag = SYR_AI_RANDOM_BAATHISM }
 						}
 						10 = {
 							SYR = { set_country_flag = SYR_AI_RANDOM_FASCISM }
 						}
-						10 = {
-							SYR = { set_country_flag = SYR_AI_RANDOM_DEMOCRATIC }
+						5 = {
+							SYR = { set_country_flag = SYR_AI_RANDOM_MANDATE }
 						}
 						15 = {
 							SYR = { set_country_flag = SYR_AI_RANDOM_COMMUNIST }

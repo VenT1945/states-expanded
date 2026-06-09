@@ -790,7 +790,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = ALDR_stay_with_sultan
-	x = -2
+	x = -3
 	y = 1
 	cost = 10
 	relative_position_id = ALDR_global_recognition
@@ -808,7 +808,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = ALDR_new_ideologies
-	x = 2
+	x = 3
 	y = 1
 	cost = 10
 	relative_position_id = ALDR_global_recognition
