@@ -5,7 +5,7 @@ characters = {
 
 		portraits = {
 			civilian = {
-				large = GFX_portrait_europe_generic_5
+				large = GFX_portrait_DRU_pierre_f_j_tarrit
 			}
 		}
 
@@ -21,7 +21,11 @@ characters = {
 
 		portraits = {
 			civilian = {
-				large = GFX_portrait_europe_generic_2
+				large = GFX_portrait_DRU_sultan_al_atrash
+			}
+			army = {
+				large = GFX_portrait_DRU_sultan_al_atrash
+				small = GFX_idea_sultan_al_atrash
 			}
 		}
 
@@ -45,6 +49,17 @@ characters = {
 			slot = political_advisor
 			idea_token = abdul_g_p_al_atrash
 			traits = { DRU_druze_leader }
+		}
+	}
+	DRU_zayd_al_atrash = {
+
+		name = DRU_zayd_al_atrash
+		
+		portraits = {
+			army = {
+				large = GFX_portrait_DRU_zayd_al_atrash
+				small = GFX_idea_zayd_al_atrash
+			}
 		}
 	}
 }

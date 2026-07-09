@@ -1,0 +1,33 @@
+update_faction_scaling = {
+
+    set_variable = { faction_members = 0 }
+
+    every_country = {
+        limit = {
+            is_in_faction_with = ROOT
+            NOT = { tag = ROOT }
+        }
+        add_to_variable = {
+            faction_members = 1
+        }
+    }
+    add_to_variable = {
+        faction_members = 1
+    }
+
+    set_variable = {
+        faction_cg_bonus = faction_members
+    }
+
+    multiply_variable = {
+        faction_cg_bonus = -0.01
+    }
+
+    set_variable = {
+        faction_construction_bonus = faction_members
+    }
+
+    multiply_variable = {
+        faction_construction_bonus = 0.015
+    }
+}

@@ -24,6 +24,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SYR_french_levant_army.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_SYR_baath_icon"
+		texturefile = "gfx/interface/ideas/SYR_baath.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_DRU_mountain_hold_icon"
 		texturefile = "gfx/interface/ideas/DRU_mountain_hold.dds"
 	}
@@ -34,9 +38,5 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ALA_strong_united_voice_icon"
 		texturefile = "gfx/interface/ideas/ALA_strong_united_voice.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_hashim_al_atassi"
-		texturefile = "gfx/interface/ideas/idea_hashim_al_atassi.dds"
 	}
 }

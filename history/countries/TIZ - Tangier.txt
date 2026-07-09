@@ -1,5 +1,7 @@
 capital = 1163
 
+recruit_character = TIZ_tangier_administration
+
 set_research_slots = 2
 # Starting tech
 set_technology = {
@@ -17,10 +19,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 30
-	communism = 5
-	neutrality = 60
-	fascism = 5
+	democratic = 2
+	communism = 2
+	neutrality = 95
+	fascism = 1
 }
 
 

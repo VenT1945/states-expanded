@@ -10,6 +10,7 @@ set_technology = {
 
 set_convoys = 5
 
+recruit_character = ZIM_godfrey_huggins
 recruit_character = ZIM_acr
 recruit_character = ZIM_stc
 recruit_character = ZIM_awt

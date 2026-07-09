@@ -10,22 +10,13 @@ joint_focus = {
     text_icon = SSB_TUR_focus_style
     available = {
         tag = TUR
-        OR = {
-            TUR = {
-                has_completed_focus = TUR_assess_our_future
-            }
-            country_exists = HAT
+        TUR = {
+            has_completed_focus = TUR_assess_our_future
         }
     }
 	completion_reward_joint_originator = {
         SYR = {
             release = HAT
-        }
-        FRA = {
-            set_autonomy = {
-                target = HAT
-                autonomous_state = autonomy_condominium
-            }
         }
         HAT = {
             set_cosmetic_tag = HAT_hatay_state
@@ -46,37 +37,11 @@ joint_focus = {
 	}
 }
 joint_focus = {
-	id = HATAY_show_dispute_league
-	x = 0
-	y = 1
-    icon = GFX_HATAY_show_dispute_league
-    prerequisite = { focus = TUR_the_hatay_issue }
-    relative_position_id = TUR_the_hatay_issue 
-	cost = 5
-	ai_will_do = {
-		base = 10
-    }
-    text_icon = HATAY_TUR_SYR_focus_style
-    available = {
-        OR = {
-            tag = TUR
-            tag = SYR
-        }
-    }
-	completion_reward = {
-        HAT = {
-            add_ideas = HAT_joint_military_supervision
-            add_ideas = HAT_peoples_assembly
-        }
-        unlock_decision_category_tooltip = HATAY_parliament_category
-	}
-}
-joint_focus = {
 	id = HATAY_TUR_recognize_independence
 	x = -1
 	y = 1
-    prerequisite = { focus = HATAY_show_dispute_league }
-    relative_position_id = HATAY_show_dispute_league 
+    prerequisite = { focus = TUR_the_hatay_issue }
+    relative_position_id = TUR_the_hatay_issue 
 	cost = 5
 	ai_will_do = {
 		base = 10

@@ -360,12 +360,7 @@ if = {
 	}
 	set_autonomy = {
 		target = SUD
-		autonomous_state = autonomy_condominium
-	}
-	set_autonomy = {
-		target = BRM
-		autonomous_state = autonomy_colony
-		freedom_level = 0.2
+		autonomous_state = autonomy_protectorate
 	}
 	set_autonomy = {
 		target = FSA

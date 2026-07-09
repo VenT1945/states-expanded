@@ -5,6 +5,8 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+recruit_character = RCG_jean_marchessou
+
 set_cosmetic_tag = RCG_colonial_fed
 
 set_convoys = 20

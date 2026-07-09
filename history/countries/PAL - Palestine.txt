@@ -104,7 +104,7 @@ set_popularities = {
 	communism = 4 
 }
 
-recruit_character = PAL_harold_macmichael
+recruit_character = PAL_arthur_grenfell_wauchope
 recruit_character = PAL_amin_al_husseini
 
 create_country_leader = {
@@ -114,23 +114,6 @@ create_country_leader = {
 	ideology = liberalism
 	traits = {
 		#
-	}
-}
-
-IF = {
-	limit = {
-		NOT = {
-			has_dlc = "Graveyard of Empires"
-		}
-	}
-	create_country_leader = {
-		name = "Amin al-Husseini"
-		desc = ""
-		picture = GFX_portrait_Amin_al_Husseini
-		ideology = fascism_ideology
-		traits = {
-			#
-		}
 	}
 }
 

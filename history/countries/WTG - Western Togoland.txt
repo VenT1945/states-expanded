@@ -7,6 +7,8 @@ set_technology = {
 }
 set_cosmetic_tag = WTG_mandate
 
+recruit_character = WTG_arnold_hodson
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"

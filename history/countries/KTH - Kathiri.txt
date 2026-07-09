@@ -7,6 +7,8 @@ set_technology = {
 }
 set_cosmetic_tag = KTH_protectorate
 
+recruit_character = KTH_ali_bin_al_mansur_bin_ghalib
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"

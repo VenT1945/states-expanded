@@ -1,5 +1,7 @@
 capital = 1112
 
+recruit_character = NZO_no_government
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

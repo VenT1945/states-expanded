@@ -4,17 +4,39 @@ leader_traits = {
         stability_factor = -0.1
         consumer_goods_factor = 0.05
     }
+    dean_of_arab_communism = {
+        random = no
+        political_power_gain = 0.15
+        stability_factor = 0.05
+        drift_defence_factor = 0.35
+    }
+    baathist_ideologue = {
+        random = no
+        political_power_gain = 0.25
+        drift_defence_factor = 0.10
+    }
+    syrian_nationalist = {
+        random = no
+        justify_war_goal_time = -0.3
+        stability_factor = 0.05
+    }
     SYR_national_bloc_president = {
         random = no
         sprite = 13
         stability_factor = 0.05
-        neutrality_drift = 0.02
+        neutrality_drift = 0.05
+    }
+    communist_figurehead = {
+        random = no
+        sprite = 13
+        communism_drift = 0.05
+        stability_factor = 0.05
     }
     high_commissioner_of_levant = {
         random = no
         sprite = 13
         improve_relations_maintain_cost_factor = -0.25
-        political_power_gain = -0.05
+        political_power_gain = -0.1
     }
     cultural_nationalist = {
         random = no

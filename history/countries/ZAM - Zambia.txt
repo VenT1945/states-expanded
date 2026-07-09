@@ -7,6 +7,7 @@ set_technology = {
 
 set_convoys = 0
 
+recruit_character = ZAM_hubert_winthrop_young
 recruit_character = ZAM_acas
 recruit_character = ZAM_acgs
 recruit_character = ZAM_ncm

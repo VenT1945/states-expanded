@@ -1,0 +1,7 @@
+FRA_levant_mandates = {
+	priority = 100
+	visible_when_empty = no	
+	allowed = {
+        original_tag = FRA
+	}
+}

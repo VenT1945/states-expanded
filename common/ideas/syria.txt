@@ -12,6 +12,18 @@ ideas = {
 			}
 		}
 	}
+	industrial_concern = {
+		SYR_chemins_de_fer_syriens = {
+			cost = 100
+			allowed = {
+				original_tag = SYR
+			}
+			available = {
+				has_completed_focus = SYR_develop_railways
+			}
+			traits = { railway_company }
+		}
+	}
 	country = {
         SYR_banque_de_syrie_1 = {
 			picture = SYR_banque_syrie_1_icon
@@ -89,7 +101,17 @@ ideas = {
                 is_puppet = yes
             }
 		}
+		SYR_french_levant_army_2 = {
+			name = SYR_french_levant_army
+			picture = SYR_french_levant_army_icon
+			modifier = {
+				experience_gain_army = 0.3
+				training_time_factor = -0.15
+				army_org_factor = -0.025
+			}
+		}
 		SYR_core_defense_act = {
+			picture = generic_constitutional_guarantees
 			modifier = {
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.075
@@ -103,6 +125,47 @@ ideas = {
 			modifier = {
 				fascism_drift = -0.2
 				stability_factor = 0.05
+			}
+		}
+		SYR_bastion_of_democracy_idea = {
+			modifier = {
+				democratic_drift = 0.0125
+				stability_factor = 0.05
+        		drift_defence_factor = 0.1
+			}
+		}
+		SYR_adopted_franc = {
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		SYR_loyalty = {
+			modifier = {
+				stability_weekly = 0.0025
+				consumer_goods_factor = -0.035
+			}
+		}
+		SYR_franco_agreement = {
+			modifier = {
+				autonomy_gain = 5
+				trade_opinion_factor = 0.2
+				research_sharing_per_country_bonus_factor = 0.25
+				custom_modifier_tooltip = SYR_franco_agreement_tt
+			}
+		}
+		SYR_building_plan_idea = {
+			modifier = {
+				industrial_capacity_factory = 0.1
+                production_speed_buildings_factor = 0.2
+				political_power_cost = 0.15
+			}
+		}
+		SYR_lend_lease_plan_idea = {
+			modifier = {
+				lend_lease_tension = -0.5
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -0.90
+				industrial_capacity_factory = 0.15
 			}
 		}
 		SYR_independence = {
@@ -134,6 +197,48 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.15
 				stability_weekly = 0.005
+			}
+		}
+		SYR_republican_constitution = {
+			picture = BRA_dasp
+			modifier = {
+				political_power_gain = 0.1
+    			stability_factor = 0.05
+			}
+		}
+		SYR_republican_constitution_1 = {
+			picture = BRA_dasp
+			name = SYR_republican_consitution
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				drift_defence_factor = 0.10
+			}
+		}
+		SYR_republican_constitution_2 = {
+			picture = BRA_dasp
+			name = SYR_republican_consitution
+			modifier = {
+				political_power_gain = 0.35
+				stability_factor = 0.03
+				political_advisor_cost_factor = -0.15
+			}
+		}
+		SYR_republican_constitution_3 = {
+			picture = BRA_dasp
+			name = SYR_republican_consitution
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.08
+				war_support_factor = 0.08
+				command_power_gain = 0.1
+			}
+		}
+		SYR_religious_protection = {
+			modifier = {
+				stability_factor = 0.05
+       	 		drift_defence_factor = 0.05
+				opinion_gain_monthly_factor = 0.25
 			}
 		}
 		SYR_true_syria_1 = {
@@ -211,11 +316,11 @@ ideas = {
 			modifier = {
 				stability_factor = 0.15
 				war_support_factor = 0.1
-				political_power_gain = 0.25
+				political_power_gain = 0.2
 				training_time_factor = -0.15
 				industrial_capacity_factory = -0.15
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.1
 			}
 		}
 		SYR_state_atheism_idea = {
@@ -227,6 +332,74 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				production_speed_buildings_factor = 0.15
 				consumer_goods_factor = -0.15
+			}
+		}
+		SYR_private_investments_idea = {
+			modifier = {
+				consumer_goods_factor = -0.03
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SYR_national_banks = {
+			modifier = {
+				military_industrial_organization_funds_gain = 0.3
+				research_speed_factor = 0.02
+			}
+		}
+		SYR_new_construction_plan_idea = {
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		SYR_promoting_independence = {
+			modifier = {
+				stability_weekly = -0.01
+				autonomy_gain = 5
+				neutrality_drift = 0.025
+			}
+			on_add = {
+				country_event = syria_baath.2
+			}
+		}
+		SYR_baath_1 = {
+			picture = SYR_baath_icon
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		SYR_baath_2 = {
+			name = SYR_baath_1
+			picture = SYR_baath_icon
+			modifier = {
+				stability_factor = 0.075
+				war_support_factor = 0.10
+				experience_gain_army_factor = 0.10
+				justify_war_goal_time = -0.15
+				conscription_factor = 0.03
+			}
+		}
+		SYR_baath_five_year_plan_idea = {
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.45
+				political_power_cost = 0.2
+			}
+		}
+		SYR_new_army = {
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_regain = 0.05
+			}
+		}
+		SYR_better_NCOs_idea = {
+			modifier = {
+				max_planning_factor = 0.15
+				mobilization_speed = 0.10
 			}
 		}
 		HAT_joint_military_supervision = {

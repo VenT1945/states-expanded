@@ -15,20 +15,20 @@ characters = {
 			expire = "2000.1.1.1"
 		}
 	}
-	UTA_bedouin_nomads = {
+	NZO_no_government = {
 
-		name = UTA_bedouin_nomads
+		name = UTA_no_government
 
 		portraits = {
 			civilian = {
-				large = GFX_portrait_europe_generic_4
+				large = GFX_portrait_desert
 			}
 		}
 
 		country_leader = {
-			ideology = oligarchism
+			ideology = anarchism
 			traits = {  }
-			expire = "1950.1.1.1"
+			expire = "2000.1.1.1"
 		}
 	}
 }

@@ -115,28 +115,32 @@ shared_focus =  {
 		}
 		add_war_support = 0.05
 		remove_ideas = ALDR_ineffective_colonial_admin
+		add_ideas = ALDR_unrecognized_independence
+		set_autonomy = {
+			target = ROOT
+			autonomy = free
+		}
 	}
 }
 shared_focus =  {
 	id = ALDR_civilian_loyalty
 	x = 1
 	y = 1
+	    
+	dynamic = yes
 
 	icon = {
-        trigger = { original_tag = ALA }
-        value = GFX_ALA_civilian_loyalty
-    }
-    icon = {
-        value = GFX_DRU_civilian_loyalty
-    }
-    dynamic = yes
+        GFX_ALA_civilian_loyalty = {
+			original_tag = ALA
+		}
+        GFX_DRU_civilian_loyalty = yes
+	}
+
 	
 	relative_position_id = ALDR_national_identity
 	prerequisite = { focus = ALDR_national_identity }
 	cost = 4
 	
-	prerequisite = {
-	}
 	available = {
 	}
 	
@@ -180,8 +184,7 @@ shared_focus =  {
 				}
 			}
 		}
-		add_ideas = ALDR_unrecognized_independence
-		set_cosmetic_tag = ALDR_levantine_state_fra
+		set_cosmetic_tag = ALDR_levantine_state
 	}
 }
 shared_focus =  {
@@ -196,8 +199,6 @@ shared_focus =  {
 	mutually_exclusive = { focus = ALDR_oppose_france }
 	cost = 5
 	
-	prerequisite = {
-	}
 	available = {
 	}
 	
@@ -217,8 +218,6 @@ shared_focus =  {
 	prerequisite = { focus = ALDR_stay_with_france }
 	cost = 10
 	
-	prerequisite = {
-	}
 	available = {
 	}
 	
@@ -244,8 +243,6 @@ shared_focus =  {
 	prerequisite = { focus = ALDR_economic_growth }
 	cost = 10
 	
-	prerequisite = {
-	}
 	available = {
 	}
 	
@@ -265,8 +262,6 @@ shared_focus =  {
 	prerequisite = { focus = ALDR_economic_growth }
 	cost = 10
 	
-	prerequisite = {
-	}
 	available = {
 	}
 	
@@ -311,7 +306,7 @@ shared_focus =  {
 	cost = 5
 	available = {
 	}
-	search_filters = { FOCUS_FILTER_INDUSTRY  }
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
 		add_tech_bonus = {
 			name = industrial_bonus
@@ -468,12 +463,12 @@ shared_focus = {
 				is_owned_by = ROOT
 			}
 			add_resource = {
-					type = oil
- 				amount = 4
+			type = oil
+ 				amount = 2
 			}
 			add_resource = {
-					type = steel
- 				amount = 6
+			type = steel
+ 				amount = 3
 			}
 		}
 		add_tech_bonus = {
@@ -625,8 +620,9 @@ shared_focus =  {
  			remove_idea = ALDR_weak_army_1
  			add_idea = ALDR_weak_army_guard
 		}
+		custom_effect_tooltip = ALDR_create_guard_template
 		division_template = {
-				name = "National Guard" 
+			name = "National Guard" 
 			priority = 1
 			regiments = {
 				infantry = { x = 0 y = 0 }

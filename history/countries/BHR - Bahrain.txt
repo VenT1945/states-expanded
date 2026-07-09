@@ -17,6 +17,8 @@ IF = {
 	set_technology = { camelry = 1 }
 }
 
+recruit_character = BHR_hamad_bin_isa_al_khalifa
+
 set_convoys = 5
 
 1939.1.1 = {

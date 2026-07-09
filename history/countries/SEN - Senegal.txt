@@ -9,6 +9,7 @@ set_cosmetic_tag = SEN_colonial_fed
 
 set_convoys = 20
 
+recruit_character = SEN_jules_brevie
 recruit_character = SEN_awt
 recruit_character = SEN_acd2
 recruit_character = SEN_nt

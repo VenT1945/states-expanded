@@ -1,0 +1,10 @@
+POL_exiled_division = {
+	priority = 100
+	visible_when_empty = no
+	allowed = {
+		original_tag = POL
+	}
+	visible = {
+		is_exiled_in = ENG
+	}
+}

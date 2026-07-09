@@ -12,6 +12,6 @@ no_more_division_test = {
         NOT = {
             has_idea = SYR_divide_and_rule
         }
-        has_stability > 0.7
+        has_stability > 0.75
     } 
 }

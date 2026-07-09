@@ -9,6 +9,7 @@ set_cosmetic_tag = UGA_protectorate
 
 set_convoys = 0
 
+recruit_character = UGA_philip_mitchell
 recruit_character = UGA_aco2
 recruit_character = UGA_nt
 recruit_character = UGA_communist_guy

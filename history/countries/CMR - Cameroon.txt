@@ -9,6 +9,7 @@ set_cosmetic_tag = CMR_mandate
 
 set_convoys = 20
 
+recruit_character = CMR_jules_repiquet
 recruit_character = CMR_aa2
 recruit_character = CMR_democratic_guy
 recruit_character = CMR_acgs

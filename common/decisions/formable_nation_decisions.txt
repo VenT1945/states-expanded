@@ -7993,8 +7993,6 @@ form_arabia_category = {
 				original_tag = PAL
 				# Lebanon
 				original_tag = LEB
-				# Syria
-				original_tag = SYR
 				# Kuwait
 				original_tag = KUW
 				# United Arab Emirates
@@ -8022,7 +8020,6 @@ form_arabia_category = {
 				original_tag = QUA
 				original_tag = KTH
 				original_tag = MAH
-				original_tag = UTA
 			}
 			NOT = { has_global_flag = form_arabia_flag }
 		}

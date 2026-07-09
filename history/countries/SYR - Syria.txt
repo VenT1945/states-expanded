@@ -7,15 +7,19 @@ set_technology = {
 	tech_support = 1
 	tech_military_police = 1
 	tech_recon = 1
+	camelry = 1
 }
 
 set_oob = "SYR_1936"
 
-IF = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
+set_variable = {
+	var = SYR_increasing_cost
+	value = 50
+}
+
+set_variable = {
+	var = SYR_propaganda_value
+	value = 0
 }
 
 add_ideas = {
@@ -39,26 +43,13 @@ set_convoys = 5
 
 set_cosmetic_tag = SYR_mandate
 
-
-set_politics = {
-	ruling_party = democratic
-	last_election = "1932.6.11"
-	election_frequency = 72
-	elections_allowed = yes
-}
-set_popularities = {
-	democratic = 57
-	fascism = 4
-	communism = 13
-	neutrality = 26
-}
-
 recruit_character = SYR_mehemed_ali_abed
 recruit_character = SYR_hashim_al_atassi
 recruit_character = SYR_antoun_saadeh
 recruit_character = SYR_khalid_bakdash
 recruit_character = SYR_jamil_al_ulshi
 recruit_character = SYR_shukri_al_quwatli
+recruit_character = SYR_sabri_al_asali
 recruit_character = SYR_zaki_al_arsuzi
 recruit_character = SYR_said_al_ghazzi
 recruit_character = SYR_damien_de_martel
@@ -67,9 +58,25 @@ recruit_character = SYR_fares_al_khoury
 recruit_character = SYR_khalil_mardam_bey
 recruit_character = SYR_jamil_mardam_bey
 recruit_character = SYR_omar_abu_risha
+recruit_character = SYR_muhammad_al_ashmar
 recruit_character = SYR_abdullah_atfeh
 recruit_character = SYR_adnan_al_malki
 recruit_character = SYR_adib_shishakli
 recruit_character = SYR_husni_al_zaim
 recruit_character = SYR_fawzi_selu
+recruit_character = SYR_tawfiq_nizam_al_din
 recruit_character = FRA_charles_huntziger
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.6.11"
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 57
+	fascism = 4
+	communism = 13
+	neutrality = 26
+}
+
+

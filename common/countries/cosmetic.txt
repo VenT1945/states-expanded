@@ -1801,6 +1801,10 @@ BOT_hct = {
 	color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }
 }
+SUD_ENG_condominium = {
+	color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
 RCG_colonial_fed = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 57 113 228 }
@@ -1813,11 +1817,7 @@ TOG_mandate = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 57 113 228 }
 }
-ALDR_levantine_state_fra = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 57 113 228 }
-}
-ALDR_levantine_state_free = {
+ALDR_levantine_state = {
 	color = rgb { 92 64 120 }
 	color_ui = rgb { 92 64 120 }
 }

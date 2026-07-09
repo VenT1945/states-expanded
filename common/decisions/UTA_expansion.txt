@@ -509,11 +509,15 @@ UTA_expansion_north_KUW = {
         allowed = {
             original_tag = SAU
         }
-        cost = 50
-        days_remove = 30
+        cost = 25
+        days_remove = 14
         ai_will_do = {
             base = 10
             modifier = {
+				factor = 0
+				has_country_flag = UTA_SAU_kuwait_zone_give_up
+			}
+             modifier = {
 				factor = 0
 				has_country_flag = UTA_neutral_zone_ai_timer_flag
 			}
@@ -523,6 +527,11 @@ UTA_expansion_north_KUW = {
                     sau_divided_zone_influence > 25
                 }
 			}
+        }
+        visible = {
+            NOT = {
+                has_country_flag = UTA_kuwait_zone_decided
+            }
         }
         available = {
             has_global_flag = discovered_oil_in_arabia
@@ -566,10 +575,14 @@ UTA_expansion_north_KUW = {
         allowed = {
             original_tag = KUW
         }
-        cost = 50
-        days_remove = 30
+        cost = 25
+        days_remove = 14
         ai_will_do = {
             base = 10
+            modifier = {
+				factor = 0
+				has_country_flag = UTA_KUW_kuwait_zone_give_up
+			}
             modifier = {
 				factor = 0
 				has_country_flag = UTA_neutral_zone_ai_timer_flag
@@ -580,6 +593,11 @@ UTA_expansion_north_KUW = {
                     kuw_divided_zone_influence > 25
                 }
 			}
+        }
+        visible = {
+            NOT = {
+                has_country_flag = UTA_kuwait_zone_decided
+            }
         }
         available = {
             has_global_flag = discovered_oil_in_arabia
@@ -630,6 +648,11 @@ UTA_expansion_north_KUW = {
         ai_will_do = {
             base = 10
         }
+        visible = {
+            NOT = {
+                has_country_flag = UTA_kuwait_zone_decided
+            }
+        }
         available = {
             custom_trigger_tooltip = {
 				tooltip = UTA_kuwait_zone_atleast_25_tt
@@ -645,7 +668,17 @@ UTA_expansion_north_KUW = {
 			}
         }
         complete_effect = {
-
+            NZO = {
+                remove_state_core = 1109
+                remove_state_core = 1110
+            }
+            KUW = {
+                transfer_state = 1109
+            }
+            SAU = {
+                transfer_state = 1110
+            }
+            set_country_flag = UTA_kuwait_zone_decided
         }
     }
     SAU_kuwait_zone_annexation = {
@@ -655,6 +688,11 @@ UTA_expansion_north_KUW = {
         cost = 50
         ai_will_do = {
             base = 10
+        }
+        visible = {
+            NOT = {
+                has_country_flag = UTA_kuwait_zone_decided
+            }
         }
         available = {
             custom_trigger_tooltip = {
@@ -667,7 +705,15 @@ UTA_expansion_north_KUW = {
 			}
         }
         complete_effect = {
-
+            NZO = {
+                remove_state_core = 1109
+                remove_state_core = 1110
+            }
+            SAU = {
+                transfer_state = 1109
+                transfer_state = 1110
+            }
+            set_country_flag = UTA_kuwait_zone_decided
         }
     }
     KUW_kuwait_zone_annexation = {
@@ -677,6 +723,11 @@ UTA_expansion_north_KUW = {
         cost = 50
         ai_will_do = {
             base = 10
+        }
+        visible = {
+            NOT = {
+                has_country_flag = UTA_kuwait_zone_decided
+            }
         }
         available = {
             custom_trigger_tooltip = {
@@ -689,7 +740,15 @@ UTA_expansion_north_KUW = {
 			}
         }
         complete_effect = {
-
+            NZO = {
+                remove_state_core = 1109
+                remove_state_core = 1110
+            }
+            KUW = {
+                transfer_state = 1109
+                transfer_state = 1110
+            }
+            set_country_flag = UTA_kuwait_zone_decided
         }
     }
 }

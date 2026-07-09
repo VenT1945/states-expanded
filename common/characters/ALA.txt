@@ -5,7 +5,7 @@ characters = {
 
 		portraits = {
 			civilian = {
-				large = GFX_portrait_europe_generic_4
+				large = GFX_portrait_ALA_ernest_m_h_schoeffler
 			}
 		}
 
@@ -20,7 +20,11 @@ characters = {
 
 		portraits = {
 			civilian = {
-				large = GFX_portrait_europe_generic_1
+				large = GFX_portrait_ALA_salih_al_ali
+			}
+			army = {
+				large = GFX_portrait_ALA_salih_al_ali
+				small = GFX_idea_salih_al_ali
 			}
 		}
 

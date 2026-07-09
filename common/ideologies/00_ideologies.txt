@@ -277,72 +277,72 @@ ideologies = {
 		ai_give_core_state_control_threshold = 10000
 	}
 
-	monarchism = {
-
-		types = {
-
-			absolutism = {
-			}
-
-			traditional_monarchy = {
-			}
-
-			theocratic_monarchy = {
-				can_be_randomly_selected = no
-			}
-
-			dynastic_monarchy = {
-				can_be_randomly_selected = no
-			}
-
-			emirate = {
-				can_be_randomly_selected = no
-			}
-
-			sultanate = {
-				can_be_randomly_selected = no
-			}
-
-			hashemite_monarchy = {
-				can_be_randomly_selected = no
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_MONARCHISM_1"
-			"FACTION_NAME_MONARCHISM_2"
-		}
-
-		color = { 138 0 189 }
-		rules = {
-			can_create_collaboration_government = yes
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = yes
-		}
-		can_host_government_in_exile = no
-
-		modifiers = {
-			generate_wargoal_tension = 0.25
-			join_faction_tension = 0.20
-			lend_lease_tension = 0.15
-			send_volunteers_tension = 0.25
-			guarantee_tension = 0.15
-			justify_war_goal_when_in_major_war_time = 0.1
-			drift_defence_factor = 0.25
-		}
-
-		war_impact_on_world_tension = 0.33
-		faction_impact_on_world_tension = 0.1
-
-		can_be_boosted = yes
-		can_collaborate = yes
-
-		ai_neutral = yes
-
-	}
+#	monarchism = {
+#
+#		types = {
+#
+#			absolutism = {
+#			}
+#
+#			traditional_monarchy = {
+#			}
+#
+#			theocratic_monarchy = {
+#				can_be_randomly_selected = no
+#			}
+#
+#			dynastic_monarchy = {
+#				can_be_randomly_selected = no
+#			}
+#
+#			emirate = {
+#				can_be_randomly_selected = no
+#			}
+#
+#			sultanate = {
+#				can_be_randomly_selected = no
+#			}
+#
+#			hashemite_monarchy = {
+#				can_be_randomly_selected = no
+#			}
+#		}
+#
+#		dynamic_faction_names = {
+#			"FACTION_NAME_MONARCHISM_1"
+#			"FACTION_NAME_MONARCHISM_2"
+#		}
+#
+#		color = { 138 0 189 }
+#		rules = {
+#			can_create_collaboration_government = yes
+#			can_declare_war_on_same_ideology = yes
+#			can_force_government = yes
+#			can_send_volunteers = yes
+#			can_puppet = yes
+#			can_lower_tension = yes
+#			can_only_justify_war_on_threat_country = no
+#			can_guarantee_other_ideologies = yes
+#		}
+#		can_host_government_in_exile = no
+#
+#		modifiers = {
+#			generate_wargoal_tension = 0.25
+#			join_faction_tension = 0.20
+#			lend_lease_tension = 0.15
+#			send_volunteers_tension = 0.25
+#			guarantee_tension = 0.15
+#			justify_war_goal_when_in_major_war_time = 0.1
+#			drift_defence_factor = 0.25
+#		}
+#
+#		war_impact_on_world_tension = 0.33
+#		faction_impact_on_world_tension = 0.1
+#
+#		can_be_boosted = yes
+#		can_collaborate = yes
+#
+#		ai_neutral = yes
+#
+#	}
 }

@@ -9,6 +9,7 @@ set_cosmetic_tag = SUD_ENG_condominium
 
 set_convoys = 20
 
+recruit_character = SUD_george_stewart_symes
 recruit_character = SUD_coi
 recruit_character = SUD_aa2
 recruit_character = SUD_democratic_guy

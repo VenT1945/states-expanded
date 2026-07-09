@@ -1,0 +1,441 @@
+default = {
+	male = {
+		names = {
+			John William James Robert Charles George
+			Thomas Joseph Edward Henry Frank Walter
+			Harold Richard Arthur Albert Ernest Samuel
+			Frederick Raymond Donald Kenneth David
+		}
+	}
+
+	female = {
+		names = {
+			Mary Margaret Helen Ruth Dorothy
+			Elizabeth Catherine Anne Florence
+			Evelyn Alice Frances Edith Louise
+		}
+	}
+
+	surnames = {
+		Smith Jones Brown Wilson Taylor
+		Anderson White Thompson Martin Moore
+		Walker Harris Clark Lewis Young Hall
+		Allen King Scott Wright Baker Green
+		Adams Campbell Mitchell Carter Roberts
+		Phillips Parker Evans Cooper
+		MacDonald MacKenzie
+		Johnson Williams Miller Davis
+		}
+}
+
+# Northwest Territories 
+NWT = { 
+	male = { 
+		names = { 
+				Akeeagok Angulalik Aputi Aqiaruq Ipeelie Kalluk Kanayuk Kigusiutak Kopak Natan Ningark Noah Ootek Ootoova Peterautaq Pudlo Qaqsauq Qumaq Tagak Tulurialik Alex Baptiste Gabriel George Isaac Jacob Joseph Louis Matthew Michael Noel Philip Samuel Simon 
+			} 
+		} 
+	female = { 
+		names = { 
+				Aakuluk Aammaaq Aknaaq Aluki Ivalu Kenojuak Lucy Natak Pitseolak Putuguq Saullu Uyarasuk Alice Annie Catherine Elizabeth Mary Rose Sarah Theresa Victoria 
+			} 
+		} 
+	surnames = { 
+		Anawak Attagutsiak Avalak Awa Ipeelie Kalluk Karetak Kilabuk Kopak Kudluk Ningeongan Noah Ootoova Papigatook Pitseolak Pudlat Qaqsauq Saggiak Tagak Uyarasuk Cardinal Desjarlais Erasmus Mercredi Baptiste Beaulieu 
+	} 
+	callsigns = { } 
+}
+
+# Alawite State
+ALA = {
+	male = {
+		names = {
+			Ahmad Ali Amin Anwar Bashir Fawzi Fuad Habib Hamid Hasan Hussein Ibrahim Ismail Jamil Khalil Mahmud Mansur Maruf Muhammad Mustafa Naji Nasib Qasim Rashid Salih Sulayman Tawfiq Yusuf Zakariya
+		}
+	}
+	female = {
+		names = {
+			Afifa Amina Fatima Hanan Jamila Khadija Latifa Layla Mariam Munira Nadia Najwa Salma Samira Suad Zahra
+		}
+	}
+	surnames = {
+		"al-Assad" "al-Khayr" "al-Ahmad" "al-Yusuf" "al-Salih" "al-Sulayman" "al-Haddad" "al-Husayn" "al-Mahmud"
+		Makhlouf Khayyat Abbas Hamdan Shalhoub Diab Eid Khalifa Nasser Darwish
+	}
+	callsigns = { }
+}
+
+# Jabal Druze State
+DRU = {
+	male = {
+		names = {
+			Akram Amin Asad Bahjat Farid Faysal Fuad Hamad Hasan Hikmat Kamal Mansur Maruf Nasib Rashid Sami Salim Shakib Sultan Talal Wahib Yusuf Zaid
+		}
+	}
+	female = {
+		names = {
+			Amal Amina Bahija Fadwa Huda Jamila Layla Maha Najla Salma Samira Thurayya Widad Zahra
+		}
+	}
+	surnames = {
+		"Abu-Assaf" "Abu-Fakhr" "Abu-Khayr" "Abu-Rashid" "Abu-Shahin"
+		Hamdan Jarbua Nasr Shanan Halabi Imad Darwish Salman Haddad
+	}
+	callsigns = { }
+}
+
+# Unclaimed Territory Arabia
+UTA = {
+	male = {
+		names = {
+			Abdullah Ahmad Ali Awdah Barakat Fahd Faisal Hamad Humaid Jassim Khalid Majid Mubarak Nasser Rashid Saad Salim Saud Sultan Talib Zayed
+		}
+	}
+	female = {
+		names = {
+			Amsha Fatima Hessa Khawla Latifa Mariam Muna Noura Salma Shamma Suad Wadha Zahra
+		}
+	}
+	surnames = {
+		"al-Murrah" "al-Ajman" "al-Dawasir" "al-Qahtani" "al-Harbi" "al-Rashid"
+		"al-Shammari" "al-Otaibi" "al-Anazi" "al-Mutairi" "al-Mansuri" "al-Kaabi"
+		"al-Marri" "al-Hajri"
+	}
+	callsigns = { }
+}
+
+# Kedah
+KDH = {
+	male = {
+		names = {
+			Ahmad Ali Aziz Daud Hamid Hassan Hussein Ibrahim Idris Ismail Mahmud Mansor Musa Omar Osman Rahman Salleh Sulaiman Syed Yusof Zainal
+		}
+	}
+	female = {
+		names = {
+			Aishah Aminah Asiah Fatimah Halimah Khadijah Mariam Maznah Rahmah Salmah Zainab
+		}
+	}
+	surnames = {
+		"bin Abdullah" "bin Ahmad" "bin Hassan" "bin Ibrahim" "bin Ismail"
+		"bin Mahmud" "bin Omar" "bin Osman" "bin Salleh" "bin Yusof"
+		"Syed Alwi" "Syed Kadir" "Wan Ismail" "Wan Ahmad"
+	}
+	callsigns = { }
+}
+
+# Kelantan
+KEL = {
+	male = {
+		names = {
+			Ahmad Aziz Che Daud Ghani Hassan Ibrahim Idris Ismail Jusoh Mahmud Nik Omar Salleh Wan Musa Yusof Zakaria
+		}
+	}
+	female = {
+		names = {
+			Aminah Fatimah Halimah Kalsom Mariam Maznah Rahimah Rohani Salmah Zainab
+		}
+	}
+	surnames = {
+		"Nik Mat" "Nik Daud" "Nik Hassan" "Nik Mahmood" "Nik Yusoff"
+		"Wan Ahmad" "Wan Ismail" "Wan Musa"
+		"bin Jusoh" "bin Salleh" "bin Omar"
+	}
+	callsigns = { }
+}
+
+# Perlis
+PLS = {
+	male = {
+		names = {
+			Ahmad Ali Daud Hamzah Hassan Hussein Ibrahim Ismail Mahmud Mat Noor Omar Osman Salleh Syed Alwi Yusof Zainal
+		}
+	}
+	female = {
+		names = {
+			Aishah Aminah Fatimah Halimah Khadijah Mariam Maznah Salmah Zainab
+		}
+	}
+	surnames = {
+		"Syed Hamzah" "Syed Alwi" "Syed Hassan"
+		"bin Ahmad" "bin Hassan" "bin Ismail" "bin Omar" "bin Salleh" "bin Yusof"
+		"Wan Ahmad" "Wan Daud"
+	}
+	callsigns = { }
+}
+
+# Terengganu
+TRG = {
+	male = {
+		names = {
+			Ahmad Daud Engku Hamid Hassan Hussein Ibrahim Idris Ismail Mahmud Omar Osman Salleh Suleiman Tengku Yusof Zainal
+		}
+	}
+	female = {
+		names = {
+			Aminah Fatimah Halimah Mariam Maznah Rahmah Salmah Tengku Zainab
+		}
+	}
+	surnames = {
+		"Tengku Ahmad" "Tengku Ismail" "Tengku Mahmud"
+		"Wan Hassan" "Wan Suleiman"
+		"bin Daud" "bin Salleh" "bin Omar" "bin Yusof"
+	}
+	callsigns = { }
+}
+
+# Johor
+JHR = {
+	male = {
+		names = {
+			Abu Bakar Ahmad Ali Daud Hassan Hussein Ibrahim Ismail Mahmud Omar Osman Rahman Salleh Suleiman Syed Yusof Zainal
+		}
+	}
+	female = {
+		names = {
+			Aishah Aminah Fatimah Halimah Khadijah Mariam Rahmah Salmah Zainab
+		}
+	}
+	surnames = {
+		Temenggong "Syed Ahmad" "Syed Alwi"
+		"bin Abdullah" "bin Ahmad" "bin Hassan" "bin Ibrahim"
+		"bin Ismail" "bin Omar" "bin Salleh"
+	}
+	callsigns = { }
+}
+
+# Brunei
+BRU = {
+	male = {
+		names = {
+			Ahmad Ali Bolkiah Hassanal Hashim Ibrahim Ismail Jamil Mahmud Omar Osman Pengiran Salleh Suleiman Yusof Zainal
+		}
+	}
+	female = {
+		names = {
+			Aminah Fatimah Mariam Masna Noorhayati Pengiran Salmah Zainab
+		}
+	}
+	surnames = {
+		Bolkiah "Pengiran Anak" "Pengiran Haji"
+		"bin Ahmad" "bin Omar" "bin Salleh" "bin Yusof"
+		Shahbandar "Setia Negara"
+	}
+	callsigns = { }
+}
+
+# Sarawak
+SRW = {
+	male = {
+		names = {
+			Abang Ahmad Ali Awang Daud Hamid Hassan Ibrahim Ismail Mahmud Omar Pengiran Salleh Sulaiman Tuanku Yusof
+		}
+	}
+	female = {
+		names = {
+			Aminah Dayang Fatimah Halimah Mariam Maznah Salmah Zainab
+		}
+	}
+	surnames = {
+		"Abang Openg" "Abang Mustapha" "Abang Haji"
+		"Awang Rambli" "Awang Tengah"
+		"Pengiran Matusin" "Pengiran Yusuf"
+		"bin Ahmad" "bin Omar"
+	}
+	callsigns = { }
+}
+
+# Sabah
+SBH = {
+	male = {
+		names = {
+			Ahmad Ali Andau Antenom Gimbang Gunsan Harun Ibrahim Indan Ismail Mahmud Mat Salleh Omar Osman Salleh Tun Mustapha Yusof
+		}
+	}
+	female = {
+		names = {
+			Aminah Fatimah Intan Mariam Noriah Rahmah Salmah Siti Zainab
+		}
+	}
+	surnames = {
+		"bin Ahmad" "bin Harun" "bin Ibrahim" "bin Ismail"
+		"bin Omar" "bin Salleh"
+		"Datu Bandira" "Datu Harun" "Datu Pangiran Gani"
+	}
+	callsigns = { }
+}
+
+# Ambazonia
+AMB = {
+	male = {
+		names = {
+			Ajong Akem Andrew Bernard Carlson Daniel Emmanuel Endeley Epie Ewane Fon George Henry John Martin Moses Ndive Samuel Solomon Tassang Victor
+		}
+	}
+	female = {
+		names = {
+			Agnes Beatrice Elizabeth Grace Helen Julia Magdalene Martha Mercy Regina Rose Sarah Victoria
+		}
+	}
+	surnames = {
+		Achu Agbor Akem Anyangwe Ayuk Besong Dibussi Endeley Epie Eta Ewane Foncha Muna Ndoki Ngala Nfor Tatah Tita
+	}
+	callsigns = { }
+}
+
+# Zanzibar
+ZAN = {
+	male = {
+		names = {
+			Abdallah Ahmad Ali Barwani Hamad Haroub Hassan Hussein Juma Kassim Khalfan Mahmoud Omar Salim Seif Suleiman Yahya Yusuf
+		}
+	}
+	female = {
+		names = {
+			Aisha Ashura Fatma Halima Khadija Mariam Mwanaidi Saada Salma Zulekha
+		}
+	}
+	surnames = {
+		"al-Barwani" "al-Maskati" "al-Busaidi"
+		"bin Khalfan" "bin Salim" "bin Suleiman" "bin Yusuf"
+		Juma Mwinyi Nassor Sharif
+	}
+	callsigns = { }
+}
+
+# Tangier International Zone
+TIZ = {
+	male = {
+		names = {
+			Abdelkader Ahmed Ali Driss Hassan Larbi Mahdi Mohamed Mustapha Omar Rachid Said Tahar Youssef
+		}
+	}
+	female = {
+		names = {
+			Aicha Fatima Habiba Khadija Lalla Malika Rahma Salma Zohra
+		}
+	}
+	surnames = {
+		Benjelloun Bennani "El-Fassi" "El-Glaoui" "El-Hajoui"
+		"El-Mokri" "El-Yousfi"
+		Laraki Tazi Torres Cohen Toledano
+	}
+	callsigns = { }
+}
+
+# Qu'aiti
+QUA = {
+	male = {
+		names = {
+			Abdullah Ahmad Ali Awad Bahashwan Ghalib Hamid Hussein Mahfuz Muhammad Omar Salim Shaykhan Sultan Umar Yasin
+		}
+	}
+	female = {
+		names = {
+			Aisha Fatima Khadija Latifa Mariam Salma Suad Zahra
+		}
+	}
+	surnames = {
+		"al-Quaiti"
+		Bahashwan "Ba-Wazir" "Ba-Junaid" "Ba-Harun"
+		"Ba-Kathir" "Ba-Matraf"
+		"al-Amudi" "al-Yafii" "al-Haddad"
+	}
+	callsigns = { }
+}
+
+# Western Togoland
+WTG = {
+	male = {
+		names = {
+			Adzo Agbeko Akakpo Anthony David Emmanuel Francis Kofi Komla Kwabla Kwame Mensah Seth Simon Yao
+		}
+	}
+	female = {
+		names = {
+			Adjoa Akosua Ama Araba Efua Esi Mansa Sena Victoria Yawa
+		}
+	}
+	surnames = {
+		Agbeli Agbeko Akpalu Amegashie Amuzu Dzobo Fiawoo Gbedemah Kpodar Mensah Nyuiadi Tetteh
+	}
+	callsigns = { }
+}
+
+# Mahra
+MAH = {
+	male = {
+		names = {
+			Abdullah Ahmad Ali Awad Bakhit Hamud Mahfud Mubarak Nasser Rashid Salim Saqr Sultan Yaqut Yusuf
+		}
+	}
+	female = {
+		names = {
+			Aisha Fatima Khadija Latifa Mariam Muna Salma Suad Zahra
+		}
+	}
+	surnames = {
+		"al-Afrar" "al-Mahri"
+		"bin Afrar" "bin Issa" "bin Salim" "bin Rashid"
+		"Ba-Krit" "Ba-Hafidh"
+		"al-Qumairi"
+	}
+	callsigns = { }
+}
+
+# Kathiri
+KTH = {
+	male = {
+		names = {
+			Abdullah Ahmad Ali Awad Ghalib Hamid Hasan Hussein Muhammad Omar Salim Sultan Umar Yahya Yusuf
+		}
+	}
+	female = {
+		names = {
+			Aisha Fatima Khadija Mariam Salma Suad Zahra
+		}
+	}
+	surnames = {
+		"al-Kathiri"
+		"Ba-Wazir" "Ba-Junaid" "Ba-Harith" "Ba-Harun"
+		"al-Amudi" "al-Haddad" "al-Yafii"
+	}
+	callsigns = { }
+}
+
+# Hatay
+HAT = {
+	male = {
+		names = {
+			Abdullah Ahmet Ali Cemal Fikri Halil Hasan Hikmet Iskender Kemal Mehmet Nuri Osman Refik Riza Salih Selim Suleyman Yusuf
+		}
+	}
+	female = {
+		names = {
+			Afife Ayse Emine Fatma Hatice Meryem Neriman Nuriye Sabiha Zehra
+		}
+	}
+	surnames = {
+		Abdullahoglu Akgun Arslan Demir Iskenderoglu Karaoglan Kurt Ozdemir Sari Turkoglu Yilmaz
+	}
+	callsigns = { }
+}
+
+# Neutral Zones
+NZO = {
+	male = {
+		names = {
+			Abdullah Ahmad Ali Fahd Faisal Hamad Khalid Majid Mubarak Nasser Rashid Saad Salim Saud Sultan Zayed
+		}
+	}
+	female = {
+		names = {
+			Fatima Hessa Khawla Mariam Muna Noura Salma Shamma Suad Zahra
+		}
+	}
+	surnames = {
+		"al-Mutairi" "al-Anazi" "al-Otaibi" "al-Shammari" "al-Harbi"
+		"al-Qahtani" "al-Dawasir" "al-Ajman" "al-Murrah" "al-Rashid"
+	}
+	callsigns = { }
+}

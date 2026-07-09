@@ -1,0 +1,8 @@
+SYR_arab_league_membership_buff = {
+    icon = GFX_idea_unknown
+    remove_trigger = {
+        is_in_faction = no
+    }
+    consumer_goods_factor = var:faction_cg_bonus
+    industrial_capacity_factory = var:faction_construction_bonus
+}

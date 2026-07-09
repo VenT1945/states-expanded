@@ -1,0 +1,87 @@
+LEB_confessionalism_bop = {
+	initial_value = 0.32
+	left_side = LEB_confessionalism_bop_weak_side 
+	right_side = LEB_confessionalism_bop_strong_side
+	decision_category = LEB_confessionalism_power_balance_decisions
+
+	range = { #Balanced Range
+		id = LEB_confessionalism_bop_balanced
+		min = -0.15
+		max = 0.15
+		modifier = {
+			political_power_gain = 0.05
+			stability_factor = 0.025
+		}
+	}
+
+	side = {
+		id = LEB_confessionalism_bop_strong_side
+		icon = GFX_bop_SWI_centralization_canton_side
+		range = {
+			id = LEB_confessionalism_bop_very_strong
+			min = 0.60
+			max = 1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.15
+				research_speed_factor = 0.07
+				consumer_goods_factor = 0.05
+				stability_weekly = 0.0025
+			}
+			on_activate = {
+				log = "Very Strong Confessionalism activated"
+			}
+		}
+		
+		range = {
+			id = LEB_confessionalism_bop_strong
+			min = 0.15
+			max = 0.60
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				research_speed_factor = 0.03
+				consumer_goods_factor = 0.03
+			}
+			on_activate = {
+				log = "Strong Confessionalism activated"
+			}
+		}
+	}
+
+	side = {
+		id = LEB_confessionalism_bop_weak_side
+		icon = GFX_bop_SWI_centralization_council_side
+		range = {
+			id = LEB_confessionalism_bop_very_weak
+			min = -1
+			max = -0.60
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+				drift_defence_factor = -0.2
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.05		
+			}
+			on_activate = {
+				log = "Very Weak Confessionalism activated"
+			}
+		}
+
+		range = {
+			id = LEB_confessionalism_bop_weak
+			min = -0.60
+			max = -0.15
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				drift_defence_factor = -0.35
+				research_speed_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+			on_activate = {
+				log = "Weak Confessionalism activated"
+			}
+		}
+	}
+} 

@@ -18,6 +18,7 @@ IF = {
 
 set_convoys = 5
 
+recruit_character = UAE_shakhbut_bin_sultan_al_nahyan
 recruit_character = UAE_stc
 recruit_character = UAE_aco2
 recruit_character = UAE_aa2

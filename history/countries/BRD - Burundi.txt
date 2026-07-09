@@ -7,13 +7,9 @@ set_technology = {
 
 set_convoys = 0
 
-IF = {
-	limit = {
-		has_dlc = "Gotterdammerung"
-	}
-	recruit_character = BRD_mwambutsa_iv
-}
+set_cosmetic_tag = BRD_mandate
 
+recruit_character = BRD_pierre_ryckmans
 recruit_character = BRD_communist_guy
 recruit_character = BRD_aa2
 recruit_character = BRD_ar

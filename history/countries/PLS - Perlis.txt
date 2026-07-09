@@ -7,6 +7,8 @@ set_technology = {
 }
 set_cosmetic_tag = PLS_UMS
 
+recruit_character = PLS_syed_alwi_jamalullail
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"

@@ -7,6 +7,8 @@ set_technology = {
 }
 set_cosmetic_tag = QUA_protectorate
 
+recruit_character = QUA_sir_saleh_bin_ghalib_al_quaiti
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"

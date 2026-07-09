@@ -9,7 +9,11 @@ state={
 		add_core_of = UTA
 		add_claim_by = UAE
 		add_claim_by = SAU
-		set_demilitarized_zone = yes	
+		set_demilitarized_zone = yes
+		add_province_modifier = {
+			static_modifiers = { oasis_modifier }
+			province = 13433
+		}
 	}
 	manpower=3172
 	buildings_max_level_factor=1.000

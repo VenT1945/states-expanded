@@ -12,7 +12,7 @@
  ALDR_support_acception: "We will get 2000 of their oldest infantry equipment."
  
  HATAY_parliament_category: "The Hatay State Peoples Assembly"
- HATAY_parliament_category_desc: "The Hatay State Peoples Assembly is the main legislative organ of the Hatay State.\n\nThere are currently §Y[?hatay_turkey_support]§! supporters for [TUR.GetNameWithFlag], §Y[?hatay_independence_support]§! supporters for independece, and §Y[?hatay_syria_support]§! supporters for [SYR.GetNameWithFlag]"
+ HATAY_parliament_category_desc: "The Hatay State Peoples Assembly is the main legislative organ of the Hatay State.\n\nThere are currently §Y[?hatay_turkey_support]§! supporters for [TUR.GetNameWithFlag], §Y[?hatay_independence_support]§! supporters that haven't chosen a side yet, and §Y[?hatay_syria_support]§! supporters for [SYR.GetNameWithFlag]"
  
 
 
@@ -51,3 +51,5 @@
  KUW_kuwait_zone_annexation_desc: "We have gotten enough influence in the zone to annex it without having to split it with [SAU.GetNameDef]."
  UTA_expansion_north_IRQ: "Expansion into the Neutral Territory"
  UTA_expansion_north_IRQ_desc: "The Neutral Territory of Iraq and Saudi Arabia, created by the Uqair Convention in 1922, is a neutral territory between the South of Iraq and the Northeast of Saudi Arabia. We have decided to spread influence in the area and annex it."
+
+ POL_higher_experience_tt: "The Polish Independent Carpathian Rifle Brigade will begin with significantly higher experience."

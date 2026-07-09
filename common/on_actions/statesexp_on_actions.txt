@@ -1,6 +1,6 @@
 on_actions = {
     on_startup = {
-		effect = {  
+		effect = { 
             SYR = {
 				if = {
 					limit = {
@@ -151,6 +151,18 @@ on_actions = {
 					random_days = 10
 				}
 			}
+			SYR = {
+				country_event = {
+					id = syria.8
+					days = 280
+					random_dyas = 30
+				}
+			}
         }
     }
+	on_weekly_SYR = {
+		effect = {
+			update_faction_scaling = yes
+		}
+	}
 }

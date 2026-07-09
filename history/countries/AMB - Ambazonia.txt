@@ -2,6 +2,8 @@ capital = 1187
 
 set_cosmetic_tag = AMB_mandate
 
+recruit_character = AMB_bernard_bourdillon
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

@@ -17,6 +17,22 @@ ideas = {
   				is_subject = no 
 			}
 		}
+		LON_mandate_B = {
+			picture = paper_mandate_icon
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.1
+				war_support_factor = -0.2
+				consumer_goods_factor = 0.125
+				research_speed_factor = -0.15
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+			cancel = {
+  				is_subject = no 
+			}
+		}
 		LON_colonial_economy = {
 			picture = colonial_economy_icon
 			modifier = {
@@ -54,13 +70,15 @@ ideas = {
 				local_resources_factor = 0.1
 				consumer_goods_factor = 0.05
 			}
+			on_remove = {
+				add_ideas = LON_recovered_economy
+			}
 		}
 		LON_recovered_economy = {
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				industrial_capacity_factory = 0.05
 				local_resources_factor = 0.25
-				consumer_goods_factor = -0.05
 			}
 		}
 	}

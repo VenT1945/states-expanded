@@ -4,4 +4,8 @@ opinion_modifiers = {
 		value = 35
 	}
 
+	reaching_out_international = {
+		value = 25
+	}
+
 }

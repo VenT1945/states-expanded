@@ -106,6 +106,8 @@ set_popularities = {
 	neutrality = 35
 }
 
+recruit_character = VIN_eugene_robert
+
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
 
 create_country_leader = {

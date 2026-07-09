@@ -25,14 +25,14 @@ division_template = {
 
 units = {
     division= {
-        name = "Jerusalem Militia"
+        name = "Jerusalem Regiment"
         location = 1086
         division_template = "Irregular Division"
         start_experience_factor = 0.3
         start_equipment_factor = 0.5
     }
 	division= {
-        name = "Coastal Militia"
+        name = "Jaffa Regiment"
         location = 4206
         division_template = "Irregular Division"
         start_experience_factor = 0.3
@@ -55,7 +55,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.1
-		efficiency = 45
+		efficiency = 32
 	}
 	add_equipment_production = {
 		equipment = {
@@ -64,6 +64,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.1
-		efficiency = 25
+		efficiency = 20
 	}
 }

@@ -4,19 +4,18 @@
 set_technology = {
 	infantry_weapons = 1
 	tech_trucks = 1
+	camelry = 1
 }
 
-IF = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
+set_oob = "LEB_1936"
 
 add_ideas = {
 	LON_mandate_A
 	LON_colonial_economy
-	}
+	LEB_french_levant_army
+	LEB_trade_hub
+	LEB_confessionalism
+}
 
 if = {
 	limit = {
@@ -80,7 +79,6 @@ set_cosmetic_tag = LEB_mandate
 	}
 }
 
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
@@ -94,7 +92,15 @@ set_popularities = {
 	neutrality = 30
 }
 
-recruit_character = LEB_abdallah_beyhum
+set_power_balance = {
+    id = LEB_confessionalism_bop
+	set_default = yes
+}
+
+recruit_character = LEB_habib_bacha_el_saad
+recruit_character = LEB_damien_de_martel
+activate_advisor = damien_de_martel_1
+recruit_character = FRA_edgard_de_larminat
 
 create_country_leader = {
 	name = "Pierre Gemayel"

@@ -9,6 +9,7 @@ set_cosmetic_tag = TUN_protectorate
 
 set_convoys = 20
 
+recruit_character = TUN_marcel_peyrouton
 recruit_character = TUN_acgs
 recruit_character = TUN_acr
 recruit_character = TUN_stc

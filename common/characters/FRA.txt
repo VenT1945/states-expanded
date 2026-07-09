@@ -517,6 +517,30 @@ characters={
 		}
 	}
 
+	FRA_edgard_de_larminat={
+		name=FRA_edgard_de_larminat
+		portraits={
+			army={
+				large=GFX_portrait_FRA_edgard_de_larminat
+				small=GFX_idea_edgard_de_larminat
+			}
+		}
+		corps_commander={
+			traits={  trait_cautious infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = edgard_de_larminat
+			traits = { army_regrouping_1 }
+		}
+	}
+
 	FRA_gastonhenri_billotte={
 		name=FRA_gastonhenri_billotte
 		portraits={

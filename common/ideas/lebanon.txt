@@ -1,18 +1,53 @@
 ideas = {
     country = {
+		LEB_french_levant_army = {
+			picture = SYR_french_levant_army_icon
+			modifier = {
+				custom_modifier_tooltip = LEB_french_levant_army_tt
+				experience_gain_army = 0.2
+				training_time_factor = -0.15
+				army_org_factor = -0.05
+			}
+			cancel = {
+				ROOT = {
+					NOT = {
+						is_subject_of = FRA
+					}
+				}
+			}
+			on_remove = {
+				IF = {
+					limit = {
+						NOT = {
+							has_country_flag = LEB_coerced_larminat
+						}
+					}
+					every_possible_country = {
+						limit = { has_character = FRA_edgard_de_larminat }
+						random_character = {
+							limit = { is_character = FRA_edgard_de_larminat }
+							set_nationality = FRA
+						}
+					}
+				}
+			}
+			allowed_civil_war = {
+                is_puppet = yes
+            }
+		}
         LEB_trade_hub = {
     		picture = idk
     		modifier = {
         		consumer_goods_factor = -0.05
                 local_resources_factor = 0.10
-                extra_trade_to_overlord_factor = 0.10
                 political_power_factor = 0.05
             }
 		}
-		LEB_weak_confessionalism = {
+		LEB_confessionalism = {
     		picture = idk
     		modifier = {
-        		stability_factor = -0.1
+				stability_factor = 0.05
+        		custom_modifier_tooltip = LEB_confessionalism_tt
             }
 		}
 	}

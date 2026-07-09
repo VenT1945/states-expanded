@@ -31,7 +31,7 @@ characters = {
 		}
 
 		country_leader = {
-			ideology = oligarchism
+			ideology = moderatism
 			traits = { skillful_diplomat }
 			expire = "1960.1.1.1"
 			id = -1
@@ -52,6 +52,7 @@ characters = {
 						OR = {
 							has_completed_focus = SYR_league_of_action_wins
 							has_completed_focus = SYR_use_instability
+							has_completed_focus = SYR_communist_underground_focus
 						}
 					}
 				}
@@ -131,7 +132,27 @@ characters = {
 		}
 
 		country_leader = {
-			ideology = oligarchism
+			ideology = centrism
+			traits = {  }
+			expire = "1967.1.1.1"
+			id = -1
+		}
+
+	}
+
+	SYR_sabri_al_asali = {
+
+		name = SYR_sabri_al_asali
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_sabri_al_asali
+				small = GFX_idea_sabri_al_asali
+			}
+		}
+
+		country_leader = {
+			ideology = moderatism
 			traits = {  }
 			expire = "1967.1.1.1"
 			id = -1
@@ -289,6 +310,18 @@ characters = {
 			}
 		}
 	}
+
+	SYR_muhammad_al_ashmar = {
+
+		name = SYR_muhammad_al_ashmar
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_muhammad_al_ashmar
+			}
+		}
+		
+	}
 	
 #--------------
 
@@ -337,7 +370,6 @@ characters = {
 
 		portraits = {
     		army = {
-        		large = GFX_portrait_SYR_fawzi_selu
 				small = GFX_idea_fawzi_selu
     		}
 		}
@@ -349,6 +381,23 @@ characters = {
 			traits = { army_commando_1 }
 		}
 
+	}
+
+	SYR_tawfiq_nizam_al_din = {
+		name = SYR_tawfiq_nizam_al_din
+
+		portraits = {
+    		army = {
+				small = GFX_idea_tawfiq_nizam_al_din
+    		}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = tawfiq_nizam_al_din
+			ledger = army
+			traits = { army_entrenchment_1 }
+		}
 	}
 
 	SYR_adib_shishakli = {

@@ -1,6 +1,6 @@
 capital = 1116
 
-recruit_character = UTA_bedouin_nomads
+recruit_character = UTA_no_government
 
 set_politics = {
 	ruling_party = neutrality

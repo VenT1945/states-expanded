@@ -79,6 +79,9 @@ set_convoys = 20
 	}
 }
 
+recruit_character = EGY_fuad_i
+
+set_country_flag = EGY_aligned_with_ENG
 
 set_politics = {
 	ruling_party = neutrality
@@ -108,16 +111,6 @@ create_country_leader = {
 	desc = ""
 	picture = GFX_portrait_Ahmed_Husayn
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Farouk Muhammad Ali"
-	desc = ""
-	picture = "GFX_portrait_egy_faud_i"
-	ideology = despotism
 	traits = {
 		#
 	}

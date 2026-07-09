@@ -1,10 +1,5 @@
 ﻿capital = 290
 
-IF = {
-	limit = {has_dlc = "By Blood Alone"}
-	recruit_character =  RIF_abd_el_krim
-}
-
 set_cosmetic_tag = RIF_protectorate
 
 # Starting tech
@@ -61,6 +56,8 @@ set_convoys = 10
 	}
 }
 
+recruit_character = RIF_manuel_rico_avello
+recruit_character = RIF_abd_el_krim
 
 set_politics = {
 	ruling_party = neutrality

@@ -24,11 +24,19 @@ state={
 			7079 1
 		}
 
+		victory_points = {
+			12764 1
+		}
+
 		add_core_of = EGY
+		add_province_modifier = {
+			static_modifiers = { oasis_modifier }
+			province = 12764
+		}
 	}
 
 	provinces={
-		7079 9989 10061 11910 11967 5078 12033 12091 7148 
+		5078 7079 7148 9989 10061 11910 11967 12033 12091 12764
 	}
 
 

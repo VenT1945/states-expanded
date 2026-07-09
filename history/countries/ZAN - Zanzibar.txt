@@ -7,6 +7,8 @@ set_technology = {
 }
 set_cosmetic_tag = ZAN_protectorate
 
+recruit_character = ZAN_khalifa_bin_harub
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"

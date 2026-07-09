@@ -1,23 +1,46 @@
 characters = {
 
-	LEB_abdallah_beyhum = {
+	LEB_habib_bacha_el_saad = {
 
-		name = LEB_abdallah_beyhum
+		name = LEB_habib_bacha_el_saad
 
 		portraits = {
 			civilian = {
-				large = GFX_portrait_LEB_abdallah_beyhum
-				small = GFX_portrait_LEB_abdallah_beyhum_small
+				large = GFX_portrait_LEB_habib_bacha_el_saad
 			}
 		}
 
 		country_leader = {
 			ideology = liberalism
-			traits = { prime_minister_okyar }
+			traits = { }
 			expire = "1962.1.1.1"
 			id = -1
 		}
 
+	}
+
+	LEB_emile_edde = {
+		
+	}
+
+#---------	
+
+	LEB_damien_de_martel = {
+
+		name = SYR_damien_de_martel
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_damien_de_martel
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = damien_de_martel_1
+			traits = { high_commissioner_of_levant }
+			can_be_fired = no
+		}
 	}
 
     LEB_shawkat_shukayr = {
@@ -30,6 +53,14 @@ characters = {
 				small = GFX_idea_shawkat_shukayr
     		}
 		}
-	}
 
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
 }

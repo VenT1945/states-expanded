@@ -8,4 +8,22 @@ focus_tree = {
 			tag = LEB
 		}
 	}
+	focus = {
+		id = LEB_election
+		x = 10
+		y = 0
+
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.025
+			country_event = lebanon.1
+		}
+	}
 }

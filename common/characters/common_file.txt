@@ -1,0 +1,630 @@
+characters = {
+	PAL_arthur_grenfell_wauchope = {
+        name = PAL_arthur_grenfell_wauchope
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_PAL_arthur_grenfell_wauchope
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+        
+    }
+    
+    MOR_henri_ponsot = {
+        name = MOR_henri_ponsot
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_MOR_henri_ponsot
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    RIF_manuel_rico_avello = {
+        name = RIF_manuel_rico_avello
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_RIF_manuel_rico_avello
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    TIZ_tangier_administration = {
+        name = TIZ_tangier_administration
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_TIZ_tangier_administration
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    TUN_marcel_peyrouton = {
+        name = TUN_marcel_peyrouton
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_TUN_marcel_peyrouton
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    EGY_fuad_i = {
+        name = EGY_fuad_i
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_egy_faud_i
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    SUD_george_stewart_symes = {
+        name = SUD_george_stewart_symes
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_SUD_george_stewart_symes
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    SEN_jules_brevie = {
+        name = SEN_jules_brevie
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_SEN_jules_brevie
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    RCG_jean_marchessou = {
+        name = RCG_jean_marchessou
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_RCG_jean_marchessou
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    WTG_arnold_hodson = {
+        name = WTG_arnold_hodson
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_WTG_arnold_hodson
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    TOG_leon_geismar = {
+        name = TOG_leon_geismar
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_TOG_leon_geismar
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    AMB_bernard_bourdillon = {
+        name = AMB_bernard_bourdillon
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_AMB_bernard_bourdillon
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    CMR_jules_repiquet = {
+        name = CMR_jules_repiquet
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_CMR_jules_repiquet
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    UGA_philip_mitchell = {
+        name = UGA_philip_mitchell
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_UGA_philip_mitchell
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    BRD_pierre_ryckmans = {
+        name = BRD_pierre_ryckmans
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_BRD_pierre_ryckmans
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    TZN_harold_macmichael = {
+        name = TZN_harold_macmichael
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_PAL_harold_macmichael
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    ZAN_khalifa_bin_harub = {
+        name = ZAN_khalifa_bin_harub
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZAN_khalifa_bin_harub
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    MLW_harold_kittermaster = {
+        name = MLW_harold_kittermaster
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_MLW_harold_kittermaster
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    ZAM_hubert_winthrop_young = {
+        name = ZAM_hubert_winthrop_young
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZAM_hubert_winthrop_young
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    ZIM_godfrey_huggins = {
+        name = ZIM_godfrey_huggins
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ZIM_godfrey_huggins
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    BOT_william_henry_clark = {
+        name = BOT_william_henry_clark
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_BOT_william_henry_clark
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    FSA_bernard_reilly = {
+        name = FSA_bernard_reilly
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_FSA_bernard_reilly
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    UAE_shakhbut_bin_sultan_al_nahyan = {
+        name = UAE_shakhbut_bin_sultan_al_nahyan
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_UAE_shakhbut_bin_sultan_al_nahyan
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    QAT_abdullah_bin_jassim_al_thani = {
+        name = QAT_abdullah_bin_jassim_al_thani
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_QAT_abdullah_bin_jassim_al_thani
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    BHR_hamad_bin_isa_al_khalifa = {
+        name = BHR_hamad_bin_isa_al_khalifa
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_BHR_hamad_bin_isa_al_khalifa
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    VIN_eugene_robert = {
+        name = VIN_eugene_robert
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_VIN_eugene_robert
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+    }
+
+    KDH_abdul_hamid_halim_shah = {
+        name = KDH_abdul_hamid_halim_shah
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_KDH_abdul_hamid_halim_shah
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    KEL_ismail_ibni_muhammad_iv = {
+        name = KEL_ismail_ibni_muhammad_iv
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_KEL_ismail_ibni_muhammad_iv
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    TRG_sulaiman_badrul_alam_shah = {
+        name = TRG_sulaiman_badrul_alam_shah
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_TRG_sulaiman_badrul_alam_shah
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    JHR_ibrahim_of_johor = {
+        name = JHR_ibrahim_of_johor
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_JHR_ibrahim_of_johor
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    PLS_syed_alwi_jamalullail = {
+        name = PLS_syed_alwi_jamalullail
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_PLS_syed_alwi_jamalullail
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    SBH_douglas_jardine = {
+        name = SBH_douglas_jardine
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_SBH_douglas_jardine
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    SRW_charles_vyner_brooke = {
+        name = SRW_charles_vyner_brooke
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_SRW_charles_vyner_brooke
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    BRU_ahmad_tajuddin = {
+        name = BRU_ahmad_tajuddin
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_BRU_ahmad_tajuddin
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    KTH_ali_bin_al_mansur_bin_ghalib = {
+        name = KTH_ali_bin_al_mansur_bin_ghalib
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_KTH_ali_bin_al_mansur_bin_ghalib
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    QUA_sir_saleh_bin_ghalib_al_quaiti = {
+        name = QUA_sir_saleh_bin_ghalib_al_quaiti
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_QUA_sir_saleh_bin_ghalib_al_quaiti
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+
+    }
+
+    MAH_ali_bin_salim_al_afrar = {
+        name = MAH_ali_bin_salim_al_afrar
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_MAH_ali_bin_salim_al_afrar
+            }
+        }
+
+        country_leader = {
+            ideology = despotism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+        
+    }
+
+}

@@ -7,6 +7,8 @@ set_technology = {
 }
 set_cosmetic_tag = KEL_UMS
 
+recruit_character = KEL_ismail_ibni_muhammad_iv
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"

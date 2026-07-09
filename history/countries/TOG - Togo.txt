@@ -9,6 +9,7 @@ set_convoys = 10
 
 set_cosmetic_tag = TOG_mandate
 
+recruit_character = TOG_leon_geismar
 recruit_character = TOG_awt
 recruit_character = TOG_acd2
 recruit_character = TOG_nt

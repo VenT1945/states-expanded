@@ -8,6 +8,7 @@ set_technology = {
 }
 set_cosmetic_tag = FSA_protectorate
 
+recruit_character = FSA_bernard_reilly
 
 set_politics = {
 	ruling_party = neutrality

@@ -7,6 +7,8 @@ set_technology = {
 }
 set_cosmetic_tag = MAH_protectorate
 
+recruit_character = MAH_ali_bin_salim_al_afrar
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"
