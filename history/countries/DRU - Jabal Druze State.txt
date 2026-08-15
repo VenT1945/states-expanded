@@ -6,6 +6,8 @@ set_cosmetic_tag = DRU_mandate
 recruit_character = DRU_pierre_f_j_tarrit
 recruit_character = DRU_sultan_al_atrash
 recruit_character = DRU_abdul_g_p_al_atrash
+recruit_character = DRU_zayd_al_atrash
+recruit_character = DRU_hasan_al_atrash
 
 set_technology = {
 	infantry_weapons = 1

@@ -34,11 +34,21 @@ joint_focus = {
             var = hatay_syria_support
             value = 14
         }
+        set_variable = {
+            var = HATAY_SYR_cost_large_variable
+            value = 100
+        }
+        set_variable = {
+            var = HATAY_SYR_cost_small_variable
+            value = 50
+        }
+        unlock_decision_category_tooltip = HATAY_parliament_category
+        news_event = hatay.1
 	}
 }
 joint_focus = {
 	id = HATAY_TUR_recognize_independence
-	x = -1
+	x = -2
 	y = 1
     prerequisite = { focus = TUR_the_hatay_issue }
     relative_position_id = TUR_the_hatay_issue 
@@ -55,5 +65,64 @@ joint_focus = {
         HAT = {
             give_military_access = TUR
         }
+	}
+}
+joint_focus = {
+	id = HATAY_SYR_recognize_independence
+	x = 0
+	y = 1
+    prerequisite = { focus = TUR_the_hatay_issue }
+    relative_position_id = TUR_the_hatay_issue 
+    mutually_exclusive = { focus = HATAY_SYR_declare_unlawful_sucession }
+	cost = 5
+	ai_will_do = {
+		base = 10
+    }
+    text_icon = HATAY_SYR_focus_style
+    available = {
+        tag = SYR
+    }
+	completion_reward_joint_originator = {
+        give_guarantee = HAT
+        HAT = {
+            give_military_access = SYR
+        }
+        set_variable = {
+            var = HATAY_SYR_cost_large_variable
+            value = 75
+        }
+        set_variable = {
+            var = HATAY_SYR_cost_small_variable
+            value = 35
+        }
+        custom_effect_tooltip = HATAY_SYR_easier_to_influence
+	}
+}
+joint_focus = {
+	id = HATAY_SYR_declare_unlawful_sucession
+	x = 2
+	y = 1
+    prerequisite = { focus = TUR_the_hatay_issue }
+    relative_position_id = TUR_the_hatay_issue 
+    mutually_exclusive = { focus = HATAY_SYR_recognize_independence }
+	cost = 5
+	ai_will_do = {
+		base = 10
+    }
+    text_icon = HATAY_SYR_focus_style
+    available = {
+        tag = SYR
+    }
+	completion_reward_joint_originator = {
+        add_political_power = 50
+        set_variable = {
+            var = HATAY_SYR_cost_large_variable
+            value = 125
+        }
+        set_variable = {
+            var = HATAY_SYR_cost_small_variable
+            value = 75
+        }
+        custom_effect_tooltip = HATAY_SYR_harder_to_influence
 	}
 }

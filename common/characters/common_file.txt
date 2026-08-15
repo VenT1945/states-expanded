@@ -339,12 +339,12 @@ characters = {
 
     }
 
-    BOT_william_henry_clark = {
-        name = BOT_william_henry_clark
+    BOT_charles_fernand_rey = {
+        name = BOT_charles_fernand_rey
 
         portraits = {
             civilian = {
-                large = GFX_portrait_BOT_william_henry_clark
+                large = GFX_portrait_BOT_charles_fernand_rey
             }
         }
 
@@ -354,6 +354,23 @@ characters = {
             id = -1
         }
 
+    }
+
+    SAW_allan_graham_marwick = {
+        name = SAW_allan_graham_marwick
+
+        portraits = {
+            civilian = {
+                large = GFX_portrait_SAW_allan_graham_marwick
+            }
+        }
+
+        country_leader = {
+            ideology = moderatism
+            expire = "1960.1.1.1"
+            id = -1
+        }
+        
     }
 
     FSA_bernard_reilly = {

@@ -1283,6 +1283,14 @@ KTH = {
 	color = rgb { 200 80 40 }
 	color_ui = rgb { 220 100 60 }
 }
+LES = {
+    color = rgb { 45 105 185 }
+    color_ui = rgb { 70 130 210 }
+}
+SWA = {
+    color = rgb { 165 45 55 }
+    color_ui = rgb { 190 65 75 }
+}
 NZO = {
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 0 0 0 }

@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_bop_LEB_confessionalism_strong_side"
+        texturefile = "gfx/interface/bop/bop_LEB_confessionalism_strong_side.dds"
+    }
+    spriteType = {
+        name = "GFX_bop_LEB_confessionalism_weak_side"
+        texturefile = "gfx/interface/bop/bop_LEB_confessionalism_weak_side.dds"
+    }
+}

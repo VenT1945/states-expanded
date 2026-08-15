@@ -14,7 +14,17 @@
  HATAY_parliament_category: "The Hatay State Peoples Assembly"
  HATAY_parliament_category_desc: "The Hatay State Peoples Assembly is the main legislative organ of the Hatay State.\n\nThere are currently §Y[?hatay_turkey_support]§! supporters for [TUR.GetNameWithFlag], §Y[?hatay_independence_support]§! supporters that haven't chosen a side yet, and §Y[?hatay_syria_support]§! supporters for [SYR.GetNameWithFlag]"
  
+ SYR_charles_huntziger_category: "The Huntziger Question"
+ SYR_charles_huntziger_category_desc: "Charles Huntziger's future remains uncertain. Through careful diplomacy and negotiation, we may be able to convince him to remain in Syria and lend his expertise to our armed forces."
+ SYR_coerce_huntziger: "Secure Huntziger's Loyalty"
 
+ LEB_strengthen_confessionalism: "Strengthen the Confessional Order"
+ LEB_promote_confessionalism: "Promote Sectarian Representation"
+ LEB_reaffirm_religious_personal_status_laws: "Reaffirm Religious Personal Status Laws"
+ LEB_weaken_confessionalism: "Limit Confessional Influence"
+ LEB_undermine_confessionalism: "Challenge the Confessional System"
+ LEB_fund_secular_policies: "Fund Secular Reform"
+ LEB_ban_confessionalism: "Abolish Political Confessionalism"
 
  PAL_great_palestinian_uprising: "The Great Palestinian Uprising"
  PAL_great_palestinian_uprising_mission: "Impending Palestinian Uprising"

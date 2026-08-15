@@ -1,7 +1,7 @@
 shared_focus =  {
 	id = ALDR_realize_future
 	icon = GFX_goal_generic_attack_allies
-	x = 14
+	x = 15
 	y = 0
 	cost = 5
 	available = {
@@ -114,11 +114,16 @@ shared_focus =  {
 			}
 		}
 		add_war_support = 0.05
-		remove_ideas = ALDR_ineffective_colonial_admin
-		add_ideas = ALDR_unrecognized_independence
-		set_autonomy = {
-			target = ROOT
-			autonomy = free
+		swap_ideas = {
+			remove_idea = ALDR_ineffective_colonial_admin
+			add_idea = ALDR_unrecognized_independence
+		}
+		drop_cosmetic_tag = yes
+		FRA = {
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_free
+			}
 		}
 	}
 }
@@ -301,7 +306,7 @@ shared_focus =  {
 }
 shared_focus =  {
 	id = ALDR_industrial_growth
-	x = 31
+	x = 32
 	y = 0
 	cost = 5
 	available = {
@@ -557,7 +562,7 @@ shared_focus = {
 }
 shared_focus =  {
 	id = ALDR_army_expansion
-	x = 22
+	x = 23
 	y = 0
 	cost = 5
 	available = {
@@ -791,6 +796,7 @@ shared_focus = {
 	cost = 10
 	relative_position_id = ALDR_global_recognition
 	prerequisite = { focus = ALDR_global_recognition }
+	mutually_exclusive = { focus = ALDR_new_ideologies }
 	available = {
 		has_country_flag = ALDR_arab_support
 	}
@@ -803,12 +809,28 @@ shared_focus = {
 	}
 }
 shared_focus = {
+	id = ALDR_the_sultans_plan
+	x = 0
+	y = 1
+	cost = 10
+	relative_position_id = ALDR_stay_with_sultan
+	prerequisite = { focus = ALDR_stay_with_sultan }
+	ai_will_do = {
+		factor = 50
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
 	id = ALDR_new_ideologies
 	x = 3
 	y = 1
 	cost = 10
 	relative_position_id = ALDR_global_recognition
 	prerequisite = { focus = ALDR_global_recognition }
+	mutually_exclusive = { focus = ALDR_stay_with_sultan }
 	available = {
 		OR = {
 			has_country_flag = aldr_fascist_support

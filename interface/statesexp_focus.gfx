@@ -28,6 +28,14 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/SYR_limit_french_control.dds"
     }
     spriteType = {
+        name = "GFX_SYR_french_concessions"
+        texturefile = "gfx/interface/goals/SYR_french_concessions.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_expand_concessions"
+        texturefile = "gfx/interface/goals/SYR_expand_concessions.dds"
+    }
+    spriteType = {
         name = "GFX_SYR_expand_ministry_of_interior"
         texturefile = "gfx/interface/goals/SYR_expand_ministry_of_interior.dds"
     }
@@ -46,6 +54,10 @@ spriteTypes = {
     spriteType = {
         name = "GFX_SYR_france_treaty"
         texturefile = "gfx/interface/goals/SYR_france_treaty.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_nationalize_banque_de_syrie"
+        texturefile = "gfx/interface/goals/SYR_nationalize_banque_de_syrie.dds"
     }
     spriteType = {
         name = "GFX_SYR_future_relations"
@@ -76,11 +88,31 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/SYR_proclaim_independence_day.dds"
     }
     spriteType = {
+        name = "GFX_SYR_fix_instability"
+        texturefile = "gfx/interface/goals/SYR_fix_instability.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_administrative_reform"
+        texturefile = "gfx/interface/goals/SYR_administrative_reform.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_national_bloc_wins"
+        texturefile = "gfx/interface/goals/SYR_national_bloc_wins.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_new_anthem_comp"
+        texturefile = "gfx/interface/goals/SYR_new_anthem_comp.dds"
+    }
+    spriteType = {
+        name = "GFX_SYR_league_of_action_wins"
+        texturefile = "gfx/interface/goals/SYR_league_of_action_wins.dds"
+    }
+    spriteType = {
         name = "GFX_SYR_soviet_support"
         texturefile = "gfx/interface/goals/SYR_soviet_support.dds"
     }
     spriteType = {
-        name = "GFX_SYR_SYR_kick_out_colonial_admin"
+        name = "GFX_SYR_kick_out_colonial_admin"
         texturefile = "gfx/interface/goals/SYR_kick_out_colonial_admin.dds"
     }
     spriteType = {
@@ -100,8 +132,8 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/SYR_islamic_socialism.dds"
     }
     spriteType = {
-        name = "GFX_HATAY_show_dispute_league"
-        texturefile = "gfx/interface/goals/HATAY_show_dispute_league.dds"
+        name = "GFX_SYR_invite_to_red_alliance"
+        texturefile = "gfx/interface/goals/SYR_invite_to_red_alliance.dds"
     }
     spriteType = {
         name = "GFX_ALA_civilian_loyalty"

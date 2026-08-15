@@ -5,6 +5,8 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+set_oob = "JOR"
+
 IF = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"

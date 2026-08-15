@@ -2,16 +2,42 @@ FRA_levant_mandates = {
 	FRA_demand_huntziger = {
         cost = 75
         fire_only_once = yes
+		visible = {
+			SYR = {
+				has_idea = SYR_french_levant_army
+			}
+		}
         available = {
             SYR = {
                 NOT = {
-                    has_country_flag = SYR_coerced
+                    has_country_flag = SYR_coerced_huntziger
                 }
             }
         }
         complete_effect = {
             SYR = {
                 remove_ideas = SYR_french_levant_army
+            }
+        }
+    }
+	FRA_demand_larminat = {
+        cost = 75
+        fire_only_once = yes
+		visible = {
+			LEB = {
+				has_idea = LEB_french_levant_army
+			}
+		}
+        available = {
+            LEB = {
+                NOT = {
+                    has_country_flag = LEB_coerced_larminat
+                }
+            }
+        }
+        complete_effect = {
+            LEB = {
+                remove_ideas = LEB_french_levant_army
             }
         }
     }

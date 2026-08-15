@@ -20,6 +20,7 @@ HATAY_parliament_category = {
 			SYR = {
 				set_country_flag = HATAY_minigame_started
 			}
+			activate_mission = HATAY_timer
 		}
 	}
 	HATAY_large_influence_TUR = {
@@ -45,6 +46,16 @@ HATAY_parliament_category = {
 				subtract_from_variable = {
 					var = hatay_syria_support
 					value = influence_number_hatay_var
+				}
+				clamp_variable = {
+					var = hatay_turkey_support
+					min = 0
+					max = 40
+				}
+				clamp_variable = {
+					var = hatay_syria_support
+					min = 0
+					max = 40
 				}
 			}
 			custom_effect_tooltip = hatay_large_influence_tt
@@ -74,12 +85,22 @@ HATAY_parliament_category = {
 					var = hatay_syria_support
 					value = influence_number_hatay_var
 				}
+				clamp_variable = {
+					var = hatay_turkey_support
+					min = 0
+					max = 40
+				}
+				clamp_variable = {
+					var = hatay_syria_support
+					min = 0
+					max = 40
+				}
 			}
 			custom_effect_tooltip = hatay_small_influence_tt
 		}
 	}
 	HATAY_large_influence_SYR = {
-		cost = 100
+		cost = var:HATAY_SYR_cost_large_variable
 		days_re_enable = 70
         visible = {
             original_tag = SYR
@@ -102,12 +123,22 @@ HATAY_parliament_category = {
 					var = hatay_syria_support
 					value = influence_number_hatay_var
 				}
+				clamp_variable = {
+					var = hatay_turkey_support
+					min = 0
+					max = 40
+				}
+				clamp_variable = {
+					var = hatay_syria_support
+					min = 0
+					max = 40
+				}
 			}
 			custom_effect_tooltip = hatay_large_influence_tt
 		}
 	}
 	HATAY_small_influence_SYR = {
-		cost = 50
+		cost = var:HATAY_SYR_cost_small_variable
 		days_re_enable = 45
 		days_remove = 15
         visible = {
@@ -129,6 +160,16 @@ HATAY_parliament_category = {
 				add_to_variable = {
 					var = hatay_syria_support
 					value = influence_number_hatay_var
+				}
+				clamp_variable = {
+					var = hatay_turkey_support
+					min = 0
+					max = 40
+				}
+				clamp_variable = {
+					var = hatay_syria_support
+					min = 0
+					max = 40
 				}
 			}
 			custom_effect_tooltip = hatay_small_influence_tt
@@ -157,8 +198,98 @@ HATAY_parliament_category = {
 					var = hatay_syria_support
 					value = influence_number_hatay_var
 				}
+				clamp_variable = {
+					var = hatay_turkey_support
+					min = 0
+					max = 40
+				}
+				clamp_variable = {
+					var = hatay_syria_support
+					min = 0
+					max = 40
+				}
 			}
 			custom_effect_tooltip = hatay_buy_out_SYR
+		}
+	}
+	HATAY_timer = {
+		activation = {
+			always = no
+		}
+		available = {
+			IF = {
+				limit = {
+					original_tag = TUR
+				}
+				check_variable = {
+					var = hatay_turkey_support
+					value = 33
+					compare = greater_than_or_equals
+				}
+			}
+			IF = {
+				limit = {
+					original_tag = SYR
+				}
+				check_variable = {
+					var = hatay_syria_support
+					value = 33
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 360
+		complete_effect = {
+			add_political_power = 50
+		}
+		timeout_effect = {
+			IF = {
+				limit = {
+					original_tag = TUR
+					check_variable = {
+						var = hatay_turkey_support
+						value = 27
+						compare = greater_than_or_equals
+					}
+				}
+				TUR = {
+					country_event = hatay.2
+					clr_country_flag = HATAY_minigame_started
+				}
+				SYR = {
+					country_event = hatay.4
+					clr_country_flag = HATAY_minigame_started
+				}
+			}
+			else_if = {
+				limit = {
+					original_tag = SYR
+					check_variable = {
+						var = hatay_syria_support
+						value = 27
+						compare = greater_than_or_equals
+					}
+				}
+				SYR = {
+					country_event = hatay.2
+					clr_country_flag = HATAY_minigame_started
+				}
+				TUR = {
+					country_event = hatay.4
+					clr_country_flag = HATAY_minigame_started
+				}
+			}
+			ELSE = {
+				SYR = {
+					country_event = hatay.5
+					clr_country_flag = HATAY_minigame_started
+				}
+				TUR = {
+					country_event = hatay.5
+					clr_country_flag = HATAY_minigame_started
+				}
+			}
 		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿capital = 658 # Abu Dhabi
 
-#oob = ""
+oob = "UAE"
 
 # Starting tech
 set_technology = {

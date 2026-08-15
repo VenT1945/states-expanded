@@ -200,6 +200,39 @@ characters = {
 		}
 	}
 
+	SYR_taj_al_din_al_hasani = {
+
+		name = SYR_taj_al_din_al_hasani
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_taj_al_din_al_hasani
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = taj_al_din_al_hasani
+			traits = { mandate_statesman }
+			cost = 50
+			available = {
+				is_subject_of = FRA
+				has_autonomy_state = autonomy_mandate
+				AND = {
+					OR = {
+						NOT = {
+							has_completed_focus = SYR_france_treaty
+						}
+						has_completed_focus = SYR_accept_future
+					}
+					NOT = {
+						has_completed_focus = SYR_communist_underground_focus
+					}
+				}
+			}
+		}
+	}
+
 	SYR_said_al_ghazzi = {
 
 		name = SYR_said_al_ghazzi
@@ -247,7 +280,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = khalil_mardam_bey
-			traits = { cultural_nationalist }
+			traits = { cultural_poet }
 			available = {
 				has_country_flag = SYR_khalil_anthem
 			}
@@ -304,7 +337,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = omar_abu_risha
-			traits = { cultural_poet }
+			traits = { cultural_nationalist }
 			available = {
 				has_country_flag = SYR_omar_anthem
 			}
@@ -320,7 +353,6 @@ characters = {
 				small = GFX_idea_muhammad_al_ashmar
 			}
 		}
-		
 	}
 	
 #--------------

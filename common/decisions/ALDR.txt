@@ -150,6 +150,11 @@ ALDR_international_support_category = {
     				days = 7
 				}
 			}
+			IF = {
+				limit = {
+					original_tag = ALA
+				}
+			}
 			custom_effect_tooltip = if_they_accept_tt
 			custom_effect_tooltip = ALDR_support_acception
 			set_country_flag = aldr_fascist_support
@@ -292,6 +297,7 @@ ALDR_international_support_category = {
 						capital_scope = {
 							is_on_continent = middle_east
 						}
+						has_government = neutrality
 						NOT = {
 							OR = {
 								original_tag = SYR
@@ -299,6 +305,7 @@ ALDR_international_support_category = {
 								original_tag = ALA
 								original_tag = DRU
 								original_tag = UTA
+								original_tag = NZO
 							}
 						}
 					}

@@ -21,6 +21,98 @@ characters = {
 
 	LEB_emile_edde = {
 		
+		name = LEB_emile_edde
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEB_emile_edde
+			}
+		}
+
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	LEB_bechara_el_khoury = {
+
+		name = LEB_bechara_el_khoury
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEB_emile_edde
+			}
+		}
+
+		country_leader = {
+			ideology = centrism
+			traits = { }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+
+	}
+
+	LEB_antoun_saadeh = {
+
+		name = SYR_antoun_saadeh
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_antoun_saadeh
+			}
+		}
+
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {  }
+			expire = "1949.1.1.1"
+			id = -1
+		}
+
+	}
+
+	LEB_pierre_gemayel = {
+
+		name = LEB_pierre_gemayel
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEB_pierre_gemayel
+				small = GFX_idea_pierre_gemayel
+			}
+		}
+
+		country_leader = {
+			ideology = phalangism
+			traits = {  }
+			expire = "1949.1.1.1"
+			id = -1
+		}
+
+	}
+
+	LEB_farajallah_el_helou = {
+
+		name = LEB_farajallah_el_helou
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEB_farajallah_el_helou
+			}
+		}
+
+		country_leader = {
+			ideology = stalinism
+			traits = {  }
+			expire = "1949.1.1.1"
+			id = -1
+		}
+
 	}
 
 #---------	
@@ -41,7 +133,28 @@ characters = {
 			traits = { high_commissioner_of_levant }
 			can_be_fired = no
 		}
+
 	}
+
+	LEB_genevieve_gemayel = {
+		
+		name = LEB_genevieve_gemayel
+
+		portraits = {
+			civilian = {
+				small = GFX_idea_genevieve_gemayel
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = genevieve_gemayel
+			traits = { }
+		}
+
+	}
+
+#---------
 
     LEB_shawkat_shukayr = {
 
@@ -62,5 +175,6 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 1
 		}
+
 	}
 }

@@ -1,0 +1,122 @@
+division_template = {
+    name = "Infantry Division"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
+    name = "Camel Corps"
+    regiments = {
+        camelry = { x = 0 y = 0 }
+        camelry = { x = 0 y = 1 }
+        camelry = { x = 1 y = 0 }
+    }
+    support = {
+        recon = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
+    name = "Royal Guard"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+    }
+}
+
+units = {
+
+    division = {
+        name = "1st Infantry Brigade"
+        location = 7011
+        division_template = "Infantry Division"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.7
+    }
+
+    division = {
+        name = "2nd Infantry Brigade"
+        location = 4076
+        division_template = "Infantry Division"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.7
+    }
+
+    division = {
+        name = "3rd Infantry Brigade"
+        location = 3996
+        division_template = "Infantry Division"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.6
+    }
+
+    division = {
+        name = "4th Infantry Brigade"
+        location = 12071
+        division_template = "Infantry Division"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.6
+    }
+
+    division = {
+        name = "Frontier District Force"
+        location = 1071
+        division_template = "Infantry Division"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+    }
+
+    division = {
+        name = "Sinai Camel Corps"
+        location = 4161
+        division_template = "Camel Corps"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.6
+    }
+
+    division = {
+        name = "Royal Guard"
+        location = 7011
+        division_template = "Royal Guard"
+        start_experience_factor = 0.6
+        start_equipment_factor = 0.8
+    }
+}
+
+instant_effect = {
+
+    add_equipment_production = {
+        equipment = {
+            type = infantry_equipment_0
+            creator = "EGY"
+        }
+        requested_factories = 2
+        progress = 0.3
+        efficiency = 40
+    }
+
+    add_equipment_production = {
+        equipment = {
+            type = support_equipment_1
+            creator = "EGY"
+        }
+        requested_factories = 1
+        progress = 0.2
+        efficiency = 25
+    }
+}

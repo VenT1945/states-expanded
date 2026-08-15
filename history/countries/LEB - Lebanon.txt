@@ -7,11 +7,12 @@ set_technology = {
 	camelry = 1
 }
 
-set_oob = "LEB_1936"
+set_oob = "LEB"
 
 add_ideas = {
 	LON_mandate_A
 	LON_colonial_economy
+	SYR_banque_de_syrie_1
 	LEB_french_levant_army
 	LEB_trade_hub
 	LEB_confessionalism
@@ -79,55 +80,31 @@ set_cosmetic_tag = LEB_mandate
 	}
 }
 
+recruit_character = LEB_habib_bacha_el_saad
+recruit_character = LEB_emile_edde
+recruit_character = LEB_bechara_el_khoury
+recruit_character = LEB_antoun_saadeh
+recruit_character = LEB_pierre_gemayel
+recruit_character = LEB_farajallah_el_helou
+recruit_character = LEB_damien_de_martel
+recruit_character = LEB_genevieve_gemayel
+activate_advisor = damien_de_martel_1
+recruit_character = FRA_edgard_de_larminat
+recruit_character = LEB_shawkat_shukayr
+
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.1"
+	last_election = "1929.1.20"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed =  no
 }
 set_popularities = {
-	democratic = 50
-	fascism = 10
-	communism = 10
-	neutrality = 30
+	democratic = 42
+	fascism = 3
+	communism = 5
+	neutrality = 50
 }
-
 set_power_balance = {
     id = LEB_confessionalism_bop
 	set_default = yes
-}
-
-recruit_character = LEB_habib_bacha_el_saad
-recruit_character = LEB_damien_de_martel
-activate_advisor = damien_de_martel_1
-recruit_character = FRA_edgard_de_larminat
-
-create_country_leader = {
-	name = "Pierre Gemayel"
-	desc = ""
-	picture = GFX_portrait_Pierre_Gemayel
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Melick Yarad"
-	desc = ""
-	picture = GFX_portrait_Melick_Yarad
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Artin Madoyan"
-	desc = ""
-	picture = GFX_portrait_Rami_Sarraff
-	ideology = leninism
-	traits = {
-		#
-	}
 }

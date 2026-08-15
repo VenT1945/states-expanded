@@ -5,8 +5,8 @@ state={
 		7900 
 	}
 	history={
-		owner = BOT
-		add_core_of = BOT
+		owner = SWA
+		add_core_of = SWA
 		victory_points = {
     		7900 2
 		}

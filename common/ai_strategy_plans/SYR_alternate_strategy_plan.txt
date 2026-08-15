@@ -1,0 +1,262 @@
+SYR_national_bloc_plan = {
+	name = "Syria National Bloc Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SYR
+	}
+	enable = {
+		OR = {
+			has_country_flag = SYR_AI_RANDOM_NATIONAL_BLOC
+			has_game_rule = {
+				rule = SYR_ai_behavior
+				option = NATIONAL_BLOC
+			}
+		}
+	}
+    ai_national_focuses = {
+        SYR_general_strike
+		SYR_limit_french_control
+		SYR_expand_ministry_of_interior
+		SYR_ban_ssnp
+		SYR_remembering_great_syrian_revolt
+		SYR_french_concessions
+		SYR_defense_act
+		SYR_syrian_question
+		SYR_france_treaty
+		SYR_basic_demands
+		SYR_future_relations
+		SYR_lebanon_question
+		SYR_coerce_treaty
+		SYR_armed_rebellion
+		SYR_annex_aldr_rebellion
+		SYR_industrialization
+		SYR_proclaim_independence_day
+		SYR_fix_instability
+		SYR_administrative_reform
+		SYR_start_fixing_economy
+		SYR_nationalize_banque_de_syrie
+		SYR_election_day
+		SYR_consolidate_national_bloc
+		SYR_new_anthem_comp
+		SYR_convene_constituent_assembly
+		SYR_republican_constitution
+		SYR_civil_reforms
+		SYR_judicial_reforms
+		SYR_public_plans
+		SYR_religious_laws
+		SYR_educational_reforms
+		SYR_arab_conference
+		SYR_international_affairs
+		SYR_protect_arabs_lebanon
+		SYR_formalize_league
+		SYR_expand_league
+    }
+
+	ideas = {
+		hashim_al_atassi = 100
+		jamil_mardam_bey = 10
+		khalil_mardam_bey = 10
+	}
+}
+SYR_baathist_plan = {
+	name = "Syria Ba'athist Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SYR
+	}
+	enable = {
+		OR = {
+			has_country_flag = SYR_AI_RANDOM_BAATHISM
+			has_game_rule = {
+				rule = SYR_ai_behavior
+				option = BAATHIST
+			}
+		}
+	}
+    ai_national_focuses = {
+        SYR_general_strike
+		SYR_limit_french_control
+		SYR_expand_ministry_of_interior
+		SYR_ban_ssnp
+		SYR_remembering_great_syrian_revolt
+		SYR_defense_act
+		SYR_syrian_question
+		SYR_industrialization
+		SYR_france_treaty
+		SYR_basic_demands
+		SYR_future_relations
+		SYR_lebanon_question
+		SYR_coerce_treaty
+		SYR_armed_rebellion
+		SYR_annex_aldr_rebellion
+		SYR_proclaim_independence_day
+		SYR_promote_generals
+		SYR_form_syrian_army
+		SYR_fix_instability
+		SYR_administrative_reform
+		SYR_start_fixing_economy
+		SYR_nationalize_banque_de_syrie
+		SYR_election_day
+		SYR_league_of_action_wins
+		SYR_weak_administration
+		SYR_ousting_of_league
+		SYR_arab_baath_focus
+		SYR_promote_baathist_generals
+		SYR_create_baath_newspaper
+		SYR_consolidate_power
+		SYR_expand_baath_rhetoric
+		SYR_militarism
+		SYR_arab_faction
+		SYR_baath_five_year_plan
+		SYR_promote_independence
+		SYR_unite_levant
+		SYR_unite_iraq_kuwait
+		SYR_unite_arabia
+    }
+	ideas = {
+		hashim_al_atassi = 100
+	}
+}
+SYR_fascist_plan = {
+	name = "Syria SSNP Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SYR
+	}
+	enable = {
+		OR = {
+			has_country_flag = SYR_AI_RANDOM_FASCISM
+			has_game_rule = {
+				rule = SYR_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+    ai_national_focuses = {
+        SYR_general_strike
+		SYR_limit_french_control
+		SYR_expand_ministry_of_interior
+		SYR_allow_ssnp
+		SYR_remembering_great_syrian_revolt
+		SYR_defense_act
+		SYR_syrian_question
+		SYR_industrialization
+		SYR_france_treaty
+		SYR_basic_demands
+		SYR_future_relations
+		SYR_lebanon_question
+		SYR_coerce_treaty
+		SYR_armed_rebellion
+		SYR_annex_aldr_rebellion
+		SYR_proclaim_independence_day
+		SYR_promote_generals
+		SYR_form_syrian_army
+		SYR_use_instability
+		SYR_fascist_coup
+		SYR_new_constitution_fascist
+		SYR_enforce_control
+		SYR_purge
+		SYR_publish_ssnp_map
+		SYR_militarize_society
+		SYR_secular_nationalism
+		SYR_unite_lebanon
+		SYR_cult_of_personality
+		SYR_national_renaissance
+		SYR_launch_coups
+    }
+	ideas = {
+		hashim_al_atassi = 100
+	}
+}
+SYR_communist_plan = {
+	name = "Syria SLCP Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SYR
+	}
+	enable = {
+		OR = {
+			has_country_flag = SYR_AI_RANDOM_COMMUNIST
+			has_game_rule = {
+				rule = SYR_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+    ai_national_focuses = {
+        SYR_general_strike
+		SYR_limit_french_control
+		SYR_expand_ministry_of_interior
+		SYR_ban_ssnp
+		SYR_defense_act
+		SYR_industrialization
+		SYR_syrian_question
+		SYR_communist_underground_focus
+		SYR_rally_working_class
+		SYR_soviet_support
+		SYR_expand_underground_operations
+		SYR_propoganda
+		SYR_ignite_revolution
+		SYR_kick_out_colonial_admin
+		SYR_stabilize_internals
+		SYR_promote_generals
+		SYR_one_party_one_state
+		SYR_divide_parties_commie
+		SYR_bring_divisions_back
+		SYR_five_year_plan
+		SYR_form_syrian_army
+		SYR_spread_revolution_south
+		SYR_spread_revolution_east
+		SYR_socialist_economy_reforms
+		SYR_red_alliance
+		SYR_unite_levant_commie
+    }
+
+	ideas = {
+		muhammad_al_ashmar = 10
+	}
+}
+SYR_mandate_plan = {
+	name = "Syria Mandate Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SYR
+	}
+	enable = {
+		OR = {
+			has_country_flag = SYR_AI_RANDOM_MANDATE
+			has_game_rule = {
+				rule = SYR_ai_behavior
+				option = MANDATE
+			}
+		}
+	}
+    ai_national_focuses = {
+        SYR_general_strike
+		SYR_limit_french_control
+		SYR_french_concessions
+		SYR_french_investments
+		SYR_expand_autonomy
+		SYR_industrialization
+		SYR_realize_france_good
+		SYR_expand_concessions
+		SYR_bastion_of_democracy
+		SYR_accept_future
+		SYR_same_old_same_old
+		SYR_push_for_breakaways
+		SYR_french_military_mission
+		SYR_develop_desert
+		SYR_locally_produced_guns
+		SYR_expand_aleppo_textiles
+		SYR_promote_generals
+    }
+
+	ideas = {
+		taj_al_din_al_hasani = 10
+	}
+}

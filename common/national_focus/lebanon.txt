@@ -10,9 +10,10 @@ focus_tree = {
 	}
 	focus = {
 		id = LEB_election
-		x = 10
+		x = 6
 		y = 0
-
+		
+		icon = GFX_focus_generic_vote
 
 		cost = 3
 
@@ -23,7 +24,886 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			add_stability = 0.025
-			country_event = lebanon.1
+			country_event = lebanon_election.1
+		}
+	}
+	focus = {
+		id = LEB_national_bloc
+		x = -1
+		y = 1
+
+		prerequisite = { focus = LEB_election }
+    	relative_position_id = LEB_election 
+    	mutually_exclusive = { focus = LEB_constitutional_bloc }
+
+		available = {
+			always = no
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = LEB_constitutional_bloc
+		x = 1
+		y = 1
+
+		prerequisite = { focus = LEB_election }
+		relative_position_id = LEB_election 
+		mutually_exclusive = { focus = LEB_national_bloc }
+
+		available = {
+			always = no
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_power_balance_value = {
+				id = LEB_confessionalism_bop
+				value = 0.025
+			}
+		}
+	}
+	focus = {
+		id = LEB_protest_mandate_policies
+		x = 0
+		y = 1
+
+		prerequisite = { focus = LEB_constitutional_bloc }
+		relative_position_id = LEB_constitutional_bloc 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_expand_civil_liberties
+		x = 2
+		y = 1
+
+		prerequisite = { focus = LEB_constitutional_bloc }
+		relative_position_id = LEB_constitutional_bloc 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_support_mandate_policies
+		x = 0
+		y = 1
+
+		icon = GFX_focus_chi_reach_out_to_france
+
+		prerequisite = { focus = LEB_national_bloc }
+		relative_position_id = LEB_national_bloc 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_treaty
+		x = 1
+		y = 1
+
+		prerequisite = { focus = LEB_support_mandate_policies focus = LEB_protest_mandate_policies }
+		relative_position_id = LEB_support_mandate_policies 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_compromised_treaty
+		x = -5
+		y = 1
+
+		prerequisite = { focus = LEB_treaty }
+		relative_position_id = LEB_treaty 
+		mutually_exclusive = { focus = LEB_failure focus = LEB_victory_for_lebanon }
+
+		available = {
+			always = no
+			has_completed_focus = LEB_national_bloc
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_failure
+		x = 0
+		y = 1
+
+		prerequisite = { focus = LEB_treaty }
+		relative_position_id = LEB_treaty 
+		mutually_exclusive = { focus = LEB_compromised_treaty focus = LEB_victory_for_lebanon }
+
+		available = {
+			always = no
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_revolution
+		x = 2
+		y = 1
+
+		prerequisite = { focus = LEB_failure }
+		relative_position_id = LEB_failure 
+		mutually_exclusive = { focus = LEB_french_future }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_french_future
+		x = -2
+		y = 1
+
+		prerequisite = { focus = LEB_failure }
+		relative_position_id = LEB_failure 
+		mutually_exclusive = { focus = LEB_revolution }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_preserve_public_order
+		x = 0
+		y = 2
+
+		prerequisite = { focus = LEB_failure }
+		relative_position_id = LEB_failure 
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_victory_for_lebanon
+		x = 5
+		y = 1
+
+		prerequisite = { focus = LEB_treaty }
+		relative_position_id = LEB_treaty 
+		mutually_exclusive = { focus = LEB_compromised_treaty focus = LEB_failure }
+
+		available = {
+			always = no
+			has_completed_focus = LEB_constitutional_bloc
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_independence
+		x = 0
+		y = 2
+
+		prerequisite = { focus = LEB_victory_for_lebanon focus = LEB_revolution }
+		relative_position_id = LEB_victory_for_lebanon 
+
+		cost = 5
+
+		available = {
+			is_subject = no
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_rebuild_the_nation
+		x = -1
+		y = 1
+
+		prerequisite = { focus = LEB_independence }
+		relative_position_id = LEB_independence 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_lebanese_identity
+		x = 1
+		y = 1
+
+		prerequisite = { focus = LEB_independence }
+		relative_position_id = LEB_independence 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_national_pact
+		x = -1
+		y = 1
+
+		prerequisite = { focus = LEB_rebuild_the_nation }
+		prerequisite = { focus = LEB_lebanese_identity }
+		relative_position_id = LEB_lebanese_identity 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_working_pact
+		x = -5
+		y = 1
+
+		prerequisite = { focus = LEB_national_pact }
+		relative_position_id = LEB_national_pact
+
+		mutually_exclusive = { focus = LEB_redo_pact_correctly focus = LEB_failure_pact}
+
+		available = {
+			always = no
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_redo_pact_correctly
+		x = 0
+		y = 1
+
+		prerequisite = { focus = LEB_national_pact }
+		relative_position_id = LEB_national_pact
+
+		mutually_exclusive = { focus = LEB_working_pact focus = LEB_failure_pact}
+
+		available = {
+			always = no
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_create_kataeb
+		x = 0
+		y = 1
+
+		prerequisite = { focus = LEB_redo_pact_correctly }
+		relative_position_id = LEB_redo_pact_correctly
+
+		cost = 10
+
+		available = {
+			is_power_balance_in_range = {
+				id = LEB_confessionalism_bop
+				range > LEB_confessionalism_bop_balanced
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LEB_failure_pact
+		x = 8
+		y = 1
+
+		prerequisite = { focus = LEB_national_pact }
+		relative_position_id = LEB_national_pact
+
+		mutually_exclusive = { focus = LEB_working_pact focus = LEB_redo_pact_correctly}
+
+		available = {
+			always = no
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			country_event = lebanon.smth #collapse of support for gov, political vaccuum, ssnp and slcp use it to take over
+		}
+	}
+	focus = {
+		id = LEB_use_instability
+		x = 5
+		y = 1
+
+		cost = 5
+
+		icon = GFX_focus_generic_strike_at_democracy1
+
+		relative_position_id = LEB_failure_pact
+		prerequisite = { focus = LEB_failure_pact }
+		mutually_exclusive = { focus = LEB_rise_of_communism }
+
+		completion_reward = {
+			
+			add_stability = -0.1
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.15
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = LEB_fascist_coup
+		x = 0
+		y = 1
+
+		icon = GFX_focus_generic_fascist_troops
+
+		cost = 10
+
+		relative_position_id = LEB_use_instability
+		prerequisite = { focus = LEB_use_instability }
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_threat = 5
+			drop_cosmetic_tag = yes
+		}
+	}
+	focus = {
+		id = LEB_new_constitution_fascist
+		x = -1
+		y = 1
+
+		icon = GFX_focus_AST_under_the_rule_of_canberra
+
+		cost = 10
+
+		relative_position_id = LEB_fascist_coup
+		prerequisite = { focus = LEB_fascist_coup }
+
+		completion_reward = {
+			add_ideas = SYR_new_constitution_fascist_idea
+		}
+	}
+	focus = {
+		id = LEB_enforce_control
+		x = 1
+		y = 1
+
+		icon = GFX_focus_GER_total_control_over_domestic_affairs
+
+		cost = 5
+
+		relative_position_id = LEB_fascist_coup
+		prerequisite = { focus = LEB_fascist_coup }
+
+		completion_reward = {
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.1
+			}
+			add_ideas = SYR_true_syria_1
+		}
+	}
+	focus = {
+		id = LEB_purge
+		x = 1
+		y = 1
+
+		icon = GFX_focus_SOV_military_purge
+
+		cost = 10
+
+		relative_position_id = LEB_new_constitution_fascist
+		prerequisite = { focus = LEB_new_constitution_fascist }
+		prerequisite = { focus = LEB_enforce_control }
+
+		completion_reward = {
+			country_event = syria_ssnp.4
+			add_political_power = 50
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = LEB_militarize_society
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = LEB_purge
+		prerequisite = { focus = LEB_purge }
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					OR = {
+						state = 554
+						state = 677
+						state = 1100
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = SYR_true_syria_1
+				add_idea = SYR_true_syria_2
+			}
+		}
+	}
+	focus = {
+		id = LEB_publish_ssnp_map
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = LEB_purge
+		prerequisite = { focus = LEB_purge }
+
+		completion_reward = {
+			add_war_support = 0.05
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = PAL
+						is_core_of = LEB
+						is_core_of = JOR
+						is_core_of = IRQ
+						is_core_of = KUW
+					}
+				}
+				add_claim_by = LEB
+			}
+		}
+	}
+	focus = {
+		id = LEB_unite_syria
+		x = 2
+		y = 1
+
+		cost = 10
+
+		relative_position_id = LEB_militarize_society
+		prerequisite = { focus = LEB_militarize_society }
+		prerequisite = { focus = LEB_publish_ssnp_map }
+
+		completion_reward = {
+			SYR = {
+				country_event = {
+					id = syria_ssnp.1
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = LEB_launch_coups
+		x = 0
+		y = 1
+
+		cost = 5
+
+		relative_position_id = LEB_unite_syria
+		prerequisite = { focus = LEB_unite_syria }
+
+		completion_reward = {
+			add_threat = 10
+			unlock_decision_category_tooltip = LEB_launch_coups_category
+		}
+	}
+	
+	focus = {
+		id = LEB_right_owner_sinai
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = LEB_launch_coups
+		prerequisite = { focus = LEB_launch_coups }
+		mutually_exclusive = { focus = LEB_sinai_for_guarantees }
+
+		completion_reward = {
+			453 = {
+				add_claim_by = LEB
+				owner = {
+					LEB = {
+						create_wargoal = {
+							type = take_state_focus
+							generator = { 453 1103 }
+							target = PREV
+						}
+					}
+				}
+			}
+			1103 = {
+				add_claim_by = LEB
+			}
+		}
+	}
+	focus = {
+		id = LEB_turkish_claims
+		x = 1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = LEB_right_owner_sinai
+		prerequisite = { focus = LEB_right_owner_sinai }
+
+		completion_reward = {
+			344 = {
+				add_claim_by = LEB
+			}
+			350 = {
+				add_claim_by = LEB
+			}
+			345 = {
+				add_claim_by = LEB
+			}
+			352 = {
+				add_claim_by = LEB
+			}
+			create_wargoal = {
+				type = take_state_focus
+				generator = { 344 350 345 352 }
+				target = TUR
+			}
+		}
+	}
+	focus = {
+		id = LEB_khuzestan_claims
+		x = -1
+		y = 1
+
+		cost = 5
+
+		relative_position_id = LEB_right_owner_sinai
+		prerequisite = { focus = LEB_right_owner_sinai }
+
+		completion_reward = {
+			413 = {
+				add_claim_by = LEB
+			}
+			421 = {
+				add_claim_by = LEB
+			}
+			413 = {
+				owner = {
+					LEB = {
+						create_wargoal = {
+							type = take_state_focus
+							generator = { 413 421 }
+							target = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = LEB_jawf_crisis
+		x = 0
+		y = 1
+
+		cost = 5
+
+		relative_position_id = LEB_turkish_claims
+		prerequisite = { focus = LEB_turkish_claims focus = LEB_khuzestan_claims }
+
+		completion_reward = {
+			854 = {
+				add_claim_by = LEB
+			}
+			854 = {
+				owner = {
+					country_event = syria_ssnp.5
+				}
+			}
+		}
+	}
+	focus = {
+		id = LEB_purchase_cyprus
+		x = 0
+		y = 1
+
+		cost = 10
+
+		relative_position_id = LEB_khuzestan_claims
+		prerequisite = { focus = LEB_khuzestan_claims focus = LEB_turkish_claims }
+
+		completion_reward = {
+			183 = {
+				add_claim_by = LEB
+			}
+			183 = {
+				owner = {
+					country_event = syria_ssnp.11
+				}
+			}
+		}
+	}
+	focus = {
+		id = LEB_natural_syria
+		x = 1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = LEB_purchase_cyprus
+		prerequisite = { focus = LEB_purchase_cyprus }
+		prerequisite = { focus = LEB_jawf_crisis }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_claimed_by = LEB
+				}
+				add_core_of = LEB
+			}
+			set_cosmetic_tag = LEB_greater_syria
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = LEB_eagles_of_whirlwind_creation
+		x = -2
+		y = 1
+
+		cost = 5
+
+		relative_position_id = LEB_militarize_society
+		prerequisite = { focus = LEB_militarize_society }
+
+		completion_reward = {
+			add_ideas = SYR_eagles_of_whirlwind
+		}
+	}
+	focus = {
+		id = LEB_secular_nationalism
+		x = 0
+		y = 1
+
+		icon = GFX_focus_PER_forced_secularization
+
+		cost = 10
+
+		relative_position_id = LEB_militarize_society
+		prerequisite = { focus = LEB_militarize_society }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SYR_true_syria_2
+				add_idea = SYR_true_syria_3
+			}
+			add_trait = {
+				character = LEB_antoun_saadeh
+				ideology = fascism_ideology
+				trait = syrian_nationalist
+			}
+		}
+	}
+	focus = {
+		id = LEB_join_axis
+		x = -2
+		y = 1
+
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+
+		cost = 10
+
+		relative_position_id = LEB_secular_nationalism
+		prerequisite = { focus = LEB_secular_nationalism }
+		prerequisite = { focus = LEB_eagles_of_whirlwind_creation }
+
+		completion_reward = {
+			GER = {
+				country_event = syria_ssnp.14
+			}
+		}
+	}
+	focus = {
+		id = LEB_cult_of_personality
+		x = 0
+		y = 1
+
+		cost = 5
+
+		relative_position_id = LEB_secular_nationalism
+		prerequisite = { focus = LEB_secular_nationalism }
+
+		completion_reward = {
+			add_trait = {
+				character = LEB_antoun_saadeh
+				ideology = fascism_ideology
+				trait = true_zaim
+			}
+			add_stability = -0.05
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = LEB_national_renaissance
+		x = -1
+		y = 1
+
+		cost = 10
+
+		relative_position_id = LEB_launch_coups
+		prerequisite = { focus = LEB_launch_coups }
+		prerequisite = { focus = LEB_cult_of_personality }
+
+		completion_reward = {
+			add_stability = 0.025
+    		add_research_slot = 1
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = LEB_ssnp_renaissance
+				days = 720
+			}
 		}
 	}
 }

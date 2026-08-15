@@ -1,0 +1,12 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_news_event_syria_general_strike"
+		texturefile = "gfx/event_pictures/news_event_syria_general_strike.dds"
+	}
+
+
+}
+
+
+

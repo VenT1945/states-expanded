@@ -1,0 +1,116 @@
+LEB_confessionalism_power_balance_decisions = {
+    LEB_strengthen_confessionalism = {
+        cost = 20
+		days_remove = 25
+		days_re_enable = 75
+        modifier = {
+            political_power_gain = -0.02
+        }
+        remove_effect = {
+            add_power_balance_value = {
+                id = LEB_confessionalism_bop
+                value = 0.1
+            }
+            add_stability = 0.02
+        }
+    }
+    LEB_promote_confessionalism = {
+        icon = GFX_decision_generic_political_rally
+        cost = 50
+		days_remove = 70
+        days_re_enable = 180
+        complete_effect = {
+            add_power_balance_modifier = {
+                id = LEB_confessionalism_bop
+                modifier = LEB_promote_confessionalism_modifier
+            }
+        }
+        remove_effect = {
+            remove_power_balance_modifier = {
+                id = LEB_confessionalism_bop
+                modifier = LEB_promote_confessionalism_modifier
+            }
+        }
+    }
+    LEB_reaffirm_religious_personal_status_laws = {
+        cost = 75
+        days_remove = 60
+        fire_only_once = yes
+        remove_effect = {
+            add_ideas = LEB_religious_personal_status_laws
+            add_power_balance_value = {
+                id = LEB_confessionalism_bop
+                value = 0.25
+            }
+        }
+    }
+    LEB_weaken_confessionalism = {
+        cost = 20
+		days_remove = 25
+		days_re_enable = 75
+        remove_effect = {
+            add_power_balance_value = {
+                id = LEB_confessionalism_bop
+                value = -0.1
+            }
+        }
+    }
+    LEB_undermine_confessionalism = {
+        icon = GFX_decision_generic_political_rally
+        cost = 50
+        days_remove = 70
+        days_re_enable = 180
+        complete_effect = {
+            add_power_balance_modifier = {
+                id = LEB_confessionalism_bop
+                modifier = LEB_undermine_confessionalism_modifier
+            }
+        }
+        remove_effect = {
+            remove_power_balance_modifier = {
+                id = LEB_confessionalism_bop
+                modifier = LEB_undermine_confessionalism_modifier
+            }
+        }
+    }
+    LEB_fund_secular_policies = {
+        icon = GFX_decision_generic_civil_support
+        cost = 75
+        days_remove = 15
+        days_re_enable = 100
+        remove_effect = {
+            add_power_balance_value = {
+                id = LEB_confessionalism_bop
+                value = -0.2
+            }
+        }
+    }
+    LEB_ban_confessionalism = {
+        cost = 100
+        icon = GFX_decision_generic_break_treaty
+        fire_only_once = yes
+        visible = {
+            OR = {
+                is_power_balance_in_range = {
+                    id = LEB_confessionalism_bop
+                    range = LEB_confessionalism_bop_weak
+                }
+                is_power_balance_in_range = {
+                    id = LEB_confessionalism_bop
+                    range = LEB_confessionalism_bop_very_weak
+                }
+            } 
+        }
+        available = {
+            is_power_balance_in_range = {
+				id = LEB_confessionalism_bop
+				range = LEB_confessionalism_bop_very_weak
+			}
+        }
+        complete_effect = {
+            remove_ideas = LEB_confessionalism
+            add_stability = -0.025
+            add_political_power = 150
+        }
+    }
+}

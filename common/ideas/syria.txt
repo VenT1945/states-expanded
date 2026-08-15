@@ -2,7 +2,10 @@ ideas = {
     hidden_ideas = {
 		SYR_mardam_bey_family_boost = {
 			modifier = {
-				stability_factor = 0.03
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				political_advisor_cost_factor = -0.15
+				high_command_cost_factor = -0.25
 			}
 			cancel = {
 				NOT = {
@@ -14,6 +17,7 @@ ideas = {
 	}
 	industrial_concern = {
 		SYR_chemins_de_fer_syriens = {
+			picture = SYR_chemins_de_fer_syriens_icon
 			cost = 100
 			allowed = {
 				original_tag = SYR
@@ -115,26 +119,38 @@ ideas = {
 			modifier = {
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.075
-				conscription = 0.01
 			}
 			allowed_civil_war = {
 				always = yes
 			}
 		}
 		SYR_banned_ssnp_idea = {
+			picture = SYR_banned_ssnp_idea_icon
 			modifier = {
 				fascism_drift = -0.2
 				stability_factor = 0.05
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 		}
 		SYR_bastion_of_democracy_idea = {
+			picture = generic_pp_unity_bonus
 			modifier = {
 				democratic_drift = 0.0125
 				stability_factor = 0.05
         		drift_defence_factor = 0.1
 			}
 		}
+		SYR_syrians_in_syrian_gov = {
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.2
+				compliance_growth = 0.1
+			}
+		}
 		SYR_adopted_franc = {
+			picture = NOR_printing_money
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -199,7 +215,7 @@ ideas = {
 				stability_weekly = 0.005
 			}
 		}
-		SYR_republican_constitution = {
+		SYR_republican_constitution_idea = {
 			picture = BRA_dasp
 			modifier = {
 				political_power_gain = 0.1
@@ -208,7 +224,7 @@ ideas = {
 		}
 		SYR_republican_constitution_1 = {
 			picture = BRA_dasp
-			name = SYR_republican_consitution
+			name = SYR_republican_constitution_idea
 			modifier = {
 				political_power_gain = 0.15
 				stability_factor = 0.1
@@ -270,10 +286,25 @@ ideas = {
 			}
 		}
 		SYR_new_constitution_fascist_idea = {
+			picture = generic_constitutional_guarantees
 			modifier = {
 				war_support_factor = 0.1
 				political_power_factor = 0.15
 				political_advisor_cost_factor = -0.25
+			}
+		}
+		SYR_ssnp_renaissance = {
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.1
+				stability_weekly = 0.001
+			}
+		}
+		SYR_eagles_of_whirlwind = {
+			modifier = {
+				army_core_defence_factor = 0.05
+				resistance_decay_on_our_occupied_states = -0.25
+				compliance_growth_on_our_occupied_states = -0.3
 			}
 		}
 		SYR_communist_underground = {
@@ -376,7 +407,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.075
 				war_support_factor = 0.10
-				experience_gain_army_factor = 0.10
+				political_power_factor = 0.2
 				justify_war_goal_time = -0.15
 				conscription_factor = 0.03
 			}
@@ -394,6 +425,20 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.05
 				army_org_regain = 0.05
+			}
+		}
+		SYR_professional_army_idea = {
+			modifier = {
+				army_morale_factor = 0.10
+				army_org_regain = 0.075
+				army_org_factor = 0.05
+				planning_speed = 0.10
+			}
+		}
+		SYR_national_conscription_idea = {
+			modifier = {
+				conscription = 0.01
+				training_time_factor = -0.15
 			}
 		}
 		SYR_better_NCOs_idea = {

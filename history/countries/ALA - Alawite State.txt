@@ -5,6 +5,8 @@ oob = "ALA"
 set_cosmetic_tag = ALA_mandate
 recruit_character = ALA_ernest_m_h_schoeffler
 recruit_character = ALA_salih_al_ali
+recruit_character = ALA_salman_al_murshid
+recruit_character = ALA_ali_al_assad
 
 set_technology = {
 	infantry_weapons = 1

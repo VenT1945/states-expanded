@@ -36,19 +36,23 @@ ideas = {
             }
 		}
         LEB_trade_hub = {
-    		picture = idk
+    		picture = can_wartime_prices_and_trade_board
     		modifier = {
         		consumer_goods_factor = -0.05
                 local_resources_factor = 0.10
-                political_power_factor = 0.05
             }
 		}
 		LEB_confessionalism = {
-    		picture = idk
+    		picture = LEB_confessionalism_icon
     		modifier = {
 				stability_factor = 0.05
         		custom_modifier_tooltip = LEB_confessionalism_tt
             }
+			on_remove = {
+				remove_power_balance = {
+					id = LEB_confessionalism_bop
+				}
+			}
 		}
 	}
 }

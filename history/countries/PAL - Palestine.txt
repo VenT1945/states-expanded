@@ -9,7 +9,7 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_oob = "PAL_1936"
+set_oob = "PAL"
 
 add_ideas = {
 	LON_mandate_A

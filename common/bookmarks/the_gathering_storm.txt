@@ -24,12 +24,14 @@ bookmarks = {
 			history = "LEB_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-
-
+				LEB_confessionalism
+				LEB_trade_hub
 				LON_mandate_A
 			}
 			focuses = {
-				
+				LEB_election
+				LEB_victory_for_lebanon
+				LEB_convene_national_pact
 			}
 		}
 		ALA = {

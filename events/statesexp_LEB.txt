@@ -1,0 +1,27 @@
+add_namespace = lebanon
+add_namespace = lebanon_election
+add_namespace = lebanon_confessionalism
+
+country_event = {
+	id = lebanon_election.1
+	title = lebanon_election.1.t
+	desc = lebanon_election.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = lebanon_election.1.a
+		ai_chance = {
+    		base = 10
+		}
+		complete_national_focus = LEB_national_bloc
+	}
+	option = {
+		name = lebanon_election.1.b
+		ai_chance = {
+    		base = 10
+		}
+		complete_national_focus = LEB_constitutional_bloc
+	}
+}

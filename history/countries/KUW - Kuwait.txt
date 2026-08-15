@@ -1,6 +1,6 @@
 ﻿capital = 656 # Kuwait City
 
-#oob = ""
+oob = "KUW"
 
 # Starting tech
 set_technology = {

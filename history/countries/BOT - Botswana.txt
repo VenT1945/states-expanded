@@ -8,11 +8,11 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
-set_cosmetic_tag = BOT_hct
+set_cosmetic_tag = BOT_protectorate
 
 set_convoys = 5
 
-recruit_character = BOT_william_henry_clark
+recruit_character = BOT_charles_fernand_rey
 recruit_character = BOT_aa2
 recruit_character = BOT_awt
 recruit_character = BOT_coi

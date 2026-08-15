@@ -4,3 +4,9 @@ oasis_modifier = {
     attrition_for_controller = -0.50
     dig_in_speed_factor = 0.5
 }
+LEB_promote_confessionalism_modifier = {
+    power_balance_weekly = 0.025
+}
+LEB_undermine_confessionalism_modifier = {
+    power_balance_weekly = -0.025
+}

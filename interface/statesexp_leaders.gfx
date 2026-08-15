@@ -32,14 +32,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SYR/idea_husni_al_zaim.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_SYR_shawkat_shukayr"
-		texturefile = "gfx/leaders/SYR/portrait_SYR_shawkat_shukayr.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_shawkat_shukayr"
-		texturefile = "gfx/leaders/SYR/idea_shawkat_shukayr.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_fawzi_selu"
 		texturefile = "gfx/leaders/SYR/idea_fawzi_selu.dds"
 	}
@@ -84,6 +76,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SYR/idea_said_al_ghazzi.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_taj_al_din_al_hasani"
+		texturefile = "gfx/leaders/SYR/idea_taj_al_din_al_hasani.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_fares_al_khoury"
 		texturefile = "gfx/leaders/SYR/idea_faris_al_khoury.dds"
 	}
@@ -124,6 +120,18 @@ spriteTypes = {
 		texturefile = "gfx/leaders/LEB/portrait_LEB_habib_bacha_el_saad.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_LEB_shawkat_shukayr"
+		texturefile = "gfx/leaders/LEB/portrait_LEB_shawkat_shukayr.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_genevieve_gemayel"
+		texturefile = "gfx/leaders/LEB/idea_genevieve_gemayel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shawkat_shukayr"
+		texturefile = "gfx/leaders/LEB/idea_shawkat_shukayr.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_FRA_edgard_de_larminat"
 		texturefile = "gfx/leaders/FRA/portrait_FRA_edgard_de_larminat.dds"
 	}
@@ -134,5 +142,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_RIF_manuel_rico_avello"
 		texturefile = "gfx/leaders/RIF/portrait_RIF_manuel_rico_avello.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BOT_charles_fernand_rey"
+		texturefile = "gfx/leaders/BOT/portrait_BOT_charles_fernand_rey.dds"
 	}
 }

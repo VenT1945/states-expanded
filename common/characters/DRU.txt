@@ -15,6 +15,7 @@ characters = {
 			expire = "1939.1.1.1"
 		}
 	}
+
 	DRU_sultan_al_atrash = {
 
 		name = DRU_sultan_al_atrash
@@ -35,6 +36,7 @@ characters = {
 			expire = "1954.1.1.1"
 		}
 	}
+
 	DRU_abdul_g_p_al_atrash = {
 
 		name = DRU_abdul_g_p_al_atrash
@@ -51,6 +53,7 @@ characters = {
 			traits = { DRU_druze_leader }
 		}
 	}
+
 	DRU_zayd_al_atrash = {
 
 		name = DRU_zayd_al_atrash
@@ -60,6 +63,24 @@ characters = {
 				large = GFX_portrait_DRU_zayd_al_atrash
 				small = GFX_idea_zayd_al_atrash
 			}
+		}
+	}
+
+	DRU_hasan_al_atrash = {
+
+		name = DRU_hasan_al_atrash
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DRU_hasan_al_atrash
+				small = GFX_idea_hasan_al_atrash
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = hasan_al_atrash
+			traits = { silent_workhorse }
 		}
 	}
 }

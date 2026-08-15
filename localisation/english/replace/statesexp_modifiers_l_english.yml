@@ -1,4 +1,6 @@
 ﻿l_english:
  monarchism_drift:0 "Daily Monarchist Support"
  oasis_modifier:0 "Oasis"
- reaching_out_modifier:0 "Reaching Out"
+ france_investments_modifiers:0 "French Investments"
+ reaching_out_international_modifier:0 "Reaching Out Internationally"
+ political_integration_modifier:0 "Political Integration"

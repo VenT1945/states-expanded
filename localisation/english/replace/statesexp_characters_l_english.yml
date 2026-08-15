@@ -22,7 +22,8 @@
  MLW_harold_kittermaster:0 "Harold Kittermaster"
  ZAM_hubert_winthrop_young:0 "Hubert Winthrop Young"
  ZIM_godfrey_huggins:0 "Godfrey Huggins"
- BOT_william_henry_clark:0 "William Henry Clark"
+ BOT_charles_fernand_rey:0 "Charles Fernand Rey"
+ SAW_allan_graham_marwick:0 "Allan Graham Marwick"
  FSA_bernard_reilly:0 "Bernard Rawdon Reilly"
  UAE_shakhbut_bin_sultan_al_nahyan:0 "Shakhbut bin Sultan Al Nahyan"
  QAT_abdullah_bin_jassim_al_thani:0 "Abdullah bin Jassim Al Thani"
@@ -45,6 +46,8 @@
  DRU_zayd_al_atrash:0 "Zayd al-Atrash"
  ALA_ernest_m_h_schoeffler:0 "Ernest M. H. Schoeffler"
  ALA_salih_al_ali:0 "Salih al-Ali"
+ ALA_salman_al_murshid:0 "Salman al-Murshid"
+ ALA_ali_al_asaad:0 "Ali al-Assad"
 
  SYR_antoun_saadeh:0 "Antoun Saadeh"
  SYR_khalid_bakdash:0 "Khalid Bakdash"
@@ -59,6 +62,7 @@
  SYR_jamil_mardam_bey:0 "Jamil Mardam Bey"
  SYR_omar_abu_risha:0 "Omar Abu Risha"
  SYR_muhammad_al_ashmar:0 "Muhammad al-Ashmar"
+ SYR_taj_al_din_al_hasani:0 "Taj al-Din al-Hasani"
  SYR_abdullah_atfeh:0 "Abdullah Atfeh"
  SYR_adnan_al_malki:0 "Adnan al-Malki"
  SYR_fawzi_selu:0 "Fawzi Selu"
@@ -67,3 +71,10 @@
  SYR_husni_al_zaim:0 "Husni al-Za'im"
 
  LEB_shawkat_shukayr:0 "Shawkat Shukayr"
+ LEB_habib_bacha_el_saad:0 "Habib Bacha el-Saad"
+ LEB_emile_edde:0 "Émile Eddé"
+ LEB_pierre_gemayel:0 "Pierre Gemayel"
+ LEB_genevieve_gemayel:0 "Geneviève Gemayel"
+ LEB_farajallah_el_helou:0 "Farajallah el-Helou"
+
+ FRA_edgard_de_larminat:0 "Edgard de Larminat"

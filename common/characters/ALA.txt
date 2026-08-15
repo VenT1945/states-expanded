@@ -15,7 +15,9 @@ characters = {
 			expire = "1939.1.1.1"
 		}
 	}
+
 	ALA_salih_al_ali = {
+
 		name = ALA_salih_al_ali
 
 		portraits = {
@@ -32,6 +34,57 @@ characters = {
 			ideology = despotism
 			traits = {  }
 			expire = "1950.1.1.1"
+		}
+	}
+
+	ALA_salman_al_murshid = {
+
+		name = ALA_salman_al_murshid
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ALA_salman_al_murshid
+				small = GFX_idea_salman_al_murshid
+			}
+		}
+
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {  }
+			expire = "1950.1.1.1"
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = salman_al_murshid
+			traits = { fascist_demagogue }
+			available = {
+				has_country_flag = aldr_fascist_support
+				NOT = {
+					has_country_leader = {
+						character = ALA_salman_al_murshid
+						ruling_only = yes
+					}
+				}
+			}
+		}
+	}
+
+	ALA_ali_al_assad = {
+
+		name = ALA_ali_al_assad
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ALA_ali_al_assad
+				small = GFX_idea_ali_al_assad
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ali_al_assad
+			traits = { silent_workhorse }
 		}
 	}
 }

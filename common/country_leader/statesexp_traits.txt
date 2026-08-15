@@ -1,6 +1,6 @@
 leader_traits = {
     unpopular_leader = {
-        random = no
+        random = yes
         stability_factor = -0.1
         consumer_goods_factor = 0.05
     }
@@ -20,11 +20,29 @@ leader_traits = {
         justify_war_goal_time = -0.3
         stability_factor = 0.05
     }
+    true_zaim = {
+        random = no
+        consumer_goods_factor = -0.15
+        war_support_factor = 0.03
+        political_power_factor = 0.2
+    }
+    experienced_politician = {
+        random = no
+        political_power_factor = 0.1
+        democratic_acceptance = 0.35
+    }
     SYR_national_bloc_president = {
         random = no
         sprite = 13
         stability_factor = 0.05
         neutrality_drift = 0.05
+    }
+    mandate_statesman = {
+        random = no
+        sprite = 13
+        autonomy_gain = -0.2
+        stability_factor = 0.05
+        consumer_goods_factor = -0.02
     }
     communist_figurehead = {
         random = no

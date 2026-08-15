@@ -1,5 +1,79 @@
 on_actions = {
     on_startup = {
+		effect = {
+			SYR = {
+				generate_character = {
+					token_base = generic_military_theorist # token will be TAG_token_base
+					advisor = {
+						slot = theorist
+						traits = { military_theorist }
+						ledger = army
+						cost = 50
+					}
+					portraits = { 
+						army = { small = GFX_idea_generic_military_theorist }
+					}
+				}
+				generate_character = {
+					token_base = generic_naval_theorist # token will be TAG_token_base
+					advisor = {
+						slot = theorist
+						traits = { naval_theorist }
+						ledger = navy
+						cost = 50
+					}
+					portraits = { 
+						army = { small = GFX_idea_generic_naval_theorist }
+					}
+				}
+				generate_character = {
+					token_base = generic_air_warfare_theorist # token will be TAG_token_base
+					advisor = {
+						slot = theorist
+						traits = { air_warfare_theorist }
+						ledger = air
+						cost = 50
+					}
+					portraits = { 
+						army = { small = GFX_idea_generic_air_warfare_theorist }
+					}
+				}
+				generate_character = {
+					token_base = generic_navy_chief_decisive_bat # token will be TAG_token_base
+					advisor = {
+						slot = navy_chief
+						traits = { navy_chief_decisive_battle_2 }
+						cost = 100
+					}
+					portraits = { 
+						army = { small = GFX_idea_generic_navy_chief_decisive_bat }
+					}
+				}
+				# generic air chiefs
+				generate_character = {
+					token_base = generic_air_close_air_sup # token will be TAG_token_base
+					advisor = {
+						slot = air_chief
+						traits = { air_chief_ground_support_2 }
+						cost = 100
+					}
+					portraits = { 
+						army = { small = GFX_idea_generic_air_close_air_sup }
+					}
+				}
+				generate_character = {
+					token_base = generic_air_chief_all_weather # token will be TAG_token_base
+					advisor = {
+						slot = air_chief
+						traits = { air_chief_all_weather_2 }
+						cost = 100
+					}
+					portraits = { 
+						army = { small = GFX_idea_generic_air_chief_all_weather }
+					}
+				}
+			}
+		}
 		effect = { 
             SYR = {
 				if = {
@@ -25,7 +99,7 @@ on_actions = {
 						25 = {
 							SYR = { set_country_flag = SYR_AI_RANDOM_NATIONAL_BLOC }
 						}
-						5 = {
+						7 = {
 							SYR = { set_country_flag = SYR_AI_RANDOM_BAATHISM }
 						}
 						10 = {
@@ -155,11 +229,23 @@ on_actions = {
 				country_event = {
 					id = syria.8
 					days = 280
-					random_dyas = 30
+					random_days = 30
 				}
 			}
         }
     }
+	on_weekly_SYR = {
+		effect = {
+			IF = {
+				limit = {
+					has_autonomy_state = autonomy_mandate
+					compare_autonomy_progress_ratio > 0.85
+					has_completed_focus = SYR_ratified
+				}
+				country_event = syria_news.2
+			}
+		}
+	}
 	on_weekly_SYR = {
 		effect = {
 			update_faction_scaling = yes

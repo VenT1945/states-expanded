@@ -258,7 +258,7 @@ UTA_expansion_central = {
                 original_tag = UAE
             }
         }
-        days_remove = 30
+        days_remove = 14
         visible = {
             has_country_flag = khor_expedition
         }
@@ -300,7 +300,7 @@ UTA_expansion_central = {
                 original_tag = UAE
             }
         }
-        days_remove = 30
+        days_remove = 14
         visible = {
             has_country_flag = liwa_expedition
         }
@@ -343,7 +343,7 @@ UTA_expansion_central = {
                 original_tag = IMO
             }
         }
-        days_remove = 30
+        days_remove = 14
         visible = {
             has_country_flag = oman_expedition
         }
@@ -386,7 +386,7 @@ UTA_expansion_central = {
                 original_tag = YEM
             }
         }
-        days_remove = 30
+        days_remove = 14
         visible = {
             has_country_flag = yemen_expedition
         }
@@ -429,7 +429,7 @@ UTA_expansion_central = {
                 original_tag = YEM
             }
         }
-        days_remove = 30
+        days_remove = 14
         visible = {
             has_country_flag = northern_yemen_expedition
         }
@@ -468,7 +468,7 @@ UTA_expansion_central = {
         allowed = {
             original_tag = SAU
         }
-        days_remove = 30
+        days_remove = 14
         visible = {
             has_country_flag = rub_al_khali_expedition
         }

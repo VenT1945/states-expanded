@@ -151,6 +151,46 @@ SYR_national_bloc_plans = {
 		}
 	}
 }
+SYR_invite_to_league_category = {
+	SYR_invite_to_league_decision = {
+		cost = 25
+		
+		targets = { LEB JOR PAL KUW FSA QUA KTH MAH OMA UAE QAT BHR SAU IRQ IMO YEM EGY SUD LBA TUN ALG MOR RIF MRT SOM DJI }
+
+		target_root_trigger = {
+			has_completed_focus = SYR_expand_league
+		}
+
+		target_trigger = {
+			FROM = {
+				exists = yes
+				is_subject = no
+				NOT = {
+					is_in_faction_with = SYR
+				}
+			}
+		}
+
+		visible = {
+			FROM = {
+				exists = yes
+				is_subject = no
+				NOT = {
+					is_in_faction_with = SYR
+				}
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = syria_national.9
+					days = 1
+				}
+			}
+		}
+	}
+}
 SYR_launch_coups_category = {
 	SYR_spread_propaganda = {
 		cost = 50
@@ -263,16 +303,44 @@ SYR_baath_category = {
 			custom_effect_tooltip = SYR_increasing_cost_tt
 		}
 	}
+	SYR_baath_five_year_plan_industrialization = {
+		cost = 100
+		days_re_enable = 45
+		days_remove = 14
+		visible = {
+			has_completed_focus = SYR_baath_five_year_plan
+		}
+		available = {
+			check_variable = {
+				var = SYR_industrialization_variable
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+				var = SYR_industrialization_variable
+				value = 1
+			}
+		}
+	}
 }
 SYR_baath_faction_category = {
 	SYR_instigate_baathist_revolt = {
-
+		cost = 25
+		days_remove = 30
 		targets = { LEB JOR PAL KUW FSA QUA KTH MAH OMA UAE QAT BHR }
-
 		target_root_trigger = {
 			has_completed_focus = SYR_promote_independence
 		}
-
 		target_trigger = {
 			FROM = {
 				exists = yes
@@ -282,7 +350,6 @@ SYR_baath_faction_category = {
 				NOT = { has_country_flag = SYR_ready_for_incorporation }
 			}
 		}
-
 		visible = {
 			FROM = {
 				exists = yes
@@ -292,7 +359,6 @@ SYR_baath_faction_category = {
 				NOT = { has_country_flag = SYR_ready_for_incorporation }
 			}
 		}
-
 		available = {
 			NOT = { has_war_with = FROM }
 			FROM = {
@@ -307,10 +373,6 @@ SYR_baath_faction_category = {
 				}
 			}
 		}
-
-		cost = 25
-		days_remove = 30
-
 		remove_effect = {
 			FROM = {
 				country_event = { 
@@ -320,7 +382,109 @@ SYR_baath_faction_category = {
 				set_country_flag = SYR_ready_for_incorporation
 			}
 		}
-
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SYR_first_stage_incorporation = {
+		cost = 25
+		days_remove = 30
+		targets = { LEB JOR PAL KUW FSA QUA KTH MAH OMA UAE QAT BHR SAU IRQ IMO YEM EGY SUD LBA TUN ALG MOR RIF MRT SOM DJI }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = SYR_unite_levant
+				has_completed_focus = SYR_unite_iraq_kuwait
+			}
+		}
+		target_trigger = {
+			FROM = {
+				exists = yes
+				OR = {
+					has_country_flag = SYR_ready_for_incorporation
+					is_subject_of = SYR
+				}
+				NOT = {
+					has_country_flag = SYR_ready_for_incorporation_2
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				exists = yes
+				OR = {
+					has_country_flag = SYR_ready_for_incorporation
+					is_subject_of = SYR
+				}
+				NOT = {
+					has_country_flag = SYR_ready_for_incorporation_2
+				}
+			}
+		}
+		available = {
+			NOT = { has_war_with = FROM }
+			FROM = {
+				is_in_faction_with = ROOT
+				has_civil_war = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = SYR_not_has_timed_baath_incorporation		
+				FROM = {
+					NOT = {
+						has_country_flag = SYR_timed_incorporation
+					}
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SYR_one_step_closer_tt
+			add_war_support = 0.005
+			FROM = {
+				clr_country_flag = SYR_ready_for_incorporation
+				set_country_flag = SYR_ready_for_incorporation_2
+				add_opinion_modifier = {
+					target = SYR
+					modifier =  political_integration_modifier
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SYR_second_stage_incorporation = {
+		cost = 25
+		days_remove = 60
+		days_re_enable = 180
+		targets = { LEB JOR PAL KUW FSA QUA KTH MAH OMA UAE QAT BHR SAU IRQ IMO YEM EGY SUD LBA TUN ALG MOR RIF MRT SOM DJI }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = SYR_unite_levant
+				has_completed_focus = SYR_unite_iraq_kuwait
+			}
+		}
+		target_trigger = {
+			FROM = {
+				exists = yes
+				has_country_flag = SYR_ready_for_incorporation_2
+			}
+		}
+		visible = {
+			FROM = {
+				exists = yes
+				has_country_flag = SYR_ready_for_incorporation_2
+			}
+		}
+		available = {
+			NOT = { has_war_with = FROM }
+			FROM = {
+				is_in_faction_with = ROOT
+			}
+		}
+		remove_effect = {
+			FROM = {
+				country_event = syria_baath.10
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}

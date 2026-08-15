@@ -8,6 +8,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/colonial_economy.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_SYR_chemins_de_fer_syriens_icon"
+		texturefile = "gfx/interface/ideas/SYR_chemins_de_fer_syriens.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_SYR_divide_rule_icon"
 		texturefile = "gfx/interface/ideas/SYR_divide_rule.dds"
 	}
@@ -24,8 +28,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SYR_french_levant_army.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_SYR_banned_ssnp_idea_icon"
+		texturefile = "gfx/interface/ideas/SYR_banned_ssnp_idea.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_SYR_baath_icon"
 		texturefile = "gfx/interface/ideas/SYR_baath.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_confessionalism_icon"
+		texturefile = "gfx/interface/ideas/LEB_confessionalism.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_DRU_mountain_hold_icon"

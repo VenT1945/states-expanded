@@ -1,0 +1,9 @@
+LEB_confessionalism_power_balance_decisions = {
+	priority = 100
+	allowed = {
+		original_tag = LEB
+	}
+    visible = {
+        has_idea = LEB_confessionalism
+    }
+}

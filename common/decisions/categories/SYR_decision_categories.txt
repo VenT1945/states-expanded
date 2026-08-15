@@ -13,7 +13,7 @@ SYR_charles_huntziger_category = {
 }
 SYR_national_bloc_plans = {
 	priority = 100
-	visible_when_empty = no
+	visible_when_empty = yes
 	allowed = {
 		original_tag = SYR
 	}
@@ -21,8 +21,31 @@ SYR_national_bloc_plans = {
 		has_completed_focus = SYR_public_plans
 	}
 }
+SYR_invite_to_league_category = {
+	priority = 110
+	visible_when_empty = no
+	allowed = {
+		original_tag = SYR
+	}
+	visible = {
+		has_completed_focus = SYR_expand_league
+	}
+}
+SYR_demand_aden_category = {
+	priority = 80
+	visible_when_empty = no
+	allowed = {
+		original_tag = SYR
+	}
+	visible = {
+		OR = {
+			has_completed_focus = SYR_unite_arabia
+			has_completed_focus = SYR_conquer_colonies
+		}
+	}
+}
 SYR_launch_coups_category = {
-	priority = 40
+	priority = 111
 	visible_when_empty = no	
 	allowed = {
         original_tag = SYR

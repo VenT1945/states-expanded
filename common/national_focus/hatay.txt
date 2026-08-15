@@ -15,12 +15,76 @@ focus_tree = {
 
 		cost = 5
 
+		mutually_exclusive = { focus = HAT_support_syrian_interests focus = HAT_split_vote }
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_political_power = 25
+			add_to_variable = {
+				var = hatay_turkey_support
+				value = 4
+			}
+			subtract_from_variable = {
+				var = hatay_independence_support
+				value = 4
+			}
+		}
+	}
+	focus = {
+		id = HAT_split_vote
+		x = 12
+		y = 0
+
+		cost = 5
+
+		mutually_exclusive = { focus = HAT_support_syrian_interests focus = HAT_support_turkish_interests }
+
 		ai_will_do = {
 			factor = 50
 		}
 
 		completion_reward = {
 			add_political_power = 50
+			add_to_variable = {
+				var = hatay_turkey_support
+				value = 2
+			}
+			add_to_variable = {
+				var = hatay_syria_support
+				value = 2
+			}
+			subtract_from_variable = {
+				var = hatay_independence_support
+				value = 4
+			}
+		}
+	}
+	focus = {
+		id = HAT_support_syrian_interests
+		x = 14
+		y = 0
+
+		cost = 5
+
+		mutually_exclusive = { focus = HAT_split_vote focus = HAT_support_turkish_interests }
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_political_power = 25
+			add_to_variable = {
+				var = hatay_syria_support
+				value = 4
+			}
+			subtract_from_variable = {
+				var = hatay_independence_support
+				value = 4
+			}
 		}
 	}
 }

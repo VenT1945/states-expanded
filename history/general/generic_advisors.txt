@@ -58,6 +58,15 @@ every_possible_country = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
+				IF = {
+					limit = {
+						OR = {
+							original_tag = ALA
+							original_tag = DRU
+						}
+					}
+					has_country_flag = aldr_arab_support_commie_support
+				}
 			}
 			ai_will_do = {
 				factor = 1
@@ -127,6 +136,15 @@ every_possible_country = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
+				IF = {
+					limit = {
+						OR = {
+							original_tag = ALA
+							original_tag = DRU
+						}
+					}
+					has_country_flag = aldr_democratic_support
+				}
 			}
 			ai_will_do = {
 				factor = 0
@@ -191,7 +209,16 @@ every_possible_country = {
 				IF = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}				
+				}			
+				IF = {
+					limit = {
+						OR = {
+							original_tag = ALA
+							original_tag = DRU
+						}
+					}
+					has_country_flag = aldr_fascist_support
+				}	
 			}
 			ai_will_do = {
 				factor = 0

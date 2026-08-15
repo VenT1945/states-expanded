@@ -47,14 +47,6 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		has_dlc = "Gotterdammerung"
-	}
-	give_guarantee = FRA
-	give_guarantee = ENG
-}
-
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.3 #we see what you are doing there Adolf
@@ -364,6 +356,21 @@ IF = {
 		target = COG
 		autonomous_state = autonomy_colony
 		freedom_level = 0.2
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = BRD
+		autonomous_state = autonomy_mandate
+	}
+	else = {
+		puppet = BRD
 	}
 }
 

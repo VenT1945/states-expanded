@@ -72,21 +72,11 @@ if = {
 		}
 	}
 }
-if = {
-	limit = {
-		has_dlc = "Gotterdammerung"
-	}
-	give_guarantee = BEL
+
+IRQ = {
+	give_military_access = ENG
 }
-if = {
-	limit = {
-		has_dlc = "Graveyard of Empires"
-	}
-	give_guarantee = IRQ
-	IRQ = {
-		give_military_access = ENG
-	}
-}
+
 
 set_research_slots = 4
 
@@ -359,6 +349,10 @@ if = {
 		autonomous_state = autonomy_protectorate
 	}
 	set_autonomy = {
+		target = SWA
+		autonomous_state = autonomy_protectorate
+	}
+	set_autonomy = {
 		target = SUD
 		autonomous_state = autonomy_protectorate
 	}
@@ -408,6 +402,7 @@ if = {
 		puppet = UAE
 		puppet = UGA
 		puppet = BOT
+		puppet = SWA
 	}
 }
 

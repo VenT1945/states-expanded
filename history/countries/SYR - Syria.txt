@@ -10,13 +10,12 @@ set_technology = {
 	camelry = 1
 }
 
-set_oob = "SYR_1936"
+set_oob = "SYR"
 
 set_variable = {
 	var = SYR_increasing_cost
 	value = 50
 }
-
 set_variable = {
 	var = SYR_propaganda_value
 	value = 0
@@ -52,6 +51,7 @@ recruit_character = SYR_shukri_al_quwatli
 recruit_character = SYR_sabri_al_asali
 recruit_character = SYR_zaki_al_arsuzi
 recruit_character = SYR_said_al_ghazzi
+recruit_character = SYR_taj_al_din_al_hasani
 recruit_character = SYR_damien_de_martel
 activate_advisor = damien_de_martel
 recruit_character = SYR_fares_al_khoury
